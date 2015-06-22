@@ -4,7 +4,6 @@ require 'rest-client'
 require 'json'
 class Docs
 	@@version = ENV['version'].nil? ? "edge/" : ENV['version']+'/'
-	@@apifolder = @@version + AppConfig['api_md']
 	@@guidesfolder = @@version + AppConfig['guides_md']
 	@@docsjson = @@version + AppConfig['docs_json']
 
@@ -13,40 +12,7 @@ class Docs
 			puts "no 'version' parameter specified : using 'edge'"
 		end		
 	  puts "Generating JSON Index: #{@@docsjson}"
-	  apiMD = File.join(@@apifolder,"**","*.md")
-	  apiFiles = Dir.glob(apiMD)
 	  index_hash = []
-	  api_mapping = []
-	  apiFiles.each do |fileName|
-	    basename = fileName.gsub(@@apifolder,'')
-	    parent = Pathname(fileName.gsub(basename,'')).each_filename.to_a.last
-      	md = File.read(fileName)
-	    if md.match(/#(.*)$/).nil? 
-	    	title = basename.gsub('.md','')
-	    else
-		    title = md.match(/#(.*)$/)[1]
-	    end
-		
-	    puts "Processing API: #{title} in #{basename}"
-	    # Change links in MD to use hash scheme #parent folder-filename
-	    md = replace_url md
-	    md = replace_images md
-	    md = replace_tables md
-	    # md = replace_images md
-	    # md = replace_tables md
-
-	    hash_object =   {
-	    	:key => "#{parent}-#{basename.gsub('.md','')}",
-	      :name => title,
-	      :md => md
-	    }
-	    api_object = {
-	    	:name => hash_object[:name],
-	    	:link => "##{hash_object[:key]}"
-	    }
-	    api_mapping.push api_object
-	    index_hash.push hash_object    
-	  end
 
 	  guidesMD = File.join(@@guidesfolder,"**","*.md")
 	  guidesFiles = Dir.glob(guidesMD)

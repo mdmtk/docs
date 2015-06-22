@@ -374,7 +374,7 @@ function loadDoc(key){
 	}).data("toc-tocify");
 	
 	$(".icon-bug").click(function(){
-	    var url = "https://github.com/EBZebra/docs/issues/new?title=Doc Issue:" + document.title + '&body=' + encodeURIComponent('Page: ' + window.location.href);
+	    var url = "https://github.com/mdmtk/docs/issues/new?title=Doc Issue:" + document.title + '&body=' + encodeURIComponent('Page: ' + window.location.href);
 	    window.open(url);
 
 	});

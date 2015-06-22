@@ -5,12 +5,12 @@ var menuStrcture = [
 		items: [
 			{
 				name: 'Overview',
-				link: '#about',
+				link: '#guide-about',
 			},		
 			{
 				name: 'Quick Start',
 				icon: 'fa fa-rocket',
-				link: '#tutorials-quickstart',
+				link: '#guide-tutorials-quickstart',
 				
 			},
 			{
@@ -24,11 +24,11 @@ var menuStrcture = [
 						items: [
 							{
 								name: 'MX Framework Overview',
-								link: '#MX-overview',
+								link: '#guide-MX-overview',
 							},
 							{
 								name: 'MX Interface',
-								link: '#MX-interface',
+								link: '#guide-MX-interface',
 							},
 							// {
 							// 	name: 'Version Notes',
@@ -41,7 +41,7 @@ var menuStrcture = [
 							// 			items: [
 							// 				{
 							// 					name: 'MX 4.3',
-							// 					link: '#MX-versions-4.3',
+							// 					link: '#guide-MX-versions-4.3',
 							// 				}
 							// 			]
 							// 		}
@@ -62,23 +62,23 @@ var menuStrcture = [
 						items: [
 							{
 								name: 'Generation',
-								link: '#xml-generate',
+								link: '#guide-xml-generate',
 							},
 							{
 								name: 'Submission',
-								link: '#xml-submit',
+								link: '#guide-xml-submit',
 							},
 							{
 								name: 'Queries',
-								link: '#xml-queries',
+								link: '#guide-xml-queries',
 							},
 							{
 								name: 'Response Handling',
-								link: '#xml-response',
+								link: '#guide-xml-response',
 							},
 							{
 								name: 'Xml Parser',
-								link: '#xml-xmlparser',
+								link: '#guide-xml-xmlparser',
 							}
 						]
 					}
@@ -95,131 +95,131 @@ var menuStrcture = [
 						items: [
 							{
 								name: 'Access',
-								link: '#csp-access',
+								link: '#guide-csp-access',
 							},
 							{
 								name: 'Analytics',
-								link: '#csp-analytics',
+								link: '#guide-csp-analytics',
 							},
 							{
 								name: 'App',
-								link: '#csp-app',
+								link: '#guide-csp-app',
 							},
 							{
 								name: 'Batch',
-								link: '#csp-batch',
+								link: '#guide-csp-batch',
 							},
 							{
 								name: 'Browser',
-								link: '#csp-browser',
+								link: '#guide-csp-browser',
 							},
 							{
 								name: 'Camera',
-								link: '#csp-camera',
+								link: '#guide-csp-camera',
 							},
 							{
 								name: 'Cellular',
-								link: '#csp-cellular',
+								link: '#guide-csp-cellular',
 							},
 							{
 								name: 'Cert',
-								link: '#csp-cert',
+								link: '#guide-csp-cert',
 							},
 							{
 								name: 'Clock',
-								link: '#csp-clock',
+								link: '#guide-csp-clock',
 							},
 							{
 								name: 'Dev Admin',
-								link: '#csp-devadmin',
+								link: '#guide-csp-devadmin',
 							},
 							{
 								name: 'Display',
-								link: '#csp-display',
+								link: '#guide-csp-display',
 							},
 							{
 								name: 'Encrypt',
-								link: '#csp-encrypt',
+								link: '#guide-csp-encrypt',
 							},
 							{
 								name: 'File',
-								link: '#csp-file',
+								link: '#guide-csp-file',
 							},
 							{
 								name: 'Gprs',
-								link: '#csp-gprs',
+								link: '#guide-csp-gprs',
 							},
 							{
 								name: 'Intent',
-								link: '#csp-intent',
+								link: '#guide-csp-intent',
 							},
 							{
 								name: 'License',
-								link: '#csp-license',
+								link: '#guide-csp-license',
 							},
 							/*{
 								name: 'MX',
-								link: '#csp-mx',
+								link: '#guide-csp-mx',
 							},*/
 							{
 								name: 'Persist ',
-								link: '#csp-persistence',
+								link: '#guide-csp-persistence',
 							},
 							{
 								name: 'Power Key',
-								link: '#csp-powerkey',
+								link: '#guide-csp-powerkey',
 							},
 							{
 								name: 'Power',
-								link: '#csp-power',
+								link: '#guide-csp-power',
 							},
 							/*{
 								name: 'Proxy',
-								link: '#csp-proxy',
+								link: '#guide-csp-proxy',
 							},*/
 							{
 								name: 'Sd Card',
-								link: '#csp-sdcard',
+								link: '#guide-csp-sdcard',
 							},
 							{
 								name: 'Settings',
-								link: '#csp-settings',
+								link: '#guide-csp-settings',
 							},
 							{
 								name: 'Threat',
-								link: '#csp-threat',
+								link: '#guide-csp-threat',
 							},
 							{
 								name: 'Touch',
-								link: '#csp-touch',
+								link: '#guide-csp-touch',
 							},
 							{
 								name: 'UI',
-								link: '#csp-ui',
+								link: '#guide-csp-ui',
 							},
 							{
 								name: 'USB',
-								link: '#csp-usb',
+								link: '#guide-csp-usb',
 							},
 							{
 								name: 'Wi-Fi',
-								link: '#csp-wifi',
+								link: '#guide-csp-wifi',
 							},
 							{
 								name: 'Wireless',
-								link: '#csp-wireless',
+								link: '#guide-csp-wireless',
 							},
 							{
 								name: 'XML',
-								link: '#csp-xml',
+								link: '#guide-csp-xml',
 							} /*,
 							{
 								name: 'Old Encrypt',
-								link: '#csp-encrypt-old',
+								link: '#guide-csp-encrypt-old',
 							},
 							{
 								name: 'Old Clock',
-								link: '#csp-clock-old',
+								link: '#guide-csp-clock-old',
 							}*/
 						]
 					}
@@ -236,7 +236,7 @@ var menuStrcture = [
 						items: [
 							{
 								name: 'Quickstart',
-								link: '#tutorials-quickstart',
+								link: '#guide-tutorials-quickstart',
 							},
 							{
 								name: 'Tutorial 2',
@@ -261,7 +261,7 @@ var menuStrcture = [
 			{
 				name: 'Samples',
 				icon: 'fa fa-download',
-				link: '#samples-1',
+				link: '#guide-samples-1',
 				items: [
 					{
 						title: 'Samples',
@@ -269,23 +269,23 @@ var menuStrcture = [
 						items: [
 							{
 								name: 'Sample App',
-								link: '#samples-1',
+								link: '#guide-samples-1',
 							},
 							{
 								name: 'Using XML Parser',
-								link: '#samples-2',
+								link: '#guide-samples-2',
 							},
 							/*{
 								name: 'Querying a CSP',
-								link: '#samples-2',
+								link: '#guide-samples-2',
 							},
 							{
 								name: 'Submitting to Multiple CSPs',
-								link: '#samples-3',
+								link: '#guide-samples-3',
 							},
 							{
 								name: 'Querying Multiple CSPs',
-								link: '#samples-4',
+								link: '#guide-samples-4',
 							}*/
 						]
 					}
@@ -293,7 +293,7 @@ var menuStrcture = [
 			},
 			{
 				name: 'Using This Help',
-				link: '#abouthelp',
+				link: '#guide-abouthelp',
 				icon: 'fa fa-question-circle'
 			}
 		]
