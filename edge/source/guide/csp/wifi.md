@@ -53,37 +53,29 @@ The Wi-Fi feature allows you to manage your devices Wi-Fi settings as well as ma
 * Remove all Existing Wi-Fi Networks
 
 ##Parameter Notes
-### Wi-Fi Enable
-Enable Disable Wi-Fi Radio.
+### Wi-Fi Enable 
+Parm name: WiFiAction
+
+Pivotal parm: No
+
+Description: Enable Disable Wi-Fi Radio.
 
 >Note: In order for other settings to be applied, Wi-Fi must be enabled. If you do not specify WiFi Enable in the profile you will get an error when attempting to apply other settings if the device's Wi-Fi is not already enabled.
+
+Parm options:
 
 * Do not change - will use whatever the device is currently configured as.
 * Enable - enabled the Wi-Fi radio
 * Disable - disabled the Wi-Fi radio
 
-### Country Selection Auto/Manual
-By leaving this option unchecked, the country may be determined by the router or access point setting. To manually select the country, you should select the checkbox. When doing this a country drop-down will appear.
-
-### Country
-Country to use for Wi-Fi regulatory setting. 802.11d will not be enabled if you select 'U.S.A' in the Country drop-down. When you choose 'AUTO' in the drop-down, 802.11d will be enabled. 
-
-### RF Band
-Specifies the 802.11 band(s) to use.
-
-* Unchanged - will use whatever the device is currently configured as.
-* 2.4GHZ - enable 2.4GHz band
-* 5.0GHZ - enable 5.0GHz band
-* Auto - enable both bands and connect automatically to either.
-
-### Wi-Fi Channel
-* 2.4GHz Channels - enable the specified channels in the 2.4GHz band. 
-	* String containing a set of valid channels. Comma separated and may contain a range specified with a dash '-'. Example: 1,7-10
-* 5.0GHz Channels - enable the specified channels in the 5.0GHz band.
-	* String containing a set of valid channels. Comma separated and may contain a range specified with a dash '-'. Example: 36-60
-
 ### Sleep Policy
-Specifies the state of the Wi-Fi radio when the device suspends.	
+Parm name: WifiSleepPolicy
+
+Pivotal parm: No
+
+Description: Specifies the state of the Wi-Fi radio when the device suspends.	
+
+Parm options:
 
 * Do not change - will use whatever the device is currently configured as.
 * Always Sleep - Power down the Wi-Fi radio.
@@ -91,74 +83,84 @@ Specifies the state of the Wi-Fi radio when the device suspends.
 * Never Sleep - Leave Wi-Fi radio powered.
 
 ### Network Notification
-Specifies whether or not to notify the user when a open network comes in range.
+Parm name: NetworkNotification
+
+Pivotal parm: No
+
+Description: Specifies whether or not to notify the user when a open network comes in range.
+
+Parm options:
 
 * Do not change - will use whatever the device is currently configured as.
 * Use network notification - Notify the user when a network comes in range.
 * Do not use network notification - Don't notify the user when a network comes in range.
 
-### Network Action
-Used to manage the network profiles on the device.
+### Country Selection Auto/Manual
 
-* Add a New Network - will add a new profile with the provided profile settings.
-* Remove an Existing Network - will remove the a network profile based on the SSID.
-* Connect to an Existing Network - will initiate a connection to the network based on the SSID.
-* Disconnect from an Existing Network - will disconnect from a network based on the SSID.
-* Enable an Existing Network - will enable a network profile based on the SSID.
-* Disable an Existing Network - will disable a network profile based on the SSID.
-* Disable All Existing Networks - will disable all network profiles.
-* Remove All Existing Networks - will remove all network profiles.
+Pivotal parm: Yes
 
-### Wi-Fi Profiles
-Parameters used for adding a network. SSID is used to identify the network profile to be acted on when choosing an '... an Existing Network' network action above.
+Description: By leaving this option unchecked, the country may be determined by the router or access point setting. To manually select the country, you should select the checkbox. When doing this a country drop-down will appear.
 
-* SSID - the SSID name of the network
-* Security Mode 
-	* Open - Open network
-	* Personal - PSK or WEP
-	* Enterprise - 802.1x EAP profiles
-* WPA Mode:  WPA mode used by the network. Ex: WPA, WPA2, WPA/WPA2, WEP
->Note: WEP is not supported with a Enterprise Security Mode. It is only supported using Personal Security Mode.
+#### Country
+Parm name: Country
 
-* Authentication Mode: Authentication mode used by the network. used with Enterprise Security Mode. Ex: EAP-TLS, EAP-FAST-GTC, EAP-FAST-MSCHAPV2, EAP-TTLS-PAP, EAP-TTLS-MSCHAP, EAP-TTLS-MSCHAPV2, LEAP, PEAP-MSCHAPV2, PEAP-GTC
-* DHCP: When selected DHCP will be used. When not selected, Static IP address is used and IP address settings should be provided ex: Static IP Address, Gateway IP Address, Subnet Mask, DNS Server IP Address
-* Proxy: When selected, a Proxy is used for network connections. Proxy settings should be supplied. Ex: Proxy Host Name, Port, Bypass Proxy
+Pivotal parm: No
 
-### Encryption Details
-* Encryption Type: Type of encryption used by the network. The values in this drop-down will change based on the WPA Mode selected. Ex: TKIP, AES-CCMP, AES-CCMP/TKIP, WEP-40, WEP-104
-* Key Type: Passphrase or Hex Key
-* Protect Key: Enables encryption of the Key
-* Web Key Index: Only `wep[0]` is a valid option
+Description: Country to use for Wi-Fi regulatory setting. 802.11d will not be enabled if you select 'U.S.A' in the Country drop-down. When you choose 'AUTO' in the drop-down, 802.11d will be enabled. 
 
-### Authentication Details
-Specific authentication settings when Enterprise Mode and specific Authentication modes are selected.
+### RF Band
+Pivotal parm: Yes
 
-* Identity - the name that should be used to join the network.
-* Server Certificate - the name of the certificate alias that should be used to verify the server (Optional).
-* Client Certificate - the name of the certificate alias that should be used to join the network (Mandatory).
-* Anonymous Identity - the anonymous identity to be used to join the network.
-* Password - the password to be used to connect to the network.
-* Protect Password - when selected will encrypt the password.
+Description: Specifies the 802.11 band(s) to use.
 
-#### EAP-TLS and Certificate Alias 
-Due to current limitations of the Certificate Manager Feature (in an EAP-TLS scenario), it is not possible to "override" the Alias that is assigned to a Client Certificate and Private Key when they are installed into the Android KeyStore
+Parm options: 
 
-The only way to determine the actual Alias that is assigned to a Client Certificate and Private Key when they are installed into the Android KeyStore is to examine the Android KeyStore after installation to determine which Alias was used:
+* Unchanged - will use whatever the device is currently configured as.
+* 2.4GHZ - enable 2.4GHz band
+* 5.0GHZ - enable 5.0GHz band
+* Auto - enable both bands and connect automatically to either.
 
-1. The same Alias will ALWAYS be assigned to a given Client Certificate and Private Key, no matter when, or on which device, it is installed
+#### 2.4GHz Channels 
+Parm name: 2.4GHzChannels
 
-2. Whenever a different Client Certificate is used, a different Alias will generally be assigned to the Client Certificate and Private Key
+Pivotal parm: No
 
-##### Manually Determining the Certificate Alias
-A device can be used to capture the alias being used for the certificate being installed. It is recommended that the key store be cleared before performing these steps (Settings->Security->Clear Credentials)
+Description: Enable the specified channels in the 2.4GHz band. 
 
-1. Use Certificate Manager to install the certificate onto a device.
-2. Navigate to Settings->Wi-Fi->'+'' to add a network
-3. Scroll to security, tap and select 802.1x EAP
-4. Scroll to EAP method, tap and select TLS
-5. Scroll to client certificate, tap and note a drop down box with "(unspecified)" and the alias of the installed certificate. The alias listed can become the value to use as the certificate when using WiFiConfig to configure a profile that uses EAP-TLS.
+Input rules: 
 
-### Advanced Options
+* String containing a set of valid channels. 
+* Comma separated and may contain a range specified with a dash '-'. Example: 1,7-10
+
+#### 5.0GHz Channels 
+Parm name: 5.0GHzChannels
+
+Pivotal parm: No
+
+Description: Enable the specified channels in the 5.0GHz band.
+
+Input rules: 
+
+* String containing a set of valid channels. 
+* Comma separated and may contain a range specified with a dash '-'. Example: 36-60
+
+### Specify Diagnostic Options
+
+Pivotal parm: Yes
+
+Description: Specify whether Diagnostic Options will be used. When enabled, Fusion Advanced Logging can also be enabled. 
+
+#### Fusion Advanced Logging
+Parm name: FusionAdvancedLogging
+
+Pivotal parm: No
+
+Description: Specify whether Fusion Advanced Logging will be used
+
+### Specify Advanced Options
+Pivotal parm: Yes
+
+Description: Specify whether Advanced Options will be used. When enabled, the following options will be available to set.
 
 >Note: The following steps must be followed in order to use the Advanced Options under the WiFi feature:
 >
@@ -168,22 +170,380 @@ A device can be used to capture the alias being used for the certificate being i
 >
 > Important Note: The default "Fast Power Savings" value must be used for the "Power Save" parameter under the Advanced Options. Using the "Do Not Change" value will result in failure.
 
-* AutoTimeConfig- Enable AutoTimeConfig feature. Updates device timestamp based on Symbol IE in 802.11 beacon. This is a Symbol specific feature.
-* HFSR - Hyper Fast Secure Roam (HFSR) is a Symbol's fast roam algorithm. 
-* CCKM - This is to enable / disable CCX roam algorithm (CCKM).
-* FT - This is to enable / disable Fast Transition roam algorithm (802.11r).
-* FTRIC - This is to enable / disable Fast Transition Resource Request (802.11r).
-* OKC- This is to enable / disable Opportunistic Key Caching (OKC).
-* PMKID - This is to enable / disable PMKID Caching. We need to disable OKC and enable PMKID for PMKID caching to work.
-* PreAuth- This is to enable / disable 802.1x Pre-Authentication.
-* PowerSave - This option is to configure different Power Save Modes of Radio.
-	* Do not change - will use whatever the device is currently configured as.
-	* Always Active: This will keep the radio in active
-	* Fast Power Savings: This will keep the radio in Auto Power Save.
-	* Maximum Power Savings: This will keep the radio in Auto Power Save.
-* Advanced Logging - Start or Stop advanced Wi-Fi logging.
-* FIPS - We can use this option to enable or disable FIPS data in motion supported in WLAN. WLAN FIPS 140-2, level 1 compliance.
-* Enable Restricted Settings UI - When enabled the Wi-Fi settings will be in Read-Only mode.
+#### Auto Time Config
+Parm name: AutoTimeConfig
+
+Pivotal parm: No
+
+Description: Enable AutoTimeConfig feature. Updates device timestamp based on Symbol IE in 802.11 beacon. This is a Symbol specific feature.
+
+#### HFSR
+Parm name: HFSR
+
+Pivotal parm: No
+
+Description: Hyper Fast Secure Roam (HFSR) is a Symbol's fast roam algorithm. 
+
+#### CCKM 
+Parm name: CCKM
+
+Pivotal parm: No
+
+Description: This is to enable / disable CCX roam algorithm (CCKM).
+
+#### FT 
+Parm name: FT
+
+Pivotal parm: No
+
+Description: This is to enable / disable Fast Transition roam algorithm (802.11r).
+
+#### FTRIC 
+Parm name: FTRIC
+
+Pivotal parm: No
+
+Description: This is to enable / disable Fast Transition Resource Request (802.11r).
+
+#### OKC
+Parm name: OKC
+
+Pivotal parm: No
+
+Description: This is to enable / disable Opportunistic Key Caching (OKC).
+
+#### PMKID 
+Parm name: PMKID
+
+Pivotal parm: No
+
+Description: This is to enable / disable PMKID Caching. We need to disable OKC and enable PMKID for PMKID caching to work.
+
+#### Pre-Auth
+Parm name: PreAuth
+
+Pivotal parm: No
+
+Description: This is to enable / disable 802.1x Pre-Authentication.
+
+#### Power Save Mode 
+Parm name: PowerSave
+
+Pivotal parm: No
+
+Description: This option is to configure different Power Save Modes of Radio.
+
+Parm options: 
+
+* Do not change - will use whatever the device is currently configured as.
+* Always Active - This will keep the radio in active
+* WMM-PS
+* Null Data Power Save
+* PS-POLL
+
+
+* Fast Power Savings: This will keep the radio in Auto Power Save.
+* Maximum Power Savings: This will keep the radio in Auto Power Save.
+
+#### Advanced Logging
+Parm name: AdvancedLogging
+
+Pivotal parm: No
+ 
+Description: Start or Stop advanced Wi-Fi logging.
+
+#### FIPS 
+Parm name: FIPS
+
+Pivotal parm: No
+
+Description: We can use this option to enable or disable FIPS data in motion supported in WLAN. WLAN FIPS 140-2, level 1 compliance.
+
+#### Enable Restricted Settings UI
+Parm name: EnableRestrictedSettingsUI
+
+Pivotal parm: No
+ 
+Description: When enabled the Wi-Fi settings will be in Read-Only mode.
+
+Parm options: 
+
+* Do not change
+* Enable Restricted WLAN Settings UI
+* Disable Restricted WLAN Settings UI
+
+#### Radio Resource Measurement(802.11K)
+Parm name: 802.11K
+
+Pivotal parm: No
+
+Description: Specify whether to enable Radio Resource Measurement
+
+#### Management Frame Protection Mode(802.11K)
+Parm name: 802.11w
+
+Pivotal parm: No
+
+Description: Specify the Management Frame Protection Mode
+
+Parm options: 
+
+* No MFP
+* Capable
+* Mandatory
+* Do not change
+
+#### Select your band preference
+Parm name: BandPreference
+
+Pivotal parm: No
+
+Description: Specify the band preference
+
+Parm options:
+
+* No preference
+* Prefer 2.4GHz
+* Prefer 5.0GHz 
+* Do not change
+
+#### Enable FTOverTheDS
+Parm name: FTOverTheDS
+
+Pivotal parm: No
+
+Description: Specify whether to enable FTOverTheDS
+
+#### Enable AggregatedFT
+Parm name: AggregatedFT
+
+Pivotal parm: No
+
+Description: Specify whether to enable AggregatedFT
+
+#### Enable ScanAssist
+Parm name: ScanAssist
+
+Pivotal parm: No
+
+Description Specify whether to enable ScanAssist
+
+#### Enable Coverage Hole Detection
+Parm name: CHD
+
+Pivotal parm: No
+
+Description: Specify whether to enable Coverage Hole Detection
+
+#### Enable Sub-Net Roam
+Parm name: SubNetRoam
+
+Pivotal parm: No
+
+Description: Specify whether to enable Sub-Net Roam
+
+#### WANCountry
+Parm name: WANCountry
+
+Pivotal parm: No
+
+Description: Specify whether to enable WanCountry
+
+### Network Action
+Pivotal parm: Yes
+
+Description: Used to manage the network profiles on the device.
+
+Parm options:
+
+* Add a New Network - will add a new profile with the provided profile settings. For the options that will be presented when chosing to add a new network, please see the "Add a New Network Options" section below
+* Remove an Existing Network - will remove the a network profile based on the SSID.
+* Connect to an Existing Network - will initiate a connection to the network based on the SSID.
+* Disconnect from an Existing Network - will disconnect from a network based on the SSID.
+* Enable an Existing Network - will enable a network profile based on the SSID.
+* Disable an Existing Network - will disable a network profile based on the SSID.
+* Disable All Existing Networks - will disable all network profiles.
+* Remove All Existing Networks - will remove all network profiles.
+
+### Add a New Network Options
+Parameters used for adding a network. SSID is used to identify the network profile to be acted on when choosing an '... an Existing Network' network action above.
+
+#### SSID
+Parm name: SSID
+
+Pivotal parm: No
+
+Description: the SSID name of the network
+
+#### Security Mode 
+Pivotal parm: Yes
+
+Description: Specify the security mode used by the network
+
+Parm options:
+
+* Open - Open network
+* Personal - PSK or WEP
+* Enterprise - 802.1x EAP profiles
+
+#### WPA Mode
+Pivotal parm: Yes
+
+Description: WPA mode used by the network.
+
+>Note: WEP is not supported with a Enterprise Security Mode. It is only supported using Personal Security Mode.
+
+Parm options: 
+
+* WPA
+* WPA2
+* WPA/WPA2
+* WEP
+
+#### Authentication
+Parm name: Authentication
+
+Pivotal parm: No
+
+Description: Authentication mode used by the network. used with Enterprise Security Mode. 
+
+Parm options:
+
+* EAP-TLS
+* EAP-FAST-GTC
+* EAP-FAST-MSCHAPV2
+* EAP-TTLS-PAP
+* EAP-TTLS-MSCHAP
+* EAP-TTLS-MSCHAPV2
+* LEAP
+* PEAP-MSCHAPV2
+* PEAP-GTC
+
+#### Authentication Details
+Specific authentication settings when Enterprise Mode and specific Authentication modes are selected.
+
+##### **Identity**
+Parm name: Identity
+
+Pivotal parm: No
+
+Description: the name that should be used to join the network.
+
+##### **Anonymous Identity** 
+Parm name: AnonymousIdentity
+
+Pivotal parm: No
+
+Description: Provide the name of the anonymous identity to be used to join the network.
+
+##### **Protect Password**
+Parm name: ProtectPassword
+
+Pivotal parm: No
+
+Description: when selected will encrypt the password.
+
+##### **Password** 
+Parm name: Password
+
+Pivotal parm: No
+
+Description: the password to be used to connect to the network.
+
+##### **Server Certificate Name (mandatory)**
+Parm name: MandatoryServerCertificate
+
+Pivotal parm: No
+
+##### **Server Certificate Name (optional)**
+Parm name: OptionalServerCertificate
+
+Pivotal parm: No
+
+Description: the name of the certificate alias that should be used to verify the server (Optional).
+
+##### **Client Certificate Name (mandatory)**
+Parm name: MandatoryClientCertificate
+
+Pivotal parm: No
+
+Description: the name of the certificate alias that should be used to join the network (Mandatory).
+
+##### **Client Certificate Name (optional)**
+Parm name: OptionalClientCertificate
+
+Pivotal parm: No
+
+##### **EAP-TLS and Certificate Alias**
+Due to current limitations of the Certificate Manager Feature (in an EAP-TLS scenario), it is not possible to "override" the Alias that is assigned to a Client Certificate and Private Key when they are installed into the Android KeyStore
+
+The only way to determine the actual Alias that is assigned to a Client Certificate and Private Key when they are installed into the Android KeyStore is to examine the Android KeyStore after installation to determine which Alias was used:
+
+1. The same Alias will ALWAYS be assigned to a given Client Certificate and Private Key, no matter when, or on which device, it is installed
+
+2. Whenever a different Client Certificate is used, a different Alias will generally be assigned to the Client Certificate and Private Key
+
+###### **Manually Determining the Certificate Alias**
+A device can be used to capture the alias being used for the certificate being installed. It is recommended that the key store be cleared before performing these steps (Settings->Security->Clear Credentials)
+
+1. Use Certificate Manager to install the certificate onto a device.
+2. Navigate to Settings->Wi-Fi->'+'' to add a network
+3. Scroll to security, tap and select 802.1x EAP
+4. Scroll to EAP method, tap and select TLS
+5. Scroll to client certificate, tap and note a drop down box with "(unspecified)" and the alias of the installed certificate. The alias listed can become the value to use as the certificate when using WiFiConfig to configure a profile that uses EAP-TLS.
+
+#### Encryption Type
+
+Description: Type of encryption used by the network. The values in this drop-down will change based on the WPA Mode selected. 
+
+Possible parm options: 
+
+* TKIP
+* AES-CCMP
+* AES-CCMP/TKIP
+* WEP-40
+* WEP-104
+
+#### Key Type
+
+Parm options: 
+
+* Passphrase
+* Hex Key
+
+#### Protect Key
+Description: "Enables encryption of the Key
+
+#### Web Key Index
+Description: Only `wep[0]` is a valid option
+
+#### Passphrase
+Description: Provide the passphrase used by the network
+
+#### DHCP
+Description: When selected DHCP will be used. When not selected, Static IP address is used and the following IP address settings should be provided:
+
+##### Static IP Address
+
+##### Gateway 1 IP Address
+
+##### Subnet Mask
+
+##### DNS Server 1 IP Address
+
+##### DNS Server 2 IP Address
+
+#### Proxy
+Description: When selected, a Proxy is used for network connections. The following proxy settings should be supplied:
+
+##### Proxy Host Name
+Description: Provide the host name of the proxy server
+
+##### Proxy Port
+Description: Provide the port number of the proxy server
+
+##### Bypass Proxy
+Description: Provide addresses for which the proxy server should be bypassed
 
 ##Example XML
 
