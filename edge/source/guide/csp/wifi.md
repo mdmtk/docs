@@ -126,6 +126,10 @@ Parm name: Country
 
 Pivotal parm: No
 
+Settable if:
+
+* The "Configure Country (Auto/Manual)" box is not checked
+
 Description: Country to use for Wi-Fi regulatory setting. 802.11d will not be enabled if you select 'U.S.A' in the Country drop-down. When you choose 'AUTO' in the drop-down, 802.11d will be enabled. 
 
 ### RF Band
@@ -138,14 +142,18 @@ Parm options:
 * Unchanged - will use whatever the device is currently configured as.
 	* Parm value: ""
 * 2.4GHZ - enable 2.4GHz band
-	* Parm value: 2.4GHz
+	* Parm value: "2.4GHz"
 * 5.0GHZ - enable 5.0GHz band
-	* Parm value: 5.0GHz
+	* Parm value: "5.0GHz"
 * Auto - enable both bands and connect automatically to either.
-	* Parm value: Auto
+	* Parm value: "Auto"
 
 #### 2.4GHz Channels 
 Parm name: 2.4GHzChannels
+
+Settable if:
+
+* The RF Band that is selected is either 2.4GHZ or Auto
 
 Pivotal parm: No
 
@@ -158,6 +166,10 @@ Input rules:
 
 #### 5.0GHz Channels 
 Parm name: 5.0GHzChannels
+
+Settable if:
+
+* The RF Band that is selected is either 5.0GHZ or Auto
 
 Pivotal parm: No
 
@@ -176,6 +188,10 @@ Description: Specify whether Diagnostic Options will be used. When enabled, Fusi
 
 #### Fusion Advanced Logging
 Parm name: FusionAdvancedLogging
+
+Settable if:
+
+* The "Specify Diagnostic Options" box is checked
 
 Pivotal parm: No
 
@@ -197,6 +213,10 @@ Description: Specify whether Advanced Options will be used. When enabled, the fo
 #### Auto Time Config
 Parm name: AutoTimeConfig
 
+Settable if:
+
+* The "Specify Advanced Options" box is checked
+
 Pivotal parm: No
 
 Description: Enable AutoTimeConfig feature. Updates device timestamp based on Symbol IE in 802.11 beacon. This is a Symbol specific feature.
@@ -204,14 +224,20 @@ Description: Enable AutoTimeConfig feature. Updates device timestamp based on Sy
 #### Profile Roaming
 Parm name: ProfileRoaming
 
+Settable if:
+
+* The "Specify Advanced Options" box is checked *AND* the Target OS is not Android
+
 Pivotal parm: No
 
 Description: Specify whether to enable roaming between Wi-Fi Profiles
 
->Note: Not available on Android
-
 #### HFSR
 Parm name: HFSR
+
+Settable if:
+
+* The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
 
@@ -220,12 +246,20 @@ Description: Hyper Fast Secure Roam (HFSR) is a Symbol's fast roam algorithm.
 #### CCKM 
 Parm name: CCKM
 
+Settable if:
+
+* The "Specify Advanced Options" box is checked
+
 Pivotal parm: No
 
 Description: This is to enable / disable CCX roam algorithm (CCKM).
 
 #### FT 
 Parm name: FT
+
+Settable if:
+
+* The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
 
@@ -234,12 +268,20 @@ Description: This is to enable / disable Fast Transition roam algorithm (802.11r
 #### FTRIC 
 Parm name: FTRIC
 
+Settable if:
+
+* The "Specify Advanced Options" box is checked
+
 Pivotal parm: No
 
 Description: This is to enable / disable Fast Transition Resource Request (802.11r).
 
 #### OKC
 Parm name: OKC
+
+Settable if:
+
+* The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
 
@@ -248,6 +290,10 @@ Description: This is to enable / disable Opportunistic Key Caching (OKC).
 #### PMKID 
 Parm name: PMKID
 
+Settable if:
+
+* The "Specify Advanced Options" box is checked
+
 Pivotal parm: No
 
 Description: This is to enable / disable PMKID Caching. We need to disable OKC and enable PMKID for PMKID caching to work.
@@ -255,12 +301,20 @@ Description: This is to enable / disable PMKID Caching. We need to disable OKC a
 #### Pre-Auth
 Parm name: PreAuth
 
+Settable if:
+
+* The "Specify Advanced Options" box is checked
+
 Pivotal parm: No
 
 Description: This is to enable / disable 802.1x Pre-Authentication.
 
 #### Power Save Mode 
 Parm name: PowerSave
+
+Settable if:
+
+* The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
 
@@ -282,6 +336,10 @@ Parm options:
 #### Advanced Logging
 Parm name: AdvancedLogging
 
+Settable if:
+
+* The "Specify Advanced Options" box is checked
+
 Pivotal parm: No
  
 Description: Start or Stop advanced Wi-Fi logging.
@@ -289,12 +347,20 @@ Description: Start or Stop advanced Wi-Fi logging.
 #### FIPS 
 Parm name: FIPS
 
+Settable if:
+
+* The "Specify Advanced Options" box is checked
+
 Pivotal parm: No
 
 Description: We can use this option to enable or disable FIPS data in motion supported in WLAN. WLAN FIPS 140-2, level 1 compliance.
 
 #### Enable Restricted Settings UI
 Parm name: EnableRestrictedSettingsUI
+
+Settable if:
+
+* The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
  
@@ -312,12 +378,20 @@ Parm options:
 #### Radio Resource Measurement(802.11K)
 Parm name: 802.11K
 
+Settable if:
+
+* The "Specify Advanced Options" box is checked
+
 Pivotal parm: No
 
 Description: Specify whether to enable Radio Resource Measurement
 
 #### Management Frame Protection Mode(802.11K)
 Parm name: 802.11w
+
+Settable if:
+
+* The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
 
@@ -337,6 +411,10 @@ Parm options:
 #### Select your band preference
 Parm name: BandPreference
 
+Settable if:
+
+* The "Specify Advanced Options" box is checked
+
 Pivotal parm: No
 
 Description: Specify the band preference
@@ -355,12 +433,20 @@ Parm options:
 #### Enable FTOverTheDS
 Parm name: FTOverTheDS
 
+Settable if:
+
+* The "Specify Advanced Options" box is checked
+
 Pivotal parm: No
 
 Description: Specify whether to enable FTOverTheDS
 
 #### Enable AggregatedFT
 Parm name: AggregatedFT
+
+Settable if:
+
+* The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
 
@@ -369,12 +455,20 @@ Description: Specify whether to enable AggregatedFT
 #### Enable ScanAssist
 Parm name: ScanAssist
 
+Settable if:
+
+* The "Specify Advanced Options" box is checked
+
 Pivotal parm: No
 
 Description Specify whether to enable ScanAssist
 
 #### Enable Coverage Hole Detection
 Parm name: CHD
+
+Settable if:
+
+* The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
 
@@ -383,12 +477,20 @@ Description: Specify whether to enable Coverage Hole Detection
 #### Enable Sub-Net Roam
 Parm name: SubNetRoam
 
+Settable if:
+
+* The "Specify Advanced Options" box is checked
+
 Pivotal parm: No
 
 Description: Specify whether to enable Sub-Net Roam
 
 #### WANCountry
 Parm name: WANCountry
+
+Settable if:
+
+* The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
 
@@ -401,7 +503,7 @@ Description: Used to manage the network profiles on the device.
 
 Parm options:
 
-* Do nothing
+* Do Nothing
 	* Parm value: ""
 * Add a New Network - will add a new profile with the provided profile settings. For the options that will be presented when choosing to add a new network, please see the "Add a New Network Options" section below
 	* Parm value: "Add" 
@@ -426,12 +528,20 @@ Parameters used for adding a network. SSID is used to identify the network profi
 #### SSID
 Parm name: SSID
 
+Settable if:
+
+* The Network Action is any option other than "Do Nothing", "Disable All Existing Networks", or "Remove All Existing Networks"
+
 Pivotal parm: No
 
 Description: the SSID name of the network
 
 #### Security Mode 
 Pivotal parm: Yes
+
+Settable if:
+
+* The Network Action is "Add a New Network"
 
 Description: Specify the security mode used by the network
 
@@ -446,6 +556,10 @@ Parm options:
 
 #### WPA Mode
 Pivotal parm: Yes
+
+Settable if:
+
+* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" or "Enterprise"
 
 Description: WPA mode used by the network.
 
@@ -464,6 +578,10 @@ Parm options:
 
 #### Authentication
 Parm name: Authentication
+
+Settable if:
+
+* The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise"
 
 Pivotal parm: No
 
@@ -496,10 +614,15 @@ Specific authentication settings when Enterprise Mode and specific Authenticatio
 ##### **Use User Profile**
 Pivotal parm: Yes
 
+Settable if:
+
+* The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* the Target OS is not Android
+
 Description: the name that should be used to join the network.
 
 ##### **Encryption Type**
 Pivotal parm: No
+
 
 Description: Type of encryption used by the network. The values in this drop-down will change based on the WPA Mode selected. 
 
@@ -511,6 +634,8 @@ If WPA is selected:
 		* Parm value: "Default" 
 	* TKIP
 		* Parm value: "TKIP" 
+* Settable if:
+	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" or "Enterprise" *AND* the WPA Mode is WPA
 
 If WPA2 is selected:
 
@@ -524,6 +649,8 @@ If WPA2 is selected:
 		* Parm value: "TKIP" 
 	* AES-CCMP/TKIP
 		* Parm value: "AES-CCMP/TKIP"
+* Settable if:
+	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" or "Enterprise" *AND* the WPA Mode is WPA2 or WPA/WPA2
 
 If WEP is selected:
 
@@ -533,9 +660,15 @@ If WEP is selected:
 		* Parm value: "WEP-40"
 	* WEP-104
 		* Parm value: "WEP-104"
+* Settable if:
+	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" or "Enterprise" *AND* the WPA Mode is WEP
 
 ##### **Identity**
 Parm name: Identity
+
+Settable if:
+
+* The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise"
 
 Pivotal parm: No
 
@@ -546,10 +679,18 @@ Parm name: AnonymousIdentity
 
 Pivotal parm: No
 
+Settable if:
+
+* The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* the Authentication is not "EAP-TLS" or "LEAP"
+
 Description: Provide the name of the anonymous identity to be used to join the network.
 
 ##### **Protect Password**
 Parm name: ProtectPassword
+
+Settable if:
+
+* The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* the Authentication is not "EAP-TLS"
 
 Pivotal parm: No
 
@@ -563,18 +704,21 @@ Description: the password to be used to connect to the network. The parm name wi
 If ProtectPassword is false:
 
 * Parm name: PasswordClear
+* Settable if:
+	* The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* Authentication is not "EAP-TLS" *AND* Protect Password is false
 
 If ProtectPassword is true:
 
 * Parm name: PasswordEncrypted
-
-##### **Server Certificate Name (mandatory)**
-Parm name: MandatoryServerCertificate
-
-Pivotal parm: No
+* Settable if:
+	* The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* Authentication is not "EAP-TLS" *AND* Protect Password is true
 
 ##### **Server Certificate Name (optional)**
 Parm name: OptionalServerCertificate
+
+Settable if:
+
+* The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* the Authentication is "EAP-TLS", "PEAP-MSCHAPV2", "EAP-TTLS-MSCHAP", "EAP-FAST-MSCHAPV2", "EAP-TTLS-PAP", "PEAP-GTC", "EAP-FAST-MSCHAPV2", or "EAP-FAST-GTC"
 
 Pivotal parm: No
 
@@ -583,12 +727,20 @@ Description: the name of the certificate alias that should be used to verify the
 ##### **Client Certificate Name (mandatory)**
 Parm name: MandatoryClientCertificate
 
+Settable if:
+
+* The Network Action is "Add a New Network" and the Security Mode is "Enterprise" and the Authentication is "EAP-TLS"
+
 Pivotal parm: No
 
 Description: the name of the certificate alias that should be used to join the network (Mandatory).
 
 ##### **Client Certificate Name (optional)**
 Parm name: OptionalClientCertificate
+
+Settable if:
+
+* The Network Action is "Add a New Network" and the Security Mode is "Enterprise" the Authentication is "PEAP-MSCHAPV2", "EAP-TTLS-MSCHAP", "EAP-TTLS-MSCHAPV2", "EAP-TTLS-PAP", "PEAP-GTC", "EAP-FAST-MSCHAPV2", or "EAP-FAST-GTC"
 
 Pivotal parm: No
 
@@ -611,9 +763,13 @@ A device can be used to capture the alias being used for the certificate being i
 5. Scroll to client certificate, tap and note a drop down box with "(unspecified)" and the alias of the installed certificate. The alias listed can become the value to use as the certificate when using WiFiConfig to configure a profile that uses EAP-TLS.
 
 #### Encryption Key Details	
-	
+
 ##### **Key Type**
 Pivotal parm: Yes
+
+Settable if:
+
+* The Network Action is "Add a New Network" and the Security Mode is "Personal"
 
 Description: Specify the type of encryption key to be used by the network
 
@@ -627,6 +783,10 @@ Parm options:
 ##### **Protect Key**
 Pivotal parm: Yes
 
+Settable if:
+
+* The Network Action is "Add a New Network" and the Security Mode is "Personal"
+
 Description: Enables encryption of the Key
 
 ##### **Passphrase**
@@ -637,18 +797,26 @@ Description: Provide the passphrase used by the network. The parm name will chan
 If WEP is selected and Protect Key is false:
 
 * Parm name: PassphraseWEPClear
+* Settable if:
+	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the Key Type is "Passphrase" *AND* the WPA Mode is "WEP" *AND* Protect Key is false
 
 If WEP is selected and Protect Key is true:
 
 * Parm name: PassphraseWEPEncrypted
+* Settable if:
+	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the Key Type is "Passphrase" *AND* the WPA Mode is "WEP" *AND* Protect Key is true
 
 If WEP is not selected and Protect Key is false:
 
 * Parm name: PassphraseWPAClear
+* Settable if:
+	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the Key Type is "Passphrase" *AND* the WPA Mode is not "WEP" *AND* Protect Key is false
 
 If WEP is not selected and Protect Key is true:
 
 * Parm name: PassphraseWPAEncrypted
+* Settable if:
+	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the Key Type is "Passphrase" *AND* the WPA Mode is not "WEP" *AND* Protect Key is true
 
 ##### **Hex Key**
 Pivotal parm: No
@@ -657,35 +825,50 @@ If WEP is not selected and Protect Key is false:
 
 * Parm name: HexKeyClear
 * Description: Provide the hex key (64 hex chars) used by network
+* Settable if:
+	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the Key Type is "Hex Key" *AND* the WPA Mode is not "WEP" *AND* Protect Key is false
 
 If WEP is not selected and Protect Key is true:
 
 * Parm name: HexKeyEncrypted
 * Description: Provide the hex key (64 hex chars) used by network
+* Settable if:
+	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the Key Type is "Hex Key" *AND* the WPA Mode is not "WEP" *AND* Protect Key is true
 
 If WEP is selected, the encryption type is WEP-40, and Protect Key is false:
 
 * Parm name: HexKeyWep40Clear
 * Description: Provide the shared secret WEP-40 key (10 hex chars) used by the network
+* Settable if:
+	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the Key Type is "Hex Key" *AND* the WPA Mode is "WEP" *AND* the Encryption Type is "WEP-40" *AND* Protect Key is false
 
 If WEP is selected, the encryption type is WEP-40, and Protect Key is true:
 
 * Parm name: HexKeyWep40Encrypted
 * Description: Provide the shared secret WEP-40 key (10 hex chars) used by the network
+* Settable if:
+	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the Key Type is "Hex Key" *AND* the WPA Mode is "WEP" *AND* the Encryption Type is "WEP-40" *AND* Protect Key is true
 
 If WEP is selected, the encryption type is WEP-104, and Protect Key is false:
 
 * Parm name: HexKeyWep104Clear
 * Description: Provide the shared secret WEP-104 key (26 hex chars) used by the network
+* Settable if:
+	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the Key Type is "Hex Key" *AND* the WPA Mode is "WEP" *AND* the Encryption Type is "WEP-104" *AND* Protect Key is false
 
 If WEP is selected, the encryption type is WEP-104, and Protect Key is true:
 
 * Parm name: HexKeyWep104Encrypted
 * Description: Provide the shared secret WEP-104 key (26 hex chars) used by the network
-
+* Settable if:
+	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the Key Type is "Hex Key" *AND* the WPA Mode is "WEP" *AND* the Encryption Type is "WEP-104" *AND* Protect Key is true
 
 ##### **WEP Key Index**
 Parm name: WepKeyIndex
+
+Settable if:
+
+* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the WPA Mode is "WEP"
 
 Pivotal parm: No
 
@@ -710,12 +893,20 @@ Description: When selected DHCP will be used. When not selected, Static IP addre
 ##### **Static IP Address**
 Parm name: IpAddress
 
+Settable if:
+
+* The Network Action is "Add a New Network" *AND* the "Use DHCP" box is not checked
+
 Pivotal parm: No
 
 Description: Provide the static IP address to be assigned to the device on this network
 
 ##### **Gateway 1 IP Address**
 Parm name: IpGateway1
+
+Settable if:
+
+* The Network Action is "Add a New Network" *AND* the "Use DHCP" box is not checked
 
 Pivotal parm: No
 
@@ -724,12 +915,20 @@ Description: Provide the IP address of the first gateway to the network
 ##### **Gateway 2 IP Address**
 Parm name: IpGateway2
 
+Settable if:
+
+* The Target OS is not Android *AND* the Network Action is "Add a New Network" *AND* the "Use DHCP" box is not checked
+
 Pivotal parm: No
 
 Description: Provide the IP address of the second gateway to the network 
 
 ##### **Subnet Mask**
 Parm name: IpMask
+
+Settable if:
+
+* The Network Action is "Add a New Network" *AND* the "Use DHCP" box is not checked
 
 Pivotal parm: No
 
@@ -738,12 +937,20 @@ Description: Provide the subnet mask to be used on the network
 ##### **DNS Server 1 IP Address**
 Parm name: IpDns1
 
+Settable if:
+
+* The Network Action is "Add a New Network" *AND* the "Use DHCP" box is not checked
+
 Pivotal parm: No
 
 Description: Provide the IP address of the first DNS server 
 
 ##### **DNS Server 2 IP Address**
 Parm name: IpDns2
+
+Settable if:
+
+* The Network Action is "Add a New Network" *AND* the "Use DHCP" box is not checked
 
 Pivotal parm: No
 
@@ -757,6 +964,10 @@ Description: When selected, a Proxy is used for network connections. The followi
 ##### **Proxy Host Name**
 Parm name: ProxyHostName
 
+Settable if:
+
+* The Network Action is "Add a New Network" *AND* "Use Proxy" box is checked
+
 Pivotal parm: No
 
 Description: Provide the host name of the proxy server
@@ -764,12 +975,20 @@ Description: Provide the host name of the proxy server
 ##### **Proxy Port**
 Parm name: ProxyPort
 
+Settable if:
+
+* The Network Action is "Add a New Network" *AND* "Use Proxy" box is checked
+
 Pivotal parm: No
 
 Description: Provide the port number of the proxy server
 
 ##### **Bypass Proxy**
 Parm name: BypassProxy
+
+Settable if:
+
+* The Network Action is "Add a New Network" *AND* "Use Proxy" box is checked
 
 Pivotal parm: No
 
