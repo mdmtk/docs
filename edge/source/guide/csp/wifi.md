@@ -64,9 +64,9 @@ Parm options:
 	* Parm value: "Android"
 	
 ### Wi-Fi Enable 
-Parm name: WiFiAction
-
 Pivotal parm: No
+
+Parm name: WiFiAction
 
 Description: Enable/Disable Wi-Fi Radio.
 
@@ -82,9 +82,9 @@ Parm options:
 	* Parm value: "disable"
 
 ### Sleep Policy
-Parm name: WifiSleepPolicy
-
 Pivotal parm: No
+
+Parm name: WifiSleepPolicy
 
 Description: Specifies the state of the Wi-Fi radio when the device suspends.	
 
@@ -100,9 +100,9 @@ Parm options:
 	* Parm value: "NeverOn"
 
 ### Network Notification
-Parm name: NetworkNotification
-
 Pivotal parm: No
+
+Parm name: NetworkNotification
 
 Description: Specifies whether or not to notify the user when a open network comes in range.
 
@@ -116,19 +116,18 @@ Parm options:
 	* Parm value: "false"
 	
 ### Country Selection Auto/Manual
-
 Pivotal parm: Yes
 
 Description: By leaving this option unchecked, the country may be determined by the router or access point setting. To manually select the country, you should select the checkbox. When doing this a country drop-down will appear.
 
 #### Country
-Parm name: Country
-
-Pivotal parm: No
-
 Settable if:
 
 * The "Configure Country (Auto/Manual)" box is not checked
+
+Pivotal parm: No
+
+Parm name: Country
 
 Description: Country to use for Wi-Fi regulatory setting. 802.11d will not be enabled if you select 'U.S.A' in the Country drop-down. When you choose 'AUTO' in the drop-down, 802.11d will be enabled. 
 
@@ -149,51 +148,52 @@ Parm options:
 	* Parm value: "Auto"
 
 #### 2.4GHz Channels 
-Parm name: 2.4GHzChannels
-
 Settable if:
 
 * The RF Band that is selected is either 2.4GHZ or Auto
 
 Pivotal parm: No
 
+Parm name: 2.4GHzChannels
+
 Description: Enable the specified channels in the 2.4GHz band. 
 
-Input rules: 
+Parm value input rules: 
 
-* String containing a set of valid channels. 
+* String containing a set of valid channels.
+* The minimum length is 0 characters and the maximum length is 64 characters.
 * Comma separated and may contain a range specified with a dash '-'. Example: 1,7-10
 
 #### 5.0GHz Channels 
-Parm name: 5.0GHzChannels
-
 Settable if:
 
 * The RF Band that is selected is either 5.0GHZ or Auto
 
 Pivotal parm: No
 
+Parm name: 5.0GHzChannels
+
 Description: Enable the specified channels in the 5.0GHz band.
 
-Input rules: 
+Parm value input rules: 
 
 * String containing a set of valid channels. 
+* The minimum length is 0 characters and the maximum length is 64 characters.
 * Comma separated and may contain a range specified with a dash '-'. Example: 36-60
 
 ### Specify Diagnostic Options
-
 Pivotal parm: Yes
 
 Description: Specify whether Diagnostic Options will be used. When enabled, Fusion Advanced Logging can also be enabled. 
 
 #### Fusion Advanced Logging
-Parm name: FusionAdvancedLogging
-
 Settable if:
 
 * The "Specify Diagnostic Options" box is checked
 
 Pivotal parm: No
+
+Parm name: FusionAdvancedLogging
 
 Description: Specify whether Fusion Advanced Logging will be used
 
@@ -210,113 +210,178 @@ Description: Specify whether Advanced Options will be used. When enabled, the fo
 >
 > Important Note: The default "Fast Power Savings" value must be used for the "Power Save" parameter under the Advanced Options. Using the "Do Not Change" value will result in failure.
 
-#### Auto Time Config
-Parm name: AutoTimeConfig
+#### Hotspot SSID
+Pivotal parm: No
+ 
+Parm name: HotspotSSID
 
+Description: Provide the SSID to use for Hotspot mode
+
+Parm value input rules
+
+* String with a minimum size of 1 character and a maximum size of 32 characters
+
+#### Hotspot AP Channel
+Pivotal parm: No
+ 
+Parm name: HotspotAPChannel
+
+Description: Provide the AP Channel to use for Hotspot mode
+
+Parm value input rules
+
+* Integer value from (and including) 1 to 11
+
+#### Hotspot Security Mode
+Pivotal parm: Yes
+
+Description: Specify the Security Mode to use for Hotspot mode
+
+Parm options: 
+
+* Open
+	* Parm value: "Open"
+* WPA2/PSK
+	* Parm value: "WPA2/PSK"
+
+#### Protect Hotspot Passphrase
+Settable if:
+
+* Hotspot security mode is "WPA2/PSK"
+
+Pivotal parm: Yes
+
+Description: Specify whether the Passphrase to use for Hotspot mode should be protected
+
+#### Hotspot Passphrase
+Pivotal parm: No
+
+Description: The passphrase to use for Hotspot mode. The parm name will change depending on the value of Protect Hotspot Passphrase
+
+If Protect Hotspot Passphrase is false:
+
+* Settable if:
+	* Hotspot security mode is 1 *AND* Protect Hotspot Passphrase is false
+* Parm name: HotspotPassphraseClear
+* Parm options: 
+* Parm value input rules
+	* String with a minimum size of 1 character and a maximum size of 32 characters
+
+If Protect Hotspot Passphrase is true:
+
+* Settable if:
+	* Hotspot security mode is 1 *AND* Protect Hotspot Passphrase is true
+* Parm name: HotspotPassphraseEncrypted
+* Parm value input rules
+	* String with a minimum size of 1 character and a maximum size of 32 characters
+
+#### Auto Time Config
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
 
+Parm name: AutoTimeConfig
+
 Description: Enable AutoTimeConfig feature. Updates device timestamp based on Symbol IE in 802.11 beacon. This is a Symbol specific feature.
 
 #### Profile Roaming
-Parm name: ProfileRoaming
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked *AND* the Target OS is not Android
 
 Pivotal parm: No
 
+Parm name: ProfileRoaming
+
 Description: Specify whether to enable roaming between Wi-Fi Profiles
 
 #### HFSR
-Parm name: HFSR
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
+
+Parm name: HFSR
 
 Description: Hyper Fast Secure Roam (HFSR) is a Symbol's fast roam algorithm. 
 
 #### CCKM 
-Parm name: CCKM
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
+
+Parm name: CCKM
 
 Description: This is to enable / disable CCX roam algorithm (CCKM).
 
 #### FT 
-Parm name: FT
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
+
+Parm name: FT
 
 Description: This is to enable / disable Fast Transition roam algorithm (802.11r).
 
 #### FTRIC 
-Parm name: FTRIC
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
+
+Parm name: FTRIC
 
 Description: This is to enable / disable Fast Transition Resource Request (802.11r).
 
 #### OKC
-Parm name: OKC
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
+
+Parm name: OKC
 
 Description: This is to enable / disable Opportunistic Key Caching (OKC).
 
 #### PMKID 
-Parm name: PMKID
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
+
+Parm name: PMKID
 
 Description: This is to enable / disable PMKID Caching. We need to disable OKC and enable PMKID for PMKID caching to work.
 
 #### Pre-Auth
-Parm name: PreAuth
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
+
+Parm name: PreAuth
 
 Description: This is to enable / disable 802.1x Pre-Authentication.
 
 #### Power Save Mode 
-Parm name: PowerSave
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
+
+Parm name: PowerSave
 
 Description: This option is to configure different Power Save Modes of Radio.
 
@@ -334,36 +399,36 @@ Parm options:
 	* Parm value: "PS-POLL "
 
 #### Advanced Logging
-Parm name: AdvancedLogging
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
  
+Parm name: AdvancedLogging
+
 Description: Start or Stop advanced Wi-Fi logging.
 
 #### FIPS 
-Parm name: FIPS
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
+
+Parm name: FIPS
 
 Description: We can use this option to enable or disable FIPS data in motion supported in WLAN. WLAN FIPS 140-2, level 1 compliance.
 
 #### Enable Restricted Settings UI
-Parm name: EnableRestrictedSettingsUI
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
  
+Parm name: EnableRestrictedSettingsUI
+
 Description: When enabled the Wi-Fi settings will be in Read-Only mode.
 
 Parm options: 
@@ -376,24 +441,24 @@ Parm options:
 	* Parm value: "2"
 
 #### Radio Resource Measurement(802.11K)
-Parm name: 802.11K
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
+
+Parm name: 802.11K
 
 Description: Specify whether to enable Radio Resource Measurement
 
 #### Management Frame Protection Mode(802.11K)
-Parm name: 802.11w
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
+
+Parm name: 802.11w
 
 Description: Specify the Management Frame Protection Mode
 
@@ -409,13 +474,13 @@ Parm options:
 	* Parm value: ""
 
 #### Select your band preference
-Parm name: BandPreference
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
+
+Parm name: BandPreference
 
 Description: Specify the band preference
 
@@ -431,68 +496,68 @@ Parm options:
 	* Parm value: ""
 
 #### Enable FTOverTheDS
-Parm name: FTOverTheDS
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
+
+Parm name: FTOverTheDS
 
 Description: Specify whether to enable FTOverTheDS
 
 #### Enable AggregatedFT
-Parm name: AggregatedFT
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
+
+Parm name: AggregatedFT
 
 Description: Specify whether to enable AggregatedFT
 
 #### Enable ScanAssist
-Parm name: ScanAssist
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
+
+Parm name: ScanAssist
 
 Description Specify whether to enable ScanAssist
 
 #### Enable Coverage Hole Detection
-Parm name: CHD
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
+
+Parm name: CHD
 
 Description: Specify whether to enable Coverage Hole Detection
 
 #### Enable Sub-Net Roam
-Parm name: SubNetRoam
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
+
+Parm name: SubNetRoam
 
 Description: Specify whether to enable Sub-Net Roam
 
 #### WANCountry
-Parm name: WANCountry
-
 Settable if:
 
 * The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
+
+Parm name: WANCountry
 
 Description: Specify whether to enable WanCountry
 
@@ -526,22 +591,26 @@ Parm options:
 Parameters used for adding a network. SSID is used to identify the network profile to be acted on when choosing an '... an Existing Network' network action above.
 
 #### SSID
-Parm name: SSID
-
 Settable if:
 
 * The Network Action is any option other than "Do Nothing", "Disable All Existing Networks", or "Remove All Existing Networks"
 
 Pivotal parm: No
 
+Parm name: SSID
+
 Description: the SSID name of the network
 
-#### Security Mode 
-Pivotal parm: Yes
+Parm value input rules: 
 
+* String with a minimum size of 1 character and a maximum size of 32 characters
+
+#### Security Mode 
 Settable if:
 
 * The Network Action is "Add a New Network"
+
+Pivotal parm: Yes
 
 Description: Specify the security mode used by the network
 
@@ -555,11 +624,11 @@ Parm options:
 	* Parm value: "Enterprise"
 
 #### WPA Mode
-Pivotal parm: Yes
-
 Settable if:
 
 * The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" or "Enterprise"
+
+Pivotal parm: Yes
 
 Description: WPA mode used by the network.
 
@@ -577,13 +646,13 @@ Parm options:
 	* Parm value: "WEP"
 
 #### Authentication
-Parm name: Authentication
-
 Settable if:
 
 * The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise"
 
 Pivotal parm: No
+
+Parm name: Authentication
 
 Description: Authentication mode used by the network. used with Enterprise Security Mode. 
 
@@ -612,33 +681,68 @@ Parm options:
 Specific authentication settings when Enterprise Mode and specific Authentication modes are selected.
 
 ##### **Use User Profile**
-Pivotal parm: Yes
-
 Settable if:
 
 * The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* the Target OS is not Android
 
+Pivotal parm: Yes
+
 Description: the name that should be used to join the network.
+
+
+##### **Enable Credentials Prompting**
+Settable if:
+
+* The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* the Target OS is not Android *AND* Use User Profile is true 
+
+Pivotal parm: No
+
+Parm name: EnableCredPrompt
+
+Description: Specify whether to Prompt for User Credentials
+
+##### **Credentials Timeout**
+Settable if:
+
+* The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* the Target OS is not Android *AND* Use User Profile is true 
+
+Pivotal parm: No
+
+Parm name: CredTimeout
+
+Description: Provide the timeout when Prompting for User Credentials
+
+##### **User Profile Mode**
+Settable if:
+
+* The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* the Target OS is not Android *AND* Use User Profile is true 
+
+Pivotal parm: No
+
+Parm name: UserProfMode
+
+Description: Provide the User Profile Mode
 
 ##### **Encryption Type**
 Pivotal parm: No
-
 
 Description: Type of encryption used by the network. The values in this drop-down will change based on the WPA Mode selected. 
 
 If WPA is selected: 
 
+* Settable if:
+	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" or "Enterprise" *AND* the WPA Mode is WPA
 * Parm name: EncryptionWPA
 * Parm options:
 	* Default - this will not change the encryption type that is currently used on the device
 		* Parm value: "Default" 
 	* TKIP
 		* Parm value: "TKIP" 
-* Settable if:
-	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" or "Enterprise" *AND* the WPA Mode is WPA
 
 If WPA2 is selected:
 
+* Settable if:
+	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" or "Enterprise" *AND* the WPA Mode is WPA2 or WPA/WPA2
 * Parm name: EncryptionWPA2
 * Parm options:
 	* Default - this will not change the encryption type that is currently used on the device
@@ -649,50 +753,53 @@ If WPA2 is selected:
 		* Parm value: "TKIP" 
 	* AES-CCMP/TKIP
 		* Parm value: "AES-CCMP/TKIP"
-* Settable if:
-	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" or "Enterprise" *AND* the WPA Mode is WPA2 or WPA/WPA2
 
 If WEP is selected:
 
+* Settable if:
+	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" or "Enterprise" *AND* the WPA Mode is WEP
 * Parm name: EncryptionWEP
 * Parm options:
 	* WEP-40
 		* Parm value: "WEP-40"
 	* WEP-104
 		* Parm value: "WEP-104"
-* Settable if:
-	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" or "Enterprise" *AND* the WPA Mode is WEP
 
 ##### **Identity**
-Parm name: Identity
-
 Settable if:
 
 * The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise"
 
 Pivotal parm: No
 
+Parm name: Identity
+
 Description: the name that should be used to join the network.
 
+
 ##### **Anonymous Identity** 
-Parm name: AnonymousIdentity
-
-Pivotal parm: No
-
 Settable if:
 
 * The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* the Authentication is not "EAP-TLS" or "LEAP"
 
+Pivotal parm: No
+
+Parm name: AnonymousIdentity
+
 Description: Provide the name of the anonymous identity to be used to join the network.
 
-##### **Protect Password**
-Parm name: ProtectPassword
+Parm value input rules: 
 
+* String with a minimum of 0 characters and a maximum of 64 characters
+
+##### **Protect Password**
 Settable if:
 
 * The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* the Authentication is not "EAP-TLS"
 
 Pivotal parm: No
+
+Parm name: ProtectPassword
 
 Description: when selected will encrypt the password.
 
@@ -701,48 +808,66 @@ Pivotal parm: No
 
 Description: the password to be used to connect to the network. The parm name will change depending on the value of ProtectPassword.
 
-If ProtectPassword is false:
+Parm value input rules: 
 
-* Parm name: PasswordClear
+* String with a minimum of 0 characters and a maximum of 64 characters
+
+If Protect Password is false:
+
 * Settable if:
 	* The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* Authentication is not "EAP-TLS" *AND* Protect Password is false
+* Parm name: PasswordClear
 
-If ProtectPassword is true:
+If Protect Password is true:
 
-* Parm name: PasswordEncrypted
 * Settable if:
 	* The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* Authentication is not "EAP-TLS" *AND* Protect Password is true
+* Parm name: PasswordEncrypted
 
 ##### **Server Certificate Name (optional)**
-Parm name: OptionalServerCertificate
-
 Settable if:
 
 * The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* the Authentication is "EAP-TLS", "PEAP-MSCHAPV2", "EAP-TTLS-MSCHAP", "EAP-FAST-MSCHAPV2", "EAP-TTLS-PAP", "PEAP-GTC", "EAP-FAST-MSCHAPV2", or "EAP-FAST-GTC"
 
 Pivotal parm: No
 
-Description: the name of the certificate alias that should be used to verify the server (Optional).
+Parm name: OptionalServerCertificate
+
+Description: The name of the certificate alias that should be used to verify the server (Optional).
+
+Parm value input rules: 
+
+* String with a minimum of 0 characters and a maximum of 64 characters
 
 ##### **Client Certificate Name (mandatory)**
-Parm name: MandatoryClientCertificate
-
 Settable if:
 
 * The Network Action is "Add a New Network" and the Security Mode is "Enterprise" and the Authentication is "EAP-TLS"
 
 Pivotal parm: No
 
-Description: the name of the certificate alias that should be used to join the network (Mandatory).
+Parm name: MandatoryClientCertificate
+
+Description: The name of the certificate alias that should be used to join the network (Mandatory).
+
+Parm value input rules: 
+
+* String with a minimum of 0 characters and a maximum of 64 characters
 
 ##### **Client Certificate Name (optional)**
-Parm name: OptionalClientCertificate
-
 Settable if:
 
 * The Network Action is "Add a New Network" and the Security Mode is "Enterprise" the Authentication is "PEAP-MSCHAPV2", "EAP-TTLS-MSCHAP", "EAP-TTLS-MSCHAPV2", "EAP-TTLS-PAP", "PEAP-GTC", "EAP-FAST-MSCHAPV2", or "EAP-FAST-GTC"
 
 Pivotal parm: No
+
+Parm name: OptionalClientCertificate
+
+Description: The name of the certificate alias that should be used to join the network (Optional).
+
+Parm value input rules: 
+
+* String with a minimum of 0 characters and a maximum of 64 characters
 
 ##### **EAP-TLS and Certificate Alias**
 Due to current limitations of the Certificate Manager Feature (in an EAP-TLS scenario), it is not possible to "override" the Alias that is assigned to a Client Certificate and Private Key when they are installed into the Android KeyStore
@@ -765,11 +890,11 @@ A device can be used to capture the alias being used for the certificate being i
 #### Encryption Key Details	
 
 ##### **Key Type**
-Pivotal parm: Yes
-
 Settable if:
 
 * The Network Action is "Add a New Network" and the Security Mode is "Personal"
+
+Pivotal parm: Yes
 
 Description: Specify the type of encryption key to be used by the network
 
@@ -781,11 +906,11 @@ Parm options:
 	* Parm value: "Passphrase"
 
 ##### **Protect Key**
-Pivotal parm: Yes
-
 Settable if:
 
 * The Network Action is "Add a New Network" and the Security Mode is "Personal"
+
+Pivotal parm: Yes
 
 Description: Enables encryption of the Key
 
@@ -796,81 +921,101 @@ Description: Provide the passphrase used by the network. The parm name will chan
 
 If WEP is selected and Protect Key is false:
 
-* Parm name: PassphraseWEPClear
 * Settable if:
 	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the Key Type is "Passphrase" *AND* the WPA Mode is "WEP" *AND* Protect Key is false
+* Parm name: PassphraseWEPClear
+* Parm value input rules: 
+	* String with a minimum of 4 characters and a maximum of 32 characters
 
 If WEP is selected and Protect Key is true:
 
-* Parm name: PassphraseWEPEncrypted
 * Settable if:
 	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the Key Type is "Passphrase" *AND* the WPA Mode is "WEP" *AND* Protect Key is true
-
+* Parm name: PassphraseWEPEncrypted
+* Parm value input rules: 
+	* String with a minimum of 4 characters and a maximum of 32 characters
+	
 If WEP is not selected and Protect Key is false:
 
-* Parm name: PassphraseWPAClear
 * Settable if:
 	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the Key Type is "Passphrase" *AND* the WPA Mode is not "WEP" *AND* Protect Key is false
+* Parm name: PassphraseWPAClear
+* Parm value input rules: 
+	* String with a minimum of 8 characters and a maximum of 63 characters
 
 If WEP is not selected and Protect Key is true:
 
-* Parm name: PassphraseWPAEncrypted
 * Settable if:
 	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the Key Type is "Passphrase" *AND* the WPA Mode is not "WEP" *AND* Protect Key is true
-
+* Parm name: PassphraseWPAEncrypted
+* Parm value input rules: 
+	* String with a minimum of 8 characters and a maximum of 63 characters
+	
 ##### **Hex Key**
 Pivotal parm: No
 
 If WEP is not selected and Protect Key is false:
 
-* Parm name: HexKeyClear
-* Description: Provide the hex key (64 hex chars) used by network
 * Settable if:
 	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the Key Type is "Hex Key" *AND* the WPA Mode is not "WEP" *AND* Protect Key is false
-
+* Parm name: HexKeyClear
+* Description: Provide the hex key (64 hex chars) used by network
+* Parm value input rules: 
+	* String with a minimum of 64 characters and a maximum of 64 characters
+	
 If WEP is not selected and Protect Key is true:
 
-* Parm name: HexKeyEncrypted
-* Description: Provide the hex key (64 hex chars) used by network
 * Settable if:
 	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the Key Type is "Hex Key" *AND* the WPA Mode is not "WEP" *AND* Protect Key is true
-
+* Parm name: HexKeyEncrypted
+* Description: Provide the hex key (64 hex chars) used by network
+* Parm value input rules: 
+	* String with a minimum of 64 characters and a maximum of 64 characters
+	
 If WEP is selected, the encryption type is WEP-40, and Protect Key is false:
 
-* Parm name: HexKeyWep40Clear
-* Description: Provide the shared secret WEP-40 key (10 hex chars) used by the network
 * Settable if:
 	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the Key Type is "Hex Key" *AND* the WPA Mode is "WEP" *AND* the Encryption Type is "WEP-40" *AND* Protect Key is false
-
+* Parm name: HexKeyWep40Clear
+* Description: Provide the shared secret WEP-40 key (10 hex chars) used by the network
+* Parm value input rules: 
+	* String with a minimum of 10 characters and a maximum of 10 characters
+	
 If WEP is selected, the encryption type is WEP-40, and Protect Key is true:
 
-* Parm name: HexKeyWep40Encrypted
-* Description: Provide the shared secret WEP-40 key (10 hex chars) used by the network
 * Settable if:
 	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the Key Type is "Hex Key" *AND* the WPA Mode is "WEP" *AND* the Encryption Type is "WEP-40" *AND* Protect Key is true
-
+* Parm name: HexKeyWep40Encrypted
+* Description: Provide the shared secret WEP-40 key (10 hex chars) used by the network
+* Parm value input rules: 
+	* String with a minimum of 10 characters and a maximum of 10 characters
+	
 If WEP is selected, the encryption type is WEP-104, and Protect Key is false:
 
-* Parm name: HexKeyWep104Clear
-* Description: Provide the shared secret WEP-104 key (26 hex chars) used by the network
 * Settable if:
 	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the Key Type is "Hex Key" *AND* the WPA Mode is "WEP" *AND* the Encryption Type is "WEP-104" *AND* Protect Key is false
+* Parm name: HexKeyWep104Clear
+* Description: Provide the shared secret WEP-104 key (26 hex chars) used by the network
+* Parm value input rules: 
+	* String with a minimum of 26 characters and a maximum of 26 characters
 
 If WEP is selected, the encryption type is WEP-104, and Protect Key is true:
 
-* Parm name: HexKeyWep104Encrypted
-* Description: Provide the shared secret WEP-104 key (26 hex chars) used by the network
 * Settable if:
 	* The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the Key Type is "Hex Key" *AND* the WPA Mode is "WEP" *AND* the Encryption Type is "WEP-104" *AND* Protect Key is true
-
+* Parm name: HexKeyWep104Encrypted
+* Description: Provide the shared secret WEP-104 key (26 hex chars) used by the network
+* Parm value input rules: 
+	* String with a minimum of 26 characters and a maximum of 26 characters
+	
 ##### **WEP Key Index**
-Parm name: WepKeyIndex
-
 Settable if:
 
 * The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the WPA Mode is "WEP"
 
 Pivotal parm: No
+
+Parm name: WepKeyIndex
 
 Description: Provide the index (1-4) of the WEP key used by the network. Only `wep[0]` is a valid option
 
@@ -891,70 +1036,94 @@ Pivotal parm: Yes
 Description: When selected DHCP will be used. When not selected, Static IP address is used and the following IP address settings should be provided:
 
 ##### **Static IP Address**
-Parm name: IpAddress
-
 Settable if:
 
 * The Network Action is "Add a New Network" *AND* the "Use DHCP" box is not checked
 
 Pivotal parm: No
+
+Parm name: IpAddress
 
 Description: Provide the static IP address to be assigned to the device on this network
 
-##### **Gateway 1 IP Address**
-Parm name: IpGateway1
+Parm value input rules: 
 
+* Must be a valid IPV4 address, example: 191.168.0.1
+
+##### **Gateway 1 IP Address**
 Settable if:
 
 * The Network Action is "Add a New Network" *AND* the "Use DHCP" box is not checked
 
 Pivotal parm: No
 
+Parm name: IpGateway1
+
 Description: Provide the IP address of the first gateway to the network 
 
-##### **Gateway 2 IP Address**
-Parm name: IpGateway2
+Parm value input rules: 
 
+* Must be a valid IPV4 address, example: 191.168.0.1
+
+##### **Gateway 2 IP Address**
 Settable if:
 
 * The Target OS is not Android *AND* the Network Action is "Add a New Network" *AND* the "Use DHCP" box is not checked
 
 Pivotal parm: No
 
+Parm name: IpGateway2
+
 Description: Provide the IP address of the second gateway to the network 
 
-##### **Subnet Mask**
-Parm name: IpMask
+Parm value input rules: 
 
+* Must be a valid IPV4 address, example: 191.168.0.1
+
+##### **Subnet Mask**
 Settable if:
 
 * The Network Action is "Add a New Network" *AND* the "Use DHCP" box is not checked
 
 Pivotal parm: No
+
+Parm name: IpMask
 
 Description: Provide the subnet mask to be used on the network
 
-##### **DNS Server 1 IP Address**
-Parm name: IpDns1
+Parm value input rules: 
 
+* Must be a valid IPV4 subnet mask, example: 255.255.255.0
+
+##### **DNS Server 1 IP Address**
 Settable if:
 
 * The Network Action is "Add a New Network" *AND* the "Use DHCP" box is not checked
 
 Pivotal parm: No
+
+Parm name: IpDns1
 
 Description: Provide the IP address of the first DNS server 
 
-##### **DNS Server 2 IP Address**
-Parm name: IpDns2
+Parm value input rules: 
 
+* Must be a valid IPV4 address, example: 191.168.0.1
+
+##### **DNS Server 2 IP Address**
 Settable if:
 
 * The Network Action is "Add a New Network" *AND* the "Use DHCP" box is not checked
 
 Pivotal parm: No
 
+Parm name: IpDns2
+
 Description: Provide the IP address of the second DNS server 
+
+Parm value input rules: 
+
+* Must be a valid IPV4 address, example: 191.168.0.1
 
 #### Use Proxy
 Pivotal parm: Yes
@@ -962,37 +1131,45 @@ Pivotal parm: Yes
 Description: When selected, a Proxy is used for network connections. The following proxy settings should be supplied:
 
 ##### **Proxy Host Name**
-Parm name: ProxyHostName
-
 Settable if:
 
 * The Network Action is "Add a New Network" *AND* "Use Proxy" box is checked
 
 Pivotal parm: No
+
+Parm name: ProxyHostName
 
 Description: Provide the host name of the proxy server
 
-##### **Proxy Port**
-Parm name: ProxyPort
+Parm value input rules: 
 
+* String with a minimum of 1 characters and a maximum of 64 characters
+
+##### **Proxy Port**
 Settable if:
 
 * The Network Action is "Add a New Network" *AND* "Use Proxy" box is checked
 
 Pivotal parm: No
+
+Parm name: ProxyPort
 
 Description: Provide the port number of the proxy server
 
 ##### **Bypass Proxy**
-Parm name: BypassProxy
-
 Settable if:
 
 * The Network Action is "Add a New Network" *AND* "Use Proxy" box is checked
 
 Pivotal parm: No
 
+Parm name: BypassProxy
+
 Description: Provide addresses for which the proxy server should be bypassed
+
+Parm value input rules: 
+
+* String with a maximum of 256 characters
 
 ##Example XML
 
