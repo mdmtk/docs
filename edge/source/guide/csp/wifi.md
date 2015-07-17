@@ -690,12 +690,12 @@ Description: Specifies the 802.11 band(s) to use.
   <tr>
     <td style="width:33%">2.4GHZ</td>
     <td style="width:33%">"2.4GHz"</td>
-	<td style="width:33%">enable 2.4GHz band</td>
+	<td style="width:33%">Enable 2.4GHz band</td>
   </tr>
   <tr>
     <td style="width:33%">5.0GHZ</td>
     <td style="width:33%">"5.0GHz"</td>
-	<td style="width:33%">enable 5.0GHz band</td>
+	<td style="width:33%">Enable 5.0GHz band</td>
   </tr>
   <tr>
     <td style="width:33%">Auto</td>
@@ -762,76 +762,6 @@ Description: Specify whether Advanced Options will be used. When enabled, the fo
 >
 > Important Note: The default "Fast Power Savings" value must be used for the "Power Save" parameter under the Advanced Options. Using the "Do Not Change" value will result in failure.
 
-#### Hotspot SSID
-Pivotal parm: No
- 
-Parm name: HotspotSSID
-
-Description: Provide the SSID to use for Hotspot mode
-
-Parm value input rules
-
-* String with a minimum size of 1 character and a maximum size of 32 characters
-
-#### Hotspot AP Channel
-Pivotal parm: No
- 
-Parm name: HotspotAPChannel
-
-Description: Provide the AP Channel to use for Hotspot mode
-
-Parm value input rules
-
-* Integer value from (and including) 1 to 11
-
-#### Hotspot Security Mode
-Pivotal parm: Yes
-
-Description: Specify the Security Mode to use for Hotspot mode
-
-<div style="max-height:300px;overflow:auto;">
- <table>
-	<tr>
-		<th>Parm Option Name</th>
-		<th>Parm Value</th>
-	</tr>
-  <tr>
-    <td style="width:50%">Open</td>
-    <td style="width:50%">"Open"</td>
-  </tr>
-  <tr>
-    <td style="width:50%">WPA2/PSK</td>
-    <td style="width:50%">"WPA2/PSK"</td>
-  </tr>
-</table>
-</div>
-
-#### Protect Hotspot Passphrase
-Settable if: Hotspot security mode is "WPA2/PSK"
-
-Pivotal parm: Yes
-
-Description: Specify whether the Passphrase to use for Hotspot mode should be protected
-
-#### Hotspot Passphrase
-Pivotal parm: No
-
-Description: The passphrase to use for Hotspot mode. The parm name will change depending on the value of Protect Hotspot Passphrase
-
-If Protect Hotspot Passphrase is false:
-
-* Settable if: Hotspot security mode is 1 *AND* Protect Hotspot Passphrase is false
-* Parm name: HotspotPassphraseClear
-* Parm value input rules
-	* String with a minimum size of 1 character and a maximum size of 32 characters
-
-If Protect Hotspot Passphrase is true:
-
-* Settable if: Hotspot security mode is 1 *AND* Protect Hotspot Passphrase is true
-* Parm name: HotspotPassphraseEncrypted
-* Parm value input rules
-	* String with a minimum size of 1 character and a maximum size of 32 characters
-
 #### Auto Time Config
 Settable if: The "Specify Advanced Options" box is checked
 
@@ -840,15 +770,6 @@ Pivotal parm: No
 Parm name: AutoTimeConfig
 
 Description: Enable AutoTimeConfig feature. Updates device timestamp based on Symbol IE in 802.11 beacon. This is a Symbol specific feature.
-
-#### Profile Roaming
-Settable if: The "Specify Advanced Options" box is checked *AND* the Target OS is not Android
-
-Pivotal parm: No
-
-Parm name: ProfileRoaming
-
-Description: Specify whether to enable roaming between Wi-Fi Profiles
 
 #### HFSR
 Settable if: The "Specify Advanced Options" box is checked
@@ -1018,7 +939,7 @@ Parm name: 802.11K
 
 Description: Specify whether to enable Radio Resource Measurement
 
-#### Management Frame Protection Mode(802.11K)
+#### Management Frame Protection Mode(802.11w)
 Settable if: The "Specify Advanced Options" box is checked
 
 Pivotal parm: No
@@ -1363,41 +1284,6 @@ Description: Authentication mode used by the network. used with Enterprise Secur
 
 #### Authentication Details
 Specific authentication settings when Enterprise Mode and specific Authentication modes are selected.
-
-##### **Use User Profile**
-Settable if: The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* the Target OS is not Android
-
-Pivotal parm: Yes
-
-Description: the name that should be used to join the network.
-
-
-##### **Enable Credentials Prompting**
-Settable if: The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* the Target OS is not Android *AND* Use User Profile is true 
-
-Pivotal parm: No
-
-Parm name: EnableCredPrompt
-
-Description: Specify whether to Prompt for User Credentials
-
-##### **Credentials Timeout**
-Settable if: The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* the Target OS is not Android *AND* Use User Profile is true 
-
-Pivotal parm: No
-
-Parm name: CredTimeout
-
-Description: Provide the timeout when Prompting for User Credentials
-
-##### **User Profile Mode**
-Settable if: The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* the Target OS is not Android *AND* Use User Profile is true 
-
-Pivotal parm: No
-
-Parm name: UserProfMode
-
-Description: Provide the User Profile Mode
 
 ##### **Encryption Type**
 Pivotal parm: No
@@ -1773,19 +1659,6 @@ Pivotal parm: No
 Parm name: IpGateway1
 
 Description: Provide the IP address of the first gateway to the network 
-
-Parm value input rules: 
-
-* Must be a valid IPV4 address, example: 191.168.0.1
-
-##### **Gateway 2 IP Address**
-Settable if: The Target OS is not Android *AND* the Network Action is "Add a New Network" *AND* the "Use DHCP" box is not checked
-
-Pivotal parm: No
-
-Parm name: IpGateway2
-
-Description: Provide the IP address of the second gateway to the network 
 
 Parm value input rules: 
 
