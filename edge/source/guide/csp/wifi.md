@@ -852,27 +852,27 @@ Description: This option is to configure different Power Save Modes of Radio.
 	</tr>
   <tr>
     <td style="width:33%">Do not change</td>
-	<td style="width:33%">""</td>
+	<td style="width:33%">"0"</td>
     <td style="width:33%">Will not change what the device is currently configured as</td>
   </tr>
   <tr>
     <td style="width:33%">Always Active</td>
-    <td style="width:33%">"Active" </td>
+    <td style="width:33%">"1" </td>
 	<td style="width:33%">This will keep the radio in active</td>
   </tr>
   <tr>
     <td style="width:33%">WMM-PS</td>
-    <td style="width:33%">"WMM-PS"</td>
+    <td style="width:33%">"4"</td>
 	<td style="width:33%"></td>
   </tr>
   <tr>
     <td style="width:33%">Null Data Power Save</td>
-    <td style="width:33%">"NDP"</td>
+    <td style="width:33%">"5"</td>
 	<td style="width:33%"></td>
   </tr>
   <tr>
     <td style="width:33%">PS-POLL</td>
-    <td style="width:33%">"PS-POLL "</td>
+    <td style="width:33%">"6"</td>
 	<td style="width:33%"></td>
   </tr>
 </table>
@@ -957,22 +957,22 @@ Description: Specify the Management Frame Protection Mode
 	</tr>
   <tr>
     <td style="width:33%">No MFP</td>
-    <td style="width:33%">"Disable"</td>
+    <td style="width:33%">"0"</td>
 	<td style="width:33%"></td>
   </tr>
   <tr>
     <td style="width:33%">Capable</td>
-    <td style="width:33%">"Capable"</td>
+    <td style="width:33%">"1"</td>
 	<td style="width:33%"></td>
   </tr>
   <tr>
     <td style="width:33%">Mandatory</td>
-    <td style="width:33%">"Mandatory" </td>
+    <td style="width:33%">"2" </td>
 	<td style="width:33%"></td>
   </tr>
   <tr>
     <td style="width:33%">Do not change</td>
-    <td style="width:33%">""</td>
+    <td style="width:33%">"3"</td>
 	<td style="width:33%">Will not change what the device is currently configured as</td>
   </tr>
 </table>
@@ -996,22 +996,22 @@ Description: Specify the band preference
 	</tr>
   <tr>
     <td style="width:33%">No preference</td>
-    <td style="width:33%">"Band Preference disabled"</td>
+    <td style="width:33%">"0"</td>
 	<td style="width:33%"></td>
   </tr>
   <tr>
     <td style="width:33%">Prefer 2.4GHz</td>
-    <td style="width:33%">"2.4GHz" </td>
+    <td style="width:33%">"1" </td>
 	<td style="width:33%"></td>
   </tr>
   <tr>
     <td style="width:33%">Prefer 5.0GHz </td>
-    <td style="width:33%">"5.0GHz "</td>
+    <td style="width:33%">"2"</td>
 	<td style="width:33%"></td>
   </tr>
   <tr>
     <td style="width:33%">Do not change</td>
-    <td style="width:33%">""</td>
+    <td style="width:33%">"3"</td>
 	<td style="width:33%">Will not change what the device is currently configured as</td>
   </tr>
 </table>	
@@ -1163,17 +1163,17 @@ Description: Specify the security mode used by the network
 	</tr>
   <tr>
     <td style="width:33%">Open</td>
-    <td style="width:33%">"Open"</td>
+    <td style="width:33%">"0"</td>
 	<td style="width:33%">Open network</td>
   </tr>
   <tr>
     <td style="width:33%">Personal</td>
-    <td style="width:33%">"Personal"</td>
+    <td style="width:33%">"1"</td>
 	<td style="width:33%">PSK or WEP</td>
   </tr>
   <tr>
     <td style="width:33%">Enterprise</td>
-    <td style="width:33%">"Enterprise"</td>
+    <td style="width:33%">"2"</td>
 	<td style="width:33%">802.1x EAP profiles</td>
   </tr>
 </table>
@@ -1197,22 +1197,22 @@ Description: WPA mode used by the network.
 	</tr>
   <tr>
     <td style="width:33%">WPA</td>
-    <td style="width:33%">"WPA"</td>
+    <td style="width:33%">"1"</td>
 	<td style="width:33%"></td>
   </tr>
   <tr>
     <td style="width:33%">WPA2</td>
-    <td style="width:33%">"WPA2"</td>
+    <td style="width:33%">"2"</td>
 	<td style="width:33%"></td>
   </tr>
   <tr>
     <td style="width:33%">WPA/WPA2</td>
-    <td style="width:33%">"WPA/WPA2"</td>
+    <td style="width:33%">"3"</td>
 	<td style="width:33%"></td>
   </tr>
   <tr>
     <td style="width:33%">WEP</td>
-    <td style="width:33%">"WEP"</td>
+    <td style="width:33%">"4"</td>
 	<td style="width:33%"></td>
   </tr>
 </table>
@@ -1302,12 +1302,12 @@ If WPA is selected:
 	</tr>
   <tr>
     <td style="width:33%">Default</td>
-    <td style="width:33%">"Default" </td>
+    <td style="width:33%">"0" </td>
 	<td style="width:33%">This will not change the encryption type that is currently used on the device</td>
   </tr>
   <tr>
     <td style="width:33%">TKIP</td>
-    <td style="width:33%">"TKIP" </td>
+    <td style="width:33%">"1" </td>
 	<td style="width:33%"></td>
   </tr>
 </table></div>
@@ -1324,22 +1324,22 @@ If WPA2 is selected:
 	</tr>
   <tr>
     <td style="width:33%">Default</td>
-    <td style="width:33%">"Default"</td>
+    <td style="width:33%">"0"</td>
 	<td style="width:33%">This will not change the encryption type that is currently used on the device</td>
   </tr>
   <tr>
     <td style="width:33%">AES-CCMP</td>
-    <td style="width:33%">"AES-CCMP"</td>
+    <td style="width:33%">"1"</td>
 	<td style="width:33%"></td>
   </tr>
   <tr>
     <td style="width:33%">TKIP</td>
-    <td style="width:33%">"TKIP"</td>
+    <td style="width:33%">"2"</td>
 	<td style="width:33%"></td>
   </tr>
   <tr>
     <td style="width:33%">AES-CCMP/TKIP</td>
-    <td style="width:33%">"AES-CCMP/TKIP"</td>
+    <td style="width:33%">"3"</td>
 	<td style="width:33%"></td>
   </tr>
 </table></div>
@@ -1356,12 +1356,12 @@ If WEP is selected:
 	</tr>
   <tr>
     <td style="width:33%">WEP-40</td>
-    <td style="width:33%">"WEP-40"</td>
+    <td style="width:33%">"1"</td>
 	<td style="width:33%"></td>
   </tr>
   <tr>
     <td style="width:33%">WEP-104</td>
-    <td style="width:33%">"WEP-104"</td>
+    <td style="width:33%">"2"</td>
 	<td style="width:33%"></td>
   </tr>
 </table></div> 
@@ -1612,22 +1612,22 @@ Description: Provide the index (1-4) of the WEP key used by the network. Only `w
 	</tr>
   <tr>
     <td style="width:33%">wep[0]</td>
-    <td style="width:33%">"wep[0]"</td>
+    <td style="width:33%">"1"</td>
 	<td style="width:33%"></td>
   </tr>
   <tr>
     <td style="width:33%">wep[1]</td>
-    <td style="width:33%">"wep[1]"</td>
+    <td style="width:33%">"2"</td>
 	<td style="width:33%"></td>
   </tr>
   <tr>
     <td style="width:33%">wep[2]</td>
-    <td style="width:33%">"wep[2]"</td>
+    <td style="width:33%">"3"</td>
 	<td style="width:33%"></td>
   </tr>
   <tr>
     <td style="width:33%">wep[3]</td>
-    <td style="width:33%">"wep[3]"</td>
+    <td style="width:33%">"4"</td>
 	<td style="width:33%"></td>
   </tr>
 </table>
@@ -1745,28 +1745,463 @@ Parm value input rules:
 
 ##Example XML
 
+### Managing Certificates Related to Wi-Fi Networks
+
+#### Initialize the Android KeyStore
+
+>Note: This must be done for a new device before you can install certificates.
+
+Without a password
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="CertMgr" version="4.2" >
+			<parm name="CertAction" value="4"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+With a password
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="CertMgr" version="4.2" >
+			<parm name="CertAction" value="4"/>
+			<characteristic type="keystore-details">
+				<parm name="KeystorePassword" value="password"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Remove a Certificate
+	
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="CertMgr" version="4.2" >
+			<parm name="CertAction" value="2"/>
+			<characteristic type="cert-details">
+				<parm name="CertAlias" value="certName1"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Install a CA certificate (.PEM file)
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="CertMgr" version="4.2" >
+			<parm name="CertAction" value="1"/>
+			<characteristic type="cert-details">
+				<parm name="CertAlias" value="certName2"/>
+				<parm name="CertType" value="5"/>
+				<parm name="CertMethod" value="2"/>
+				<parm name="CertFileCA" value="/path/to/cert.pem"/>
+				<parm name="CertAdjustClock" value="false"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Install a client certificate (.PEM file)
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="CertMgr" version="4.2" >
+			<parm name="CertAction" value="1"/>
+			<characteristic type="cert-details">
+				<parm name="CertAlias" value="certName2"/>
+				<parm name="CertType" value="6"/>
+				<parm name="CertMethod" value="2"/>
+				<parm name="CertFileClient" value="/path/to/cert.pem"/>
+				<parm name="CertAdjustClock" value="false"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Install a client certificate and private key (.PFX file)
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="CertMgr" version="4.2" >
+			<parm name="CertAction" value="1"/>
+			<characteristic type="cert-details">
+				<parm name="CertAlias" value="certName2"/>
+				<parm name="CertType" value="8"/>
+				<parm name="CertMethod" value="2"/>
+				<parm name="CertFileClient" value="/path/to/cert.pem"/>
+				<parm name="CertAdjustClock" value="false"/>
+				<parm name="PrivateKeyPassword" value="pass"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Install a client certificate and private key (.P12 file)
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="CertMgr" version="4.2" >
+			<parm name="CertAction" value="1"/>
+			<characteristic type="cert-details">
+				<parm name="CertAlias" value="certName2"/>
+				<parm name="CertType" value="9"/>
+				<parm name="CertMethod" value="2"/>
+				<parm name="CertFileClient" value="/path/to/cert.pem"/>
+				<parm name="CertAdjustClock" value="false"/>
+				<parm name="PrivateKeyPassword" value="pass"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Install a client certificate and private key (.PKCS12 file)
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="CertMgr" version="4.2" >
+			<parm name="CertAction" value="1"/>
+			<characteristic type="cert-details">
+				<parm name="CertAlias" value="certName2"/>
+				<parm name="CertType" value="9"/>
+				<parm name="CertMethod" value="10"/>
+				<parm name="CertFileClient" value="/path/to/cert.pem"/>
+				<parm name="CertAdjustClock" value="false"/>
+				<parm name="PrivateKeyPassword" value="pass"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+	
+### Country Selection
+
+#### Selecting a Country
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="Wi-Fi" version="4.4" >
+			<parm name="UseRegulatory" value="1"/>
+			<characteristic type="Regulatory">
+				<parm name="Country" value="US"/>
+			</characteristic>
+			<parm name="UseDiagnosticOptions" value="0"/>
+			<parm name="UseAdvancedOptions" value="0"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Using the Auto Option
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="Wi-Fi" version="4.4" >
+			<parm name="UseRegulatory" value="1"/>
+			<characteristic type="Regulatory">
+				<parm name="Country" value="AUTO"/>
+			</characteristic>
+			<parm name="UseDiagnosticOptions" value="0"/>
+			<parm name="UseAdvancedOptions" value="0"/>
+		</characteristic>
+	</wap-provisioningdoc>
+	
+### Band Selection
+
+#### Set 2.4 GHz
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="Wi-Fi" version="4.4" >
+			<parm name="UseRegulatory" value="0"/>
+			<characteristic type="Radio">
+				<parm name="BandSelection" value="2.4GHz"/>
+				<characteristic type="ChannelSelection">
+					<parm name="2.4GHzChannels" value="1"/>
+				</characteristic>
+			</characteristic>
+			<parm name="UseDiagnosticOptions" value="0"/>
+			<parm name="UseAdvancedOptions" value="0"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Set 5.0 GHz
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="Wi-Fi" version="4.4" >
+			<parm name="UseRegulatory" value="0"/>
+			<characteristic type="Radio">
+				<parm name="BandSelection" value="5.0GHz"/>
+				<characteristic type="ChannelSelection">
+					<parm name="5.0GHzChannels" value="36"/>
+				</characteristic>
+			</characteristic>
+			<parm name="UseDiagnosticOptions" value="0"/>
+			<parm name="UseAdvancedOptions" value="0"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Set Auto (both 2.4 and 5.0 GHz)
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="Wi-Fi" version="4.4" >
+			<parm name="UseRegulatory" value="0"/>
+			<characteristic type="Radio">
+				<parm name="BandSelection" value="Auto"/>
+				<characteristic type="ChannelSelection">
+					<parm name="2.4GHzChannels" value="1"/>
+					<parm name="5.0GHzChannels" value="36"/>
+				</characteristic>
+			</characteristic>
+			<parm name="UseDiagnosticOptions" value="0"/>
+			<parm name="UseAdvancedOptions" value="0"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+	
 ### Add Wi-Fi Network
 
-    :::XML
-    <wap-provisioningdoc>
-        <characteristic type="Wi-Fi" version="2.7" >
-            <parm name="UseRegulatory" value="0"/>
-            <parm name="UseAdvancedOptions" value="0"/>
-            <parm name="NetworkAction" value="Add"/>
-            <characteristic type="network-profile">
-                <parm name="SSID" value="Zebra"/>
-                <parm name="SecurityMode" value="1"/>
-                <parm name="WPAMode" value="1"/>
-                <characteristic type="key-details">
-                    <parm name="KeyType" value="Passphrase"/>
-                    <parm name="ProtectKey" value="0"/>
-                    <parm name="PassphraseWPAClear" value="KsdU6X3u"/>
-                </characteristic>
-                <parm name="UseDHCP" value="1"/>
-                <parm name="UseProxy" value="0"/>
-            </characteristic>
-        </characteristic>
-    </wap-provisioningdoc>
+#### Adding an Open Network
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="Wi-Fi" version="4.4" >
+			<parm name="UseRegulatory" value="0"/>
+			<parm name="UseDiagnosticOptions" value="0"/>
+			<parm name="UseAdvancedOptions" value="0"/>
+			<parm name="NetworkAction" value="Add"/>
+			<characteristic type="network-profile">
+				<parm name="SSID" value="Zebra"/>
+				<parm name="SecurityMode" value="0"/>
+				<parm name="UseDHCP" value="1"/>
+				<parm name="UseProxy" value="0"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Adding a Personal Network with WPA
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="Wi-Fi" version="4.4" >
+			<parm name="UseRegulatory" value="0"/>
+			<parm name="UseDiagnosticOptions" value="0"/>
+			<parm name="UseAdvancedOptions" value="0"/>
+			<parm name="NetworkAction" value="Add"/>
+			<characteristic type="network-profile">
+				<parm name="SSID" value="Zebra"/>
+				<parm name="SecurityMode" value="1"/>
+				<parm name="WPAMode" value="1"/>
+				<characteristic type="key-details">
+					<parm name="KeyType" value="Passphrase"/>
+					<parm name="ProtectKey" value="0"/>
+					<parm name="PassphraseWPAClear" value="KsdU6X3u"/>
+				</characteristic>
+				<parm name="UseDHCP" value="1"/>
+				<parm name="UseProxy" value="0"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+	
+#### Adding a Personal Network with WPA and TKIP
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="Wi-Fi" version="4.4" >
+			<parm name="UseRegulatory" value="0"/>
+			<parm name="UseDiagnosticOptions" value="0"/>
+			<parm name="UseAdvancedOptions" value="0"/>
+			<parm name="NetworkAction" value="Add"/>
+			<characteristic type="network-profile">
+				<parm name="SSID" value="Zebra"/>
+				<parm name="SecurityMode" value="1"/>
+				<parm name="WPAMode" value="1"/>
+				<characteristic type="auth-details">
+					<characteristic type="encryption-details">
+						<parm name="EncryptionWPA" value="1"/>
+					</characteristic>
+				</characteristic>
+				<characteristic type="key-details">
+					<parm name="KeyType" value="Passphrase"/>
+					<parm name="ProtectKey" value="0"/>
+					<parm name="PassphraseWPAClear" value="KsdU6X3u"/>
+				</characteristic>
+				<parm name="UseDHCP" value="1"/>
+				<parm name="UseProxy" value="0"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Adding a Personal Network with WPA2
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="Wi-Fi" version="4.4" >
+			<parm name="UseRegulatory" value="0"/>
+			<parm name="UseDiagnosticOptions" value="0"/>
+			<parm name="UseAdvancedOptions" value="0"/>
+			<parm name="NetworkAction" value="Add"/>
+			<characteristic type="network-profile">
+				<parm name="SSID" value="Zebra"/>
+				<parm name="SecurityMode" value="1"/>
+				<parm name="WPAMode" value="2"/>
+				<characteristic type="key-details">
+					<parm name="KeyType" value="Passphrase"/>
+					<parm name="ProtectKey" value="0"/>
+					<parm name="PassphraseWPAClear" value="KsdU6X3u"/>
+				</characteristic>
+				<parm name="UseDHCP" value="1"/>
+				<parm name="UseProxy" value="0"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Adding a Personal Network with WPA/WPA2
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="Wi-Fi" version="4.4" >
+			<parm name="UseRegulatory" value="0"/>
+			<parm name="UseDiagnosticOptions" value="0"/>
+			<parm name="UseAdvancedOptions" value="0"/>
+			<parm name="NetworkAction" value="Add"/>
+			<characteristic type="network-profile">
+				<parm name="SSID" value="Zebra"/>
+				<parm name="SecurityMode" value="1"/>
+				<parm name="WPAMode" value="3"/>
+				<characteristic type="key-details">
+					<parm name="KeyType" value="Passphrase"/>
+					<parm name="ProtectKey" value="0"/>
+					<parm name="PassphraseWPAClear" value="KsdU6X3u"/>
+				</characteristic>
+				<parm name="UseDHCP" value="1"/>
+				<parm name="UseProxy" value="0"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Adding a Personal Network with WEP
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="Wi-Fi" version="4.4" >
+			<parm name="UseRegulatory" value="0"/>
+			<parm name="UseDiagnosticOptions" value="0"/>
+			<parm name="UseAdvancedOptions" value="0"/>
+			<parm name="NetworkAction" value="Add"/>
+			<characteristic type="network-profile">
+				<parm name="SSID" value="Zebra"/>
+				<parm name="SecurityMode" value="1"/>
+				<parm name="WPAMode" value="4"/>
+				<characteristic type="auth-details">
+					<characteristic type="encryption-details">
+						<parm name="EncryptionWEP" value="1"/>
+					</characteristic>
+				</characteristic>
+				<characteristic type="key-details">
+					<parm name="KeyType" value="Passphrase"/>
+					<parm name="ProtectKey" value="0"/>
+					<parm name="PassphraseWEPClear" value="KsdU6X3u"/>
+					<parm name="WepKeyIndex" value="1"/>
+				</characteristic>
+				<parm name="UseDHCP" value="1"/>
+				<parm name="UseProxy" value="0"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+	
+#### Adding an Enterprise Network with WPA
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="Wi-Fi" version="4.4" >
+			<parm name="UseRegulatory" value="0"/>
+			<parm name="UseDiagnosticOptions" value="0"/>
+			<parm name="UseAdvancedOptions" value="0"/>
+			<parm name="NetworkAction" value="Add"/>
+			<characteristic type="network-profile">
+				<parm name="SSID" value="Zebra"/>
+				<parm name="SecurityMode" value="2"/>
+				<parm name="WPAMode" value="1"/>
+				<parm name="Authentication" value="1"/>
+				<characteristic type="auth-details">
+					<parm name="OptionalServerCertificate" value="serverCertName"/>
+					<parm name="MandatoryClientCertificate" value="clientCertName"/>
+				</characteristic>
+				<parm name="UseDHCP" value="1"/>
+				<parm name="UseProxy" value="0"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Adding an Enterprise Network with WPA2
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="Wi-Fi" version="4.4" >
+			<parm name="UseRegulatory" value="0"/>
+			<parm name="UseDiagnosticOptions" value="0"/>
+			<parm name="UseAdvancedOptions" value="0"/>
+			<parm name="NetworkAction" value="Add"/>
+			<characteristic type="network-profile">
+				<parm name="SSID" value="Zebra"/>
+				<parm name="SecurityMode" value="2"/>
+				<parm name="WPAMode" value="2"/>
+				<parm name="Authentication" value="1"/>
+				<characteristic type="auth-details">
+					<parm name="OptionalServerCertificate" value="serverCertName"/>
+					<parm name="MandatoryClientCertificate" value="clientCertName"/>
+				</characteristic>
+				<parm name="UseDHCP" value="1"/>
+				<parm name="UseProxy" value="0"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Adding an Enterprise Network with WPA/WPA2
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="Wi-Fi" version="4.4" >
+			<parm name="UseRegulatory" value="0"/>
+			<parm name="UseDiagnosticOptions" value="0"/>
+			<parm name="UseAdvancedOptions" value="0"/>
+			<parm name="NetworkAction" value="Add"/>
+			<characteristic type="network-profile">
+				<parm name="SSID" value="Zebra"/>
+				<parm name="SecurityMode" value="2"/>
+				<parm name="WPAMode" value="3"/>
+				<parm name="Authentication" value="1"/>
+				<characteristic type="auth-details">
+					<parm name="OptionalServerCertificate" value="serverCertName"/>
+					<parm name="MandatoryClientCertificate" value="clientCertName"/>
+				</characteristic>
+				<parm name="UseDHCP" value="1"/>
+				<parm name="UseProxy" value="0"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+#### Adding an Enterprise Network with WEP
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="Wi-Fi" version="4.4" >
+			<parm name="UseRegulatory" value="0"/>
+			<parm name="UseDiagnosticOptions" value="0"/>
+			<parm name="UseAdvancedOptions" value="0"/>
+			<parm name="NetworkAction" value="Add"/>
+			<characteristic type="network-profile">
+				<parm name="SSID" value="Zebra"/>
+				<parm name="SecurityMode" value="2"/>
+				<parm name="WPAMode" value="4"/>
+				<parm name="Authentication" value="1"/>
+				<characteristic type="auth-details">
+					<characteristic type="encryption-details">
+						<parm name="EncryptionWEP" value="1"/>
+					</characteristic>
+					<parm name="OptionalServerCertificate" value="serverCertName"/>
+					<parm name="MandatoryClientCertificate" value="clientCertName"/>
+				</characteristic>
+				<parm name="UseDHCP" value="1"/>
+				<parm name="UseProxy" value="0"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
 
 ## Feature Compatibility
 
