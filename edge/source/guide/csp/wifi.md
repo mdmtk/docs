@@ -16,11 +16,12 @@ The Wi-Fi feature allows you to manage your devices Wi-Fi settings as well as ma
 * Set Wi-Fi to Never Sleep When Plugged In
 * Set Wi-Fi to Always Sleep
 * Use Network Notifications
-* Do Not User Network Notifications
+* Do Not Use Network Notifications
 * Enable Auto Country Selection
 * Manually Select country
 * Set the RF Band
 * Enable Auto RF Band Selection
+* Enable Fusion Advanced Logging
 * Enable the Device to set the Clock off the AP (Access Point) Time
 * Enable HF SR (Hyper Fast Secure Roam)
 * Disable HR SR (Hyper Fast Secure Roam)
@@ -32,17 +33,37 @@ The Wi-Fi feature allows you to manage your devices Wi-Fi settings as well as ma
 * Disable FTRIC (Fast Transition Resource Request)
 * Enable OKC (Opportunistic Key Caching)
 * Disable OKC (Opportunistic Key Caching)
+* Enable PMKID Caching
+* Disable PMKID Caching
 * Enable PreAuth
 * Disable PreAuth
-* Set Power Saving Mode to Fast Power Savings
 * Set Power Savings Mode to Always Active
-* Set Power Savings Mode to Maximum Power Savings
+* Set Power Savings Mode to WMM-PS
+* Set Power Savings Mode to Null Data Power Save
+* Set Power Savings Mode to PS-POLL
 * Enable Advanced Logging
 * Disable Advanced Logging
 * Enable FIPS Compliance
 * Disable FIPS Compliance
 * Enable Restricted WLAN Settings UI
 * Disable Restricted WLAN Settings UI
+* Enable Radio Resource Measurement(802.?11K)
+* Disable Radio Resource Measurement(802.?11K)
+* Enable Management Frame Protection Mode(802.?11w)
+* Disable Management Frame Protection Mode(802.?11w)
+* Set the band preference
+* Enable FTOverTheDS
+* Disable FTOverTheDS
+* Enable AggregatedFT
+* Disable AggregatedFT
+* Enable ScanAssist
+* Disable ScanAssist
+* Enable Coverage Hole Detection
+* Disable Coverage Hole Detection
+* Enable Sub-Net Roam
+* Disable Sub-Net Roam
+* Enable WANCountry
+* Disable WANCountry
 * Add a Wi-Fi Network
 * Remove a Wi-Fi Network
 * Connect to a Wi-Fi Network
@@ -65,7 +86,7 @@ Description: Specify the target OS of the device
 	</tr>
   <tr>
     <td style="width:50%">Android</td>
-    <td style="width:50%">"Android"</td>
+    <td style="width:50%">"2"</td>
   </tr>
 </table>
 	
@@ -706,7 +727,7 @@ Description: Specifies the 802.11 band(s) to use.
 </div>
 
 #### 2.4GHz Channels 
-Settable if: The RF Band that is selected is either 2.4GHZ or Auto
+Settable if: The RF Band that is selected is either 2.4GHz or Auto
 
 Pivotal parm: No
 
@@ -717,11 +738,13 @@ Description: Enable the specified channels in the 2.4GHz band.
 Parm value input rules: 
 
 * String containing a set of valid channels.
+	* Not all channels are available in all every country. Please see the link below for more information:
+		* https://en.wikipedia.org/wiki/List_of_WLAN_channels
 * The minimum length is 0 characters and the maximum length is 64 characters.
 * Comma separated and may contain a range specified with a dash '-'. Example: 1,7-10
 
 #### 5.0GHz Channels 
-Settable if: The RF Band that is selected is either 5.0GHZ or Auto
+Settable if: The RF Band that is selected is either 5.0GHz or Auto
 
 Pivotal parm: No
 
@@ -732,6 +755,8 @@ Description: Enable the specified channels in the 5.0GHz band.
 Parm value input rules: 
 
 * String containing a set of valid channels. 
+	* Not all channels are available in all every country. Please see the link below for more information:
+		* https://en.wikipedia.org/wiki/List_of_WLAN_channels
 * The minimum length is 0 characters and the maximum length is 64 characters.
 * Comma separated and may contain a range specified with a dash '-'. Example: 36-60
 
