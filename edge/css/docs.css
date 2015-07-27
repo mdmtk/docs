@@ -373,3 +373,12 @@ iframe{
 .selectedMenuItem{
 	background-color: #444444;
 }
+
+.parm-table{
+	max-height:300px;
+	overflow:auto;
+}
+
+.parm-table  table  tr  td{
+width:33%
+}

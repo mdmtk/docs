@@ -6,7 +6,12 @@
 
 The Wi-Fi feature allows you to manage your devices Wi-Fi settings as well as manage the network profiles to be used for connecting and remembering networks.
 
->Note: In order for settings to be applied, Wi-Fi must be enabled. If you do not specify WiFi Enable in the profile you will get an error when attempting to apply other settings if the device's Wi-Fi is not already enabled.
+>Notes:
+
+>In order for settings to be applied, Wi-Fi must be turned on. If you do not specify WiFi Enable in the profile you will get an error when attempting to apply certain settings if the device's Wi-Fi is not already turned on.
+
+>In other CSPs, the terms "enable" and "disable" refer to whether or not the user will be allowed to turn the device on or off at all. However, in this CSP, "enable" and "disable" are equivalent to "turn on" and "turn off".
+
 
 ### Main Functionality
 
@@ -79,27 +84,35 @@ Pivotal parm: Yes
 
 Description: Specify the target OS of the device
 
+<div class="parm-table">
  <table>
 	<tr>
 		<th>Parm Option Name</th>
 		<th>Parm Value</th>
 	</tr>
   <tr>
-    <td style="width:50%">Android</td>
-    <td style="width:50%">"2"</td>
+    <td>Android</td>
+    <td>"2"</td>
   </tr>
 </table>
+</div>
 	
 ### Wi-Fi Enable 
 Pivotal parm: No
 
 Parm name: WiFiAction
 
-Description: Enable/Disable Wi-Fi Radio.
+Description: Turn the Wi-Fi radio on or off.
 
->Note: In order for other settings to be applied, Wi-Fi must be enabled. If you do not specify WiFi Enable in the profile you will get an error when attempting to apply other settings if the device's Wi-Fi is not already enabled.
+> Notes:
 
-<div style="max-height:300px;overflow:auto;">
+>In order for settings to be applied, Wi-Fi must be turned on. If you do not specify WiFi Enable in the profile you will get an error when attempting to apply certain settings if the device's Wi-Fi is not already turned on.
+
+>In other CSPs, the terms "enable" and "disable" refer to whether or not the user will be allowed to turn the device on or off at all. However, in this CSP, "enable" and "disable" are equivalent to "turn on" and "turn off".
+
+>As a best practice, it is recommended that this is turned on whenever setting another Wi-Fi parm that requires to be on, as it is not harmful to enable the Wi-Fi again if it is already on.
+
+<div class="parm-table">
  <table>
 	<tr>
 		<th>Parm Option Name</th>
@@ -107,19 +120,19 @@ Description: Enable/Disable Wi-Fi Radio.
 		<th>Description</th>
 	</tr>
   <tr>
-    <td style="width:33%">Do not change</td>
-    <td style="width:33%">""</td>
-	<td style="width:33%">Will not change what the device is currently configured as</td>
+    <td>Do not change</td>
+    <td>""</td>
+	<td>Will not change what the device is currently configured as</td>
   </tr>
   <tr>
-    <td style="width:33%">Enable</td>
-    <td style="width:33%">"enable"</td>
-	<td style="width:33%">Enables the Wi-Fi radio</td>
+    <td>Enable</td>
+    <td>"enable"</td>
+	<td>Turns on the Wi-Fi radio</td>
   </tr>
   <tr>
-    <td style="width:33%">Disable</td>
-    <td style="width:33%">"disable"</td>
-	<td style="width:33%">Disables the Wi-Fi radio</td>
+    <td>Disable</td>
+    <td>"disable"</td>
+	<td>Turns off the Wi-Fi radio</td>
   </tr>
 </table>
 </div>	
@@ -129,9 +142,11 @@ Pivotal parm: No
 
 Parm name: WifiSleepPolicy
 
-Description: Specifies the state of the Wi-Fi radio when the device suspends.	
+Description: Specifies the state of the Wi-Fi radio when the device suspends.
 
-<div style="max-height:300px;overflow:auto;">
+For Android devices, the device is suspended when the display turns off after idling for a certain amount of time. While the device is suspended, the device's software continues running in a lower power mode, meaning that the device itself is not turned off and software can run when the device is in this state. The amount of power consumption while in this state partially depends on what features are left on.
+
+<div class="parm-table">
  <table>
 	<tr>
 		<th>Parm Option Name</th>
@@ -139,24 +154,24 @@ Description: Specifies the state of the Wi-Fi radio when the device suspends.
 		<th>Description</th>
 	</tr>
   <tr>
-    <td style="width:33%">Do not change</td>
-    <td style="width:33%">""</td>
-	<td style="width:33%">Will not change what the device is currently configured as</td>
+    <td>Do not change</td>
+    <td>""</td>
+	<td>Will not change what the device is currently configured as</td>
   </tr>
   <tr>
-    <td style="width:33%">Never Sleep</td>
-    <td style="width:33%">"AlwaysOn"</td>
-	<td style="width:33%">Leave Wi-Fi radio powered</td>
+    <td>Never Sleep</td>
+    <td>"AlwaysOn"</td>
+	<td>This will leave the Wi-Fi radio on while the device's display is turned off and Wi-Fi can continue to be used by any software that is running. Existing Wi-Fi connections will be maintained as if the device was not suspended. For example, emails will continue to come in. This behavior may be preferred in some situations, however this could significantly increase the drain on the battery and reduce the battery life.</td>
   </tr>
   <tr>
-    <td style="width:33%">Never Sleep When Plugged</td>
-    <td style="width:33%">"PluggedIn"</td>
-	<td style="width:33%">Leave Wi-Fi radio powered while it is connected to A/C power and power down the Wi-Fi radio while it is on battery</td>
+    <td>Never Sleep When Plugged</td>
+    <td>"PluggedIn"</td>
+	<td>This will leave the Wi-Fi radio on while the display is turned off if the device is not running from battery power.</td>
   </tr>
   <tr>
-    <td style="width:33%">Always Sleep</td>
-    <td style="width:33%">"NeverOn"</td>
-	<td style="width:33%">Power down the Wi-Fi radio.</td>
+    <td>Always Sleep</td>
+    <td>"NeverOn"</td>
+	<td>This turns the Wi-Fi radio off while the device's display is turned off. Existing Wi-Fi connections will be dropped and will need to be re-established, if needed, when the display (and Wi-Fi) are turned back on. Software that is running cannot use Wi-Fi while it is off. This can significantly increase the battery life if communications are not needed when the device is suspended.</td>
   </tr>
 </table>
 </div>
@@ -166,8 +181,9 @@ Pivotal parm: No
 
 Parm name: NetworkNotification
 
-Description: Specifies whether or not to notify the user when a open network comes in range.
- <div style="max-height:300px;overflow:auto;">
+Description: Specifies whether or not to notify the user when an unknown, open network comes in range. If this setting is turned on, the user will be asked if they want to join the network, which could be useful for personal or dual use devices which might want to use a public Wi-Fi connection at some point. However, turning these notifications on is not recommended for devices that are supposed to be used only on a single corporate Wi-Fi network since it might be harmful to offer a user the opportunity to connect to a rogue, non-secure network.
+
+ <div class="parm-table">
  <table>
 	<tr>
 		<th>Parm Option Name</th>
@@ -175,19 +191,19 @@ Description: Specifies whether or not to notify the user when a open network com
 		<th>Description</th>
 	</tr>
   <tr>
-    <td style="width:33%">Do not change</td>
-    <td style="width:33%">""</td>
-	<td style="width:33%">Will not change what the device is currently configured as</td>
+    <td>Do not change</td>
+    <td>""</td>
+	<td>Will not change what the device is currently configured as</td>
   </tr>
   <tr>
-    <td style="width:33%">Use network notification</td>
-    <td style="width:33%">"true"</td>
-	<td style="width:33%">Notify the user when a network comes in range</td>
+    <td>Use network notification</td>
+    <td>"true"</td>
+	<td>Notify the user when an unknown, open network comes into range</td>
   </tr>
   <tr>
-    <td style="width:33%">Do not use network notification</td>
-    <td style="width:33%">"false"</td>
-	<td style="width:33%">Don't notify the user when a network comes in range</td>
+    <td>Do not use network notification</td>
+    <td>"false"</td>
+	<td>Don't notify the user when an unknown, open network comes into range</td>
   </tr>
 </table>
 </div>
@@ -204,17 +220,21 @@ Pivotal parm: No
 
 Parm name: Country
 
-Description: Country to use for Wi-Fi regulatory setting. 802.11d will not be enabled if you select 'U.S.A' in the Country drop-down. When you choose 'AUTO' in the drop-down, 802.11d will be enabled. 
+Description: Sets the country to use for Wi-Fi regulatory setting. 
 
- <div style="max-height:300px;overflow:auto;">
+When you choose 'AUTO' in the drop-down, 802.11d will be enabled. 802.11d is a mode where the device will listen for a country-specific beacon. It also will not transmit unless it can auto-detect the country, which can be beneficial because the device cannot transmit with a frequency that is inconsistent with the Wi-Fi infrastructure and is therefore less likely to violate country-specific regulations.
+
+If a Wi-Fi infrastructure does not support, 802.11d, then the country that is used by this infrastructure will need to be selected so that the device can connect to it.
+
+ <div class="parm-table">
  <table>
 	<tr>
 		<th>Parm Option Name</th>
 		<th>Parm Values</th>
 	</tr>
   <tr>
-    <td style="width:50%">AUTO (Use 802.11d)</td>
-    <td style="width:50%">"AUTO"</td>
+    <td>AUTO (Use 802.11d)</td>
+    <td>"AUTO"</td>
   </tr>
   <tr>
     <td>Algeria</td>
@@ -694,9 +714,9 @@ Description: Country to use for Wi-Fi regulatory setting. 802.11d will not be en
 ### RF Band
 Pivotal parm: Yes
 
-Description: Specifies the 802.11 band(s) to use.
+Description: Specifies the 802.11 band(s) to use. The bands to use will usually be determined automatically through negotiation with the Wi-Fi infrastructure. However, in some cases, the Wi-Fi infrastructure may be shared amongst multiple uses, which may mean that it would be preferable to limit the devices to one band and leave the other bands for other purposes. 
 
-<div style="max-height:300px;overflow:auto;">
+<div class="parm-table">
  <table>
 	<tr>
 		<th>Parm Option Name</th>
@@ -704,24 +724,24 @@ Description: Specifies the 802.11 band(s) to use.
 		<th>Description</th>
 	</tr>
   <tr>
-    <td style="width:33%">Unchanged</td>
-    <td style="width:33%">""</td>
-	<td style="width:33%">Will not change what the device is currently configured as</td>
+    <td>Unchanged</td>
+    <td>""</td>
+	<td>Will not change what the device is currently configured as</td>
   </tr>
   <tr>
-    <td style="width:33%">2.4GHZ</td>
-    <td style="width:33%">"2.4GHz"</td>
-	<td style="width:33%">Enable 2.4GHz band</td>
+    <td>2.4GHZ</td>
+    <td>"2.4GHz"</td>
+	<td>Enable 2.4GHz band</td>
   </tr>
   <tr>
-    <td style="width:33%">5.0GHZ</td>
-    <td style="width:33%">"5.0GHz"</td>
-	<td style="width:33%">Enable 5.0GHz band</td>
+    <td>5.0GHZ</td>
+    <td>"5.0GHz"</td>
+	<td>Enable 5.0GHz band</td>
   </tr>
   <tr>
-    <td style="width:33%">Auto</td>
-    <td style="width:33%">"Auto"</td>
-	<td style="width:33%">Enable both bands and connect automatically to either</td>
+    <td>Auto</td>
+    <td>"Auto"</td>
+	<td>Enable both bands and connect automatically to either</td>
   </tr>
 </table>
 </div>
@@ -733,7 +753,7 @@ Pivotal parm: No
 
 Parm name: 2.4GHzChannels
 
-Description: Enable the specified channels in the 2.4GHz band. 
+Description: Enable the specified channels in the 2.4GHz band. In most cases, if the 2.4GHZ band is allowed to be used, then the channels in this band that should be used can be determined automatically through negotiation with the Wi-Fi infrastructure. However, it may be beneficial to control the channels manually because different channels or sets of channels might be used for different uses. It may be preferable to limit the devices to only use certain channels so that other channels are left for other purposes.
 
 Parm value input rules: 
 
@@ -750,7 +770,7 @@ Pivotal parm: No
 
 Parm name: 5.0GHzChannels
 
-Description: Enable the specified channels in the 5.0GHz band.
+Description: Enable the specified channels in the 5.0GHz band. In most cases, if the 5.0GHZ band is allowed to be used, then the channels in this band that should be used can be determined automatically through negotiation with the Wi-Fi infrastructure. However, it may be beneficial to control the channels manually because different channels or sets of channels might be used for different uses. It may be preferable to limit the devices to only use certain channels so that other channels are left for other purposes.
 
 Parm value input rules: 
 
@@ -763,7 +783,9 @@ Parm value input rules:
 ### Specify Diagnostic Options
 Pivotal parm: Yes
 
-Description: Specify whether Diagnostic Options will be used. When enabled, Fusion Advanced Logging can also be enabled. 
+Description: Specify whether Diagnostic Options will be used. When enabled, Fusion Advanced Logging can also be enabled. This option can be used to collect additional information for troubleshooting but can impact the performance of a device.
+
+>Note: In most cases, this option should not be used except under the direction of Zebra support staff.
 
 #### Fusion Advanced Logging
 Settable if: The "Specify Diagnostic Options" box is checked
@@ -775,333 +797,15 @@ Parm name: FusionAdvancedLogging
 Description: Specify whether Fusion Advanced Logging will be used
 
 ### Specify Advanced Options
-Pivotal parm: Yes
 
-Description: Specify whether Advanced Options will be used. When enabled, the following options will be available to set.
-
->Note: The following steps must be followed in order to use the Advanced Options under the WiFi feature:
->
->* PMKID must be enabled in order to enable PreAuth (PreAuth =1 and PMKID =1)
->* FT must be enabled in order to enable FTRIC (FT=1 and FTRIC =1)
->* OKC must be disabled (OKC =0 and PMKID =1) in order to use PMKID caching
->
-> Important Note: The default "Fast Power Savings" value must be used for the "Power Save" parameter under the Advanced Options. Using the "Do Not Change" value will result in failure.
-
-#### Auto Time Config
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
-
-Parm name: AutoTimeConfig
-
-Description: Enable AutoTimeConfig feature. Updates device timestamp based on Symbol IE in 802.11 beacon. This is a Symbol specific feature.
-
-#### HFSR
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
-
-Parm name: HFSR
-
-Description: Hyper Fast Secure Roam (HFSR) is a Symbol's fast roam algorithm. 
-
-#### CCKM 
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
-
-Parm name: CCKM
-
-Description: This is to enable / disable CCX roam algorithm (CCKM).
-
-#### FT 
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
-
-Parm name: FT
-
-Description: This is to enable / disable Fast Transition roam algorithm (802.11r).
-
-#### FTRIC 
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
-
-Parm name: FTRIC
-
-Description: This is to enable / disable Fast Transition Resource Request (802.11r).
-
-#### OKC
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
-
-Parm name: OKC
-
-Description: This is to enable / disable Opportunistic Key Caching (OKC).
-
-#### PMKID 
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
-
-Parm name: PMKID
-
-Description: This is to enable / disable PMKID Caching. We need to disable OKC and enable PMKID for PMKID caching to work.
-
-#### Pre-Auth
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
-
-Parm name: PreAuth
-
-Description: This is to enable / disable 802.1x Pre-Authentication.
-
-#### Power Save Mode 
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
-
-Parm name: PowerSave
-
-Description: This option is to configure different Power Save Modes of Radio.
-
-<div style="max-height:300px;overflow:auto;">
- <table>
-	<tr>
-		<th>Parm Option Name</th>
-		<th>Parm Value</th>
-		<th>Description</th>
-	</tr>
-  <tr>
-    <td style="width:33%">Do not change</td>
-	<td style="width:33%">"0"</td>
-    <td style="width:33%">Will not change what the device is currently configured as</td>
-  </tr>
-  <tr>
-    <td style="width:33%">Always Active</td>
-    <td style="width:33%">"1" </td>
-	<td style="width:33%">This will keep the radio in active</td>
-  </tr>
-  <tr>
-    <td style="width:33%">WMM-PS</td>
-    <td style="width:33%">"4"</td>
-	<td style="width:33%"></td>
-  </tr>
-  <tr>
-    <td style="width:33%">Null Data Power Save</td>
-    <td style="width:33%">"5"</td>
-	<td style="width:33%"></td>
-  </tr>
-  <tr>
-    <td style="width:33%">PS-POLL</td>
-    <td style="width:33%">"6"</td>
-	<td style="width:33%"></td>
-  </tr>
-</table>
-</div>
-
-#### Advanced Logging
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
- 
-Parm name: AdvancedLogging
-
-Description: Start or Stop advanced Wi-Fi logging.
-
-#### FIPS 
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
-
-Parm name: FIPS
-
-Description: We can use this option to enable or disable FIPS data in motion supported in WLAN. WLAN FIPS 140-2, level 1 compliance.
-
-#### Enable Restricted Settings UI
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
- 
-Parm name: EnableRestrictedSettingsUI
-
-Description: When enabled the Wi-Fi settings will be in Read-Only mode.
-
-<div style="max-height:300px;overflow:auto;">
-<table>
-	<tr>
-		<th>Parm Option Name</th>
-		<th>Parm Value</th>
-		<th>Description</th>
-	</tr>
-  <tr>
-    <td style="width:33%">Do not change</td>
-    <td style="width:33%">"0"</td>
-	<td style="width:33%">Will not change what the device is currently configured as</td>
-  </tr>
-  <tr>
-    <td style="width:33%">Disable Restricted WLAN Settings UI</td>
-    <td style="width:33%">"1"</td>
-	<td style="width:33%"></td>
-  </tr>
-  <tr>
-    <td style="width:33%">Enable Restricted WLAN Settings UI</td>
-    <td style="width:33%">"2"</td>
-	<td style="width:33%"></td>
-  </tr>
-</table>
-</div>
-
-#### Radio Resource Measurement(802.11K)
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
-
-Parm name: 802.11K
-
-Description: Specify whether to enable Radio Resource Measurement
-
-#### Management Frame Protection Mode(802.11w)
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
-
-Parm name: 802.11w
-
-Description: Specify the Management Frame Protection Mode
-
-<div style="max-height:300px;overflow:auto;">
- <table>
-	<tr>
-		<th>Parm Option Name</th>
-		<th>Parm Value</th>
-		<th>Description</th>
-	</tr>
-  <tr>
-    <td style="width:33%">No MFP</td>
-    <td style="width:33%">"0"</td>
-	<td style="width:33%"></td>
-  </tr>
-  <tr>
-    <td style="width:33%">Capable</td>
-    <td style="width:33%">"1"</td>
-	<td style="width:33%"></td>
-  </tr>
-  <tr>
-    <td style="width:33%">Mandatory</td>
-    <td style="width:33%">"2" </td>
-	<td style="width:33%"></td>
-  </tr>
-  <tr>
-    <td style="width:33%">Do not change</td>
-    <td style="width:33%">"3"</td>
-	<td style="width:33%">Will not change what the device is currently configured as</td>
-  </tr>
-</table>
-</div>
-
-#### Select your band preference
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
-
-Parm name: BandPreference
-
-Description: Specify the band preference
-
-<div style="max-height:300px;overflow:auto;">
- <table>
-	<tr>
-		<th>Parm Option Name</th>
-		<th>Parm Value</th>
-		<th>Description</th>
-	</tr>
-  <tr>
-    <td style="width:33%">No preference</td>
-    <td style="width:33%">"0"</td>
-	<td style="width:33%"></td>
-  </tr>
-  <tr>
-    <td style="width:33%">Prefer 2.4GHz</td>
-    <td style="width:33%">"1" </td>
-	<td style="width:33%"></td>
-  </tr>
-  <tr>
-    <td style="width:33%">Prefer 5.0GHz </td>
-    <td style="width:33%">"2"</td>
-	<td style="width:33%"></td>
-  </tr>
-  <tr>
-    <td style="width:33%">Do not change</td>
-    <td style="width:33%">"3"</td>
-	<td style="width:33%">Will not change what the device is currently configured as</td>
-  </tr>
-</table>	
-</div>
-	
-#### Enable FTOverTheDS
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
-
-Parm name: FTOverTheDS
-
-Description: Specify whether to enable FTOverTheDS
-
-#### Enable AggregatedFT
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
-
-Parm name: AggregatedFT
-
-Description: Specify whether to enable AggregatedFT
-
-#### Enable ScanAssist
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
-
-Parm name: ScanAssist
-
-Description Specify whether to enable ScanAssist
-
-#### Enable Coverage Hole Detection
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
-
-Parm name: CHD
-
-Description: Specify whether to enable Coverage Hole Detection
-
-#### Enable Sub-Net Roam
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
-
-Parm name: SubNetRoam
-
-Description: Specify whether to enable Sub-Net Roam
-
-#### WANCountry
-Settable if: The "Specify Advanced Options" box is checked
-
-Pivotal parm: No
-
-Parm name: WANCountry
-
-Description: Specify whether to enable WanCountry
+Description: Specify whether Advanced Options will be used. In most cases, these options should not be used except under the direction of Zebra support staff. More information about the Advanced Options that can be set, please see [this page.](../guide/csp/wifiAdvancedOptions)
 
 ### Network Action
 Pivotal parm: Yes
 
-Description: Used to manage the network profiles on the device.
+Description: This is used to manage the Wi-Fi network profiles on the device. A given device can have zero or more Wi-Fi network profiles defined, which are used to specify the information that is needed for the device to connect to a single Wi-Fi network. These profiles can each be enabled or disabled. An enabled Wi-Fi network profile can be used to connect to a network and a disabled profile cannot be used to connect to a network. At any given time, the device can be connected to at most one network using a corresponding Wi-Fi network profile. The potential network connections are controlled by which profiles are defined and enabled on the device. It is also possible to force a connection to the network associated with a specific Wi-Fi network profile.
 
-<div style="max-height:300px;overflow:auto;">
+<div class="parm-table">
  <table>
 	<tr>
 		<th>Parm Option Name</th>
@@ -1109,55 +813,52 @@ Description: Used to manage the network profiles on the device.
 		<th>Description</th>
 	</tr>
   <tr>
-    <td style="width:33%">Do Nothing</td>
-    <td style="width:33%">""</td>
-	<td style="width:33%">Will not change what the device is currently configured as</td>
+    <td>Do Nothing</td>
+    <td>""</td>
+	<td>Will not change what the device is currently configured as</td>
   </tr>
   <tr>
-    <td style="width:33%">Add a New Network</td>
-    <td style="width:33%">"Add"</td>
-	<td style="width:33%">Will add a new profile with the provided profile settings. For the options that will be presented when choosing to add a new network, please see the "Add a New Network Options" section below</td>
+    <td>Add a New Network</td>
+    <td>"Add"</td>
+	<td>Will add a new profile with the provided profile settings. For the options that will be presented when choosing to add a new network, please see the following "SSID" parm and the "Add a New Network Options" section below</td>
   </tr>
   <tr>
-    <td style="width:33%">Remove an Existing Network</td>
-    <td style="width:33%">"Remove"</td>
-	<td style="width:33%">Will remove the a network profile based on the SSID</td>
+    <td>Remove an Existing Network</td>
+    <td>"Remove"</td>
+	<td>Will remove the a network profile based on the SSID</td>
   </tr>
   <tr>
-    <td style="width:33%">Connect to an Existing Network</td>
-    <td style="width:33%">"Connect"</td>
-	<td style="width:33%">Will initiate a connection to the network based on the SSID</td>
+    <td>Connect to an Existing Network</td>
+    <td>"Connect"</td>
+	<td>Will initiate a connection to the network based on the SSID</td>
   </tr>
     <tr>
-    <td style="width:33%">Disconnect from an Existing Network </td>
-    <td style="width:33%">"Disconnect"</td>
-	<td style="width:33%">Will disconnect from a network based on the SSID</td>
+    <td>Disconnect from an Existing Network </td>
+    <td>"Disconnect"</td>
+	<td>Will disconnect from a network based on the SSID</td>
   </tr>
   <tr>
-    <td style="width:33%">Enable an Existing Network</td>
-    <td style="width:33%">"Enable"</td>
-	<td style="width:33%">Will enable a network profile based on the SSID</td>
+    <td>Enable an Existing Network</td>
+    <td>"Enable"</td>
+	<td>Will enable a network profile based on the SSID</td>
   </tr>
   <tr>
-    <td style="width:33%">Disable an Existing Network</td>
-    <td style="width:33%">"Disable"</td>
-	<td style="width:33%">Will disable a network profile based on the SSID</td>
+    <td>Disable an Existing Network</td>
+    <td>"Disable"</td>
+	<td>Will disable a network profile based on the SSID</td>
   </tr>
   <tr>
-    <td style="width:33%">Disable All Existing Networks</td>
-    <td style="width:33%">"DisableAll"</td>
-	<td style="width:33%">Will disable all network profiles</td>
+    <td>Disable All Existing Networks</td>
+    <td>"DisableAll"</td>
+	<td>Will disable all network profiles</td>
   </tr>
     <tr>
-    <td style="width:33%">Remove All Existing Networks</td>
-    <td style="width:33%">"RemoveAll"</td>
-	<td style="width:33%">Will remove all network profiles</td>
+    <td>Remove All Existing Networks</td>
+    <td>"RemoveAll"</td>
+	<td>Will remove all network profiles</td>
   </tr>
 </table>
 </div>
-
-### Add a New Network Options
-Parameters used for adding a network. SSID is used to identify the network profile to be acted on when choosing an '... an Existing Network' network action above.
 
 #### SSID
 Settable if: The Network Action is any option other than "Do Nothing", "Disable All Existing Networks", or "Remove All Existing Networks"
@@ -1166,20 +867,23 @@ Pivotal parm: No
 
 Parm name: SSID
 
-Description: the SSID name of the network
+Description: This is the SSID name of the network, which is the primary mechanism used to identify a Wi-Fi network and is used to identify the Wi-Fi network profile to be acted on. Therefore, any Network Action that is used to affect a single profile need to specify the SSID to select the desired profile.
 
 Parm value input rules: 
 
 * String with a minimum size of 1 character and a maximum size of 32 characters
+
+### Add a New Network Options
+The following parms are the parameters that are used for adding a network, in addition to the SSID parm above. 
 
 #### Security Mode 
 Settable if: The Network Action is "Add a New Network"
 
 Pivotal parm: Yes
 
-Description: Specify the security mode used by the network
+Description: This specifies the Security Mode used by the network, which determines the degree or class of security to be used on the device. Based on the Security Mode, more or fewer security options will be offered.
 
-<div style="max-height:300px;overflow:auto;">
+<div class="parm-table">
  <table>
 	<tr>
 		<th>Parm Option Name</th>
@@ -1187,19 +891,19 @@ Description: Specify the security mode used by the network
 		<th>Description</th>
 	</tr>
   <tr>
-    <td style="width:33%">Open</td>
-    <td style="width:33%">"0"</td>
-	<td style="width:33%">Open network</td>
+    <td>Open</td>
+    <td>"0"</td>
+	<td>An open network indicates that the network uses no security. These kinds of networks are generally not advised to be used for transmitting sensitive data unless other protection mechanisms are used, such as VPNs, data encryption, etc. No additional security information will need to be supplied to configure these networks.</td>
   </tr>
   <tr>
-    <td style="width:33%">Personal</td>
-    <td style="width:33%">"1"</td>
-	<td style="width:33%">PSK or WEP</td>
+    <td>Personal</td>
+    <td>"1"</td>
+	<td>This indicates that the network uses basic security. A Pre-Shared Key (PSK) or Wired Equivalency Privacy (WEP) key, which is known to both the device and the Wi-Fi infrastructure, is used to encrypt data. These networks are more secure than open networks, but may be compromised if the keys are not handled securely and/or are not changed periodically. Security information pertaining to the required key will need to be supplied to configure these networks.</td>
   </tr>
   <tr>
-    <td style="width:33%">Enterprise</td>
-    <td style="width:33%">"2"</td>
-	<td style="width:33%">802.1x EAP profiles</td>
+    <td>Enterprise</td>
+    <td>"2"</td>
+	<td>This indicates that the network uses 802.1x Extensible Authentication Protocol (EAP) security. These networks use authentication to establish the entitlement of a device to join the network and then distribute necessary keys once this entitlement has been verified. Security information pertaining to the EAP type and authentication credentials to be used will need to be supplied to configure these networks.</td>
   </tr>
 </table>
 </div>
@@ -1209,11 +913,11 @@ Settable if: The Network Action is "Add a New Network" *AND* the Security Mode i
 
 Pivotal parm: Yes
 
-Description: WPA mode used by the network.
+Description: When the selected Security Mode is "Personal" or "Enterprise", the WPA Mode must be specified to determine what sort of key will then be used.
 
 >Note: WEP is not supported with a Enterprise Security Mode. It is only supported using Personal Security Mode.
 
-<div style="max-height:300px;overflow:auto;">
+<div class="parm-table">
  <table>
 	<tr>
 		<th>Parm Option Name</th>
@@ -1221,24 +925,24 @@ Description: WPA mode used by the network.
 		<th>Description</th>
 	</tr>
   <tr>
-    <td style="width:33%">WPA</td>
-    <td style="width:33%">"1"</td>
-	<td style="width:33%"></td>
+    <td>WPA</td>
+    <td>"1"</td>
+	<td>This indicates that the network requires encryption using the Wi-Fi Protected Access (WPA) standard. WPA only performs encryption using the Temporal Key Integrity Protocol. A TKIP-compatible key will therefore need to be specified.</td>
   </tr>
   <tr>
-    <td style="width:33%">WPA2</td>
-    <td style="width:33%">"2"</td>
-	<td style="width:33%"></td>
+    <td>WPA2</td>
+    <td>"2"</td>
+	<td>This indicates that the network requires encryption using the Wi-Fi Protected Access version 2 (WPA2) standard. WPA2 supports encryption using either the Temporal Key Integrity Protocol (TKIP) for backward compatibility with WPA, or the more secure Advanced Encryption Standard (AES) algorithm.  A decision about whether to use TKIP or AES (or auto-select) will need to be made and then a TKIP or AES-compatible key will need to be specified.</td>
   </tr>
   <tr>
-    <td style="width:33%">WPA/WPA2</td>
-    <td style="width:33%">"3"</td>
-	<td style="width:33%"></td>
+    <td>WPA/WPA2</td>
+    <td>"3"</td>
+	<td>This indicates that the network supports both the Wi-Fi Protected Access (WPA) standard and the Wi-Fi Protected Access version 2 (WPA2) standard. This is essentially the same effect as selecting WPA2 since WPA2 supports backward compatibility with WPA.</td>
   </tr>
   <tr>
-    <td style="width:33%">WEP</td>
-    <td style="width:33%">"4"</td>
-	<td style="width:33%"></td>
+    <td>WEP</td>
+    <td>"4"</td>
+	<td>This indicates that the network requires encryption using the older, and less secure, Wired Equivalency Privacy (WEP) standard. A decision about the WEP key size to use will need to be made and then a WEP key of the selected size will need to be specified.</td>
   </tr>
 </table>
 </div>
@@ -1250,9 +954,9 @@ Pivotal parm: No
 
 Parm name: Authentication
 
-Description: Authentication mode used by the network. used with Enterprise Security Mode. 
+Description: This is the Authentication Mode used by the network. When a Security Mode of "Enterprise" is selected, an Authentication Mode will need to be specified to determine how authentication will be performed as part of the 802.1x EAP type used by the network.
 
-<div style="max-height:300px;overflow:auto;">
+<div class="parm-table">
  <table>
 	<tr>
 		<th>Parm Option Name</th>
@@ -1260,136 +964,64 @@ Description: Authentication mode used by the network. used with Enterprise Secur
 		<th>Description</th>
 	</tr>
   <tr>
-    <td style="width:33%">EAP-TLS</td>
-    <td style="width:33%">"1"</td>
-	<td style="width:33%"></td>
+    <td>EAP-TLS</td>
+    <td>"1"</td>
+	<td>This indicates that the network requires authentication using the 802.1x Extensible Authentication Protocol - Transport Layer Security (EAP-TLS) standard (RFC 5216). EAP-TLS requires a device identity to be specified and requires that a client certificate be specified to prove the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
+</td>
   </tr>
   <tr>
-    <td style="width:33%">EAP-FAST-GTC</td>
-    <td style="width:33%">"13"</td>
-	<td style="width:33%"></td>
+    <td>EAP-FAST-GTC</td>
+    <td>"13"</td>
+	<td>This indicates that the network requires authentication using a token generated using a Generic Token Card (GTC) within an anonymous TLS tunnel established using the 802.1x Extensible Authentication Protocol - Flexible Authentication via Secure Tunneling (EAP-FAST) standard (RFC 5422). EAP-FAST-GTC requires a device identity to be specified and requires that a token value (typically obtained from a physical token device) be specified to prove the authenticity of that device identity.  An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
+</td>
   </tr>
   <tr>
-    <td style="width:33%">EAP-FAST-MSCHAPV2</td>
-    <td style="width:33%">"11"</td>
-	<td style="width:33%"></td>
+    <td>EAP-FAST-MSCHAPV2</td>
+    <td>"11"</td>
+	<td>This indicates that the network requires authentication using the Microsoft Challenge Authentication Protocol Version 2 (MSCHAPV2) within an anonymous TLS tunnel established using the 802.1x Extensible Authentication Protocol - Flexible Authentication via Secure Tunneling (EAP-FAST) standard (RFC 5422). EAP-FAST-MSCHAPV2 requires a device identity to be specified and requires that a password be specified to prove the authenticity of that device identity.  An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
+</td>
   </tr>
   <tr>
-    <td style="width:33%">EAP-TTLS-PAP</td>
-    <td style="width:33%">"8"</td>
-	<td style="width:33%"></td>
+    <td>EAP-TTLS-PAP</td>
+    <td>"8"</td>
+	<td>This indicates that the network requires authentication using the Password Authentication Protocol (PAP) within a secure TLS tunnel established using the 802.1x Extensible Authentication Protocol - Tunneled Transport Layer Security (EAP-TTLS) standard (RFC 5281). EAP-TTLS-PAP requires a device identity to be specified and requires that a password be specified to prove the authenticity of that device identity.  An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
+</td>
   </tr>
    <tr>
-    <td style="width:33%">EAP-TTLS-MSCHAP</td>
-    <td style="width:33%">"6"</td>
-	<td style="width:33%"></td>
+    <td>EAP-TTLS-MSCHAP</td>
+    <td>"6"</td>
+	<td>This indicates that the network requires authentication using the Microsoft Challenge Authentication Protocol (MSCHAP) within a secure TLS tunnel established using the 802.1x Extensible Authentication Protocol - Tunneled Transport Layer Security (EAP-TTLS) standard (RFC 5281). EAP-TTLS-MSCHAP requires a device identity to be specified and requires that a password be specified to prove the authenticity of that device identity.  An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
+</td>
   </tr>
   <tr>
-    <td style="width:33%">EAP-TTLS-MSCHAPV2</td>
-    <td style="width:33%">"7"</td>
-	<td style="width:33%"></td>
+    <td>EAP-TTLS-MSCHAPV2</td>
+    <td>"7"</td>
+	<td>This indicates that the network requires authentication using the Microsoft Challenge Authentication Protocol Version 2 (MSCHAPV2) within a secure TLS tunnel established using the 802.1x Extensible Authentication Protocol - Tunneled Transport Layer Security (EAP-TTLS) standard (RFC 5281). EAP-TTLS-MSCHAPV2 requires a device identity to be specified and requires that a password be specified to prove the authenticity of that device identity.  An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
+</td>
   </tr>
   <tr>
-    <td style="width:33%">LEAP</td>
-    <td style="width:33%">"4"</td>
-	<td style="width:33%"></td>
+    <td>LEAP</td>
+    <td>"4"</td>
+	<td>This indicates that the network requires authentication using the Lightweight Extensible Authentication Protocol (LEAP) defined by Cisco.  LEAP uses a modified version of MSCHAP without a secure tunnel and hence can be easily compromised. LEAP requires a device identity to be specified and requires that a password be specified to prove the authenticity of that device identity. Unlike standard EAP modes, LEAP does not support an optional certificate to help verify the identity of the authentication server.
+</td>
   </tr>
   <tr>
-    <td style="width:33%">PEAP-MSCHAPV2</td>
-    <td style="width:33%">"2"</td>
-	<td style="width:33%"></td>
+    <td>PEAP-MSCHAPV2</td>
+    <td>"2"</td>
+	<td>This indicates that the network requires authentication using the Microsoft Challenge Authentication Protocol Version 2 (MSCHAPV2) within a secure TLS tunnel established using the Protected Extensible Authentication Protocol, (PEAP) defined by Cisco Systems, Microsoft, and RSA Security. PEAP-MSCHAPV2 requires a device identity to be specified and requires that a password be specified to prove the authenticity of that device identity.  An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
+</td>
   </tr> 
   <tr>
-    <td style="width:33%">PEAP-GTC</td>
-    <td style="width:33%">"10"</td>
-	<td style="width:33%"></td>
+    <td>PEAP-GTC</td>
+    <td>"10"</td>
+	<td>This indicates that the network requires authentication using a token generated using a Generic Token Card (GTC) within a secure TLS tunnel established using the Protected Extensible Authentication Protocol, (PEAP) defined by Cisco Systems, Microsoft, and RSA Security. PEAP-GTC requires a device identity to be specified and requires that a token value (typically obtained from a physical token device) be specified to prove the authenticity of that device identity.  An optional client certificate may also be specified to verify the authenticity of the device identity. In all EAP modes, an optional certificate may be specified to help verify the identity of the authentication server.
+</td>
   </tr>
 </table>
 </div>
 
 #### Authentication Details
 Specific authentication settings when Enterprise Mode and specific Authentication modes are selected.
-
-##### **Encryption Type**
-Pivotal parm: No
-
-Description: Type of encryption used by the network. The values in this drop-down will change based on the WPA Mode selected. 
-
-If WPA is selected: 
-
-* Settable if: The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" or "Enterprise" *AND* the WPA Mode is WPA
-* Parm name: EncryptionWPA
-*  <div style="max-height:300px;overflow:auto;"><table>
-	<tr>
-		<th>Parm Option Name</th>
-		<th>Parm Value</th>
-		<th>Description</th>
-	</tr>
-  <tr>
-    <td style="width:33%">Default</td>
-    <td style="width:33%">"0" </td>
-	<td style="width:33%">This will not change the encryption type that is currently used on the device</td>
-  </tr>
-  <tr>
-    <td style="width:33%">TKIP</td>
-    <td style="width:33%">"1" </td>
-	<td style="width:33%"></td>
-  </tr>
-</table></div>
-
-If WPA2 is selected:
-
-* Settable if: The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" or "Enterprise" *AND* the WPA Mode is WPA2 or WPA/WPA2
-* Parm name: EncryptionWPA2
-*  <div style="max-height:300px;overflow:auto;"><table>
-	<tr>
-		<th>Parm Option Name</th>
-		<th>Parm Value</th>
-		<th>Description</th>
-	</tr>
-  <tr>
-    <td style="width:33%">Default</td>
-    <td style="width:33%">"0"</td>
-	<td style="width:33%">This will not change the encryption type that is currently used on the device</td>
-  </tr>
-  <tr>
-    <td style="width:33%">AES-CCMP</td>
-    <td style="width:33%">"1"</td>
-	<td style="width:33%"></td>
-  </tr>
-  <tr>
-    <td style="width:33%">TKIP</td>
-    <td style="width:33%">"2"</td>
-	<td style="width:33%"></td>
-  </tr>
-  <tr>
-    <td style="width:33%">AES-CCMP/TKIP</td>
-    <td style="width:33%">"3"</td>
-	<td style="width:33%"></td>
-  </tr>
-</table></div>
-
-If WEP is selected:
-
-* Settable if: The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" or "Enterprise" *AND* the WPA Mode is WEP
-* Parm name: EncryptionWEP
-* <div style="max-height:300px;overflow:auto;"><table>
-	<tr>
-		<th>Parm Option Name</th>
-		<th>Parm Value</th>
-		<th>Description</th>
-	</tr>
-  <tr>
-    <td style="width:33%">WEP-40</td>
-    <td style="width:33%">"1"</td>
-	<td style="width:33%"></td>
-  </tr>
-  <tr>
-    <td style="width:33%">WEP-104</td>
-    <td style="width:33%">"2"</td>
-	<td style="width:33%"></td>
-  </tr>
-</table></div> 
 
 ##### **Identity**
 Settable if: The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise"
@@ -1499,6 +1131,87 @@ A device can be used to capture the alias being used for the certificate being i
 4. Scroll to EAP method, tap and select TLS
 5. Scroll to client certificate, tap and note a drop down box with "(unspecified)" and the alias of the installed certificate. The alias listed can become the value to use as the certificate when using WiFiConfig to configure a profile that uses EAP-TLS.
 
+#### Encryption Type
+Pivotal parm: No
+
+Description: Type of encryption used by the network. The values that can be selected for Encryption Type will vary based on the selections made for Security Mode and WPA Mode. But a selection must always be made for Encryption Type whenever Security Mode is not "Open" (indicating no encryption).
+
+If WPA is selected: 
+
+* Settable if: The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" or "Enterprise" *AND* the WPA Mode is WPA
+* Parm name: EncryptionWPA
+*  <div class="parm-table"><table>
+	<tr>
+		<th>Parm Option Name</th>
+		<th>Parm Value</th>
+		<th>Description</th>
+	</tr>
+  <tr>
+    <td>Default</td>
+    <td>"0" </td>
+	<td>This will not change the encryption type that is currently used on the device</td>
+  </tr>
+  <tr>
+    <td>TKIP</td>
+    <td>"1" </td>
+	<td>This indicates that the network requires encryption to be performed using the Temporal Key Integrity Protocol (TKIP) standard with a per-packet key length of 128 bits.</td>
+  </tr>
+</table></div>
+
+If WPA2 is selected:
+
+* Settable if: The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" or "Enterprise" *AND* the WPA Mode is WPA2 or WPA/WPA2
+* Parm name: EncryptionWPA2
+*  <div class="parm-table"><table>
+	<tr>
+		<th>Parm Option Name</th>
+		<th>Parm Value</th>
+		<th>Description</th>
+	</tr>
+  <tr>
+    <td>Default</td>
+    <td>"0"</td>
+	<td>This will not change the encryption type that is currently used on the device</td>
+  </tr>
+  <tr>
+    <td>AES-CCMP</td>
+    <td>"1"</td>
+	<td>This indicates that the network requires encryption to be performed using the Advanced Encryption Standard - Counter mode Cipher block chaining Message authentication code Protocol (AES-CCMP) standard, wherein the AES block cipher is used with a per-packet key length of 128 bits.</td>
+  </tr>
+  <tr>
+    <td>TKIP</td>
+    <td>"2"</td>
+	<td>This indicates that the network requires encryption to be performed using the Temporal Key Integrity Protocol (TKIP) standard with a per-packet key length of 128 bits.</td>
+  </tr>
+  <tr>
+    <td>AES-CCMP/TKIP</td>
+    <td>"3"</td>
+	<td>This indicates that the network allows the use of either the AES-CCMP standard or the TKIP encryption standard and the proper encryption type to use can be automatically determined by negotiation with the Wi-Fi infrastructure.</td>
+  </tr>
+</table></div>
+
+If WEP is selected:
+
+* Settable if: The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" or "Enterprise" *AND* the WPA Mode is WEP
+* Parm name: EncryptionWEP
+* <div class="parm-table"><table>
+	<tr>
+		<th>Parm Option Name</th>
+		<th>Parm Value</th>
+		<th>Description</th>
+	</tr>
+  <tr>
+    <td>WEP-40</td>
+    <td>"1"</td>
+	<td>This indicates that the network requires encryption to be performed using the Wireless Equivalency Privacy (WEP) standard with a key size of 40 bits.</td>
+  </tr>
+  <tr>
+    <td>WEP-104</td>
+    <td>"2"</td>
+	<td>This indicates that the network requires encryption to be performed using the Wireless Equivalency Privacy (WEP) standard with a key size of 104 bits.</td>
+  </tr>
+</table></div> 
+
 #### Encryption Key Details	
 
 ##### **Key Type**
@@ -1508,7 +1221,7 @@ Pivotal parm: Yes
 
 Description: Specify the type of encryption key to be used by the network
 
-<div style="max-height:300px;overflow:auto;">
+<div class="parm-table">
  <table>
 	<tr>
 		<th>Parm Option Name</th>
@@ -1516,14 +1229,14 @@ Description: Specify the type of encryption key to be used by the network
 		<th>Description</th>
 	</tr>
   <tr>
-    <td style="width:33%">Hex Key</td>
-    <td style="width:33%">"HexKey" </td>
-	<td style="width:33%"></td>
+    <td>Hex Key</td>
+    <td>"HexKey" </td>
+	<td></td>
   </tr>
   <tr>
-    <td style="width:33%">Passphrase</td>
-    <td style="width:33%">"Passphrase"</td>
-	<td style="width:33%"></td>
+    <td>Passphrase</td>
+    <td>"Passphrase"</td>
+	<td></td>
   </tr>
 </table>
 </div>
@@ -1628,7 +1341,7 @@ Parm name: WepKeyIndex
 
 Description: Provide the index (1-4) of the WEP key used by the network. Only `wep[0]` is a valid option
 
-<div style="max-height:300px;overflow:auto;">
+<div class="parm-table">
  <table>
 	<tr>
 		<th>Parm Option Name</th>
@@ -1636,24 +1349,24 @@ Description: Provide the index (1-4) of the WEP key used by the network. Only `w
 		<th>Description</th>
 	</tr>
   <tr>
-    <td style="width:33%">wep[0]</td>
-    <td style="width:33%">"1"</td>
-	<td style="width:33%"></td>
+    <td>wep[0]</td>
+    <td>"1"</td>
+	<td></td>
   </tr>
   <tr>
-    <td style="width:33%">wep[1]</td>
-    <td style="width:33%">"2"</td>
-	<td style="width:33%"></td>
+    <td>wep[1]</td>
+    <td>"2"</td>
+	<td></td>
   </tr>
   <tr>
-    <td style="width:33%">wep[2]</td>
-    <td style="width:33%">"3"</td>
-	<td style="width:33%"></td>
+    <td>wep[2]</td>
+    <td>"3"</td>
+	<td></td>
   </tr>
   <tr>
-    <td style="width:33%">wep[3]</td>
-    <td style="width:33%">"4"</td>
-	<td style="width:33%"></td>
+    <td>wep[3]</td>
+    <td>"4"</td>
+	<td></td>
   </tr>
 </table>
 </div>

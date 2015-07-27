@@ -14,7 +14,7 @@ This document will describe how to handle response from MX:
 
 ## Parm Value Extraction
 
-A simple and quite useful method for simplifying the extraction of relevant information from an XML Result document is Parm Value Extraction. Parm Value Extraction is simply the process of searching an XML document for a parm with a given name and extracting the value associated with it. Parm Value Extraction is most commonly applied to Non-Pivotal Parms since they are the mostly likely to contain useful information. This is because Pivotal Parms are typically "canned" as part of an XML Template used to create an Request XML document and are simply replicated into the Result XML document. It is an important aspect of the XML used by MXMS that a given parm can only appear once within a given TLC since this can make it much easier to extract of the value of a given named parm from within a Result XML document.
+A simple and quite useful method for simplifying the extraction of relevant information from an XML Result document is Parm Value Extraction. It is simply the process of searching an XML document for a parm with a given name and extracting the value associated with it. Parm Value Extraction is most commonly applied to Non-Pivotal Parms since they are the mostly likely to contain useful information. This is because Pivotal Parms are typically "canned" as part of an XML Template used to create an Request XML document and are simply replicated into the Result XML document. It is an important aspect of the XML used by MXMS that a given parm can only appear once within a given TLC since this can make it much easier to extract of the value of a given named parm from within a Result XML document.
 
 ## Success Response
 
