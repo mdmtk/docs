@@ -18,6 +18,39 @@ DSD Files are XML documents that define the schema a CSP uses to configure setti
 
 ![img](images/dsdfiles.jpg)
 
+
+### DSD-Driven Programmatic XML Generation
+
+A powerful and extensible, but fairly complex, method for creating conformant XML is to drive generation of XML directly from a DSD. This method is most valuable for an MDM Server that is likely to possess the requisite processing resources. This method could be used to support cases where the MDM Server wishes to present its own Data-Driven UI to allow an MDM Administrator to enable the creation of XML that is conformant to a selected DSD. It also could be used to support cases where the MDM Server needs to programmatically generate XML and wants to drive this from the DSD to avoid the need to change the code if a DSD is added or modified. This method requires that the DSD be parsed and interpreted by the MDM Server code. Since the processing of DSDs can be quite complex, use of this technique is not currently supported by the EMDK for MDMs. Future versions of the EMDK for MDMs may support this method by supplying code libraries that can be called directly from MDM Servers.
+
+### XML Templates
+
+A simple and quite useful method for creating conformant XML is to use XML Templates and Parm Value Substitution. An XML Template is XML that is "hand generated" using a tool that can present a Data-Driven UI based on a DSD. An XML Template may address the needs of a particular use case by making specific decisions about the values of specific Pivotal Parms. A single CSP may require many XML Templates if the CSP can be used to satisfy many different use cases. An MDM that wants to use a CSP needs to understand the use cases that CSP can support and which of them are of value to be leveraged by that MDM. For each use case that a CSP supports and that an MDM wishes to leverage, a suitable XML Template will likely need to be generated.
+
+#### XML Templates and Parm Substitution
+
+When an MDM uses XML Templates, a given use case is likely to involve one or more Non-Pivotal Parms. 
+
+A Non-Pivotal Parm is simply a parm where the value selected or entered has no impact on subsequent SGCs or parms. When an XML Template is "hand generated" for a given Use Case using a tool, it will often be necessary to enter "valid" values for one or more Non-Pivotal Parms. Since the XML Template is intended to be generic for a given Use Case, any valid "placeholder" values can be entered for Non-Pivotal Parms. When an XML Template is used to implement its associated Use Case, Parm Value Substitution can be used to replace the "placeholder" values of Non-Pivotal Parms with the actual values required to customize that XML Template to produce the proper result. It is an important aspect of the XML used by MXMS that a given parm can only appear ONCE within a given TLC since this can make it much easier to locate and perform replacement of the values of "placeholder" values of Non-Pivotal Parms within an XML Template.
+
+#### Management Functions and XML Templates
+
+XML Templates and Parm Value Substitution can be quite useful when XML will be created by the MDM Server or the MSP Agent. This can be accomplished via a process such as:
+
+* Determine the list of management functions that need to be supported by the MDM
+* Determine which use case of which CSP can be used to implement each identified management function
+* Generate an XML Template for each required use case 
+* Embed the XML Template for each required use case into the code of the MDM Server or MDM Agent, as appropriate, and associate it logically with the associated management function
+
+To perform a given management function:
+
+1. Obtain the parameter data required to perform that management function.
+2. Select the XML Template associated with that management function.
+3. Use Parm Value Substitution to customize the XML Template with the parameter data to generate XML to perform the desired management function.
+4. If the MDM Server is generating the XML, deliver the generated XML to the MSP Agent for submission to the MXMS. If the MSP Agent is generating the XML, submit the generated XML to the MXMS.
+
+
+
 ## Using DSDtoXML Tool
 
 The DSDtoXML tool, `DSDtoXML.jar`, is used for generating XML configuration files and templates. It is located in the `DSD To XML` folder of the MDM Toolkit

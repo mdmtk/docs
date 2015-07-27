@@ -61,6 +61,10 @@ var menuStrcture = [
 						icon: '',
 						items: [
 							{
+								name: 'MXMS XML Overview',
+								link: '#guide-xml-xml_overview',
+							},
+							{
 								name: 'Generation',
 								link: '#guide-xml-generate',
 							},

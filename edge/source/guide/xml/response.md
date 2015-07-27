@@ -1,9 +1,20 @@
 # XML Responses
 
+When submitting a Request XML document, knowing what happened will require at least some minimal parsing of the Result XML document. The required parsing can be simplified by taking advantage of the following aspects of MXMS XML: 
+
+* All three types of behaviors (Set Configuration, Perform Action, and Query Configuration) have the same format for their Result XML documents
+* The presence of TLC errors and the (absence of) XML equivalence can be used to quickly separate successes from failures
+* If an operation was performed, but not exactly as requested, Parm Value Extraction can be used to compare requested and resulting values to determine any deviation
+* When an XML query is issued, Parm Value Extraction can be used to extract key values that were the primary purpose of the XML query 
+
 This document will describe how to handle response from MX:
 
 * Success Response
 * Error Responses
+
+## Parm Value Extraction
+
+A simple and quite useful method for simplifying the extraction of relevant information from an XML Result document is Parm Value Extraction. Parm Value Extraction is simply the process of searching an XML document for a parm with a given name and extracting the value associated with it. Parm Value Extraction is most commonly applied to Non-Pivotal Parms since they are the mostly likely to contain useful information. This is because Pivotal Parms are typically "canned" as part of an XML Template used to create an Request XML document and are simply replicated into the Result XML document. It is an important aspect of the XML used by MXMS that a given parm can only appear once within a given TLC since this can make it much easier to extract of the value of a given named parm from within a Result XML document.
 
 ## Success Response
 
