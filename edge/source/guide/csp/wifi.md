@@ -4,13 +4,9 @@
 
 ### Overview
 
-The Wi-Fi feature allows you to manage your devices Wi-Fi settings as well as manage the network profiles to be used for connecting and remembering networks.
+The Wi-Fi feature allows you to manage a device's Wi-Fi settings as well as manage the network profiles to be used for connecting and remembering networks.
 
->Notes:
-
->In order for settings to be applied, Wi-Fi must be turned on. If you do not specify WiFi Enable in the profile you will get an error when attempting to apply certain settings if the device's Wi-Fi is not already turned on.
-
->In other CSPs, the terms "enable" and "disable" refer to whether or not the user will be allowed to turn the device on or off at all. However, in this CSP, "enable" and "disable" are equivalent to "turn on" and "turn off".
+> **Note:** In other CSPs, the terms "enable" and "disable" refer to whether or not the user will be allowed to turn the device on or off at all. However, in this CSP, "enable" and "disable" are equivalent to "turn on" and "turn off".
 
 
 ### Main Functionality
@@ -82,7 +78,9 @@ The Wi-Fi feature allows you to manage your devices Wi-Fi settings as well as ma
 ### Target OS
 Pivotal parm: Yes
 
-Description: Specify the target OS of the device
+Description: 
+
+>Specify the target OS of the device.
 
 <div class="parm-table">
  <table>
@@ -102,15 +100,17 @@ Pivotal parm: No
 
 Parm name: WiFiAction
 
-Description: Turn the Wi-Fi radio on or off.
+Description: 
 
-> Notes:
+>Turn the Wi-Fi radio on or off.
 
->In order for settings to be applied, Wi-Fi must be turned on. If you do not specify WiFi Enable in the profile you will get an error when attempting to apply certain settings if the device's Wi-Fi is not already turned on.
-
->In other CSPs, the terms "enable" and "disable" refer to whether or not the user will be allowed to turn the device on or off at all. However, in this CSP, "enable" and "disable" are equivalent to "turn on" and "turn off".
+> **Note:** In order for settings to be applied, Wi-Fi must be turned on. If you do not specify WiFi Enable in the profile, you will get an error when attempting to apply certain settings if the device's Wi-Fi is not already turned on. For example, all of the Network Actions, which are described later in this document, will require that Wi-Fi is turned on. However, other settings, such as Sleep Policy and Network Notification, do not require Wi-Fi to be turned on.
 
 >As a best practice, it is recommended that this is turned on whenever setting another Wi-Fi parm that requires to be on, as it is not harmful to enable the Wi-Fi again if it is already on.
+
+> **Note:** In other CSPs, the terms "enable" and "disable" refer to whether or not the user will be allowed to turn the device on or off at all. However, in this CSP, "enable" and "disable" are equivalent to "turn on" and "turn off".
+
+
 
 <div class="parm-table">
  <table>
@@ -142,9 +142,10 @@ Pivotal parm: No
 
 Parm name: WifiSleepPolicy
 
-Description: Specifies the state of the Wi-Fi radio when the device suspends.
+Description: 
+>Specifies the state of the Wi-Fi radio when the device suspends.
 
-For Android devices, the device is suspended when the display turns off after idling for a certain amount of time. While the device is suspended, the device's software continues running in a lower power mode, meaning that the device itself is not turned off and software can run when the device is in this state. The amount of power consumption while in this state partially depends on what features are left on.
+>For Android devices, the device is suspended when the display turns off after idling for a certain amount of time. While the device is suspended, the device's software continues running in a lower power mode, meaning that the device itself is not turned off and software can run when the device is in this state. The amount of power consumption while in this state partially depends on what features are left on.
 
 <div class="parm-table">
  <table>
@@ -161,7 +162,7 @@ For Android devices, the device is suspended when the display turns off after id
   <tr>
     <td>Never Sleep</td>
     <td>"AlwaysOn"</td>
-	<td>This will leave the Wi-Fi radio on while the device's display is turned off and Wi-Fi can continue to be used by any software that is running. Existing Wi-Fi connections will be maintained as if the device was not suspended. For example, emails will continue to come in. This behavior may be preferred in some situations, however this could significantly increase the drain on the battery and reduce the battery life.</td>
+	<td>This will leave the Wi-Fi radio on while the device's display is turned off and Wi-Fi can continue to be used by any software that is running. Existing Wi-Fi connections will be maintained as if the device was not suspended. For example, emails will continue to come in. This behavior may be preferred in some situations. However, this could significantly increase the drain on the battery and reduce the battery life.</td>
   </tr>
   <tr>
     <td>Never Sleep When Plugged</td>
@@ -181,7 +182,8 @@ Pivotal parm: No
 
 Parm name: NetworkNotification
 
-Description: Specifies whether or not to notify the user when an unknown, open network comes in range. If this setting is turned on, the user will be asked if they want to join the network, which could be useful for personal or dual use devices which might want to use a public Wi-Fi connection at some point. However, turning these notifications on is not recommended for devices that are supposed to be used only on a single corporate Wi-Fi network since it might be harmful to offer a user the opportunity to connect to a rogue, non-secure network.
+Description: 
+>Specifies whether or not to notify the user when an unknown, open network comes in range. If this setting is turned on, the user will be asked if they want to join the network, which could be useful for personal or dual use devices which might want to use a public Wi-Fi connection at some point. However, turning these notifications on is not recommended for devices that are supposed to be used only on a single corporate Wi-Fi network since it might be harmful to offer a user the opportunity to connect to a rogue, non-secure network.
 
  <div class="parm-table">
  <table>
@@ -211,7 +213,8 @@ Description: Specifies whether or not to notify the user when an unknown, open n
 ### Country Selection Auto/Manual
 Pivotal parm: Yes
 
-Description: By leaving this option unchecked, the country may be determined by the router or access point setting. To manually select the country, you should select the checkbox. When doing this a country drop-down will appear.
+Description: 
+>By leaving this option unchecked, the country may be determined by the router or access point setting. To manually select the country, you should select the checkbox. When doing this a country drop-down will appear.
 
 #### Country
 Settable if: The "Configure Country (Auto/Manual)" box is not checked
@@ -220,11 +223,12 @@ Pivotal parm: No
 
 Parm name: Country
 
-Description: Sets the country to use for Wi-Fi regulatory setting. 
+Description: 
+>Sets the country to use for Wi-Fi regulatory setting. 
 
-When you choose 'AUTO' in the drop-down, 802.11d will be enabled. 802.11d is a mode where the device will listen for a country-specific beacon. It also will not transmit unless it can auto-detect the country, which can be beneficial because the device cannot transmit with a frequency that is inconsistent with the Wi-Fi infrastructure and is therefore less likely to violate country-specific regulations.
+>When you choose 'AUTO' in the drop-down, 802.11d will be enabled. 802.11d is a mode where the device will listen for a country-specific beacon. It also will not transmit unless it can auto-detect the country, which can be beneficial because the device cannot transmit with a frequency that is inconsistent with the Wi-Fi infrastructure and is therefore less likely to violate country-specific regulations.
 
-If a Wi-Fi infrastructure does not support, 802.11d, then the country that is used by this infrastructure will need to be selected so that the device can connect to it.
+>If a Wi-Fi infrastructure does not support, 802.11d, then the country that is used by this infrastructure will need to be selected so that the device can connect to it.
 
  <div class="parm-table">
  <table>
@@ -714,7 +718,8 @@ If a Wi-Fi infrastructure does not support, 802.11d, then the country that is us
 ### RF Band
 Pivotal parm: Yes
 
-Description: Specifies the 802.11 band(s) to use. The bands to use will usually be determined automatically through negotiation with the Wi-Fi infrastructure. However, in some cases, the Wi-Fi infrastructure may be shared amongst multiple uses, which may mean that it would be preferable to limit the devices to one band and leave the other bands for other purposes. 
+Description: 
+>Specifies the 802.11 band(s) to use. The bands to use will usually be determined automatically through negotiation with the Wi-Fi infrastructure. However, in some cases, the Wi-Fi infrastructure may be shared amongst multiple uses, which may mean that it would be preferable to limit the devices to one band and leave the other bands for other purposes. 
 
 <div class="parm-table">
  <table>
@@ -753,7 +758,8 @@ Pivotal parm: No
 
 Parm name: 2.4GHzChannels
 
-Description: Enable the specified channels in the 2.4GHz band. In most cases, if the 2.4GHZ band is allowed to be used, then the channels in this band that should be used can be determined automatically through negotiation with the Wi-Fi infrastructure. However, it may be beneficial to control the channels manually because different channels or sets of channels might be used for different uses. It may be preferable to limit the devices to only use certain channels so that other channels are left for other purposes.
+Description: 
+>Enable the specified channels in the 2.4GHz band. In most cases, if the 2.4GHZ band is allowed to be used, then the channels in this band that should be used can be determined automatically through negotiation with the Wi-Fi infrastructure. However, it may be beneficial to control the channels manually because different channels or sets of channels might be used for different uses. It may be preferable to limit the devices to only use certain channels so that other channels are left for other purposes.
 
 Parm value input rules: 
 
@@ -770,7 +776,8 @@ Pivotal parm: No
 
 Parm name: 5.0GHzChannels
 
-Description: Enable the specified channels in the 5.0GHz band. In most cases, if the 5.0GHZ band is allowed to be used, then the channels in this band that should be used can be determined automatically through negotiation with the Wi-Fi infrastructure. However, it may be beneficial to control the channels manually because different channels or sets of channels might be used for different uses. It may be preferable to limit the devices to only use certain channels so that other channels are left for other purposes.
+Description: 
+>Enable the specified channels in the 5.0GHz band. In most cases, if the 5.0GHZ band is allowed to be used, then the channels in this band that should be used can be determined automatically through negotiation with the Wi-Fi infrastructure. However, it may be beneficial to control the channels manually because different channels or sets of channels might be used for different uses. It may be preferable to limit the devices to only use certain channels so that other channels are left for other purposes.
 
 Parm value input rules: 
 
@@ -783,9 +790,10 @@ Parm value input rules:
 ### Specify Diagnostic Options
 Pivotal parm: Yes
 
-Description: Specify whether Diagnostic Options will be used. When enabled, Fusion Advanced Logging can also be enabled. This option can be used to collect additional information for troubleshooting but can impact the performance of a device.
+Description: 
+>Specify whether Diagnostic Options will be used. When turned on, Fusion Advanced Logging can also be turned on. This option can be used to collect additional information for troubleshooting but can impact the performance of a device.
 
->Note: In most cases, this option should not be used except under the direction of Zebra support staff.
+> **Note:** In most cases, this option should not be used except under the direction of Zebra support staff.
 
 #### Fusion Advanced Logging
 Settable if: The "Specify Diagnostic Options" box is checked
@@ -794,16 +802,19 @@ Pivotal parm: No
 
 Parm name: FusionAdvancedLogging
 
-Description: Specify whether Fusion Advanced Logging will be used
+Description: 
+>Specify whether Fusion Advanced Logging will be used
 
 ### Specify Advanced Options
 
-Description: Specify whether Advanced Options will be used. In most cases, these options should not be used except under the direction of Zebra support staff. More information about the Advanced Options that can be set, please see [this page.](../guide/csp/wifiAdvancedOptions)
+Description: 
+>Specify whether Advanced Options will be used. In most cases, these options should not be used except under the direction of Zebra support staff. More information about the Advanced Options that can be set, please see [this page.](../guide/csp/wifiAdvancedOptions)
 
 ### Network Action
 Pivotal parm: Yes
 
-Description: This is used to manage the Wi-Fi network profiles on the device. A given device can have zero or more Wi-Fi network profiles defined, which are used to specify the information that is needed for the device to connect to a single Wi-Fi network. These profiles can each be enabled or disabled. An enabled Wi-Fi network profile can be used to connect to a network and a disabled profile cannot be used to connect to a network. At any given time, the device can be connected to at most one network using a corresponding Wi-Fi network profile. The potential network connections are controlled by which profiles are defined and enabled on the device. It is also possible to force a connection to the network associated with a specific Wi-Fi network profile.
+Description: 
+>This is used to manage the Wi-Fi network profiles on the device. A given device can have zero or more Wi-Fi network profiles defined, which are used to specify the information that is needed for the device to connect to a single Wi-Fi network. These profiles can each be enabled or disabled. An enabled Wi-Fi network profile can be used to connect to a network and a disabled profile cannot be used to connect to a network. At any given time, the device can be connected to at most one network using a corresponding Wi-Fi network profile. The potential network connections are controlled by which profiles are defined and enabled on the device. It is also possible to force a connection to the network associated with a specific Wi-Fi network profile.
 
 <div class="parm-table">
  <table>
@@ -867,7 +878,8 @@ Pivotal parm: No
 
 Parm name: SSID
 
-Description: This is the SSID name of the network, which is the primary mechanism used to identify a Wi-Fi network and is used to identify the Wi-Fi network profile to be acted on. Therefore, any Network Action that is used to affect a single profile need to specify the SSID to select the desired profile.
+Description: 
+>This is the SSID name of the network, which is the primary mechanism used to identify a Wi-Fi network and is used to identify the Wi-Fi network profile to be acted on. Therefore, any Network Action that is used to affect a single profile need to specify the SSID to select the desired profile.
 
 Parm value input rules: 
 
@@ -881,7 +893,8 @@ Settable if: The Network Action is "Add a New Network"
 
 Pivotal parm: Yes
 
-Description: This specifies the Security Mode used by the network, which determines the degree or class of security to be used on the device. Based on the Security Mode, more or fewer security options will be offered.
+Description: 
+>This specifies the Security Mode used by the network, which determines the degree or class of security to be used on the device. Based on the Security Mode, more or fewer security options will be offered.
 
 <div class="parm-table">
  <table>
@@ -913,9 +926,10 @@ Settable if: The Network Action is "Add a New Network" *AND* the Security Mode i
 
 Pivotal parm: Yes
 
-Description: When the selected Security Mode is "Personal" or "Enterprise", the WPA Mode must be specified to determine what sort of key will then be used.
+Description: 
+>When the selected Security Mode is "Personal" or "Enterprise", the WPA Mode must be specified to determine what sort of key will then be used.
 
->Note: WEP is not supported with a Enterprise Security Mode. It is only supported using Personal Security Mode.
+> **Note:** WEP is not supported with a Enterprise Security Mode. It is only supported using Personal Security Mode.
 
 <div class="parm-table">
  <table>
@@ -954,7 +968,8 @@ Pivotal parm: No
 
 Parm name: Authentication
 
-Description: This is the Authentication Mode used by the network. When a Security Mode of "Enterprise" is selected, an Authentication Mode will need to be specified to determine how authentication will be performed as part of the 802.1x EAP type used by the network.
+Description: 
+>This is the Authentication Mode used by the network. When a Security Mode of "Enterprise" is selected, an Authentication Mode will need to be specified to determine how authentication will be performed as part of the 802.1x EAP type used by the network.
 
 <div class="parm-table">
  <table>
@@ -1030,7 +1045,12 @@ Pivotal parm: No
 
 Parm name: Identity
 
-Description: the name that should be used to join the network.
+Description: 
+>Identity is used only when Authentication is used, which also means that this is only used when the Security Mode is "Enterprise". 
+
+>This parm is used by the device to specify to the Authentication Server the Identity that it wishes to authenticate as. The Identity is synonymous with "user name" in many cases. However, different Authentication Servers can be configured to require different types of Identity, such as email addresses, device unique ID, etc. 
+
+>The Identity is used as a way of getting accepted by the Authentication Server so that you can receive the encryption key that is needed to operate on the network. Once you are authenticated, the Identity does not have any further meaning and is not used to identify the device on the network.
 
 
 ##### **Anonymous Identity** 
@@ -1040,7 +1060,10 @@ Pivotal parm: No
 
 Parm name: AnonymousIdentity
 
-Description: Provide the name of the anonymous identity to be used to join the network.
+Description: 
+>When using an EAP type that has a secure tunnel over which authentication credentials can be delivered, it may be necessary to specify an Identity outside the tunnel as well as an Identity inside the tunnel. To protect the actual Identity from disclosure when sending it outside the tunnel, an Anonymous Identity can be sent outside the tunnel and the actual Identity, along with the password or other verifying credentials, can be sent inside the tunnel.
+
+>If no Anonymous Identity is specified, then the actual Identity will be sent outside the tunnel, if required. This may not be a problem since the password or other verifying credentials is only sent inside the tunnel, in modes that use a tunnel for secure credential delivery. So, using the actual Identity outside the tunnel would only risk disclosure of part of the information needed to authenticate. A separate Anonymous Identity can only be used if the Authentication Server is set up to support such use.
 
 Parm value input rules: 
 
@@ -1053,12 +1076,18 @@ Pivotal parm: No
 
 Parm name: ProtectPassword
 
-Description: when selected will encrypt the password.
+Description: 
+>A Password is an authentication credential that is used to prove the authenticity of an Identity and therefore, is only used when the Security Mode is "Enterprise". All Authentication types require a Password except EAP-TLS, which uses a client certificate instead of a Password.
+
+>In most cases, it is important to protect a Password since, combined with the matching Identity, it can be used to authenticate and gain access to a network. Since the Password must be embedded within the XML, it is often desirable to encrypt the Password so that i cannot be extracted and exploited if the XML is intercepted. The ProtectPassword parm is used to indicate whether the Password will be specified in clear, unencrypted text or in encrypted form.
 
 ##### **Password** 
-Pivotal parm: No
+Pivotal parm: Yes
 
-Description: the password to be used to connect to the network. The parm name will change depending on the value of ProtectPassword.
+Description: 
+>The password to be used to connect to the network. The parm name will change depending on the value of ProtectPassword.
+
+> **Note:** Currently, the parm value encryption process is not documented and the key that is needed to encrypt is not published. Therefore, an MDM cannot currently use an encrypted password since there is no way to store an encrypted, server-supplied password in an XML.
 
 Parm value input rules: 
 
@@ -1081,7 +1110,14 @@ Pivotal parm: No
 
 Parm name: OptionalServerCertificate
 
-Description: The name of the certificate alias that should be used to verify the server (Optional).
+Description: 
+>The name of the certificate alias that should be used to verify the server (Optional).
+
+>When Security Mode is "Enterprise", the device will not need to authenticate to an Authentication Server using the defined Authentication type. This will involve sending potentially sensitive authentication credentials to the Authentication Server. It is usually not recommended to do this unless the authenticity of the Authentication Server can be verified, for example, ensuring it is not a "man in the middle".
+
+>The device contacts and challenges the Authentication Server to assert and prove its Identity through the use of a server certificate. The device must be able to establish the validity of that certificate and must trust the chain of authority of the issuer of that certificate. This would all occur whether or not a Server Certificate Name is specified.
+
+>By default, a certificate asserted by an Authentication Server will be trusted if it can be verified to have been validly issued by any trusted certificate authority. If a Server Certificate Name is supplied, then the certificate asserted by an Authentication Server will be trusted only if it is verified to have been validly issued by that specific trusted certificate authority. This increases the security by preventing the use of certificates issued by authorities that are not trusted to issue certificates to authentication servers.
 
 Parm value input rules: 
 
@@ -1094,7 +1130,8 @@ Pivotal parm: No
 
 Parm name: MandatoryClientCertificate
 
-Description: The name of the certificate alias that should be used to join the network (Mandatory).
+Description: 
+>The name of the certificate alias that should be used to join the network (Mandatory). When Authenticating using EAP-TLS, a client certificate is used instead of a Password. Consequently, when Authentication is EAP-TLS, a client certificate must be specified and a Password must not be specified.
 
 Parm value input rules: 
 
@@ -1107,7 +1144,8 @@ Pivotal parm: No
 
 Parm name: OptionalClientCertificate
 
-Description: The name of the certificate alias that should be used to join the network (Optional).
+Description: 
+>The name of the certificate alias that should be used to join the network (Optional). When Authenticating using EAP types other than EAP-TLS, which would not require a client certificate, a client is still allowed. If used, the client certificate will be used to authenticate the device to the authentication server as part of the establishment of the secure tunnel over which further authentication credentials will be delivered. This means that the client certificate do not need to be unique, even if the authentication credentials are. The use of a client certificate can introduce an additional level of protection by requiring a device to possess a valid client certificate as well as valid authentication credentials. The client certificate serves as a first pass filter.
 
 Parm value input rules: 
 
@@ -1134,7 +1172,8 @@ A device can be used to capture the alias being used for the certificate being i
 #### Encryption Type
 Pivotal parm: No
 
-Description: Type of encryption used by the network. The values that can be selected for Encryption Type will vary based on the selections made for Security Mode and WPA Mode. But a selection must always be made for Encryption Type whenever Security Mode is not "Open" (indicating no encryption).
+Description: 
+>Type of encryption used by the network. The values that can be selected for Encryption Type will vary based on the selections made for Security Mode and WPA Mode. But a selection must always be made for Encryption Type whenever Security Mode is not "Open" (indicating no encryption).
 
 If WPA is selected: 
 
@@ -1219,7 +1258,15 @@ Settable if: The Network Action is "Add a New Network" and the Security Mode is 
 
 Pivotal parm: Yes
 
-Description: Specify the type of encryption key to be used by the network
+Description: 
+>Specify the type of encryption key to be used by the network. This key is only specified when the Security Mode is "Personal" since the "Open" Security Mode does not use encryption and the "Enterprise" Security Mode distributes keys automatically following Authentication.
+
+>An encryption key can be specified using one of two methods: 
+
+>* A hexadecimal value of the actual key
+>* A passphrase that can be used to generate a key using a pre-defined algorithm
+
+>The method that is used usually depends on the configuration of the Wi-Fi infrastructure that implements the network. This is because the key to be used must be known to both the Wi-Fi infrastructure and the client. Therefore, both must use a common method to specify that key.
 
 <div class="parm-table">
  <table>
@@ -1231,12 +1278,12 @@ Description: Specify the type of encryption key to be used by the network
   <tr>
     <td>Hex Key</td>
     <td>"HexKey" </td>
-	<td></td>
+	<td>This indicates that the actual key used by the network to perform encryption will be specified.</td>
   </tr>
   <tr>
     <td>Passphrase</td>
     <td>"Passphrase"</td>
-	<td></td>
+	<td>This indicates that a passphrase will be specified from which the actual key used by the network to perform encryption can be derived.</td>
   </tr>
 </table>
 </div>
@@ -1246,12 +1293,18 @@ Settable if: The Network Action is "Add a New Network" and the Security Mode is 
 
 Pivotal parm: Yes
 
-Description: Enables encryption of the Key
+Description: 
+>This enables encryption of the Key. 
+
+>A Key, or the Passphrase used to generate a Key, is generally considered sensitive information since possession of the key for a network grants access to that network. Since the Key or Passphrase must be embedded within the XML, it is often desirable to encrypt the Key or Passphrase so it cannot be extracted and exploited if the XML is intercepted. The WPA Mode and the Key Type, which were previously specified, will determine what type of Key or Passphrase will need to be used. The value selected for the ProtectKey parm will deterime whether the Key or Passphrase will be specified in clear, unencrypted text or encrypted form.
 
 ##### **Passphrase**
 Pivotal parm: No
 
-Description: Provide the passphrase used by the network. The parm name will change based on the WPA mode that is selected and if the Protect Key option was selected
+Description: 
+>When Key Type is Passphrase, then a Passphrase needs to be specified so it can be used to generate a Key. The type of Passphrase required will vary with the WPA Mode specified since it need to be either a WEP Passphrase or a WPA Passphrase.
+
+> **Note:** Currently, the parm value encryption process is not documented and the key that is needed to encrypt is not published. Therefore, an MDM cannot currently use encrypted Keys or Passphrases since there is no way to store an encrypted, server-supplied password in an XML.
 
 If WEP is selected and Protect Key is false:
 
@@ -1266,6 +1319,7 @@ If WEP is selected and Protect Key is true:
 * Parm name: PassphraseWEPEncrypted
 * Parm value input rules: 
 	* String with a minimum of 4 characters and a maximum of 32 characters
+* Currently, this parm cannot be used effectively by an MDM.
 	
 If WEP is not selected and Protect Key is false:
 
@@ -1280,9 +1334,15 @@ If WEP is not selected and Protect Key is true:
 * Parm name: PassphraseWPAEncrypted
 * Parm value input rules: 
 	* String with a minimum of 8 characters and a maximum of 63 characters
+* Currently, this parm cannot be used effectively by an MDM.
 	
 ##### **Hex Key**
 Pivotal parm: No
+
+Description: 
+>When Key Type is Hex Key, then a Key, which is expressed as a sequence of hexadecimal characters, needs to be specified. The type of Key required will vary based on the WPA Mode and Encryption Type specified, since it will need to be either a WEP 40 bit Key, a WEP 104 bit Key, or a 256 bit TKIP/AES-CCMP Key.
+
+> **Note:** Currently, the parm value encryption process is not documented and the key that is needed to encrypt is not published. Therefore, an MDM cannot currently use encrypted Keys or Passphrases since there is no way to store an encrypted, server-supplied password in an XML.
 
 If WEP is not selected and Protect Key is false:
 
@@ -1290,7 +1350,7 @@ If WEP is not selected and Protect Key is false:
 * Parm name: HexKeyClear
 * Description: Provide the hex key (64 hex chars) used by network
 * Parm value input rules: 
-	* String with a minimum of 64 characters and a maximum of 64 characters
+	* String with exactly 64 valid hexadecimal characters (e.g. 0-9, A-F) that collectively specify a 256 bit binary key value that can be used for either TKIP or AES-CCMP encryption.
 	
 If WEP is not selected and Protect Key is true:
 
@@ -1298,7 +1358,8 @@ If WEP is not selected and Protect Key is true:
 * Parm name: HexKeyEncrypted
 * Description: Provide the hex key (64 hex chars) used by network
 * Parm value input rules: 
-	* String with a minimum of 64 characters and a maximum of 64 characters
+	* String with exactly 64 valid hexadecimal characters (e.g. 0-9, A-F) that collectively specify a 256 bit binary key value that can be used for either TKIP or AES-CCMP encryption.
+* Currently, this parm cannot be used effectively by an MDM.
 	
 If WEP is selected, the encryption type is WEP-40, and Protect Key is false:
 
@@ -1306,7 +1367,7 @@ If WEP is selected, the encryption type is WEP-40, and Protect Key is false:
 * Parm name: HexKeyWep40Clear
 * Description: Provide the shared secret WEP-40 key (10 hex chars) used by the network
 * Parm value input rules: 
-	* String with a minimum of 10 characters and a maximum of 10 characters
+	* String with exactly 10 valid hexadecimal characters (e.g. 0-9, A-F) that collectively specify a 40 bit binary key value that can be used for either WEP encryption.
 	
 If WEP is selected, the encryption type is WEP-40, and Protect Key is true:
 
@@ -1314,7 +1375,8 @@ If WEP is selected, the encryption type is WEP-40, and Protect Key is true:
 * Parm name: HexKeyWep40Encrypted
 * Description: Provide the shared secret WEP-40 key (10 hex chars) used by the network
 * Parm value input rules: 
-	* String with a minimum of 10 characters and a maximum of 10 characters
+	* String with exactly 10 valid hexadecimal characters (e.g. 0-9, A-F) that collectively specify a 40 bit binary key value that can be used for either WEP encryption.
+* Currently, this parm cannot be used effectively by an MDM.
 	
 If WEP is selected, the encryption type is WEP-104, and Protect Key is false:
 
@@ -1322,7 +1384,7 @@ If WEP is selected, the encryption type is WEP-104, and Protect Key is false:
 * Parm name: HexKeyWep104Clear
 * Description: Provide the shared secret WEP-104 key (26 hex chars) used by the network
 * Parm value input rules: 
-	* String with a minimum of 26 characters and a maximum of 26 characters
+	* String with exactly 26 valid hexadecimal characters (e.g. 0-9, A-F) that collectively specify a 104 bit binary key value that can be used for either WEP encryption.
 
 If WEP is selected, the encryption type is WEP-104, and Protect Key is true:
 
@@ -1330,7 +1392,8 @@ If WEP is selected, the encryption type is WEP-104, and Protect Key is true:
 * Parm name: HexKeyWep104Encrypted
 * Description: Provide the shared secret WEP-104 key (26 hex chars) used by the network
 * Parm value input rules: 
-	* String with a minimum of 26 characters and a maximum of 26 characters
+	* String with exactly 26 valid hexadecimal characters (e.g. 0-9, A-F) that collectively specify a 104 bit binary key value that can be used for either WEP encryption.
+* Currently, this parm cannot be used effectively by an MDM.
 	
 ##### **WEP Key Index**
 Settable if: The Network Action is "Add a New Network" *AND* the Security Mode is "Personal" *AND* the WPA Mode is "WEP"
@@ -1339,34 +1402,32 @@ Pivotal parm: No
 
 Parm name: WepKeyIndex
 
-Description: Provide the index (1-4) of the WEP key used by the network. Only `wep[0]` is a valid option
+Description: 
+>Some Wi-Fi infrastructure that implements a network using WEP encryption may support multiple WEP keys and a WEP index to indicate which key to use at any given time. 
+
+> **Note:** Android does not currently support multiple WEP keys per network. Therefore, only the first WEP key (`wep[0]`) is supported. 
 
 <div class="parm-table">
  <table>
 	<tr>
 		<th>Parm Option Name</th>
 		<th>Parm Value</th>
-		<th>Description</th>
 	</tr>
   <tr>
     <td>wep[0]</td>
     <td>"1"</td>
-	<td></td>
   </tr>
   <tr>
     <td>wep[1]</td>
     <td>"2"</td>
-	<td></td>
   </tr>
   <tr>
     <td>wep[2]</td>
     <td>"3"</td>
-	<td></td>
   </tr>
   <tr>
     <td>wep[3]</td>
     <td>"4"</td>
-	<td></td>
   </tr>
 </table>
 </div>
@@ -1374,7 +1435,13 @@ Description: Provide the index (1-4) of the WEP key used by the network. Only `w
 #### Use DHCP
 Pivotal parm: Yes
 
-Description: When selected DHCP will be used. When not selected, Static IP address is used and the following IP address settings should be provided:
+Description: 
+
+>When this parm is selected, DHCP will be used. When not selected, Static IP address is used.
+
+>Most modern networks use DHCP to automatically assign IP Addresses to devices when they join the network. If DHCP is used, then all requisite IP Address information will be obtained automatically and no additional information will need to be provided.
+
+>If DHCP cannot be used for a particular network, then all IP Address information that is needed to operate on that network will need to be specified. None of the following IP Address information parms can be left blank, but they may not all require meaningful values, depending on the network.
 
 ##### **Static IP Address**
 Settable if: The Network Action is "Add a New Network" *AND* the "Use DHCP" box is not checked
@@ -1383,7 +1450,10 @@ Pivotal parm: No
 
 Parm name: IpAddress
 
-Description: Provide the static IP address to be assigned to the device on this network
+Description: 
+>Provide the static IP address to be assigned to the device on this network. 
+
+>When not using DHCP, a valid IP Address for the device to use on the network must be specified and that IP Address must not be assigned to any other device on the same network.
 
 Parm value input rules: 
 
@@ -1396,7 +1466,10 @@ Pivotal parm: No
 
 Parm name: IpGateway1
 
-Description: Provide the IP address of the first gateway to the network 
+Description: 
+>Provide the IP address of the first gateway to the network.
+
+>When not using DHCP, a valid Gateway IP Address may or may not be required. If there is a Gateway that can route traffic out of the current network, then the IP Address of that Gateway should be specified if the device will need to send traffic outside that network. If the network is essentially self-contained, then it may not be important what value is specified for this parm.
 
 Parm value input rules: 
 
@@ -1409,7 +1482,10 @@ Pivotal parm: No
 
 Parm name: IpMask
 
-Description: Provide the subnet mask to be used on the network
+Description: 
+>Provide the subnet mask to be used on the network.
+
+>When not using DHCP, a subnet mask must be specified that is consistent with the network and is consistent with the IP Address assigned to the device for use on that network.
 
 Parm value input rules: 
 
@@ -1422,7 +1498,10 @@ Pivotal parm: No
 
 Parm name: IpDns1
 
-Description: Provide the IP address of the first DNS server 
+Description: 
+>Provide the IP address of the first DNS server.
+
+>When not using DHCP, a valid DNS Server IP Address may or may not be required. If there is a DNS Server that can resolve network names to IP Addresses on the current network, then the IP Address of that server should be specified if the device will need to resolve names for that network. If name resolution is not required, then it may not be important what value is specified for this parm.
 
 Parm value input rules: 
 
@@ -1435,7 +1514,8 @@ Pivotal parm: No
 
 Parm name: IpDns2
 
-Description: Provide the IP address of the second DNS server 
+Description: 
+>Provide the IP address of the second DNS server. When not using DHCP, a valid DNS Server IP Address may or may not be required. If there is a secondary DNS Server that can resolve network names to IP Addresses on the current network, then the IP Address of that server may be specified as a backup. If no alternate DNS Server is available or required, then it may not be important what value is specified for this parm.
 
 Parm value input rules: 
 
@@ -1444,7 +1524,8 @@ Parm value input rules:
 #### Use Proxy
 Pivotal parm: Yes
 
-Description: When selected, a Proxy is used for network connections. The following proxy settings should be supplied:
+Description: 
+>When selected, a Proxy is used for network connections. A proxy is a an intermediary service that routes HTTP requests and responses between clients on a device and another network (typically the internet or an intranet). When there is a proxy between the Wi-Fi network and some outer network, then HTTP-based applications, such as a Web Browser, may need to negotiate with that proxy to access the services of that outer network.
 
 ##### **Proxy Host Name**
 Settable if: The Network Action is "Add a New Network" *AND* "Use Proxy" box is checked
@@ -1453,7 +1534,10 @@ Pivotal parm: No
 
 Parm name: ProxyHostName
 
-Description: Provide the host name of the proxy server
+Description: 
+>Provide the Host Name or IP Address of the computer on which the proxy is running. Host Name can be used only if the network provides suitable name resolution. Otherwise, an IP Address would need to be provided.
+
+>Since different Wi-Fi networks may have different proxies connecting them to different outer networks, proxy information, if needed, must be configured for each network.
 
 Parm value input rules: 
 
@@ -1466,7 +1550,8 @@ Pivotal parm: No
 
 Parm name: ProxyPort
 
-Description: Provide the port number of the proxy server
+Description: 
+>Provide the port number of the proxy server on the computer on which the proxy is running on which the proxy is listening.
 
 ##### **Bypass Proxy**
 Settable if: The Network Action is "Add a New Network" *AND* "Use Proxy" box is checked
@@ -1475,7 +1560,10 @@ Pivotal parm: No
 
 Parm name: BypassProxy
 
-Description: Provide addresses for which the proxy server should be bypassed
+Description: 
+>Once a proxy is configured for a given network, all HTTP traffic will generally be routed to the outer network via that proxy.  
+
+>In some cases, it may be desirable to avoid routing selected Host Names or IP Addresses through the proxy. For example, you might want to access a local Web Server. This can be accomplished by listing the Host Names or IP Addresses for which the Proxy should be bypassed. To specify multiple Host Names or IP Addresses, separate them with commas.
 
 Parm value input rules: 
 
@@ -1487,7 +1575,7 @@ Parm value input rules:
 
 #### Initialize the Android KeyStore
 
->Note: This must be done for a new device before you can install certificates.
+> **Note:** This must be done for a new device before you can install certificates.
 
 Without a password
 
