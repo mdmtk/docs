@@ -98,35 +98,43 @@ var menuStrcture = [
 						icon: 'fa fa-code',
 						items: [
 							{
-								name: 'Access',
+								name: 'AccessMgr',
 								link: '#guide-csp-access',
 							},
 							{
-								name: 'Analytics',
+								name: 'AnalyticsMgr',
 								link: '#guide-csp-analytics',
 							},
 							{
-								name: 'App',
+								name: 'AppMgr',
 								link: '#guide-csp-app',
 							},
 							{
+								name: 'AudioVolUIMgr',
+								link: '#',
+							},
+							/*{
 								name: 'Batch',
 								link: '#guide-csp-batch',
+							},*/
+							{
+								name: 'BatteryMgr',
+								link: '#',
 							},
 							{
-								name: 'Browser',
+								name: 'BrowserMgr',
 								link: '#guide-csp-browser',
 							},
 							{
-								name: 'Camera',
+								name: 'CameraMgr',
 								link: '#guide-csp-camera',
 							},
 							{
-								name: 'Cellular',
+								name: 'CellularMgr',
 								link: '#guide-csp-cellular',
 							},
 							{
-								name: 'Cert',
+								name: 'CertMgr',
 								link: '#guide-csp-cert',
 							},
 							{
@@ -134,47 +142,67 @@ var menuStrcture = [
 								link: '#guide-csp-clock',
 							},
 							{
-								name: 'Dev Admin',
+								name: 'ComponentMgr',
+								link: '#',
+							},
+							{
+								name: 'ConditionMgr',
+								link: '#',
+							},
+							{
+								name: 'CspMgr',
+								link: '#',
+							},
+							{
+								name: 'DevAdmin',
 								link: '#guide-csp-devadmin',
 							},
 							{
-								name: 'Display',
+								name: 'DhcpOptionMgr',
+								link: '#',
+							},
+							{
+								name: 'DisplayMgr',
 								link: '#guide-csp-display',
 							},
 							{
-								name: 'Encrypt',
+								name: 'EncryptMgr',
 								link: '#guide-csp-encrypt',
 							},
-							{
-								name: 'File',
-								link: '#guide-csp-file',
-							},
-							{
-								name: 'Gprs',
-								link: '#guide-csp-gprs',
-							},
-							{
-								name: 'Intent',
-								link: '#guide-csp-intent',
-							},
-							{
-								name: 'License',
-								link: '#guide-csp-license',
-							},
 							/*{
-								name: 'MX',
-								link: '#guide-csp-mx',
+								name: 'FileMgr',
+								link: '#guide-csp-file',
 							},*/
 							{
-								name: 'Persist ',
+								name: 'GprsMgr',
+								link: '#guide-csp-gprs',
+							},
+							/*{
+								name: 'Intent',
+								link: '#guide-csp-intent',
+							},*/
+							{
+								name: 'KeyMappingMgr',
+								link: '#',
+							},
+							{
+								name: 'LicenseMgr',
+								link: '#guide-csp-license',
+							},
+							{
+								name: 'MX',
+								link: '#guide-csp-mx',
+							},
+							{
+								name: 'PersistMgr',
 								link: '#guide-csp-persistence',
 							},
 							{
-								name: 'Power Key',
+								name: 'PowerKeyMgr',
 								link: '#guide-csp-powerkey',
 							},
 							{
-								name: 'Power',
+								name: 'PowerMgr',
 								link: '#guide-csp-power',
 							},
 							/*{
@@ -182,27 +210,31 @@ var menuStrcture = [
 								link: '#guide-csp-proxy',
 							},*/
 							{
-								name: 'Sd Card',
+								name: 'SdCardMgr',
 								link: '#guide-csp-sdcard',
 							},
 							{
-								name: 'Settings',
+								name: 'SettingsMgr',
 								link: '#guide-csp-settings',
 							},
 							{
-								name: 'Threat',
+								name: 'StatusMgr',
+								link: '#',
+							},
+							{
+								name: 'ThreatMgr',
 								link: '#guide-csp-threat',
 							},
 							{
-								name: 'Touch',
+								name: 'TouchMgr',
 								link: '#guide-csp-touch',
 							},
 							{
-								name: 'UI',
+								name: 'UiMgr',
 								link: '#guide-csp-ui',
 							},
 							{
-								name: 'USB',
+								name: 'UsbMgr',
 								link: '#guide-csp-usb',
 							},
 							{
@@ -210,13 +242,14 @@ var menuStrcture = [
 								link: '#guide-csp-wifi',
 							},
 							{
-								name: 'Wireless',
+								name: 'WirelessMgr',
 								link: '#guide-csp-wireless',
 							},
-							{
-								name: 'XML',
+							/*{
+								name: 'XmlMgr',
 								link: '#guide-csp-xml',
-							} /*,
+							}*/ 
+							/*,
 							{
 								name: 'Old Encrypt',
 								link: '#guide-csp-encrypt-old',

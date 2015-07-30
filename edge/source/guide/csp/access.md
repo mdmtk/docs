@@ -4,7 +4,7 @@
 
 ### Overview
 
-The Access Manager feature allows you to configure a set of applications that will be allowed to run and install on the device. When this feature is enabled, the device will only allow user installed applications on the Whitelist to be executed and/or installed (some applications that are part of the default operating system will still be available). To disable the Whitelist, you would select 'Single User Without Whitelist'.  
+The AccessMgr feature type allows you to configure a set of applications that will be allowed to run and install on the device. When this feature is enabled, the device will only allow user installed applications on the Whitelist to be executed and/or installed (some applications that are part of the default operating system will still be available). To disable the Whitelist, you would select 'Single User Without Whitelist'.  
 
 >**Note:** It is important to include the executing EMDK application in the Whitelist otherwise your application will lose control of the Whitelist configuration and you will not be able to change the behavior.
 

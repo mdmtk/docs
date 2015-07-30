@@ -4,7 +4,7 @@
 
 ### Overview
 
-The Wi-Fi feature allows you to manage a device's Wi-Fi settings as well as manage the network profiles to be used for connecting and remembering networks.
+The Wi-Fi feature type allows you to manage a device's Wi-Fi settings as well as manage the network profiles to be used for connecting and remembering networks.
 
 > **Note:** In other CSPs, the terms "enable" and "disable" refer to whether or not the user will be allowed to turn the device on or off at all. However, in this CSP, "enable" and "disable" are equivalent to "turn on" and "turn off".
 
