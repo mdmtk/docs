@@ -180,7 +180,7 @@ Description:
 
 >This will enable or disable the ability to access the application information dialog for all applications. Access to this dialog could be disabled for security reasons, such as preventing the user from changing settings, or to replace the dialog with another application.
 
-This affects access to the application information dialog in the Settings application, in the "Manage Apps" option in the menu when the device's menu button is pressed, and when long pressing on an application that is in the notification area. The application information dialog shows detailed information about the application as well as allow the user to perform actions like: Force Stop, Enable/Disable, Clear Data, Clear Cache. This setting effects all applications.
+>This affects access to the application information dialog in the Settings application, in the "Manage Apps" option in the menu when the device's menu button is pressed, and when long pressing on an application that is in the notification area. The application information dialog shows detailed information about the application as well as allow the user to perform actions like: Force Stop, Enable/Disable, Clear Data, Clear Cache. This setting effects all applications.
 
 > **Note:** This feature is supported on devices that are running KitKat versions of Android like the TC70.
 
