@@ -358,7 +358,7 @@ Description:
   <tr>
     <td>Allow ALL applications that are permitted to be executed</td>
     <td>"2"</td>
-	<td>This value allows all applications that are on the “white” list (i.e. that are allowed to be launched) to submit XML.
+	<td>This value allows all applications that are on the "white" list (i.e. that are allowed to be launched) to submit XML.
 <p>This value also allows a list of Package Names to be specified that will NOT be allowed to submit XML, thus providing an option to specify "all except these"</p>
 </td>
   </tr>  
