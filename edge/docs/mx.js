@@ -2061,38 +2061,8 @@ var mxVersions = [
                                 name: 'Set Default Homepage',
                                 compatibility: [
                                     {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC40 JB',
+                                        name: 'MC40 KK',
                                         device: 'MC40',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 JB',
-                                        device: 'MC67',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC55 JB',
-                                        device: 'TC55',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC70 JB',
-                                        device: 'TC70',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -2103,14 +2073,20 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -2131,38 +2107,8 @@ var mxVersions = [
                                 name: 'Turn On',
                                 compatibility: [
                                     {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC40 JB',
+                                        name: 'MC40 KK',
                                         device: 'MC40',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 JB',
-                                        device: 'MC67',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC55 JB',
-                                        device: 'TC55',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC70 JB',
-                                        device: 'TC70',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -2173,14 +2119,20 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -2196,38 +2148,8 @@ var mxVersions = [
                                 name: 'Turn Off',
                                 compatibility: [
                                     {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC40 JB',
+                                        name: 'MC40 KK',
                                         device: 'MC40',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 JB',
-                                        device: 'MC67',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC55 JB',
-                                        device: 'TC55',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC70 JB',
-                                        device: 'TC70',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -2238,14 +2160,20 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -2266,38 +2194,8 @@ var mxVersions = [
                                 name: 'Turn On',
                                 compatibility: [
                                     {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC40 JB',
+                                        name: 'MC40 KK',
                                         device: 'MC40',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 JB',
-                                        device: 'MC67',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC55 JB',
-                                        device: 'TC55',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC70 JB',
-                                        device: 'TC70',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -2308,14 +2206,20 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -2331,38 +2235,8 @@ var mxVersions = [
                                 name: 'Turn Off',
                                 compatibility: [
                                     {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC40 JB',
+                                        name: 'MC40 KK',
                                         device: 'MC40',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 JB',
-                                        device: 'MC67',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC55 JB',
-                                        device: 'TC55',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC70 JB',
-                                        device: 'TC70',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -2373,14 +2247,20 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
