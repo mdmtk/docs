@@ -1970,6 +1970,87 @@ var mxVersions = [
 				]
 			},
 			{
+				name: 'BatteryMgr',
+				version: '',
+				features: [
+					{
+						name: 'Configure the battery decommission thresholds',
+						specifics: [
+							{
+								name: 'Set the Battery Usage Decommissioned Threshold',
+								compatibility: [
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: ''
+									},
+								]
+							},
+							{
+								name: 'Set the Battery Percentage Decommissioned Threshold',
+								compatibility: [
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: ''
+									},
+								]
+							}
+						]
+					}
+				]
+			},
+			{
                 name: 'BrowserMgr',
                 version: '',
                 features: [

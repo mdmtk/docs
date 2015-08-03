@@ -119,7 +119,7 @@ var menuStrcture = [
 							},*/
 							{
 								name: 'BatteryMgr',
-								link: '#',
+								link: '#guide-csp-batterymgr',
 							},
 							{
 								name: 'BrowserMgr',
