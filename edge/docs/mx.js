@@ -1636,6 +1636,340 @@ var mxVersions = [
                 ]
             },
 			{
+				name: 'AudioVolUIMgr',
+				version: '',
+				features: [
+					{
+						name: 'Mute/Vibrate State',
+						specifics: [
+							{
+								name: 'Set the device to Mute/Vibrate/Unmute mode',
+								compatibility: [
+								{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: ''
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: ''
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: ''
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: ''
+									},
+									{
+										name: 'TC70 JB',
+										device: 'TC70',
+										os: 'JB',
+										notes: ''
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC32 KK',
+										device: 'MC32',
+										os: 'KK',
+										notes: ''
+									},
+								]
+							}
+						]
+					},
+					{
+						name: 'Current Active Profile Action',
+						specifics: [
+							{
+								name: 'Set an Audio UI Profile as the current Profile',
+								compatibility: [
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC32 KK',
+										device: 'MC32',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: ''
+									},
+								]
+							},
+							{
+								name: 'Adjust to the Preset volume level of the current Profile',
+								compatibility: [
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC32 KK',
+										device: 'MC32',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: ''
+									},
+								]
+							},
+							{
+								name: 'Set the FactoryPreset Profile as the current Profile',
+								compatibility: [
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC32 KK',
+										device: 'MC32',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: ''
+									},
+								]
+							}
+						]
+					},
+					{
+						name: 'Audio UI Profile Actions',
+						specifics: [
+							{
+								name: 'Add an Audio UI Profile',
+								compatibility: [
+								{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC32 KK',
+										device: 'MC32',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: ''
+									},
+								]
+							},
+							{
+								name: 'Remove an Audio UI Profile',
+								compatibility: [
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC32 KK',
+										device: 'MC32',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: ''
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: ''
+									},
+									
+								]
+							}
+						]
+					}
+				]
+			},
+			{
                 name: 'BrowserMgr',
                 version: '',
                 features: [

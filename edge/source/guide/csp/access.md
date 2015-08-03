@@ -6,7 +6,7 @@
 
 The AccessMgr Feature Type enables the configuration of a device to control which user, or "installable", applications can be used on a given device as well as what those applications can do.
 
-A key concept within the AccessMgr Feature Type is the ability to turn Whitelisting on or off.  By default, Whitelisting is turned off.  When Whitelisting is turned off, no restrictions are imposed.  When Whitelisting is turned on, using the AccessMgr Feature Type, various restrictions can be imposed.
+A key concept within the AccessMgr Feature Type is the ability to turn Whitelisting on or off. By default, Whitelisting is turned off. When Whitelisting is turned off, no restrictions are imposed. When Whitelisting is turned on, using the AccessMgr Feature Type, various restrictions can be imposed.
 
 Whitelisting is a process which allows only applications to run which are explicitly specified in a list, which is called the "white" list. All other applications are prohibited from running. The AccessMgr Feature Type allows the "white" list of applications that are allowed to be installed and/or launched to be maintained. The AccessMgr Feature Type also allows control of which applications are allowed to submit XML for all of the Feature Types, including the AccessMgr Feature Type.
 
