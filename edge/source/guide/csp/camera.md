@@ -8,18 +8,13 @@ The CameraMgr Feature Type allows your application to control access to the came
 
 ### Main Functionality
 
-* Enable the use of all Cameras
-* Disable the use of all Cameras
-* Enable the use of the Front Facing Camera
-* Disable the use of the Front Facing Camera
-* Enable the use of the Rear Facing Camera
-* Disable the use of the Rear Facing Camera
+* Enable or disable the use of all Cameras
+* Enable or disable the use of the Front Facing Camera
+* Enable or disable the use of the Rear Facing Camera
 
 ##Parameter Notes
 ###All Cameras
 Pivotal parm: Yes
-
-Parm name: UseAllCameras
 
 Description: 
 

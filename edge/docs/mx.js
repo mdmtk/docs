@@ -879,12 +879,6 @@ var mxVersions = [
                             {
                                 name: 'Install Application',
                                 compatibility: [
-                                    {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
@@ -903,10 +897,10 @@ var mxVersions = [
                                         os: 'JB',
                                         notes: ''
                                     },
-									{
-                                        name: 'TC70 JB',
+                                    {
+                                        name: 'TC70 KK',
                                         device: 'TC70',
-                                        os: 'JB',
+                                        os: 'KK',
                                         notes: ''
                                     },
                                     {
@@ -922,14 +916,14 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -946,12 +940,6 @@ var mxVersions = [
                                 name: 'Uninstall Application',
                                 compatibility: [
                                     {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
@@ -969,10 +957,10 @@ var mxVersions = [
                                         os: 'JB',
                                         notes: ''
                                     },
-									{
-                                        name: 'TC70 JB',
+                                    {
+                                        name: 'TC70 KK',
                                         device: 'TC70',
-                                        os: 'JB',
+                                        os: 'KK',
                                         notes: ''
                                     },
                                     {
@@ -988,14 +976,14 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -1012,12 +1000,6 @@ var mxVersions = [
                                 name: 'Upgrade Application',
                                 compatibility: [
                                     {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
@@ -1035,10 +1017,10 @@ var mxVersions = [
                                         os: 'JB',
                                         notes: ''
                                     },
-									{
-                                        name: 'TC70 JB',
+                                    {
+                                        name: 'TC70 KK',
                                         device: 'TC70',
-                                        os: 'JB',
+                                        os: 'KK',
                                         notes: ''
                                     },
                                     {
@@ -1054,14 +1036,14 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -1077,13 +1059,7 @@ var mxVersions = [
 							{
                                 name: 'Set Default Launcher',
                                 compatibility: [
-                                    {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-									{
+                                   {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
@@ -1101,10 +1077,10 @@ var mxVersions = [
                                         os: 'JB',
                                         notes: ''
                                     },
-									{
-                                        name: 'TC70 JB',
+                                    {
+                                        name: 'TC70 KK',
                                         device: 'TC70',
-                                        os: 'JB',
+                                        os: 'KK',
                                         notes: ''
                                     },
                                     {
@@ -1120,14 +1096,14 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -1144,12 +1120,6 @@ var mxVersions = [
                                 name: 'Enable Application',
                                 compatibility: [
                                     {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
@@ -1167,10 +1137,10 @@ var mxVersions = [
                                         os: 'JB',
                                         notes: ''
                                     },
-									{
-                                        name: 'TC70 JB',
+                                    {
+                                        name: 'TC70 KK',
                                         device: 'TC70',
-                                        os: 'JB',
+                                        os: 'KK',
                                         notes: ''
                                     },
                                     {
@@ -1186,14 +1156,14 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -1210,12 +1180,6 @@ var mxVersions = [
                                 name: 'Disable Application',
                                 compatibility: [
                                     {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
@@ -1233,10 +1197,10 @@ var mxVersions = [
                                         os: 'JB',
                                         notes: ''
                                     },
-									{
-                                        name: 'TC70 JB',
+                                    {
+                                        name: 'TC70 KK',
                                         device: 'TC70',
-                                        os: 'JB',
+                                        os: 'KK',
                                         notes: ''
                                     },
                                     {
@@ -1252,14 +1216,14 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -1269,19 +1233,12 @@ var mxVersions = [
                                         os: 'KK',
                                         notes: ''
                                     },
-
                                 ]
                             },
 							{
                                 name: 'Clear Recent Apps List',
                                 compatibility: [
-                                    {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-									{
+                                   {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
@@ -1299,10 +1256,10 @@ var mxVersions = [
                                         os: 'JB',
                                         notes: ''
                                     },
-									{
-                                        name: 'TC70 JB',
+                                    {
+                                        name: 'TC70 KK',
                                         device: 'TC70',
-                                        os: 'JB',
+                                        os: 'KK',
                                         notes: ''
                                     },
                                     {
@@ -1318,14 +1275,14 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -1346,13 +1303,7 @@ var mxVersions = [
                             {
                                 name: 'Add Application to Protected List',
                                 compatibility: [
-                                    {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-									{
+                                   {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
@@ -1370,10 +1321,10 @@ var mxVersions = [
                                         os: 'JB',
                                         notes: ''
                                     },
-									{
-                                        name: 'TC70 JB',
+                                    {
+                                        name: 'TC70 KK',
                                         device: 'TC70',
-                                        os: 'JB',
+                                        os: 'KK',
                                         notes: ''
                                     },
                                     {
@@ -1389,14 +1340,14 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -1406,19 +1357,12 @@ var mxVersions = [
                                         os: 'KK',
                                         notes: ''
                                     },
-
                                 ]
                             },
 							{
                                 name: 'Remove Application from Protected List',
                                 compatibility: [
-                                    {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-									{
+                                   {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
@@ -1436,10 +1380,10 @@ var mxVersions = [
                                         os: 'JB',
                                         notes: ''
                                     },
-									{
-                                        name: 'TC70 JB',
+                                    {
+                                        name: 'TC70 KK',
                                         device: 'TC70',
-                                        os: 'JB',
+                                        os: 'KK',
                                         notes: ''
                                     },
                                     {
@@ -1455,14 +1399,14 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -1479,12 +1423,6 @@ var mxVersions = [
                                 name: 'Remove All Applications from Protected List',
                                 compatibility: [
                                     {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
@@ -1502,10 +1440,10 @@ var mxVersions = [
                                         os: 'JB',
                                         notes: ''
                                     },
-									{
-                                        name: 'TC70 JB',
+                                    {
+                                        name: 'TC70 KK',
                                         device: 'TC70',
-                                        os: 'JB',
+                                        os: 'KK',
                                         notes: ''
                                     },
                                     {
@@ -1521,14 +1459,14 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -1550,10 +1488,28 @@ var mxVersions = [
                             {
                                 name: 'Enable Access to App Info for All Applications ',
                                 compatibility: [
-                                    {
-                                        name: 'TC70 JB',
-                                        device: 'TC70',
+                                   {
+                                        name: 'MC40 JB',
+                                        device: 'MC40',
                                         os: 'JB',
+                                        notes: ''
+                                    },
+									{
+                                        name: 'MC67 JB',
+                                        device: 'MC67',
+                                        os: 'JB',
+                                        notes: ''
+                                    },
+									{
+                                        name: 'TC55 JB',
+                                        device: 'TC55',
+                                        os: 'JB',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
                                         notes: ''
                                     },
                                     {
@@ -1569,14 +1525,14 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -1592,10 +1548,28 @@ var mxVersions = [
 							{
                                 name: 'Disable Access to App Info for All Applications ',
                                 compatibility: [
-                                    {
-                                        name: 'TC70 JB',
-                                        device: 'TC70',
+                                   {
+                                        name: 'MC40 JB',
+                                        device: 'MC40',
                                         os: 'JB',
+                                        notes: ''
+                                    },
+									{
+                                        name: 'MC67 JB',
+                                        device: 'MC67',
+                                        os: 'JB',
+                                        notes: ''
+                                    },
+									{
+                                        name: 'TC55 JB',
+                                        device: 'TC55',
+                                        os: 'JB',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
                                         notes: ''
                                     },
                                     {
@@ -1611,14 +1585,14 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -2371,11 +2345,11 @@ var mxVersions = [
                         name: 'Data Roaming',
                         specifics: [
                             {
-                                name: 'Turn On',
+                                name: 'Turn On/Off',
                                 compatibility: [
                                     {
                                         name: 'TC55 JB',
-                                        device: 'TC5',
+                                        device: 'TC55',
                                         os: 'JB',
                                         notes: ''
                                     },
@@ -2406,11 +2380,11 @@ var mxVersions = [
                                 ]
                             },
 							{
-                                name: 'Turn Off',
+                                name: 'Enable/Disable',
                                 compatibility: [
                                     {
                                         name: 'TC55 JB',
-                                        device: 'TC5',
+                                        device: 'TC55',
                                         os: 'JB',
                                         notes: ''
                                     },
@@ -2446,7 +2420,7 @@ var mxVersions = [
                         name: 'Background Data',
                         specifics: [
                             {
-                                name: 'Turn On',
+                                name: 'Turn On/Off',
                                 compatibility: [
                                     {
                                         name: 'TC70 JB',
@@ -2469,7 +2443,7 @@ var mxVersions = [
                                 ]
                             },
 							{
-                                name: 'Turn Off',
+                                name: 'Enable/Disable',
                                 compatibility: [
                                     {
                                         name: 'TC70 JB',
