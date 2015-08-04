@@ -329,6 +329,10 @@ var menuStrcture = [
 				]
 			},
 			{
+				name: 'Remote Control',
+				link: '#guide-remotecontrol'
+			},
+			{
 				name: 'Using This Help',
 				link: '#guide-abouthelp',
 				icon: 'fa fa-question-circle'
