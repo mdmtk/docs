@@ -35,8 +35,8 @@ Description:
 	</tr>
   <tr>
     <td>Do nothing</td>
-    <td>""</td>
-	<td>This value will not make any change to the applications on the device.</td>
+    <td>"Do nothing"</td>
+	<td>This value (or the absence of this parm from the XML) will not make any change to the applications on the device.</td>
   </tr>
   <tr>
     <td>Install</td>
@@ -144,8 +144,8 @@ Description:
 	</tr>
   <tr>
     <td>Do nothing</td>
-    <td>""</td>
-	<td>This value will not cause any changes to the Protected List.</td>
+    <td>"Do nothing"</td>
+	<td>This value (or the absence of this parm from the XML) will not cause any changes to the Protected List.</td>
   </tr>
   <tr>
     <td>Add Application to Protected List</td>
@@ -209,8 +209,8 @@ Description:
 	</tr>
   <tr>
     <td>Do nothing</td>
-    <td>""</td>
-	<td>This value will cause no changes to be made.</td>
+    <td>"Do nothing"</td>
+	<td>This value (or the absence of this parm from the XML) will cause no changes to be made.</td>
   </tr>
   <tr>
     <td>Enable Access to App Info for all applications</td>

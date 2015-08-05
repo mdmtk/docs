@@ -51,7 +51,7 @@ Description:
 Parm value input rules: 
 
 * The input value must be an integer between 0 and 65535
-* Setting this parm to 0 indicates no change or not applicable
+* Setting this parm to 0 (or the absence of this parm from the XML) indicates no change or not applicable
 
 ###Battery Percentage Decommissioned Threshold
 Pivotal parm: No
@@ -71,7 +71,7 @@ Description:
 Parm value input rules: 
 
 * The input value must be an integer between 0 and 100
-* Setting this parm to 0 indicates no change or not applicable
+* Setting this parm to 0 (or the absence of this parm from the XML) indicates no change or not applicable
 
 ## Feature Compatibility
 

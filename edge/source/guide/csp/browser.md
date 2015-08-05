@@ -14,7 +14,6 @@ Many Zebra Android devices include a default Web Browser that is derived from th
 * Turn the Remember Passwords Option On/Off 
 * Turn the Save Form Data Option On/Off 
 
-
 ##Parameter Notes
 ###Set Default Home Page
 Pivotal parm: No
@@ -24,6 +23,8 @@ Parm name: SetDefaultHomepage
 Description: 
 
 >This parm allows you to set the Default Home Page URI of the Default Android Web Browser. Each time the Default Android Web Browser is opened without an explicitly requested URI, it will use to the URI to the Default Home Page URI. To produce successful results, a full, valid URI to a desired web page should be supplied, such as "www.google.com". This could be used to launch a specific web-based application or to direct users to an internal company web site or portal as a starting point for browsing.
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -49,8 +50,8 @@ Description:
 	</tr>
   <tr>
     <td>Do not change</td>
-    <td>""</td>
-	<td>This value will cause no change to whether the Remember Passwords Option is turned On or Off.</td>
+    <td>"0"</td>
+	<td>This value (or the absence of this parm from the XML) will cause no change to whether the Remember Passwords Option is turned On or Off.</td>
   </tr>
   <tr>
     <td>Turn on</td>
@@ -85,8 +86,8 @@ Description:
 	</tr>
   <tr>
     <td>Do not change</td>
-    <td>""</td>
-	<td>This value will cause no change to whether or the Save Form Data Option is turned On or Off.</td>
+    <td>"0"</td>
+	<td>This value (or the absence of this parm from the XML) will cause no change to whether or the Save Form Data Option is turned On or Off.</td>
   </tr>
   <tr>
     <td>Turn on</td>

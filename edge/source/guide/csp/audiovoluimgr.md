@@ -66,8 +66,8 @@ Description:
 	</tr>
   <tr>
     <td>Do not change</td>
-    <td>""</td>
-	<td>This value will make no changes to the Mute and Vibrate states of the device.</td>
+    <td>"0"</td>
+	<td>This value (or the absence of this parm from the XML) will make no changes to the Mute and Vibrate states of the device.</td>
   </tr>
   <tr>
     <td>Mute - Turn off audible sounds</td>
@@ -103,8 +103,8 @@ Description:
 	</tr>
   <tr>
     <td>Do nothing</td>
-    <td>""</td>
-	<td>This value will cause no change to the currently selected Audio Profile or the volume levels of any Audio Streams.</td>
+    <td>"0"</td>
+	<td>This value (or the absence of this parm from the XML) will cause no change to the currently selected Audio Profile or the volume levels of any Audio Streams.</td>
   </tr>
   <tr>
     <td>Set an Audio UI Profile as the current Profile</td>
@@ -160,12 +160,12 @@ Description:
   <tr>
     <td>Do not adjust the volume level</td>
     <td>"1"</td>
-	<td><p>This value causes the Preset volume levels specified for all Audio Streams in the new current Audio Profile to be ignored.</p><p>If the current volume level of an Audio Stream is less than the minimum, then it will be changed to the minimum and if the current volume level of an Audio Stream is greater than the minimum, then it will be changed to the maximum.  Otherwise, the current volume level of an Audio Stream will be unchanged.</p></td>
+	<td><p>This value will cause the Preset volume levels specified for all Audio Streams in the new current Audio Profile to be ignored.</p><p>If the current volume level of an Audio Stream is less than the minimum, then it will be changed to the minimum and if the current volume level of an Audio Stream is greater than the minimum, then it will be changed to the maximum.  Otherwise, the current volume level of an Audio Stream will be unchanged.</p></td>
   </tr>
   <tr>
     <td>Adjust the volume level</td>
     <td>"2"</td>
-	<td><p>This value causes the Preset volume levels specified for all Audio Streams in the new Audio Profile to be made the new current volumes for those Audio Streams.</p><p>This option ensures that a specific set of volumes will be in effect after setting a new current Audio Profile. This should be used with caution since it could have a noticeable impact on current or future audio output.</p></td>
+	<td><p>This value will cause the Preset volume levels specified for all Audio Streams in the new Audio Profile to be made the new current volumes for those Audio Streams.</p><p>This option ensures that a specific set of volumes will be in effect after setting a new current Audio Profile. This should be used with caution since it could have a noticeable impact on current or future audio output.</p></td>
   </tr>
 </table>
 </div>	
@@ -186,8 +186,8 @@ Description:
 	</tr>
   <tr>
     <td>Do nothing</td>
-    <td>""</td>
-	<td>This value will cause no change to the set of defined Audio Profiles or the Factory Preset Audio Profile.</td>
+    <td>"0"</td>
+	<td>This value (or the absence of this parm from the XML) will cause no change to the set of defined Audio Profiles or the Factory Preset Audio Profile.</td>
   </tr>
   <tr>
     <td>Add an Audio UI Profile</td>
@@ -229,7 +229,9 @@ Parm name: STREAM_MUSIC_Label
 
 Description: 
 
->This parm allows you to set a customized label that the ZVC will display to visually identify the Audio Stream that is typically used for music playback.
+>This parm allows you to set a customized label that the ZVC will display to visually identify the Audio Stream that is typically used for music playback. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 >**Note:** If the value of this parm is empty (a length of 0), then no customized label will be specified for the Audio Stream. This will cause ZVC to display not label the Audio Stream.
 
@@ -246,7 +248,9 @@ Parm name: STREAM_MUSIC_Icon
 
 Description: 
 
->This parm allows you to set a customized icon that the ZVC will display to visually identify the Audio Stream that is typically used for music playback. If specified, the value must be the full path and file name of an icon file in PNG format that resides in the device file system. An icon size of 48x48 pixels is recommended.
+>This parm allows you to set a customized icon that the ZVC will display to visually identify the Audio Stream that is typically used for music playback. If specified, the value must be the full path and file name of an icon file in PNG format that resides in the device file system. An icon size of 48x48 pixels is recommended. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 >**Note:** If the value of this parm is empty (a length of 0), or if the value provided does not reference an icon file, then no customized icon will be specified for the Audio Stream. This will cause ZVC to display the default icon defined for the Audio Stream.
 
@@ -263,7 +267,9 @@ Parm name: STREAM_MUSIC_Ctrl
 
 Description: 
 
->This parm allows you to control whether the ZVC allow the device user to view and modify the volume settings for the Audio Stream that is typically used for music playback.
+>This parm allows you to control whether the ZVC allow the device user to view and modify the volume settings for the Audio Stream that is typically used for music playback. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -281,7 +287,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used for music playback when the device is in speaker mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the music volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for music playback to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for music playback to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -299,7 +307,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used for music playback when the device is in receiver mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the music volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for music playback to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for music playback to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -317,7 +327,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used for music playback when the device is in wired headset mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the music volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for music playback to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for music playback to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -335,7 +347,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used for music playback when the device is in bluetooth headset mode mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the music volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for music playback to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for music playback to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -351,7 +365,9 @@ Parm name: STREAM_RING_Label
 
 Description: 
 
->This parm allows you to set a customized label that the ZVC will display to visually identify the Audio Stream that is typically used for the incoming call notification.
+>This parm allows you to set a customized label that the ZVC will display to visually identify the Audio Stream that is typically used for the incoming call notification. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 >**Note:** If the value of this parm is empty (a length of 0), then no customized label will be specified for the Audio Stream. This will cause ZVC to display not label the Audio Stream.
 
@@ -368,7 +384,9 @@ Parm name: STREAM_RING_Icon
 
 Description: 
 
->This parm allows you to set a customized icon that the ZVC will display to visually identify the Audio Stream that is typically used for the incoming call notification. If specified, the value must be the full path and file name of an icon file in PNG format that resides in the device file system. An icon size of 48x48 pixels is recommended.
+>This parm allows you to set a customized icon that the ZVC will display to visually identify the Audio Stream that is typically used for the incoming call notification. If specified, the value must be the full path and file name of an icon file in PNG format that resides in the device file system. An icon size of 48x48 pixels is recommended. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 >**Note:** If the value of this parm is empty (a length of 0), or if the value provided does not reference an icon file, then no customized icon will be specified for the Audio Stream. This will cause ZVC to display the default icon defined for the Audio Stream.
 
@@ -385,7 +403,9 @@ Parm name: STREAM_RING_Ctrl
 
 Description: 
 
->This parm allows you to control whether the ZVC allow the device user to view and modify the volume settings for the Audio Stream that is typically used for the typically used for the incoming call notification.
+>This parm allows you to control whether the ZVC allow the device user to view and modify the volume settings for the Audio Stream that is typically used for the typically used for the incoming call notification. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -403,7 +423,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used for the incoming call notification when the device is in speaker mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the ring tone volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for the incoming call notification to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for the incoming call notification to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -421,7 +443,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used for the incoming call notification when the device is in receiver mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the ring tone volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for the incoming call notification to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for the incoming call notification to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -439,7 +463,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used for the incoming call notification when the device is in wired headset mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the ring tone volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for the incoming call notification to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for the incoming call notification to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -457,7 +483,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used for the incoming call notification when the device is in bluetooth headset mode mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the ring tone volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for the incoming call notification to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for the incoming call notification to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -473,7 +501,9 @@ Parm name: STREAM_NOTIFICATION_Label
 
 Description: 
 
->This parm allows you to set a customized label that the ZVC will display to visually identify the Audio Stream that is typically used for other notifications.
+>This parm allows you to set a customized label that the ZVC will display to visually identify the Audio Stream that is typically used for other notifications. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 >**Note:** If the value of this parm is empty (a length of 0), then no customized label will be specified for the Audio Stream. This will cause ZVC to display not label the Audio Stream.
 
@@ -490,7 +520,9 @@ Parm name:
 
 Description: 
 
->This parm allows you to set a customized icon that the ZVC will display to visually identify the Audio Stream that is typically used for other notifications. If specified, the value must be the full path and file name of an icon file in PNG format that resides in the device file system. An icon size of 48x48 pixels is recommended.
+>This parm allows you to set a customized icon that the ZVC will display to visually identify the Audio Stream that is typically used for other notifications. If specified, the value must be the full path and file name of an icon file in PNG format that resides in the device file system. An icon size of 48x48 pixels is recommended. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 >**Note:** If the value of this parm is empty (a length of 0), then no customized label will be specified for the Audio Stream. This will cause ZVC to display not label the Audio Stream.
 
@@ -507,7 +539,9 @@ Parm name: STREAM_NOTIFICATION_Ctrl
 
 Description: 
 
->This parm allows you to control whether the ZVC allow the device user to view and modify the volume settings for the Audio Stream that is typically used for other notifications.
+>This parm allows you to control whether the ZVC allow the device user to view and modify the volume settings for the Audio Stream that is typically used for other notifications. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -525,7 +559,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used for other notifications when the device is in speaker mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the notification volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for other notifications to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for other notifications to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -543,7 +579,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used for other notifications when the device is in receiver mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the notification volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for other notifications to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for other notifications to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -561,7 +599,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used for other notifications when the device is in wired headset mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the notification volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for other notifications to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for other notifications to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -579,7 +619,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used for other notifications when the device is in bluetooth headset mode mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the notification volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for other notifications to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for other notifications to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -595,7 +637,9 @@ Parm name: STREAM_SYSTEM_Label
 
 Description: 
 
->This parm allows you to set a customized label that the ZVC will display to visually identify the Audio Stream that is typically used by system sounds.
+>This parm allows you to set a customized label that the ZVC will display to visually identify the Audio Stream that is typically used by system sounds. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 >**Note:** If the value of this parm is empty (a length of 0), then no customized label will be specified for the Audio Stream. This will cause ZVC to display not label the Audio Stream.
 
@@ -612,7 +656,9 @@ Parm name: STREAM_SYSTEM_Icon
 
 Description: 
 
->This parm allows you to set a customized icon that the ZVC will display to visually identify the Audio Stream that is typically used by system sounds. If specified, the value must be the full path and file name of an icon file in PNG format that resides in the device file system. An icon size of 48x48 pixels is recommended.
+>This parm allows you to set a customized icon that the ZVC will display to visually identify the Audio Stream that is typically used by system sounds. If specified, the value must be the full path and file name of an icon file in PNG format that resides in the device file system. An icon size of 48x48 pixels is recommended. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 >**Note:** If the value of this parm is empty (a length of 0), or if the value provided does not reference an icon file, then no customized icon will be specified for the Audio Stream. This will cause ZVC to display the default icon defined for the Audio Stream.
 
@@ -629,7 +675,9 @@ Parm name: STREAM_SYSTEM_Ctrl
 
 Description: 
 
->This parm allows you to control whether the ZVC allow the device user to view and modify the volume settings for the Audio Stream that is typically used by system sounds.
+>This parm allows you to control whether the ZVC allow the device user to view and modify the volume settings for the Audio Stream that is typically used by system sounds. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -647,7 +695,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used by system sounds when the device is in speaker mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the system volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used by system sounds to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used by system sounds to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -665,7 +715,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used by system sounds when the device is in receiver mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the system volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used by system sounds to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used by system sounds to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -683,7 +735,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used by system sounds when the device is in wired headset mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the system volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used by system sounds to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used by system sounds to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -701,7 +755,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used by system sounds when the device is in bluetooth headset mode mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the system volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used by system sounds to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used by system sounds to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -717,7 +773,9 @@ Parm name: STREAM_ALARM_Label
 
 Description: 
 
->This parm allows you to set a customized label that the ZVC will display to visually identify the Audio Stream that is typically used for alarms.
+>This parm allows you to set a customized label that the ZVC will display to visually identify the Audio Stream that is typically used for alarms. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 >**Note:** If the value of this parm is empty (a length of 0), then no customized label will be specified for the Audio Stream. This will cause ZVC to display not label the Audio Stream.
 
@@ -734,7 +792,9 @@ Parm name: STREAM_ALARM_Icon
 
 Description: 
 
->This parm allows you to set a customized icon that the ZVC will display to visually identify the Audio Stream that is typically used for alarms. If specified, the value must be the full path and file name of an icon file in PNG format that resides in the device file system. An icon size of 48x48 pixels is recommended.
+>This parm allows you to set a customized icon that the ZVC will display to visually identify the Audio Stream that is typically used for alarms. If specified, the value must be the full path and file name of an icon file in PNG format that resides in the device file system. An icon size of 48x48 pixels is recommended. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 >**Note:** If the value of this parm is empty (a length of 0), or if the value provided does not reference an icon file, then no customized icon will be specified for the Audio Stream. This will cause ZVC to display the default icon defined for the Audio Stream.
 
@@ -751,7 +811,9 @@ Parm name: STREAM_ALARM_Ctrl
 
 Description: 
 
->This parm allows you to control whether the ZVC allow the device user to view and modify the volume settings for the Audio Stream that is typically used for alarms.
+>This parm allows you to control whether the ZVC allow the device user to view and modify the volume settings for the Audio Stream that is typically used for alarms. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -769,7 +831,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used for alarms when the device is in speaker mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the alarm volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for alarms to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for alarms to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -787,7 +851,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used for alarms when the device is in receiver mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the alarm volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for alarms to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for alarms to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -805,7 +871,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used for alarms when the device is in wired headset mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the system volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for alarms to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for alarms to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -823,8 +891,10 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used for alarms when the device is in bluetooth headset mode mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the system volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for alarms to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for alarms to this set level. 
 
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
+ 
 Parm value input rules: 
 
 * String that contains the minimum, maximum, and preset volumes in this order and separated by commas. For example, "1,5,3"
@@ -839,7 +909,9 @@ Parm name: STREAM_VOICECALL_Label
 
 Description: 
 
->This parm allows you to set a customized label that the ZVC will display to visually identify the Audio Stream that is typically used for phone calls.
+>This parm allows you to set a customized label that the ZVC will display to visually identify the Audio Stream that is typically used for phone calls. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 >**Note:** If the value of this parm is empty (a length of 0), then no customized label will be specified for the Audio Stream. This will cause ZVC to display not label the Audio Stream.
 
@@ -856,7 +928,9 @@ Parm name: STREAM_VOICECALL_Icon
 
 Description: 
 
->This parm allows you to set a customized icon that the ZVC will display to visually identify the Audio Stream that is typically used for phone calls. If specified, the value must be the full path and file name of an icon file in PNG format that resides in the device file system. An icon size of 48x48 pixels is recommended.
+>This parm allows you to set a customized icon that the ZVC will display to visually identify the Audio Stream that is typically used for phone calls. If specified, the value must be the full path and file name of an icon file in PNG format that resides in the device file system. An icon size of 48x48 pixels is recommended. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 >**Note:** If the value of this parm is empty (a length of 0), or if the value provided does not reference an icon file, then no customized icon will be specified for the Audio Stream. This will cause ZVC to display the default icon defined for the Audio Stream.
 
@@ -873,7 +947,9 @@ Parm name: STREAM_VOICECALL_Ctrl
 
 Description: 
 
->This parm allows you to control whether the ZVC allow the device user to view and modify the volume settings for the Audio Stream that is typically used for phone calls.
+>This parm allows you to control whether the ZVC allow the device user to view and modify the volume settings for the Audio Stream that is typically used for phone calls. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -891,7 +967,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used for phone calls when the device is in speaker mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the voice call volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for phone calls to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for phone calls to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -909,7 +987,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used for phone calls when the device is in receiver mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the voice call volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for phone calls to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for phone calls to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -927,7 +1007,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used for phone calls when the device is in wired headset mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the voice call volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for phone calls to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for phone calls to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -945,7 +1027,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the Audio Stream that is typically used for phone calls when the device is in bluetooth headset mode mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the voice call volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for phone calls to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the Audio Stream that is typically used for phone calls to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -961,7 +1045,9 @@ Parm name: STREAM_VVS_Label
 
 Description: 
 
->This parm allows you to set a customized label that the ZVC will display to visually identify the decode beep virtual volume stream.
+>This parm allows you to set a customized label that the ZVC will display to visually identify the decode beep virtual volume stream. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 >**Note:** If the value of this parm is empty (a length of 0), then no customized label will be specified for the Audio Stream. This will cause ZVC to display not label the Audio Stream.
 
@@ -978,7 +1064,9 @@ Parm name: STREAM_VVS_Icon
 
 Description: 
 
->This parm allows you to set a customized icon that the ZVC will display to visually identify the decode beep virtual volume stream. If specified, the value must be the full path and file name of an icon file in PNG format that resides in the device file system. An icon size of 48x48 pixels is recommended.
+>This parm allows you to set a customized icon that the ZVC will display to visually identify the decode beep virtual volume stream. If specified, the value must be the full path and file name of an icon file in PNG format that resides in the device file system. An icon size of 48x48 pixels is recommended. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 >**Note:** If the value of this parm is empty (a length of 0), or if the value provided does not reference an icon file, then no customized icon will be specified for the Audio Stream. This will cause ZVC to display the default icon defined for the Audio Stream.
 
@@ -995,7 +1083,9 @@ Parm name: STREAM_VVS_Ctrl
 
 Description: 
 
->This parm allows you to control whether the ZVC allow the device user to view and modify the volume settings for the decode beep virtual volume stream.
+>This parm allows you to control whether the ZVC allow the device user to view and modify the volume settings for the decode beep virtual volume stream. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -1013,7 +1103,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the decode beep virtual stream when the device is in speaker mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the decode beep virtual volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the decode beep virtual stream to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the decode beep virtual stream to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -1031,7 +1123,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the decode beep virtual stream when the device is in receiver mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the decode beep virtual volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the decode beep virtual stream to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the decode beep virtual stream to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -1049,7 +1143,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the decode beep virtual stream when the device is in wired headset mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the decode beep virtual volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the decode beep virtual stream to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the decode beep virtual stream to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -1067,7 +1163,9 @@ Description:
 
 >This will set the minimum, maximum, and preset volume levels for the decode beep virtual stream when the device is in bluetooth headset mode mode. The user will not be able to lower or raise the volume outside of the minimum/maximum range that is set. If the decode beep virtual volume level was outside of this range at the time that this range is set, then the volume of this stream will be equal to the minimum or maximum level depending on whether it was below or above this volume range.
 
->The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the decode beep virtual stream to this set level.
+>The preset volume level is a third volume level that must be greater than or equal to the minimum volume level and less than or equal to the maximum volume level. If the preset volume is outside of the minimum/maximum range, then this value will be be equal to the minimum or maximum level depending on whether it was below or above this volume range. This will be used by the SetCurrentProfileOption feature to adjust the volume of the decode beep virtual stream to this set level. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 

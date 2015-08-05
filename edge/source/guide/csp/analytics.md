@@ -44,7 +44,7 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value will cause no change to whether the Analytics Engine collects data on the device.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no change to whether the Analytics Engine collects data on the device.</td>
   </tr>
   <tr>
     <td>Enable</td>
@@ -78,7 +78,7 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value will cause no change to whether data is stored on the device or sent to the Cloud by the Analytics Engine.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no change to whether data is stored on the device or sent to the Cloud by the Analytics Engine.</td>
   </tr>
   <tr>
     <td>Select Cloud Transport</td>
@@ -113,7 +113,7 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value will cause no change to which groups of metrics are collected by the Analytics Engine or how often they are collected.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no change to which groups of metrics are collected by the Analytics Engine or how often they are collected.</td>
   </tr>
   <tr>
     <td>Configure Levels for Multiple Groups</td>
@@ -144,27 +144,27 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value will cause no change to whether this group of metrics is collected by the Analytics Engine or how often it is collected.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no change to whether this group of metrics is collected by the Analytics Engine or how often it is collected.</td>
   </tr>
   <tr>
     <td>None</td>
     <td>"1"</td>
-	<td>This value cause the Analytics Engine to skip collecting data for all of the metrics in the group.</td>
+	<td>This value will cause the Analytics Engine to skip collecting data for all of the metrics in the group.</td>
   </tr>
   <tr>
     <td>Low</td>
     <td>"2"</td>
-	<td>This value cause the Analytics Engine to collect data for all of the metrics in the group at low frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at low frequency.</td>
   </tr>
   <tr>
     <td>Medium</td>
     <td>"3"</td>
-	<td>This value cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency.</td>
   </tr>
   <tr>
     <td>High</td>
     <td>"4"</td>
-	<td>This value cause the Analytics Engine to collect data for all of the metrics in the group at high frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at high frequency.</td>
   </tr>
 </table>
 </div>	
@@ -190,27 +190,27 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value will cause no change to whether this group of metrics is collected by the Analytics Engine or how often it is collected.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no change to whether this group of metrics is collected by the Analytics Engine or how often it is collected.</td>
   </tr>
   <tr>
     <td>None</td>
     <td>"1"</td>
-	<td>This value cause the Analytics Engine to skip collecting data for all of the metrics in the group.</td>
+	<td>This value will cause the Analytics Engine to skip collecting data for all of the metrics in the group.</td>
   </tr>
   <tr>
     <td>Low</td>
     <td>"2"</td>
-	<td>This value cause the Analytics Engine to collect data for all of the metrics in the group at low frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at low frequency.</td>
   </tr>
   <tr>
     <td>Medium</td>
     <td>"3"</td>
-	<td>This value cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency.</td>
   </tr>
   <tr>
     <td>High</td>
     <td>"4"</td>
-	<td>This value cause the Analytics Engine to collect data for all of the metrics in the group at high frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at high frequency.</td>
   </tr>
 </table>
 </div>	
@@ -236,27 +236,27 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value will cause no change to whether this group of metrics is collected by the Analytics Engine or how often it is collected.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no change to whether this group of metrics is collected by the Analytics Engine or how often it is collected.</td>
   </tr>
   <tr>
     <td>None</td>
     <td>"1"</td>
-	<td>This value cause the Analytics Engine to skip collecting data for all of the metrics in the group.</td>
+	<td>This value will cause the Analytics Engine to skip collecting data for all of the metrics in the group.</td>
   </tr>
   <tr>
     <td>Low</td>
     <td>"2"</td>
-	<td>This value cause the Analytics Engine to collect data for all of the metrics in the group at low frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at low frequency.</td>
   </tr>
   <tr>
     <td>Medium</td>
     <td>"3"</td>
-	<td>This value cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency.</td>
   </tr>
   <tr>
     <td>High</td>
     <td>"4"</td>
-	<td>This value cause the Analytics Engine to collect data for all of the metrics in the group at high frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at high frequency.</td>
   </tr>
 </table>
 </div>	
@@ -282,27 +282,27 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value will cause no change to whether this group of metrics is collected by the Analytics Engine or how often it is collected.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no change to whether this group of metrics is collected by the Analytics Engine or how often it is collected.</td>
   </tr>
   <tr>
     <td>None</td>
     <td>"1"</td>
-	<td>This value cause the Analytics Engine to skip collecting data for all of the metrics in the group.</td>
+	<td>This value will cause the Analytics Engine to skip collecting data for all of the metrics in the group.</td>
   </tr>
   <tr>
     <td>Low</td>
     <td>"2"</td>
-	<td>This value cause the Analytics Engine to collect data for all of the metrics in the group at low frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at low frequency.</td>
   </tr>
   <tr>
     <td>Medium</td>
     <td>"3"</td>
-	<td>This value cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency.</td>
   </tr>
   <tr>
     <td>High</td>
     <td>"4"</td>
-	<td>This value cause the Analytics Engine to collect data for all of the metrics in the group at high frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at high frequency.</td>
   </tr>
 </table>
 </div>	
@@ -328,27 +328,27 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value will cause no change to whether this group of metrics is collected by the Analytics Engine or how often it is collected.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no change to whether this group of metrics is collected by the Analytics Engine or how often it is collected.</td>
   </tr>
   <tr>
     <td>None</td>
     <td>"1"</td>
-	<td>This value cause the Analytics Engine to skip collecting data for all of the metrics in the group.</td>
+	<td>This value will cause the Analytics Engine to skip collecting data for all of the metrics in the group.</td>
   </tr>
   <tr>
     <td>Low</td>
     <td>"2"</td>
-	<td>This value cause the Analytics Engine to collect data for all of the metrics in the group at low frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at low frequency.</td>
   </tr>
   <tr>
     <td>Medium</td>
     <td>"3"</td>
-	<td>This value cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency.</td>
   </tr>
   <tr>
     <td>High</td>
     <td>"4"</td>
-	<td>This value cause the Analytics Engine to collect data for all of the metrics in the group at high frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at high frequency.</td>
   </tr>
 </table>
 </div>	

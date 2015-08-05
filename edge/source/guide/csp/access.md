@@ -33,7 +33,7 @@ Pivotal parm: Yes
 
 Description: 
 
->Select the desired Operation Mode which will turn Whitelisting on or off.  Whitelisting is turned off by default, and hence no restrictions are imposed on which applications device users can install or which applications can be launched.
+>Select the desired Operation Mode which will turn Whitelisting on or off. Whitelisting is turned off by default, and hence no restrictions are imposed on which applications device users can install or which applications can be launched.
 
 >Turning on Whitelisting allows a device to be made more secure by preventing a device user from installing applications that are not on the "white" list and by preventing all launching of applications that are not on the "white" list. Turning on Whitelisting also complicates the process of deploying applications since applications that are deployed and installed will have to also be added to the "white" list before they can be launched.
 
@@ -47,12 +47,12 @@ Description:
   <tr>
     <td>Single User without Whitelist</td>
     <td>"1"</td>
-	<td>This value will turn Whitelisting off and hence disable all Whitelisting functionality.</td>
+	<td>This value will cause Whitelisting to be turned off and hence disable all Whitelisting functionality.</td>
   </tr>
   <tr>
     <td>Single User with Whitelist</td>
     <td>"2"</td>
-	<td>This value will turn Whitelisting on and hence enable Whitelisting functionality. The exact behavior of Whitelisting will depend on the configuration of the other parms.</td>
+	<td>This value will cause Whitelisting to be turned on and hence enable Whitelisting functionality. The exact behavior of Whitelisting will depend on the configuration of the other parms.</td>
   </tr>
 </table>
 </div>	
@@ -78,12 +78,12 @@ Description:
   <tr>
     <td>Full Access</td>
     <td>"1"</td>
-	<td>The device user will be allowed to access the full capabilities of the in-device System Settings Menu.</td>
+	<td>This value will cause the device user to be allowed to access the full capabilities of the in-device System Settings Menu.</td>
   </tr>
   <tr>
     <td>Reduced Access</td>
     <td>"2"</td>
-	<td>The device user will be allowed to access only a reduced set of the capabilities of the in-device System Settings Menu (Display, Volume, About)</td>
+	<td>This value will cause the device user to be allowed to access only a reduced set of the capabilities of the in-device System Settings Menu (Display, Volume, About)</td>
   </tr>
 </table>
 </div>	
@@ -95,9 +95,9 @@ Pivotal parm: Yes
 
 Description: 
 
->Select whether Whitelisting will verify the signatures of applications, and if so, which application signatures will be verified. Signature verification is turned off by default.
+>This parm allows you to control whether Whitelisting will verify the signatures of applications, and if so, which application signatures will be verified. Signature verification is turned off by default.
 
->When Whitelisting is turned on but Signature verification is turned off, the determination of whether an application is on the "white" list is made solely by comparing the Android Package Name. This is insecure since it cannot prevent a potentially rogue application from setting it’s Package Name to be one that is known to be on the "white" list, and hence circumvent Whitelisting by impersonating a trusted application.
+>When Whitelisting is turned on but Signature verification is turned off, the determination of whether an application is on the "white" list is made solely by comparing the Android Package Name. This is insecure since it cannot prevent a potentially rogue application from setting it's Package Name to be one that is known to be on the "white" list, and hence circumvent Whitelisting by impersonating a trusted application.
 
 >To increase security, Signature verification can be turned on. When Signature verification is turned on, the determination of whether an application is on the "white" list will be based on both its Package Name and its Signature. For that to work, the Signature must be provided for every application that is added to the "white" list so it can be compared against the actual Signature of that application.
 
@@ -113,22 +113,22 @@ Description:
   <tr>
     <td>Do nothing</td>
     <td>"0"</td>
-	<td>This value will not change whether Signature verification will occur or for which applications.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no change to whether Signature verification will occur or for which applications.</td>
   </tr>
   <tr>
     <td>Do not verify app signature</td>
     <td>"1"</td>
-	<td>This value will turn Signature verification off, thus causing Package Names alone to be used in to determine if an application is on the "white" list.</td>
+	<td>This value will cause Signature verification to be turned off, thus causing Package Names alone to be used in to determine if an application is on the "white" list.</td>
   </tr>
   <tr>
     <td>Verify user app signature</td>
     <td>"2"</td>
-	<td>This value will turn Signature verification on, thus causing Signature verification to be used in addition to Package Names to determine if a user, or "installable", application is on the "white" list.</td>
+	<td>This value will cause Signature verification to be turned on, thus causing Signature verification to be used in addition to Package Names to determine if a user, or "installable", application is on the "white" list.</td>
   </tr>
   <tr>
     <td>Verify all apps signature</td>
     <td>"3"</td>
-	<td>This value will turn Signature verification on, thus causing Signature verification to be used in addition to Package Names to determine if any application, "built-in" or "installable", is on the "white" list.</td>
+	<td>This value will cause Signature verification to be turned on, thus causing Signature verification to be used in addition to Package Names to determine if any application, "built-in" or "installable", is on the "white" list.</td>
   </tr>
 </table>
 </div>	
@@ -157,12 +157,12 @@ Description:
   <tr>
     <td>Delete specified Packages(s)</td>
     <td>"1"</td>
-	<td>This value deletes one or more selected Package Names from the "white list", thus blocking user, or "installable", applications with those Package Names from being installed by the device user or launched.</td>
+	<td>This value will cause one or more selected Package Names to be deleted from the "white list", thus blocking user, or "installable", applications with those Package Names from being installed by the device user or launched.</td>
   </tr>
   <tr>
     <td>Delete ALL Packages</td>
     <td>"2"</td>
-	<td>This value deletes all Package Names from the "white list", thus blocking all user, or "installable",  applications from being installed by the device user or launched.</td>
+	<td>This value will cause all Package Names to be deleted from the "white list", thus blocking all user, or "installable",  applications from being installed by the device user or launched.</td>
   </tr>  
   <tr>
     <td>Delete specified Signature(s)</td>
@@ -197,7 +197,9 @@ Parm name: DeletePackageSign
 
 Description: 
 
->Provide the package signatures to be deleted
+>Provide the package signatures to be deleted. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -225,12 +227,12 @@ Description:
   <tr>
     <td>Add No Packages</td>
     <td>"0"</td>
-	<td>This value does not add any Package Names to the "white" list.</td>
+	<td>This value will not cause any Package Names to be added to the "white" list.</td>
   </tr>
   <tr>
     <td>Add Specified Package(s)</td>
     <td>"1"</td>
-	<td>This value adds the specified Package Names to the "white" list.</td>
+	<td>This value will cause the specified Package Names to be added the "white" list.</td>
   </tr>
 </table>
 </div>	
@@ -260,7 +262,9 @@ Parm name: AddPackageSign
 
 Description: 
 
->Provide the Signatures that should be added to the "white" list.
+>Provide the Signatures that should be added to the "white" list. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 ###Add Packages and Allow to Submit XML
 Settable if: The Operation Mode is "Single User With Whitelist"
@@ -281,12 +285,12 @@ Description:
   <tr>
     <td>Add NO Packages</td>
     <td>"0"</td>
-	<td>This values does add any Package Names to the "white" list and does not explicitly allow any applications to submit XML.</td>
+	<td>This value (or the absence of this parm from the XML) will not cause any Package Names to be added to the "white" list and does not explicitly allow any applications to submit XML.</td>
   </tr>
   <tr>
     <td>Add specified Package(s)</td>
     <td>"1"</td>
-	<td>This value adds the specified Package Names to the "white" list and also allows the applications identified by those Package Names to submit XML.</td>
+	<td>This value will cause the specified Package Names to be added to the "white" list and also allows the applications identified by those Package Names to submit XML.</td>
   </tr>
 </table>
 </div>	
@@ -300,7 +304,9 @@ Parm name: AddPackageNamesAllowXML
 
 Description: 
 
->Provide the Package Names to be added to the "white" list and that should be allowed to submit XML.
+>Provide the Package Names to be added to the "white" list and that should be allowed to submit XML. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -316,7 +322,9 @@ Parm name: AddPackageSignAllowXML
 
 Description: 
 
->Provide the Signatures that should be added to the "white" list.
+>Provide the Signatures that should be added to the "white" list. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -330,11 +338,11 @@ Pivotal parm: Yes
 
 Description: 
 
->Select whether or not to allow the application to submit XML. This will allow or restrict applications from submitting changes to the MX Framework.
+>Select whether or not to allow the application to submit XML. This will allow or restrict applications from submitting changes to the MX Framework. 
 
 >**Note:** This feature is supported on devices that are running KitKat versions of Android like the TC70 and will only be used when the Whitelist feature is enabled.
 
-> **WARNING:** Be sure to always include the EMDK for Android service package name `com.symbol.emdkservice` when this feature is enabled. Otherwise Profile Features (excluding DataCapture) will not be able to be processed. 
+>**WARNING:** Be sure to always include the EMDK for Android service package name `com.symbol.emdkservice` when this feature is enabled. Otherwise Profile Features (excluding DataCapture) will not be able to be processed. 
 
 <div class="parm-table">
  <table>
@@ -346,20 +354,18 @@ Description:
   <tr>
     <td>Allow NO applications</td>
     <td>"0"</td>
-	<td>This values does make any changes and hence does not explicitly allow any applications to submit XML.</td>
+	<td>This value (or the absence of this parm from the XML) will not cause any changes and hence does not explicitly allow any applications to submit XML.</td>
   </tr>
   <tr>
     <td>Allow specified application(s)</td>
     <td>"1"</td>
-	<td>This value allows the applications identified by the specified list of Package Names to submit XML.
-<p>This value also allows a list of Package Names to be specified that will NOT be allowed to submit XML, thus providing an option to specify "these but not those"</p>
+	<td><p>This value will cause the applications identified by the specified list of Package Names to be allowed to submit XML.</p><p>This value also allows a list of Package Names to be specified that will NOT be allowed to submit XML, thus providing an option to specify "these but not those"</p>
 </td>
   </tr>
   <tr>
     <td>Allow ALL applications that are permitted to be executed</td>
     <td>"2"</td>
-	<td>This value allows all applications that are on the "white" list (i.e. that are allowed to be launched) to submit XML.
-<p>This value also allows a list of Package Names to be specified that will NOT be allowed to submit XML, thus providing an option to specify "all except these"</p>
+	<td><p>This value will cause all of the applications that are on the "white" list (i.e. that are allowed to be launched) to be allowed to submit XML.</p><p>This value also allows a list of Package Names to be specified that will NOT be allowed to submit XML, thus providing an option to specify "all except these"</p>
 </td>
   </tr>  
 </table>
@@ -374,7 +380,9 @@ Parm name: AllowSubmitXMLPackageNames
 
 Description: 
 
->Provide the Package Names that should be allowed to submit XML.
+>Provide the Package Names that should be allowed to submit XML. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -390,7 +398,9 @@ Parm name: DisallowSubmitXMLPackageNames
 
 Description: 
 
->Provide the Package Names that should be disallowed from submitting XML.
+>Provide the Package Names that should be disallowed from submitting XML. 
+
+>**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 

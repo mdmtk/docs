@@ -4,16 +4,71 @@
 
 ### Overview
 
-The Cert Manager feature allows your application to install or uninstall certificates and initialize the Android key store. You can use digital certificates to identify your device for a variety of purposes, including VPN or Wi-Fi network access as well as authentication to servers by apps such as Email or Chrome. 
+The CertMgr Feature Type allows your application to install or uninstall certificates and initialize the Android key store. You can use digital certificates to identify your device for a variety of purposes, including VPN or Wi-Fi network access as well as authentication to servers by apps such as Email or Chrome. 
 
 ### Main Functionality
 
-* Install Certificate
-* Uninstall Certificate
+* Install or uninstall Certificate
 * Initialize Android Keystore
 * Adjust System Clock
 
 ##Parameter Notes
+###Certificate Action
+Pivotal parm: Yes
+
+Description: 
+
+>This parm is used to specify which certificate action should be performed.
+
+<div class="parm-table">
+ <table>
+	<tr>
+		<th>Parm Option Name</th>
+		<th>Parm Value</th>
+		<th>Description</th>
+	</tr>
+  <tr>
+    <td>Install certificate</td>
+    <td>"1"</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>Uninstall certificate</td>
+    <td>"2"</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>Initialize Android Keystore</td>
+    <td>"4"</td>
+	<td></td>
+  </tr>
+</table>
+</div>	
+
+###Certificate Alias
+Settable if: The Certificate Action is "Install certificate" or "Uninstall certificate"
+
+Pivotal parm: No
+
+Parm name: CertAlias
+
+Description: 
+
+>Provide the name(alias) that will uniquely identify the certificate
+
+Parm value input rules: 
+
+* String with a minimum size of 1 character
+
+
+
+
+
+
+
+
+___
+
 ### Initialize Android Keystore
 When you initialize the Android keystore you create a new keystore replacing any previously existing one.  Before installing or uninstalling certificates, a keystore must exist. You can choose to perform this action as a separate EMDK profile or include the Certificate Manager feature multiple times in one profile.
 

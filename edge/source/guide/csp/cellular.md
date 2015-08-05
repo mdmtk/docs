@@ -40,8 +40,8 @@ Description:
 	</tr>
   <tr>
     <td>Do not change</td>
-    <td>""</td>
-	<td>This value will cause no change to the current state of the Data Roaming Option.</td>
+    <td>"0"</td>
+	<td>This value (or the absence of this parm from the XML) will cause no change to the current state of the Data Roaming Option.</td>
   </tr>
   <tr>
     <td>Turn On</td>
@@ -74,8 +74,8 @@ Description:
 	</tr>
   <tr>
     <td>Do not change</td>
-    <td>""</td>
-	<td>This value will cause no change to the current state of the Background Data Option.</td>
+    <td>"0"</td>
+	<td>This value (or the absence of this parm from the XML) will cause no change to the current state of the Background Data Option.</td>
   </tr>
   <tr>
     <td>Turn On</td>
@@ -108,8 +108,8 @@ Description:
 	</tr>
   <tr>
     <td>Do not change</td>
-    <td>""</td>
-	<td>This value will cause no change to whether the state of the Data Roaming Option can be changed.</td>
+    <td>"0"</td>
+	<td>This value (or the absence of this parm from the XML) will cause no change to whether the state of the Data Roaming Option can be changed.</td>
   </tr>
   <tr>
     <td>Enable</td>
@@ -142,8 +142,8 @@ Description:
 	</tr>
   <tr>
     <td>Do not change</td>
-    <td>""</td>
-	<td>This value will cause no change to whether the state of the Background Data Option can be changed.</td>
+    <td>"0"</td>
+	<td>This value (or the absence of this parm from the XML) will cause no change to whether the state of the Background Data Option can be changed.</td>
   </tr>
   <tr>
     <td>Enable</td>

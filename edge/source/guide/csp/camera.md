@@ -35,8 +35,8 @@ Description:
 	</tr>
   <tr>
     <td>Control Individual Cameras</td>
-    <td>""</td>
-	<td>This value will cause no changes to whether any of the device's cameras can be used.</td>
+    <td>"0"</td>
+	<td>This value (or the absence of this parm from the XML) will cause no changes to whether any of the device's cameras can be used.</td>
   </tr>
   <tr>
     <td>Enable ALL Cameras</td>
@@ -73,8 +73,8 @@ Description:
 	</tr>
   <tr>
     <td>Do not change</td>
-    <td>""</td>
-	<td>This value will cause no changes to whether the device's front facing camera can be used.</td>
+    <td>"0"</td>
+	<td>This value (or the absence of this parm from the XML) will cause no changes to whether the device's front facing camera can be used.</td>
   </tr>
   <tr>
     <td>Enable</td>
@@ -112,8 +112,8 @@ Description:
 	</tr>
   <tr>
     <td>Do not change</td>
-    <td>""</td>
-	<td>This value will cause no changes to whether the device's rear facing camera can be used.</td>
+    <td>"0"</td>
+	<td>This value (or the absence of this parm from the XML) will cause no changes to whether the device's rear facing camera can be used.</td>
   </tr>
   <tr>
     <td>Enable</td>
