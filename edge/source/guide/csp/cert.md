@@ -93,7 +93,7 @@ Description:
 
 >This parm is used to specify the type of certificate to be installed.
 
->Note: Be sure to initialize the Keystore the first time when installing certificate types with private keys (.PFX,.P12,.PKCS12)
+>**Note:** Be sure to initialize the Keystore the first time when installing certificate types with private keys (.PFX,.P12,.PKCS12)
 
 <div class="parm-table">
  <table>
@@ -215,7 +215,6 @@ Description:
 Parm value input rules: 
 
 * String with a minimum of 1 character and a maximum of 32 characters
-
 
 ##Example XML
 ###Initialize the Android Keystore
