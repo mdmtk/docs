@@ -4,7 +4,11 @@
 
 ### Overview
 
-The CameraMgr Feature Type allows your application to control access to the cameras in the device. For example you can disable the user from using all cameras on the device. 
+Many Zebra Android devices are equipped with mechanisms that may be used to take pictures, scan barcodes, and/or capture documents. Some Zebra Android devices may also be equipped with special-purpose mechanisms, such as lasers or imagers, which are optimized to scan barcodes. In some sensitive environments, it may be necessary to restrict the use of devices from taking pictures or capturing documents to avoid potential security risks.
+
+The CameraMgr Feature Type allows you to control which of the mechanisms supported by a device can be used by the device user to take pictures or capture documents, and hence are considered to be cameras. For example you could prevent the device user from using all cameras on the device or selectively control which cameras the device user can use.
+
+**Note:** If a device is equipped with a mechanism that can be used to take pictures or capture documents, then that mechanism will be considered to be a camera, for the purposes of the CameraMgr Feature Type. For example, if a device is equipped with a CCD-based imager that is primarily designed to scan barcodes but also supports the ability to take pictures or capture documents, then that imager will be considered to be a camera and hence will need to support enable and disable. But if no method was available to use that imager to take pictures or capture documents, then it would not be considered a cameras, since it would not introduce the same camera-oriented security risks.
 
 ### Main Functionality
 
@@ -20,6 +24,8 @@ Description:
 
 >This parm will enable or disable use of all of the cameras that are on the device, which may affect cameras that are not explicitly listed. In other words, this will globally allow or disallow all camera support.
 
+>**Note:** Enabling or disabling all cameras will affect all mechanism that are considered cameras that are supported on a device. This will be the case even if that device has more cameras than can be individually controlled on that device using the CameraMgr Feature Type. For example, if a device had a front facing camera, a rear facing, and a side-facing imager that can capture documents, all three would be considered cameras would be enabled or disabled together. This would be the cases even the side facing imager could not be enabled or disabled individually. Enabling or disabling all cameras may override prior enabling or disabling of individual cameras using the CameraMgr Feature Type or may be overridden for individual cameras by subsequent use of the CameraMgr Feature Type.
+
 <div class="parm-table">
  <table>
 	<tr>
@@ -30,17 +36,17 @@ Description:
   <tr>
     <td>Control Individual Cameras</td>
     <td>""</td>
-	<td>This value indicates that the cameras will be enabled or disabled individually.</td>
+	<td>This value will cause no changes to whether any of the device's cameras can be used.</td>
   </tr>
   <tr>
     <td>Enable ALL Cameras</td>
     <td>"1"</td>
-	<td>This parm indicates that all of the cameras that are on the device will be enabled.</td>
+	<td>This value will cause use of all the device's cameras to be enabled, thus allowing the device user to use any of those cameras to take pictures, if an application exists on the device to do so.</td>
   </tr>
   <tr>
     <td>Disable ALL Cameras</td>
     <td>"2"</td>
-	<td>This parm indicates that all of the cameras that are on the device will be disabled.</td>
+	<td>This value will cause use of all the device's cameras to be disabled, thus preventing the device user from using any of those cameras to take pictures, even if an application exists on the device to do so.</td>
   </tr>
 </table>
 </div>	
@@ -68,17 +74,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>""</td>
-	<td>This parm will make no changes to the current state of the device's front facing camera.</td>
+	<td>This value will cause no changes to whether the device's front facing camera can be used.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This parm will enable the use of the device's front facing camera.</td>
+	<td>This value will cause use of the device's front facing camera to be enabled, thus allowing the device user to use that camera to take pictures, if an application exists on the device to do so.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td>This parm will disable the use of the device's front facing camera.</td>
+	<td>This value will cause use of the device's front facing camera to be disabled, thus preventing the device user from using that camera to take pictures, even if an application exists on the device to do so.</td>
   </tr>
 </table>
 </div>	
@@ -96,6 +102,7 @@ Description:
 
 >If the device does not have a rear facing camera, then an error will be returned in the Result XML document.
 
+
 <div class="parm-table">
  <table>
 	<tr>
@@ -106,17 +113,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>""</td>
-	<td>This parm will make no changes to the current state of the device's rear facing camera.</td>
+	<td>This value will cause no changes to whether the device's rear facing camera can be used.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This parm will enable the use of the device's rear facing camera.</td>
+	<td>This value will cause use of the device's rear facing camera to be enabled, thus allowing the device user to use that camera to take pictures, if an application exists on the device to do so.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td>This parm will disable the use of the device's rear facing camera.</td>
+	<td>This value will cause use of the device's rear facing camera to be disabled, thus preventing the device user from using that camera to take pictures, even if an application exists on the device to do so.</td>
   </tr>
 </table>
 </div>	

@@ -4,20 +4,22 @@
 
 ### Overview
 
-The CellularMgr Feature Type allows you to configure the state and usage of a device's Data Roaming and Background Data functionalities.
+The CellularMgr Feature Type allows you to control how a device's Cellular data connection is used. The CellularMgr Feature Type is supported only on Zebra Android devices that are equipped with Wireless Wide Area Network (WWAN) network adapters that enable access to a Cellular data network.
 
-Data Roaming is a function which allows the device to receive data from cellular networks that your mobile operator does not own. This could incur extra charges if it is available in your mobile service plan.
+**Note:** If a device does not have a Wireless Wide Area Network (WWAN) network adapter, then it will not support the Cellular data connections and hence will not support the CellularMgr Feature Type. Attempting to use the CellularMgr Feature Type on such a device will cause an error to be returned in the Result XML document.
 
-Background Data is another function which will let an application use data while it is running in the background. For example, an email application might use Background Data to get updates even though the user is currently using another application or the device's screen is turned off. If Background Data is turned off, the application would only be able to update when the user tells it to, possibly by starting the application.
+The CellularMgr Feature Type provides the ability to change the state of various options On or Off, thus controlling whether the capability is operational. The CellularMgr Feature Type also provides the ability to enable or disable use of the same options. Disabling an option means that the option cannot be turned On or Off by the device user or programmatically, using the CellularMgr Feature Type. Enabling an option means that the option can be turned On or Off by the device user or programmatically, using the CellularMgr Feature Type. You can think of Turn On/Off as being like a switch and the Enable/Disable as being like a cover over the switch. When the cover is closed, the position of the switch cannot be changed.
 
->**Note:** If the device does not have cellular functionality that is being set or the OSX version on the device does not support the requested feature, an error will be returned in the Result XML document.
+In Android, the Data Roaming Option determines whether a device is allowed to communicate over Cellular data networks other than the one provided by its configured "home" mobile operator. Communicating over such "foreign" networks is called roaming and can be quite convenient, allowing a device user to operate seamlessly in many different locations.  But, depending on the networks involved and the terms of a specific Cellular data service plan, turning on the Data Roaming Option significantly increase telecom expenses. Turning off the Data Roaming Option can help limit such costs but limiting Cellular data connections to the "home" network.
+
+In Android, the Background Data Option determines whether applications that are capable of performing communications in the background (i.e. while they are not the current visible running foreground application) should do so over a Cellular data network. Turning on the Background Data Option allows background communications over a Cellular data network and can improve the experience of the device user by allowing applications to have data ready "when you ask for it". For example, an email application might download emails while the device user is using another application or when the device's screen is turned off. Turning off the Background Data Option tells applications to utilize Cellular data connections only when running in the foreground.
 
 ### Main Functionality
 
 * Enable or disable Data Roaming
 * Enable or disable Background Data
-* Turn Data Roaming on or off  
-* Turn Background Data on or off
+* Turn Data Roaming On or Off  
+* Turn Background Data On or Off
 
 ##Parameter Notes
 ###Set the state of Data Roaming
@@ -27,7 +29,7 @@ Parm name: DataRoamingState
 
 Description: 
 
->This parm will turn on or off Data Roaming.
+>This parm allows you to change the state of the Data Roaming Option to On or Off.
 
 <div class="parm-table">
  <table>
@@ -39,17 +41,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>""</td>
-	<td>This value will cause no change to the current state of Data Roaming on the device.</td>
+	<td>This value will cause no change to the current state of the Data Roaming Option.</td>
   </tr>
   <tr>
     <td>Turn On</td>
     <td>"1"</td>
-	<td>This value will turn on Data Roaming on the device.</td>
+	<td>This value will cause the Data Roaming Option to be turned On, thus allowing Cellular data connections when roaming.</td>
   </tr>
   <tr>
     <td>Turn Off</td>
     <td>"2"</td>
-	<td>This value will turn off Data Roaming on the device.</td>
+	<td>This value will cause the Data Roaming Option to be turned Off, thus disallowing Cellular data connections when roaming.</td>
   </tr>
 </table>
 </div>	
@@ -61,7 +63,7 @@ Parm name: BackgroundDataState
 
 Description: 
 
->This parm will turn on or off Background Data. 
+>This parm allows you to change the state of the Background Data Option to On or Off.
 
 <div class="parm-table">
  <table>
@@ -73,17 +75,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>""</td>
-	<td>This value will cause no change to the current state of Background Data on the device.</td>
+	<td>This value will cause no change to the current state of the Background Data Option.</td>
   </tr>
   <tr>
     <td>Turn On</td>
     <td>"1"</td>
-	<td>This value will turn on Background Data on the device.</td>
+	<td>This value will cause the Background Data Option to be turned On, thus allowing applications to communicate in the background over Cellular data connections.</td>
   </tr>
   <tr>
     <td>Turn Off</td>
     <td>"2"</td>
-	<td>This value will turn off Background Data on the device.</td>
+	<td>This value will cause the Background Data Option to be turned Off, thus disallowing applications from communicating in the background over Cellular data connections.</td>
   </tr>
 </table>
 </div>	
@@ -95,7 +97,7 @@ Parm name: DataRoamingUsage
 
 Description: 
 
->This parm will enable or disable the usage of Data Roaming, which would allow or disallow the user from turning Data Roaming on or off.
+>This parm allows you to control whether the state of the Data Roaming Option can be changed.
 
 <div class="parm-table">
  <table>
@@ -107,17 +109,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>""</td>
-	<td>This value will not change whether Data Roaming is enabled or disabled on the device.</td>
+	<td>This value will cause no change to whether the state of the Data Roaming Option can be changed.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This value will enable Data Roaming, which means that the user will be able to turn Data Roaming on or off.</td>
+	<td>This value will cause the state of the Data Roaming Option to be unlocked allowing it to be changed, either by the device user or by the CellularMgr Feature Type.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td>This value will disable Data Roaming, which means that the user will be blocked from turning Data Roaming on or off.</td>
+	<td>This value will cause the state of the Data Roaming Option to be locked, preventing it from being changed, either by the device user or by the CellularMgr Feature Type.</td>
   </tr>
 </table>
 </div>	
@@ -129,7 +131,7 @@ Parm name: BackgroundDataUsage
 
 Description: 
 
->This parm will enable or disable the usage of Background Data, which would allow or disallow the user from turning Background Data on or off.
+>This parm allows you to control whether the state of the Background Data Option can be changed.
 
 <div class="parm-table">
  <table>
@@ -141,17 +143,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>""</td>
-	<td>This value will not change whether Background Data is enabled or disabled on the device.</td>
+	<td>This value will cause no change to whether the state of the Background Data Option can be changed.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This value will enable Background Data, which means that the user will be able to turn Background Data on or off.</td>
+	<td>This value will cause the state of the Background Data Option to be unlocked allowing it to be changed, either by the device user or by the CellularMgr Feature Type.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td>This value will disable Background Data, which means that the user will be blocked from turning Background Data on or off.</td>
+	<td>This value will cause the state of the Background Data Option to be locked, preventing it from being changed, either by the device user or by the CellularMgr Feature Type.</td>
   </tr>
 </table>
 </div>	

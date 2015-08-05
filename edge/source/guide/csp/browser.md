@@ -4,15 +4,16 @@
 
 ### Overview
 
-The BrowserMgr Feature Type is used to configure the settings of the Android web browser app.
+Many Zebra Android devices include a default Web Browser that is derived from the stock Android Open Source Project (AOSP) Web Browser source code. The key changes made are to enable configurability of selected settings. The BrowserMgr Feature Type is used to configure these settings.
+
+**Note:** Multi-User Mode is supported on all Zebra Android devices that support Zebra MX functionality, but the AccessMgr Feature Type currently does not support enabling Multi-User Mode. Multi-User Mode can be enabled on devices that support it, but only using unsupported tools or mechanisms that do not scale to large deployments. For this reason, the ability to use the AppMgr Feature Type to manage the Protected List may provide little or no immediate benefit. In the future, when the AccessMgr Feature Type is enhanced to support enabling Multi-User Mode, the ability to use the AppMgr Feature Type to manage the Protected List will likely be more meaningful.
 
 ### Main Functionality
 
-* Set Default homepage
-* Turn on Remember Password
-* Turn off Remember Password
-* Turn on save form data
-* Turn off save form data
+* Set the Default Home Page
+* Turn the Remember Passwords Option On/Off 
+* Turn the Save Form Data Option On/Off 
+
 
 ##Parameter Notes
 ###Set Default Home Page
@@ -22,7 +23,7 @@ Parm name: SetDefaultHomepage
 
 Description: 
 
->This parm will set a specified web page as the default home page in the Android web browser. This requires the full, valid URL to the web page to be input, such as "www.google.com". Then when this browser app is opened, it will open on the web page that was set with this parm.
+>This parm allows you to set the Default Home Page URI of the Default Android Web Browser. Each time the Default Android Web Browser is opened without an explicitly requested URI, it will use to the URI to the Default Home Page URI. To produce successful results, a full, valid URI to a desired web page should be supplied, such as "www.google.com". This could be used to launch a specific web-based application or to direct users to an internal company web site or portal as a starting point for browsing.
 
 Parm value input rules: 
 
@@ -35,7 +36,9 @@ Parm name: SetRememberPasswords
 
 Description: 
 
->This parm will set whether or not the user should be asked if they want the browser to save their password when they are submitting a password in a web page. If this is turned on, the password will be remembered by the browser and will automatically be filled in when the user fills out the same web page.
+>This parm will allow you to turn the Remember Passwords Option of the Default Android Web Browser On or Off.
+
+>Turning the Remember Passwords Option On can make browsing more convenient by eliminating the need for the device user to enter the same password later. Turning the Remember Passwords Option Off is generally more secure, especially on a device that might be shared, since it would prevent an unauthorized user from logging in using a password that was previously entered by an authorized user.
 
 <div class="parm-table">
  <table>
@@ -47,17 +50,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>""</td>
-	<td>This value will cause no change to whether or not the Remember Passwords dialog currently appears.</td>
+	<td>This value will cause no change to whether the Remember Passwords Option is turned On or Off.</td>
   </tr>
   <tr>
     <td>Turn on</td>
     <td>"1"</td>
-	<td>This value will turn on the Remember Passwords option, which will cause the user to be prompted if they would like to save the password.</td>
+	<td>This value will turn the Remember Passwords Option On, which will cause the user to be prompted, following password entry, as to whether or not they would like to save the password.</td>
   </tr>
   <tr>
     <td>Turn off</td>
     <td>"2"</td>
-	<td>This value will turn on the Remember Passwords option, which will cause the user to not be prompted if they would like to save the password.</td>
+	<td>This value will turn the Remember Passwords Option Off, which will prevent any saving of passwords.</td>
   </tr>
 </table>
 </div>	
@@ -69,7 +72,9 @@ Parm name: SetSaveFormData
 
 Description: 
 
->This parm will set whether or not the user should be asked if they want to save the information that they entered into the field when filling out and submitting a web form.
+>This parm will allow you to turn the Save Form Data Option of the Default Android Web Browser On or Off.
+
+>Turning the Save Form Data Option On can make browsing more convenient by eliminating the need for the device user to re-enter the same information into the same form later. Turning the Save Form Data Option Off is generally more secure, especially on a device that might be shared, since it would prevent an unauthorized user viewing or re-entering sensitive information that was previously entered by an authorized user.
 
 <div class="parm-table">
  <table>
@@ -81,17 +86,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>""</td>
-	<td>This value will cause no change to whether or not the Save Form Data dialog currently appears.</td>
+	<td>This value will cause no change to whether or the Save Form Data Option is turned On or Off.</td>
   </tr>
   <tr>
     <td>Turn on</td>
     <td>"1"</td>
-	<td>This value will turn on the Save Form Data option, which will cause the user to be prompted if they would like to to save the form data.</td>
+	<td>This value will turn the Save Form Data Option On, which will give the device user the option to save form data so it can be automatically re-entered into the same form later.</td>
   </tr>
   <tr>
     <td>Turn off</td>
     <td>"2"</td>
-	<td>This value will turn off the Save Form Data option, which will cause the user to not be prompted if they would like to to save the form data.</td>
+	<td>This value will turn the Save Form Data Option Off, which prevent any saving of form data.</td>
   </tr>
 </table>
 </div>	
