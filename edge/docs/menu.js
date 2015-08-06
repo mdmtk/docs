@@ -147,7 +147,7 @@ var menuStrcture = [
 							},
 							{
 								name: 'ConditionMgr',
-								link: '#',
+								link: '#guide-csp-conditionmgr',
 							},
 							{
 								name: 'CspMgr',

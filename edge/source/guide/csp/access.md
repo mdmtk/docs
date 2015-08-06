@@ -199,8 +199,6 @@ Description:
 
 >Provide the package signatures to be deleted. 
 
->**Note:** This parm is optional and is not required to be present in the Request XML document.
-
 Parm value input rules: 
 
 * String with a minimum size of 1 character
@@ -262,9 +260,7 @@ Parm name: AddPackageSign
 
 Description: 
 
->Provide the Signatures that should be added to the "white" list. 
-
->**Note:** This parm is optional and is not required to be present in the Request XML document.
+>Provide the Signatures that should be added to the "white" list. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no package signatures to be added.
 
 ###Add Packages and Allow to Submit XML
 Settable if: The Operation Mode is "Single User With Whitelist"
@@ -304,9 +300,7 @@ Parm name: AddPackageNamesAllowXML
 
 Description: 
 
->Provide the Package Names to be added to the "white" list and that should be allowed to submit XML. 
-
->**Note:** This parm is optional and is not required to be present in the Request XML document.
+>Provide the Package Names to be added to the "white" list and that should be allowed to submit XML. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no package names to be added and allowed to submit XML.
 
 Parm value input rules: 
 
@@ -323,8 +317,6 @@ Parm name: AddPackageSignAllowXML
 Description: 
 
 >Provide the Signatures that should be added to the "white" list. 
-
->**Note:** This parm is optional and is not required to be present in the Request XML document.
 
 Parm value input rules: 
 
@@ -380,9 +372,7 @@ Parm name: AllowSubmitXMLPackageNames
 
 Description: 
 
->Provide the Package Names that should be allowed to submit XML. 
-
->**Note:** This parm is optional and is not required to be present in the Request XML document.
+>Provide the Package Names that should be allowed to submit XML. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no package names to be allowed to submit XML.
 
 Parm value input rules: 
 
@@ -398,9 +388,7 @@ Parm name: DisallowSubmitXMLPackageNames
 
 Description: 
 
->Provide the Package Names that should be disallowed from submitting XML. 
-
->**Note:** This parm is optional and is not required to be present in the Request XML document.
+>Provide the Package Names that should be disallowed from submitting XML. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no package names to be disallowed from submitting XML.
 
 Parm value input rules: 
 

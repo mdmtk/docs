@@ -4,9 +4,9 @@
 
 ### Overview
 
-The ComponentMgr Feature Type is used to configure the usage and state specific subsystems on the device, such as Ethernet. This means that subsystems can be Enabled and Disabled and also turned On or Off. 
+The ComponentMgr Feature Type allows you to configure the state and usage of specific subsystems on the device, such as Ethernet. State allows you to control whether the subsystem is On (active) or Off (inactive). Usage allows you to control (enable or disable) whether the state of a subsystem can be changed (turned On or Off) by the device user using the System Settings Menu or programmatically using the ComponentMgr Feature Type. If you try to use the ComponentMgr Feature Type to control the state of a subsystem for which usage is currently disabled, then an error will be returned in the Result XML document.
 
->**Note:** If the ComponentMgr Feature Type is being used to configure a component that is not available on the device, an error will be returned in the Result XML document.  
+>**Note:** Not every device will support every subsystem. For example, some devices have no support for Ethernet. If you try to use the ComponentMgr Feature Type to control the state or usage of a subsystem that is not supported on a given device, then an error will be returned in the Result XML document.
 
 ### Main Functionality
 
@@ -24,7 +24,7 @@ Description:
 
 >This parm allows you to control whether the state of the Ethernet Option can be changed.
 
->If the Ethernet Option is Disabled and then Enabled, the state of the Ethernet Option, either On or Off, should return to the state it was in before it was Disabled.
+>If the usage of Ethernet is Disabled and then Enabled, the state of Ethernet, either On or Off, will be the same as it was before it was Disabled.
 
 <div class="parm-table">
  <table>

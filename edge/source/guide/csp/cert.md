@@ -208,9 +208,7 @@ Parm name: KeystorePassword
 
 Description: 
 
->This parm is used to set the password which is needed to initialize the Android Keystore.
-
->**Note:** This parm is optional and is not required to be present in the Request XML document.
+>This parm is used to set the password which is needed to initialize the Android Keystore. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will not set this password. 
 
 Parm value input rules: 
 

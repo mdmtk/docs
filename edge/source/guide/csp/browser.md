@@ -22,9 +22,7 @@ Parm name: SetDefaultHomepage
 
 Description: 
 
->This parm allows you to set the Default Home Page URI of the Default Android Web Browser. Each time the Default Android Web Browser is opened without an explicitly requested URI, it will use to the URI to the Default Home Page URI. To produce successful results, a full, valid URI to a desired web page should be supplied, such as "www.google.com". This could be used to launch a specific web-based application or to direct users to an internal company web site or portal as a starting point for browsing.
-
->**Note:** This parm is optional and is not required to be present in the Request XML document.
+>This parm allows you to set the Default Home Page URI of the Default Android Web Browser. Each time the Default Android Web Browser is opened without an explicitly requested URI, it will use to the URI to the Default Home Page URI. To produce successful results, a full, valid URI to a desired web page should be supplied, such as "www.google.com". This could be used to launch a specific web-based application or to direct users to an internal company web site or portal as a starting point for browsing. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause no change to the current Default Home Page.
 
 Parm value input rules: 
 

@@ -102,12 +102,12 @@ Description: This option is to configure different Power Save Modes of Radio.
   <tr>
     <td>Do not change</td>
 	<td>"0"</td>
-    <td>Will not change what the device is currently configured as</td>
+    <td>This value (or the absence of this parm from the XML) will not make any change to the device's Power Save mode.</td>
   </tr>
   <tr>
     <td>Always Active</td>
     <td>"1" </td>
-	<td>This will keep the radio in active</td>
+	<td>This value will keep the radio in active</td>
   </tr>
   <tr>
     <td>WMM-PS</td>
@@ -164,7 +164,7 @@ Description: When enabled the Wi-Fi settings will be in Read-Only mode.
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>Will not change what the device is currently configured as</td>
+	<td>This value (or the absence of this parm from the XML) will not make any change to whether or not the Settings UI is restricted.</td>
   </tr>
   <tr>
     <td>Disable Restricted WLAN Settings UI</td>
@@ -222,7 +222,7 @@ Description: Specify the Management Frame Protection Mode
   <tr>
     <td>Do not change</td>
     <td>"3"</td>
-	<td>Will not change what the device is currently configured as</td>
+	<td>This value (or the absence of this parm from the XML) will not make any change to the Management Frame Protection Mode.</td>
   </tr>
 </table>
 </div>
@@ -261,7 +261,7 @@ Description: Specify the band preference
   <tr>
     <td>Do not change</td>
     <td>"3"</td>
-	<td>Will not change what the device is currently configured as</td>
+	<td>This value (or the absence of this parm from the XML) will not make any change to the current band preference.</td>
   </tr>
 </table>	
 </div>

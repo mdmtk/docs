@@ -87,10 +87,12 @@ Description:
 	<tr>
 		<th>Parm Option Name</th>
 		<th>Parm Value</th>
+		<th>Description</th>
 	</tr>
   <tr>
     <td>Android</td>
     <td>"2"</td>
+    <td>This value (or the absence of this parm from the XML) will set the Target OS to Android.</td>
   </tr>
 </table>
 </div>
@@ -121,18 +123,18 @@ Description:
 	</tr>
   <tr>
     <td>Do not change</td>
-    <td>""</td>
-	<td>Will not change what the device is currently configured as</td>
+    <td>"0"</td>
+	<td>This value (or the absence of this parm from the XML) will not make any change to the whether the Wi-Fi radio is on or off.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"enable"</td>
-	<td>Turns on the Wi-Fi radio</td>
+	<td>This value will cause the Wi-Fi radio to be turned on.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"disable"</td>
-	<td>Turns off the Wi-Fi radio</td>
+	<td>This value will cause the Wi-Fi radio to be turned off.</td>
   </tr>
 </table>
 </div>	
@@ -157,22 +159,22 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>""</td>
-	<td>Will not change what the device is currently configured as</td>
+	<td>This value (or the absence of this parm from the XML) will not make any change to the current sleep policy on the device.</td>
   </tr>
   <tr>
     <td>Never Sleep</td>
     <td>"AlwaysOn"</td>
-	<td>This will leave the Wi-Fi radio on while the device's display is turned off and Wi-Fi can continue to be used by any software that is running. Existing Wi-Fi connections will be maintained as if the device was not suspended. For example, emails will continue to come in. This behavior may be preferred in some situations. However, this could significantly increase the drain on the battery and reduce the battery life.</td>
+	<td>This value will leave the Wi-Fi radio on while the device's display is turned off and Wi-Fi can continue to be used by any software that is running. Existing Wi-Fi connections will be maintained as if the device was not suspended. For example, emails will continue to come in. This behavior may be preferred in some situations. However, this could significantly increase the drain on the battery and reduce the battery life.</td>
   </tr>
   <tr>
     <td>Never Sleep When Plugged</td>
     <td>"PluggedIn"</td>
-	<td>This will leave the Wi-Fi radio on while the display is turned off if the device is not running from battery power.</td>
+	<td>This value will leave the Wi-Fi radio on while the display is turned off if the device is not running from battery power.</td>
   </tr>
   <tr>
     <td>Always Sleep</td>
     <td>"NeverOn"</td>
-	<td>This turns the Wi-Fi radio off while the device's display is turned off. Existing Wi-Fi connections will be dropped and will need to be re-established, if needed, when the display (and Wi-Fi) are turned back on. Software that is running cannot use Wi-Fi while it is off. This can significantly increase the battery life if communications are not needed when the device is suspended.</td>
+	<td>This value turns the Wi-Fi radio off while the device's display is turned off. Existing Wi-Fi connections will be dropped and will need to be re-established, if needed, when the display (and Wi-Fi) are turned back on. Software that is running cannot use Wi-Fi while it is off. This can significantly increase the battery life if communications are not needed when the device is suspended.</td>
   </tr>
 </table>
 </div>
@@ -195,17 +197,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>""</td>
-	<td>Will not change what the device is currently configured as</td>
+	<td>This value (or the absence of this parm from the XML) will not make any change to the current network notification setting.</td>
   </tr>
   <tr>
     <td>Use network notification</td>
     <td>"true"</td>
-	<td>Notify the user when an unknown, open network comes into range</td>
+	<td>This value will cause the user to be notified when an unknown, open network comes into range</td>
   </tr>
   <tr>
     <td>Do not use network notification</td>
     <td>"false"</td>
-	<td>Don't notify the user when an unknown, open network comes into range</td>
+	<td>This value will cause the user to not be notified when an unknown, open network comes into range</td>
   </tr>
 </table>
 </div>
@@ -731,22 +733,22 @@ Description:
   <tr>
     <td>Unchanged</td>
     <td>""</td>
-	<td>Will not change what the device is currently configured as</td>
+	<td>This value (or the absence of this parm from the XML) will not make any change to the current selected band on the device.</td>
   </tr>
   <tr>
     <td>2.4GHZ</td>
     <td>"2.4GHz"</td>
-	<td>Enable 2.4GHz band</td>
+	<td>This value will enable 2.4GHz band</td>
   </tr>
   <tr>
     <td>5.0GHZ</td>
     <td>"5.0GHz"</td>
-	<td>Enable 5.0GHz band</td>
+	<td>This value will enable 5.0GHz band</td>
   </tr>
   <tr>
     <td>Auto</td>
     <td>"Auto"</td>
-	<td>Enable both bands and connect automatically to either</td>
+	<td>This value will enable both bands and connect automatically to either</td>
   </tr>
 </table>
 </div>
@@ -759,7 +761,7 @@ Pivotal parm: No
 Parm name: 2.4GHzChannels
 
 Description: 
->Enable the specified channels in the 2.4GHz band. In most cases, if the 2.4GHZ band is allowed to be used, then the channels in this band that should be used can be determined automatically through negotiation with the Wi-Fi infrastructure. However, it may be beneficial to control the channels manually because different channels or sets of channels might be used for different uses. It may be preferable to limit the devices to only use certain channels so that other channels are left for other purposes.
+>Enable the specified channels in the 2.4GHz band. In most cases, if the 2.4GHZ band is allowed to be used, then the channels in this band that should be used can be determined automatically through negotiation with the Wi-Fi infrastructure. However, it may be beneficial to control the channels manually because different channels or sets of channels might be used for different uses. It may be preferable to limit the devices to only use certain channels so that other channels are left for other purposes. 
 
 Parm value input rules: 
 
@@ -826,47 +828,47 @@ Description:
   <tr>
     <td>Do Nothing</td>
     <td>""</td>
-	<td>Will not change what the device is currently configured as</td>
+	<td>This value (or the absence of this parm from the XML) will not cause any Network Actions to be performed.</td>
   </tr>
   <tr>
     <td>Add a New Network</td>
     <td>"Add"</td>
-	<td>Will add a new profile with the provided profile settings. For the options that will be presented when choosing to add a new network, please see the following "SSID" parm and the "Add a New Network Options" section below</td>
+	<td>This value will add a new profile with the provided profile settings. For the options that will be presented when choosing to add a new network, please see the following "SSID" parm and the "Add a New Network Options" section below</td>
   </tr>
   <tr>
     <td>Remove an Existing Network</td>
     <td>"Remove"</td>
-	<td>Will remove the a network profile based on the SSID</td>
+	<td>This value will remove the a network profile based on the SSID</td>
   </tr>
   <tr>
     <td>Connect to an Existing Network</td>
     <td>"Connect"</td>
-	<td>Will initiate a connection to the network based on the SSID</td>
+	<td>This value will initiate a connection to the network based on the SSID</td>
   </tr>
     <tr>
     <td>Disconnect from an Existing Network </td>
     <td>"Disconnect"</td>
-	<td>Will disconnect from a network based on the SSID</td>
+	<td>This value will disconnect from a network based on the SSID</td>
   </tr>
   <tr>
     <td>Enable an Existing Network</td>
     <td>"Enable"</td>
-	<td>Will enable a network profile based on the SSID</td>
+	<td>This value will enable a network profile based on the SSID</td>
   </tr>
   <tr>
     <td>Disable an Existing Network</td>
     <td>"Disable"</td>
-	<td>Will disable a network profile based on the SSID</td>
+	<td>This value will disable a network profile based on the SSID</td>
   </tr>
   <tr>
     <td>Disable All Existing Networks</td>
     <td>"DisableAll"</td>
-	<td>Will disable all network profiles</td>
+	<td>This value will disable all network profiles</td>
   </tr>
     <tr>
     <td>Remove All Existing Networks</td>
     <td>"RemoveAll"</td>
-	<td>Will remove all network profiles</td>
+	<td>This value will remove all network profiles</td>
   </tr>
 </table>
 </div>
@@ -1052,6 +1054,8 @@ Description:
 
 >The Identity is used as a way of getting accepted by the Authentication Server so that you can receive the encryption key that is needed to operate on the network. Once you are authenticated, the Identity does not have any further meaning and is not used to identify the device on the network.
 
+>Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause the Identity will not be set.
+
 
 ##### **Anonymous Identity** 
 Settable if: The Network Action is "Add a New Network" *AND* the Security Mode is "Enterprise" *AND* the Authentication is not "EAP-TLS" or "LEAP"
@@ -1064,6 +1068,8 @@ Description:
 >When using an EAP type that has a secure tunnel over which authentication credentials can be delivered, it may be necessary to specify an Identity outside the tunnel as well as an Identity inside the tunnel. To protect the actual Identity from disclosure when sending it outside the tunnel, an Anonymous Identity can be sent outside the tunnel and the actual Identity, along with the password or other verifying credentials, can be sent inside the tunnel.
 
 >If no Anonymous Identity is specified, then the actual Identity will be sent outside the tunnel, if required. This may not be a problem since the password or other verifying credentials is only sent inside the tunnel, in modes that use a tunnel for secure credential delivery. So, using the actual Identity outside the tunnel would only risk disclosure of part of the information needed to authenticate. A separate Anonymous Identity can only be used if the Authentication Server is set up to support such use.
+
+>Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause the Anonymous Identity will not be set.
 
 Parm value input rules: 
 
@@ -1119,6 +1125,8 @@ Description:
 
 >By default, a certificate asserted by an Authentication Server will be trusted if it can be verified to have been validly issued by any trusted certificate authority. If a Server Certificate Name is supplied, then the certificate asserted by an Authentication Server will be trusted only if it is verified to have been validly issued by that specific trusted certificate authority. This increases the security by preventing the use of certificates issued by authorities that are not trusted to issue certificates to authentication servers.
 
+>Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause the Optional Server Certificate to not be set.
+
 Parm value input rules: 
 
 * String with a minimum of 0 characters and a maximum of 64 characters
@@ -1146,6 +1154,8 @@ Parm name: OptionalClientCertificate
 
 Description: 
 >The name of the certificate alias that should be used to join the network (Optional). When Authenticating using EAP types other than EAP-TLS, which would not require a client certificate, a client is still allowed. If used, the client certificate will be used to authenticate the device to the authentication server as part of the establishment of the secure tunnel over which further authentication credentials will be delivered. This means that the client certificate do not need to be unique, even if the authentication credentials are. The use of a client certificate can introduce an additional level of protection by requiring a device to possess a valid client certificate as well as valid authentication credentials. The client certificate serves as a first pass filter.
+
+>Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause the Optional Server Certificate to not be set.
 
 Parm value input rules: 
 
@@ -1188,7 +1198,7 @@ If WPA is selected:
   <tr>
     <td>Default</td>
     <td>"0" </td>
-	<td>This will not change the encryption type that is currently used on the device</td>
+	<td>This value (or the absence of this parm from the XML) will not make any change to the encryption type that is currently used on the device.</td>
   </tr>
   <tr>
     <td>TKIP</td>
@@ -1210,7 +1220,7 @@ If WPA2 is selected:
   <tr>
     <td>Default</td>
     <td>"0"</td>
-	<td>This will not change the encryption type that is currently used on the device</td>
+	<td>This value (or the absence of this parm from the XML) will not make any change to the encryption type that is currently used on the device.</td>
   </tr>
   <tr>
     <td>AES-CCMP</td>
@@ -1516,6 +1526,8 @@ Parm name: IpDns2
 
 Description: 
 >Provide the IP address of the second DNS server. When not using DHCP, a valid DNS Server IP Address may or may not be required. If there is a secondary DNS Server that can resolve network names to IP Addresses on the current network, then the IP Address of that server may be specified as a backup. If no alternate DNS Server is available or required, then it may not be important what value is specified for this parm.
+
+>Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause the DNS Server 2 IP Address to not be set.
 
 Parm value input rules: 
 
