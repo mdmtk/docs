@@ -143,7 +143,7 @@ var menuStrcture = [
 							},
 							{
 								name: 'ComponentMgr',
-								link: '#',
+								link: '#guide-csp-componentmgr',
 							},
 							{
 								name: 'ConditionMgr',
