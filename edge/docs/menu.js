@@ -151,7 +151,7 @@ var menuStrcture = [
 							},
 							{
 								name: 'CspMgr',
-								link: '#',
+								link: '#guide-csp-cspmgr',
 							},
 							{
 								name: 'DevAdmin',

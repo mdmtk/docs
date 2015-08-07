@@ -4252,6 +4252,34 @@ var mxVersions = [
                 ]
             },
 			{
+                name: 'CspMgr',
+                version: '',
+                features: [
+                    {
+                        name: 'All features',
+                        specifics: [
+                            {
+                                name: '',
+                                compatibility: [
+									{
+                                        name: 'All devices',
+                                        device: 'All devices',
+                                        os: 'JB',
+                                        notes: ''
+                                    },
+									{
+                                        name: 'All devices',
+                                        device: 'All devices',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+			{
                 name: 'DevAdmin',
                 version: '',
                 features: [
