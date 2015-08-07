@@ -159,7 +159,7 @@ var menuStrcture = [
 							},
 							{
 								name: 'DhcpOptionMgr',
-								link: '#',
+								link: '#guide-csp-dhcpoptionmgr',
 							},
 							{
 								name: 'DisplayMgr',
