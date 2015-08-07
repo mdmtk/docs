@@ -89,7 +89,7 @@ var menuStrcture = [
 				]
 			},
 			{
-				name: 'CSP Reference',
+				name: 'Feature Type Reference',
 				icon: 'fa fa-code',
 				link: '#',
 				items: [
@@ -245,10 +245,10 @@ var menuStrcture = [
 								name: 'WirelessMgr',
 								link: '#guide-csp-wireless',
 							},
-							/*{
+							{
 								name: 'XmlMgr',
 								link: '#guide-csp-xml',
-							}*/ 
+							}
 							/*,
 							{
 								name: 'Old Encrypt',
