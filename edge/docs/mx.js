@@ -4760,8 +4760,13 @@ var mxVersions = [
                                 name: 'Change (15,30,...)',
                                 compatibility: [
                                     {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
+                                        name: 'ET1N0 JB',
+                                        device: 'ET1N0',
+                                        os: 'JB',
+                                        notes: ''
+                                    },{
+                                        name: 'ET1N2 JB',
+                                        device: 'ET1N2',
                                         os: 'JB',
                                         notes: ''
                                     },
@@ -4772,9 +4777,9 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC67 JB',
-                                        device: 'MC67',
-                                        os: 'JB',
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
                                         notes: ''
                                     },
                                     {
@@ -4784,32 +4789,38 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'TC70 JB',
-                                        device: 'TC70',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'MC67 JB',
+                                        device: 'MC67',
+                                        os: 'JB',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC67 KK',
+                                        device: 'MC67',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+									{
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -4825,8 +4836,13 @@ var mxVersions = [
                                 name: 'Do not change interval',
                                 compatibility: [
                                     {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
+                                        name: 'ET1N0 JB',
+                                        device: 'ET1N0',
+                                        os: 'JB',
+                                        notes: ''
+                                    },{
+                                        name: 'ET1N2 JB',
+                                        device: 'ET1N2',
                                         os: 'JB',
                                         notes: ''
                                     },
@@ -4837,9 +4853,9 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC67 JB',
-                                        device: 'MC67',
-                                        os: 'JB',
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
                                         notes: ''
                                     },
                                     {
@@ -4849,32 +4865,38 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'TC70 JB',
-                                        device: 'TC70',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'MC67 JB',
+                                        device: 'MC67',
+                                        os: 'JB',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC67 KK',
+                                        device: 'MC67',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+									{
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
