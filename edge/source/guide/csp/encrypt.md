@@ -4,7 +4,7 @@
 
 ### Overview
 
-The EncryptMgr allows the developer to set encryption policies on a device through MX XML. For example a developer can create an Encrypted File System for storing application data.  
+The EncryptMgr Feature Type allows the developer to set encryption policies on a device through MX XML. For example a developer can create an Encrypted File System for storing application data.  
 
 ### Main Functionality
 
