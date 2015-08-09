@@ -9015,7 +9015,7 @@ var mxVersions = [
                 ]
             },
             {
-                name: 'KeyMapMgr',
+                name: 'KeyMappingMgr',
                 version: '',
                 features: [
                     {
@@ -9030,15 +9030,27 @@ var mxVersions = [
                                         os: 'KK',
                                         notes: ''
                                     },
-                                    {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+									{
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+									{
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC92 KK',
-                                        device: 'MC92',
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },

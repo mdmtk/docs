@@ -183,7 +183,7 @@ var menuStrcture = [
 							},*/
 							{
 								name: 'KeyMappingMgr',
-								link: '#',
+								link: '#guide-csp-keymappingmgr',
 							},
 							{
 								name: 'LicenseMgr',
