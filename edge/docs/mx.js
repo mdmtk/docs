@@ -6014,6 +6014,34 @@ var mxVersions = [
                 ]
             },
 			{
+                name: 'MX',
+                version: '',
+                features: [
+                    {
+                        name: 'All features',
+                        specifics: [
+                            {
+                                name: '',
+                                compatibility: [
+                                   {
+                                        name: 'All devices',
+                                        device: 'All devices',
+                                        os: 'JB',
+                                        notes: ''
+                                    },
+									{
+                                        name: 'All devices',
+                                        device: 'All devices',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                ]
+                            },
+                        ]
+                    },
+                ]
+            },
+			{
                 name: 'PersistMgr',
                 version: '',
                 features: [
