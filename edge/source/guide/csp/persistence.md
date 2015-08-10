@@ -4,68 +4,202 @@
 
 ### Overview
 
-The Persist Manager is used to create and remove persistent profile features. These features and their parameters will survive and be automatically applied after a 'Enterprise Reset'. 
-
->Note:  
->Data Capture Manager profile features will not be persisted.
+The PersistMgr Feature Type is used to create and remove Persistent Profiles on the device. Any parameters specified in the Persistent Profile will be automatically recovered during an Enterprise Reset. The PersistMgr Feature Type can also be used to enable and disable the Persistent Profiles, which would allow or disallow the Persistent Profile from being reapplied after an Enterprise Reset.
 
 ### Main Functionality
 
-* Configure Default Device Settings After an Enterprise Reset
-* Add a Persistent Settings Profile
-* Remove a Persistent Settings Profile
-* Enable a Persistent Settings Profile
-* Disable a Persistent Settings Profile
-* Set if XML should Persist on Errors
+* Add or Remove a Persistent Profile
+* Enable or Disable a Persistent Profile
 
 ##Parameter Notes
-### Make Current XML Persistent
-This will make the specified Profile features persistent. The combination of Name, Version and Order will be used to 'identify' the profile set to be persisted. The same combination must be used when trying to remove the features from being persisted.
+###Persist Action
+Pivotal parm: Yes
 
-* Persist as Name - This name is used to identify the profile features that will be persisted, so that you can reference it for removal from the persist list.
-	* Generic/Absolute - can be used to further clarify the name/scenario
-	* Staging-Specific/Relative - can be used to further clarify the name/scenario
-* Persist as Version - Provide the version of the profile features that will be persisted, so that you can reference it for removal from the persist list.
-* Persist as Order - Provide the optional order in which the profile features with the specified name will be persisted.
-* Persist if Error - Specifies whether the profile features will be persisted if any errors occur.
+Description: 
 
+>This parm allows you to add, remove, enable, or disable a Persistent Profile. The Persistent Profile is the entire Request XML document that is sent to the PersistMgr Feature Type, which contains any features that should be persisted in addition to the PersistMgr feature.
 
-### Remove Persistent XML
-This will remove the specified profile features from being persistent. The combination of the Name, Version and Order features must match a previously persisted profile with those same features.
+<div class="parm-table">
+ <table>
+	<tr>
+		<th>Parm Option Name</th>
+		<th>Parm Value</th>
+		<th>Description</th>
+	</tr>
+  <tr>
+    <td>Add current XML as a persistent profile</td>
+    <td>"1"</td>
+	<td>This value will make the specified Persistent Profile persistent. The combination of Persist As Name, Persist As Version and Persist As Order will be used to identify the profile set to be persisted. The same combination must be used when trying to remove the features from being persisted.</td>
+  </tr>
+  <tr>
+    <td>Remove the specified persistent profile</td>
+    <td>"2"</td>
+	<td>This value will remove the specified Persistent Profile from the device. The combination of the Persist As Name, Persist As Version and Persist As Order parms must match a previously Persistent Profile with those same features.</td>
+  </tr>
+  <tr>
+    <td>Enable the specified persistent profile</td>
+    <td>"3"</td>
+	<td>This value will enable the specified Persistent Profile, which means that when an Enterprise reset is performed, the persisted XML will be reapplied. Enabling a profile would allow the device's features to be automatically set after an Enterprise Reset, without any required user actions.</td>
+  </tr>
+  <tr>
+    <td>Disable the specified persistent profile</td>
+    <td>"4"</td>
+	<td>This value will disable the specified Persistent Profile, which means that when an Enterprise reset is performed, the persisted XML will not be reapplied.</td>
+  </tr>
+</table>
+</div>	
 
-* Persist as Name - This name is used to identify the persisted profile setting to remove
-	* Generic/Absolute 
-	* Staging-Specific/Relative 
-* Persist as Version - The version of the persisted profile setting to be removed
-* Persist as Order - The optional order of the persisted profile setting to be removed
+####Persist As Name
+Pivotal parm: No
 
-### Enable the specified persistent profile
-It will enable the persistent profile that you specify with the help of supply details about a specific persist action to be performed.
+Parm name: PersistAsName
 
-### Disable the specified persistent profile
-It will disable the specified persistent profile with the help of supply details about a specific persist action to be performed.
+Description: 
+
+>This parm is used to set the name of the Persistent Profile. This is used with the Persist As Version and Persist as Order values to identify the Persistent Profile so that it can be referenced when removing it from the device or enabling or disabling it.
+
+Parm value input rules: 
+
+* String with a minimum size of 1 character and a maximum size of 255 characters
+
+####Persist As Version
+Pivotal parm: No
+
+Parm name: PersistAsVersion
+
+Description: 
+
+>This parm is used to set the version number of the Persistent Profile. This is used with the Persist As Name and Persist as Order to identify the Persistent Profile so that it can be referenced when removing it from the device or enabling or disabling it.
+
+>If an already existing Persistent Profile has the same Persist As Name value, but a different Persist As Version value, the new Persistent Profile will be added and enabled and the previous Persistent Profile will be disabled. If an already existing Persistent Profile has the same Persist As Name and Persist As Order values, the new Persistent Profile will replace the previous one.
+
+Parm value input rules: 
+
+* String with a minimum size of 1 character and a maximum size of 255 characters
+
+####Persist As Order
+Pivotal parm: No
+
+Parm name: PersistAsOrder
+
+Description: 
+
+>This parm is used to set the order number of the Persistent Profile. This is used with the Persist As Name and Persist as Version to identify the Persistent Profile so that it can be referenced when removing it from the device or enabling or disabling it. This value (or the absence of this parm from the XML) will cause the order number to default to 99, which is the maximum Persist As Order value.
+
+>The order number of the Persistent Profile will indicate what order the Persistent Profiles would be resubmitted to the MXMF after an Enterprise Reset is performed. A Persistent Profile with a lower order number would be resubmitted to the MXMF before a Persistent Profile with a higher number. If two Persistent Profiles have the same order number, they will be resubmitted to the MXMF in alphabetical order based on their Persist As Name values.
+
+Parm value input rules: 
+
+* Integer value with a minimum value of 1 and a maximum value of 99
+
+####Persist If Error?
+Settable if: Persist Action is "Add current XML as a persistent profile"
+
+Pivotal parm: No
+
+Parm name: PersistIfError
+
+Description: 
+
+>This parm specifies if the Persistent Profile should be persisted if any errors are found in the Request XML document.
+
+<div class="parm-table">
+ <table>
+	<tr>
+		<th>Parm Option Name</th>
+		<th>Parm Value</th>
+		<th>Description</th>
+	</tr>
+  <tr>
+    <td>True</td>
+    <td>"true"</td>
+	<td>This value will cause the Persistent Profile to be persisted even if errors are found in the Request XML document.</td>
+  </tr>
+  <tr>
+    <td>False</td>
+    <td>"false"</td>
+	<td>This value will not cause the Persistent Profile to be persisted if errors are found in the Request XML document.</td>
+  </tr>
+</table>
+</div>	
 
 ### Usage Notes
-####Using PersistsManager on TC55 after performing a FactoryReset
+####Using PersistMgr on TC55 after performing a Factory Reset
 The following issue is limited to the TC55 only: 
  
-During the installation on the TC55, the EMDK Device Runtime package creates the "enterprise/usr/persist/" folder required for the PersistManager feature to function.  If a factory reset is done after installing the EMDK Device Runtime, this folder will get deleted and the PersistManager will no longer work. 
+During the installation on the TC55, the EMDK Device Runtime package creates the "enterprise/usr/persist/" folder required for the PersistMgr feature to function. If a factory reset is done after installing the EMDK Device Runtime, this folder will get deleted and the PersistMgr will no longer work. 
  
 This problem can be fixed by reinstalling the EMDK Device Runtime Package on the TC55.
 
 ##Example XML
-### ADD Persist XML
+### Add a Persistent Profile
+
+This Request XML document is used to persist an XML which is used to configure the device's clock.
 
     :::XML
 	<wap-provisioningdoc>
-		<characteristic type="PersistMgr" version="4.2" >
-			<parm name="PersistAction" value="1"/>
+		<characteristic type="Clock" version="4.2">
+			<parm name="AutoTime" value="true" /> 
+			<characteristic type="AutoTimeDetails">
+				<parm name="NTPServer" value="http://time.test.com" /> 
+				<parm name="SyncInterval" value="00:30:00" /> 
+			</characteristic>
+		</characteristic>
+		<characteristic type="PersistMgr">
+			<parm name="PersistAction" value="1" /> 
 			<characteristic type="persist-details">
+				<parm name="PersistAsName" value="Clock-profile" /> 
+				<parm name="PersistAsVersion" value="1" /> 
+				<parm name="PersistAsOrder" value="3"/>
+				<parm name="PersistIfError" value="false" /> 
+			</characteristic>
+		</characteristic>
+	  </wap-provisioningdoc>
+
+### Remove a Persistent Profile
+
+This Request XML document is used to remove a Persistent Profile, which is used to configure the device's clock.
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="PersistMgr" version="4.2" >
+			<parm name="PersistAction" value="2"/>
+			<characteristic type="persist-details">
+				<parm name="PersistAsName" value="Clock-profile"/>
 				<parm name="PersistAsVersion" value="1"/>
-				<parm name="PersistIfError" value="false"/>
+				<parm name="PersistAsOrder" value="3"/>
 			</characteristic>
 		</characteristic>
 	</wap-provisioningdoc>
+
+### Enable a Persistent Profile
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="PersistMgr" version="4.2" >
+			<parm name="PersistAction" value="3"/>
+			<characteristic type="persist-details">
+				<parm name="PersistAsName" value="Clock-profile"/>
+				<parm name="PersistAsVersion" value="1"/>
+				<parm name="PersistAsOrder" value="3"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+### Disable a Persistent Profile
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="PersistMgr" version="4.2" >
+			<parm name="PersistAction" value="4"/>
+			<characteristic type="persist-details">
+				<parm name="PersistAsName" value="Clock-profile"/>
+				<parm name="PersistAsVersion" value="1"/>
+				<parm name="PersistAsOrder" value="3"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
 
 ## Feature Compatibility
 
