@@ -4,7 +4,7 @@
 
 ### Overview
 
-This feature allows you to put the device into Sleep mode, re-power or perform an OS Update. The action will be performed when the configuration is set.
+The PowerMgr Feature Type allows you to perform power related actions on the device, such as putting it into Sleep mode, rebooting the device, or perform an OS Update. The action will be performed when the configuration is set.
 
 ### Main Functionality
 
@@ -16,37 +16,77 @@ This feature allows you to put the device into Sleep mode, re-power or perform a
 * Update the OS
 
 ##Parameter Notes
-### Sleep Mode
-Will put the device into Sleep mode.
+###Reset Action
+Pivotal parm: Yes
 
-### Reboot
-Will reboot or repower the device.
+Description: 
 
-### Enterprise Reset
-Will perform an Enterprise Reset.
+>This parm allows you to specify the reset action to perform.
 
-> Note: This feature is supported on devices that are running KitKat versions of Android like the TC70.
+<div class="parm-table">
+ <table>
+	<tr>
+		<th>Parm Option Name</th>
+		<th>Parm Value</th>
+		<th>Description</th>
+	</tr>
+  <tr>
+    <td>Do Nothing</td>
+    <td>"0"</td>
+	<td>This value (or the absence of this parm from the XML) will not cause any power related actions to be performed.</td>
+  </tr>
+  <tr>
+    <td>Sleep Mode</td>
+    <td>"1"</td>
+	<td>This value will cause the device to be put into Sleep mode. This would turn off the device's display, but some applications may be allowed to continue running.</td>
+  </tr>
+  <tr>
+    <td>Reboot</td>
+    <td>"4"</td>
+	<td>This value will cause the device to be rebooted, or repowered.</td>
+  </tr>
+  <tr>
+    <td>Enterprise Reset</td>
+    <td>"5"</td>
+	<td><p>This value will cause an Enterprise Reset to be performed, which would clear the data and cache partitions, but also preserve the contents of the Enterprise partition on the device.</p><p><b>Note:</b> This feature is supported on devices that are running KitKat versions of Android like the TC70.</p></td>
+  </tr>
+  <tr>
+    <td>Factory Reset</td>
+    <td>"6"</td>
+	<td><p>This value will cause an Factory Reset to be performed, which would clear the data, cache, and Enterprise partitions to return the device to its factory settings.</p><p><b>Note:</b> This feature is supported on devices that are running KitKat versions of Android like the TC70.</p></td>
+  </tr>
+  <tr>
+    <td>Full Device Wipe</td>
+    <td>"7"</td>
+	<td><p>This value will cause a full device wipe to be performed, which would clear the data, cache, and Enterprise partitions as well as the internal and external SD cards.</p><p><b>Note:</b> This feature is supported on devices that are running KitKat versions of Android like the TC70.</p></td>
+  </tr>
+  <tr>
+    <td>OS Update</td>
+    <td>"8"</td>
+	<td>This value will cause an OS update to be performed by using the OS Update Zip File that is provided in the parm below.</td>
+  </tr>
+</table>
+</div>	
 
-### Factory Reset
-Will perform a Factory Reset.
+####OS Update ZIP File
+Settable if: The Reset Action is "OS Update"
 
-> Note: This feature is supported on devices that are running KitKat versions of Android like the TC70.
+Pivotal parm: No
 
-### Full Device Wipe
-Will perform a full device wipe.
+Parm name: ZipFile
 
-> Note: This feature is supported on devices that are running KitKat versions of Android like the TC70.
+Description: 
 
-### OS Update
-Will intiate an OS Update using the provided OS Update Zip File
+>This parm allows you to specify the full path and name of the OS Update Zip File in the device's file system.
 
-* OS Update Zip File - The full path to the OS Update Zip File that resides on the device
+>**Note:** The OS Update file should already exist on the device. When using this feature on the TC55 the update package must be placed on the external SD card. Any attempt to use the internal SD card for this purpose will fail.
 
-> Note: The OS Update file should already exist on the device. When using this feature on the TC55 the update package must be placed on the external SD card. Any attempt to use the internal SD card for this purpose will fail.
+Parm value input rules: 
 
+* String with a minimum size of 1 character and a maximum size of 255 characters
 
 ## Example XML
-### Restart the Device
+### Reboot the Device
 
     :::XML
 	<wap-provisioningdoc>
@@ -55,7 +95,15 @@ Will intiate an OS Update using the provided OS Update Zip File
 	    </characteristic>
 	</wap-provisioningdoc>
 
+### Enterprise Reset the Device
 
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="PowerMgr" version="4.2" >
+			<parm name="ResetAction" value="5"/>
+		</characteristic>
+	</wap-provisioningdoc>
+	
 ### Factory Reset the Device
 
     :::XML
@@ -64,6 +112,15 @@ Will intiate an OS Update using the provided OS Update Zip File
             <parm name="ResetAction" value="6"/>
         </characteristic>
     </wap-provisioningdoc>
+	
+### Full Device Wipe
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="PowerMgr" version="4.2" >
+			<parm name="ResetAction" value="7"/>
+		</characteristic>
+	</wap-provisioningdoc>
 
 ### OS Update
 	:::xml
