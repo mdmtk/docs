@@ -134,7 +134,7 @@ This problem can be fixed by reinstalling the EMDK Device Runtime Package on the
 ##Example XML
 ### Add a Persistent Profile
 
-This Request XML document is used to persist an XML which is used to configure the device's clock.
+This Request XML document is used to persist an XML which is used to configure the device's clock. After an Enterprise Reset is performed, this XML will be reapplied, which would cause the device's clock to be set accordingly.
 
     :::XML
 	<wap-provisioningdoc>
@@ -199,7 +199,6 @@ This Request XML document is used to remove a Persistent Profile, which is used 
 			</characteristic>
 		</characteristic>
 	</wap-provisioningdoc>
-
 
 ## Feature Compatibility
 

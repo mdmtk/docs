@@ -188,6 +188,28 @@ Parm value input rules:
 
 * String with a minimum size of 1 character and a maximum size of 255 characters
 
+##Example XML
+
+###Set the Screen to Lock to 1 Minute After the Display Times Out
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="DevAdmin" version="4.3" >
+			<parm name="ScreenLockTimeoutInterval" value="60"/>
+		</characteristic>
+	</wap-provisioningdoc>
+	
+###Allow Application Installs from Unknown Sources
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="DevAdmin" version="4.3" >
+			<parm name="UnknownSourcesStatus" value="1"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+
+
 ## Queries
 
 ### Get Apps that are Active Device Admins

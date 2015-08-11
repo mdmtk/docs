@@ -230,10 +230,13 @@ Description:
 ###Install An Application
 	:::xml
 	<!-- Silently install Clock.apk from the /enterprise/usr/persist folder -->
-	<characteristic type="AppMgr">
-		<parm name="apk" value="/enterprise/usr/persist/Clock.apk" />
-		<parm name="Action" value="install" />
-	</characteristic>
+	<wap-provisioningdoc>
+		<characteristic version="4.2" type="AppMgr">
+			<parm name="Action" value="Install" />
+			<parm name="APK" value="/enterprise/usr/persist/Clock.apk" />
+		</characteristic>
+	</wap-provisioningdoc>
+
 
 ###Upgrade An Application
 	:::xml
