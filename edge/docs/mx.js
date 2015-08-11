@@ -6989,9 +6989,9 @@ var mxVersions = [
                                 compatibility: [
 
                                     {
-                                        name: 'TC70 JB',
+                                        name: 'TC70 KK',
                                         device: 'TC70',
-                                        os: 'JB',
+                                        os: 'KK',
                                         notes: ''
                                     },
                                     {
@@ -7030,9 +7030,9 @@ var mxVersions = [
                                 name: 'Disable',
                                 compatibility: [
                                     {
-                                        name: 'TC70 JB',
+                                        name: 'TC70 KK',
                                         device: 'TC70',
-                                        os: 'JB',
+                                        os: 'KK',
                                         notes: ''
                                     },
                                     {
