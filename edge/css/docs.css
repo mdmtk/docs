@@ -382,3 +382,12 @@ iframe{
 .parm-table  table  tr  td{
 width:33%
 }
+
+.dhcp-table{
+	max-height:300px;
+	overflow:auto;
+}
+
+.dhcp-table  table  tr  td{
+width:20%;
+}
