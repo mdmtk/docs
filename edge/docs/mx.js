@@ -7082,26 +7082,32 @@ var mxVersions = [
                                 name: 'Enable Setting Access',
                                 compatibility: [
                                     {
-                                        name: 'TC70 JB',
-                                        device: 'TC70',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC67 KK',
+                                        device: 'MC67',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -7117,26 +7123,32 @@ var mxVersions = [
                                 name: 'Disable Setting Access',
                                 compatibility: [
                                     {
-                                        name: 'TC70 JB',
-                                        device: 'TC70',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC67 KK',
+                                        device: 'MC67',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -7157,14 +7169,8 @@ var mxVersions = [
                                 name: 'Disable Setting Access',
                                 compatibility: [
                                     {
-                                        name: 'TC70 JB',
-                                        device: 'TC70',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -7175,14 +7181,20 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'MC67 KK',
+                                        device: 'MC67',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -7198,14 +7210,8 @@ var mxVersions = [
                                 name: 'Enable Setting Access',
                                 compatibility: [
                                     {
-                                        name: 'TC70 JB',
-                                        device: 'TC70',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -7216,14 +7222,20 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'MC67 KK',
+                                        device: 'MC67',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -7244,14 +7256,8 @@ var mxVersions = [
                                 name: 'Disable Setting Access',
                                 compatibility: [
                                     {
-                                        name: 'TC70 JB',
-                                        device: 'TC70',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -7262,14 +7268,20 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'MC67 KK',
+                                        device: 'MC67',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -7285,14 +7297,8 @@ var mxVersions = [
                                 name: 'Enable Setting Access',
                                 compatibility: [
                                     {
-                                        name: 'TC70 JB',
-                                        device: 'TC70',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -7303,14 +7309,20 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'MC67 KK',
+                                        device: 'MC67',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -7331,14 +7343,8 @@ var mxVersions = [
                                 name: 'Disable Setting Access',
                                 compatibility: [
                                     {
-                                        name: 'TC70 JB',
-                                        device: 'TC70',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -7349,14 +7355,20 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'MC67 KK',
+                                        device: 'MC67',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -7372,14 +7384,8 @@ var mxVersions = [
                                 name: 'Enable Setting Access',
                                 compatibility: [
                                     {
-                                        name: 'TC70 JB',
-                                        device: 'TC70',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -7390,14 +7396,20 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
+                                        name: 'MC67 KK',
+                                        device: 'MC67',
                                         os: 'KK',
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC32 KK',
+                                        device: 'MC32',
                                         os: 'KK',
                                         notes: ''
                                     },
