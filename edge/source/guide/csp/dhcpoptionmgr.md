@@ -264,7 +264,7 @@ Description:
 
 >This parm allows you to control whether a request for a NTP Server Address will be sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the NTP Server Address to the device in the DHCP Acknowledgment.
 
->**Note:** The DHCP Client does not automatically use the value returned by this DHCP Option to configure the device to acquire the Date and Time from the returned NTP Server. To configure a device to acquire the Date and Time from the NTP Server, the value of the returned NTP Server Address would need to be obtained using the DhcpOptionsMgr Feature Type and then used to configure AutoTime via the Clock Feature Type.
+>**Note:** The DHCP Client does not automatically use the value returned by this DHCP Option to configure the device to acquire the Date and Time from the returned NTP Server. To configure a device to acquire the Date and Time from the NTP Server, the value of the returned NTP Server Address would need to be obtained using the DhcpOptionMgr Feature Type and then used to configure AutoTime via the Clock Feature Type.
 
 <div class="parm-table">
  <table>
@@ -302,7 +302,7 @@ Description:
 
 >This parm allows you to control whether a request for a TFTP Server Name will be sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the TFTP Server Name to the device in the DHCP Acknowledgment.
 
->**Note:** The DHCP Client does not automatically use the TFTP Server Name to perform any file transfers or configuration. To configure a device using TFTP, the TFTP Server Name would need to be acquired using the DhcpOptionsMgr Feature Type and then provided to a TFTP Client that could perform the transfer of one or more files and then perform any desired configuration using those files.
+>**Note:** The DHCP Client does not automatically use the TFTP Server Name to perform any file transfers or configuration. To configure a device using TFTP, the TFTP Server Name would need to be acquired using the DhcpOptionMgr Feature Type and then provided to a TFTP Client that could perform the transfer of one or more files and then perform any desired configuration using those files.
 
 <div class="parm-table">
  <table>
@@ -340,7 +340,7 @@ Description:
 
 >This parm allows you to control whether a request for a Boot File name will be sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the Boot File name to the device in the DHCP Acknowledgment.
 
->**Note:** The DHCP Client does not automatically use the Boot File name to perform any file transfers or configuration. To configure a device, a Boot File name and a TFTP Server Name would both be need to be acquired using the DhcpOptionsMgr Feature Type and then provided to a TFTP Client that could perform the transfer of the Boot File and then perform any desired configuration using that file.
+>**Note:** The DHCP Client does not automatically use the Boot File name to perform any file transfers or configuration. To configure a device, a Boot File name and a TFTP Server Name would both be need to be acquired using the DhcpOptionMgr Feature Type and then provided to a TFTP Client that could perform the transfer of the Boot File and then perform any desired configuration using that file.
 
 <div class="parm-table">
  <table>
@@ -378,6 +378,8 @@ Description:
 
 >This parm allows you to control whether a request for the Domain Search list will be sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the Domain Search list for the network to the device in the DHCP Acknowledgment.
 
+>**Note:** The DHCP Client does not automatically use the Domain Search List to configure the DNS Client to resolve names based on the list. This may be a future enhancement, when the DNS Client provides a way to configure it to use such a list. In the meantime, if name resolution needs to be performed based on this list, it would have to be implemented at an application level. An application would need to acquire the Domain Search List using the DhcpOptionMgr Feature Type and then utilize the information provided in that list to drive an explicit process of requesting name resolution from the DNS Servers for the listed domains
+
 <div class="parm-table">
  <table>
 	<tr>
@@ -414,7 +416,7 @@ Description:
 
 >This parm allows you to control whether a request for a TFTP Server Address will be sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the TFTP Server Address to the device in the DHCP Acknowledgment.
 
->**Note:** The DHCP Client does not automatically use the TFTP Server Address to perform any file transfers or configuration.  To configure a device using TFTP, the TFTP Server Address would need to be acquired using the DhcpOptionsMgr Feature Type and then provided to a TFTP Client that could perform the transfer of one or more files and then perform any desired configuration using those files.
+>**Note:** The DHCP Client does not automatically use the TFTP Server Address to perform any file transfers or configuration.  To configure a device using TFTP, the TFTP Server Address would need to be acquired using the DhcpOptionMgr Feature Type and then provided to a TFTP Client that could perform the transfer of one or more files and then perform any desired configuration using those files.
 
 <div class="parm-table">
  <table>
