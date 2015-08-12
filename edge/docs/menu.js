@@ -219,7 +219,7 @@ var menuStrcture = [
 							},
 							{
 								name: 'StatusMgr',
-								link: '#',
+								link: '#guide-csp-statusmgr',
 							},
 							{
 								name: 'ThreatMgr',
