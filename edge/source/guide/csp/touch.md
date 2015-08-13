@@ -4,7 +4,7 @@
 
 ### Overview
 
-Touch Manager feature allows you set the Touch Mode on your device in order to interact with User Interface.
+The TouchMgr Feature Type allows you set the Touch Mode on your device which will be used to interact with the device's user interface.
 
 ### Main Functionality
 
@@ -13,11 +13,38 @@ Touch Manager feature allows you set the Touch Mode on your device in order to i
 
 ##Parameter Notes
 ### TouchAction
-Specify Touch Mode to interact with User Interface on the device.
+Pivotal parm: No
 
-* Do not change - Keep the existing Touch Mode settings.
-* Stylus and Finger - Set the Touch Mode to Stylus and Finger.
-* Glove and Finger - Set the Touch Mode to Glove and Finger.
+Parm name: TouchAction
+
+Description: 
+
+>This parm allows you to specify Touch Mode that should be used to interact with the user interface on the device.
+
+<div class="parm-table">
+ <table>
+	<tr>
+		<th>Parm Option Name</th>
+		<th>Parm Value</th>
+		<th>Description</th>
+	</tr>
+  <tr>
+    <td>Do not change</td>
+    <td>"Do not change"</td>
+	<td>This value (or the absence of this parm from the XML) will not make any change to the device's current Touch Mode settings.</td>
+  </tr>
+  <tr>
+    <td>Stylus and Finger</td>
+    <td>"Stylus and Finger"</td>
+	<td>This parm will cause the Touch Mode of the device to be changed to Stylus and Finger mode.</td>
+  </tr>
+  <tr>
+    <td>Glove and Finger</td>
+    <td>"Glove and Finger"</td>
+	<td>This parm will cause the Touch Mode of the device to be changed to Glove and Finger mode.</td>
+  </tr>
+</table>
+</div>	
 
 ## Feature Compatibility
 
