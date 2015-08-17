@@ -162,12 +162,12 @@ Description:
 
 >An attempt to Create an Encrypted File System creation may fail for various reasons, including:
 
-* A BSF with the specified EFS name already exists in the specified storage location.  Only one EFS of a given name can created on each storage location.
-* The storage location specified for the BSF is not accessible (e.g. is not mounted) or is not writable.
-* The storage location specified for the BSF has insufficient free space to create the BSF of the specified size.
-* The storage location specified for the BSF is a Storage Card for which Full Storage Card Encryption has been activated.
-* The Named Key specified for the EFS is not present in the Key Storage Database.
-* The size specified for the EFS is invalid.
+>* A BSF with the specified EFS name already exists in the specified storage location.  Only one EFS of a given name can created on each storage location.
+>* The storage location specified for the BSF is not accessible (e.g. is not mounted) or is not writable.
+>* The storage location specified for the BSF has insufficient free space to create the BSF of the specified size.
+>* The storage location specified for the BSF is a Storage Card for which Full Storage Card Encryption has been activated.
+>* The Named Key specified for the EFS is not present in the Key Storage Database.
+>* The size specified for the EFS is invalid.
 
 <div class="parm-table">
  <table>
