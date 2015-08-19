@@ -4,11 +4,13 @@
 
 ### Overview
 
-The MX Feature Type is used to record the version number of the MXMF. The main functionality of this Feature Type is to return this value when it receives a Request XML document that contains a top-level characteristic query for "MX". This Feature Type can also return its own version number by receiving a Request XML document that contains a parm-query for "MX".
+The MX Feature Type allows you to acquire the version numbers of the MX Management Framework (MXMF) and of the MX CSP itself. Of these two versions, the most likely to be useful is the version of the MXMF, since it is most likely to affect overall capabilities. While the MXMF does not handle the actual details of processing XML (that is left to the CSPs that implement the Feature Types), the MXMF is responsible for some general XML parsing and validation, routing XML to appropriate CSPs, and error handling. As such, over time, bug fixes in the MXMF might be made and knowing the MXMF version might be useful to determine how a given XML Request might be handled. The version of the MX CSP would likely only be relevant in the unlikely event that a bug was fixed related to actually returning the MXMF version.
 
 ### Main Functionality
 
-* Queries for the MXMF version number
+* Query the MXMF version number
+* Query the MX CSP version number
+
 
 ##Parameter Notes
 ###Version
@@ -16,14 +18,14 @@ Parm name: Version
 
 Description:
 
->This is the version of the MX Feature Type that is returned when a Request XML document that contains a parm-query for "MX" is received.
+>This value returned for this parm is the version number of the MX CSP, which implements the MX Feature Type. As noted earlier, this parm does not tell you what version of the MXMF is present on a device. This parm is present in the Result XML when the Request XML contains a parm-query for this parm.
 
 ###MXMF Version
 Parm name: MXMFVersion
 
 Description:
 
->This is the version of MXMF that is returned when a Request XML document that contains a top-level characteristic query for "MX" is received.
+>This value returned for this parm is the version number of the MXMF, which is the main processing point for all XML Requests. As noted earlier, this parm tells you what version of the MXMF is present on a device. This parm is present in the Result XML when the Request XML contains top-level characteristic-query for the MX Feature Type.
 
 ## Queries
 ###MX Feature Type Version Query
