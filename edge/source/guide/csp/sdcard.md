@@ -4,11 +4,23 @@
 
 ### Overview
 
-The SdCardMgr Feature Type allows your application to manage the usage of the device's external SD card.
+Zebra Android devices may have one or more storage areas that are collectively referred to as External Storage and individually as Storage Cards. Some devices support a special Storage Card that is implemented via a physically removable media (e.g. a Micro SD Card), whereas others do not. Most Zebra Android devices also implement at least one Storage Card that is simulated using flash memory that is built-into (not removable from) the device.
+
+When a device supports physically removable media, it may be important to control whether the Storage Card implemented by that physically removable media is allowed to be used. For example, removable media could provide a path via which unwanted software could be loaded onto the device or via which sensitive data could be extracted from the device. Disallowing the use of physically removable media could significantly increase device security by ensuring that such media cannot be used as a path to perform such activities.
+
+All Zebra Android devices support the path "/sdcard", which is logically mapped to one of the supported Storage Cards. Most Zebra Android devices also support one or more paths under "/storage", such as "/storage/sdcard0" and /storage/sdcard1", to access all supported Storage Cards. The path "/sdcard" will generally be a logical link to one of the paths under "/storage" corresponding to one of the supported Storage Cards.
+
+**Note:** Various Zebra Android devices support different numbers and types of Storage Cards and the exact path via which an application can access a particular Storage Card will vary by device. Variation is greatest amongst devices that are running the Jelly Bean version of Android and between those devices and devices that are running the Kit Kat version of Android. Variations are considerably less amongst devices that are running the Kit Kat version of Android, although some variations still exist due to differences in core device capabilities (e.g. presence of lack of a physical card slot or total amount of available built-in flash memory).
+
+The SdCardMgr Feature Type allows you to control whether one specific External Storage on the device can be used. The Storage Card affected by the SdCardMgr Feature Type varies by device. On devices that support physically removable media, such as the TC55, the SdCardMgr Feature Type will always control access to the Storage Card that is implemented by physically removable media, whether or not such media is physically present. On devices that do not support physically removable media, such as the MC40, the SdCardMgr Feature Type will control access to the Primary Storage Card.
+
+**Note:** Since the primary use case for the SdCardMgr Feature Type is to control the security risks associated with physically removable media, the SdCardMgr Feature Type offers significantly less value on devices that do not support physically removable media than it offers on devices that do support physically removable media. In fact, it may be hard to come up with a significant use case for using the SdCardMgr Feature Type on devices that do not support physically removable media, since it may not significantly enhance device security.  Nonetheless, it is provided for completeness.
+
+There may be many ways in which a Storage Card can be accessed. A Storage Card might be access via built-in privileged System applications, via installed unprivileged applications, or from a PC using a MTP or ADB over USB. A Storage Card might also be encrypted or have one or more encrypted file systems stored on it (see the EncryptMgr Feature Type).  But, if access to a Storage Card is disabled using the SdCardMgr Feature Type, then all access to that Storage Card, even by built-in privileged System applications, will be blocked, with no exceptions, until access is re-enabled again using the SdCardMgr Feature Type.
 
 ### Main Functionality
 
-* Enable or Disable the SD card usage
+* Enable or Disable the usage of the single Storage Card supported on a given device
 
 ##Parameter Notes
 ###Enable or Disable use of SdCard
@@ -18,7 +30,9 @@ Parm name: SdCardUsage
 
 Description: 
 
->This parm will enable or disable the usage of the external SD card, which means that the user will be allowed or disallowed from using an SD card on the device. Enabling or disabling this would affect whether or not the device can read from and write to the SD card.
+>This parm will allow you to control the Storage Card that is selected to support this feature on a given device. On devices that support physically removable media, that Storage Card will always be the one implemented by physically removable media. When disabled, the affected Storage Card will be completely inaccessible, to the device user and to all applications running on the device. When enabled, access to the Storage Card will not be blocked.
+
+>**Note:** Just because access to a Storage Card is not blocked, the Storage Card may or may not be accessible. For example, if the Storage Card is implemented by physically removable media and there is no media in the slot, then the Storage Card would not be accessible even though access to the Storage Card was enabled. Or, if the Storage Card was encrypted, and the Named Key was removed from the Key Storage Database (see the EncryptMgr Feature Type), the Storage Card would not be accessible even though it was present and not blocked.
 
 <div class="parm-table">
  <table>
@@ -30,17 +44,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will cause no changes to whether an SD card can be used.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no changes to whether access to a Storage Card will be blocked.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This value will cause use of an SD card on the device to be enabled, thus allowing the device user use an SD card for additional storage. If an SD card is inserted while the SD card usage is enabled, the SD card will be mounted.</td>
+	<td>This value will cause access to the Storage Card that is selected to support this feature on a given device to be blocked, thus preventing its use.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td>This value will cause use of an SD card on the device to be disabled, thus preventing the device user from using an SD card for additional storage. If an SD card is inserted while the SD card usage is disabled, the SD card will be unmounted.</td>
+	<td>This value will cause access to the Storage Card that is selected to support this feature on a given device to be unblocked, thus allowing it to be accessed, if no other circumstances prevent such access.</td>
   </tr>
 </table>
 </div>	
