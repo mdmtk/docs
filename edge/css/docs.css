@@ -379,8 +379,8 @@ iframe{
 	overflow:auto;
 }
 
-.parm-table  table  tr  td{
-width:33%
+.parm-table   tr  td{
+	width:33%;
 }
 
 .dhcp-table{
@@ -388,6 +388,11 @@ width:33%
 	overflow:auto;
 }
 
-.dhcp-table  table  tr  td{
-width:20%;
+.dhcp-table  tr  td{
+	width:20%;
+}
+.table {
+    margin-bottom: 0px;
+	margin-top:-9px;
+    width: 100%;
 }
