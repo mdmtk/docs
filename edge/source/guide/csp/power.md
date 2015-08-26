@@ -192,10 +192,10 @@ Description:
 			<td>/storage/sdcard0</td>
 			<td>Internal Storage Card</td>
 		  </tr>
-		  <tr>
+		  <!--<tr>
 			<td>/data/tmp</td>
 			<td>Internal Data Partition (folder is not world writable)</td>
-		  </tr>
+		  </tr>-->
 		  <tr>
 			<td>/data/tmp/local</td>
 			<td>Internal Data Partition (folder must be created by an entity with system privilege)</td>
@@ -223,6 +223,7 @@ Description:
 		</table>
 	</td>
   </tr>
+  <!--
   <tr>
     <td>MC92</td>
     <td><p>Kit Kat TBD</p><p>v??</p></td>
@@ -251,34 +252,38 @@ Description:
 		</table>
 	</td>
   </tr>
+  -->
+  <!--
   <tr>
     <td>TC55</td>
     <td><p>Jelly Bean Non-GMS</p><p>v01.74.00</p><p>T55N0JB0VRUEN17400.zip</p></td>
 	<td> 
 		 <table>
-		  <tr>
+	  <tr>
 			<td>/sdcard</td>
 			<td>Internal Storage Card OR Removable Micro SD Card (if media is physically present)</td>
 		  </tr>
-		  <tr>
+	      <tr>
 			<td>/storage/sdcard0</td>
 			<td>Removable Micro SD Card (media must be physically present)</td>
 		  </tr>
-		  <tr>
+	   	 <tr>
 			<td>/storage/sdcard1</td>
 			<td>Internal Storage Card</td>
 		  </tr>
-		  <tr>
+	      <tr>
 			<td>/data/tmp</td>
 			<td>Internal Data Partition (folder exists and is world writable)</td>
 		  </tr>
-		  <tr>
+	      <tr>
 			<td>/data/tmp/local</td>
 			<td>Internal Data Partition (folder must be created by an entity that does not need system privilege)</td>
 		  </tr>
 		</table>
 	</td>
   </tr>
+  -->
+  <!--
   <tr>
     <td>TC55</td>
     <td><p>Jelly Bean GMS</p><p>v1.74</p><p>(with or without Enterprise Enabler applied)</p></td>
@@ -299,6 +304,8 @@ Description:
 		</table>
 	</td>
   </tr>
+  -->
+  <!--
   <tr>
     <td>TC55</td>
     <td><p>Jelly Bean GMS</p><p>v1.74</p><p>(without Enterprise Enabler applied)</p></td>
@@ -311,6 +318,8 @@ Description:
 		</table>
 	</td>
   </tr>
+  -->
+  <!--
   <tr>
     <td>TC55</td>
     <td><p>Jelly Bean GMS</p><p>v1.74</p><p>(with Enterprise Enabler applied)</p></td>
@@ -323,6 +332,8 @@ Description:
 		</table>
 	</td>
   </tr>
+  -->
+  <!--
   <tr>
     <td>TC55</td>
     <td><p>Jelly Bean GMS</p><p>v1.74</p><p>(with or without Enterprise Enabler applied)</p></td>
@@ -335,6 +346,7 @@ Description:
 		</table>
 	</td>
   </tr>
+  -->
   <tr>
     <td>TC55</td>
     <td><p>Kit Kat GMS</p><p>v2.52.02G.07</p><p>T55N0KXXVRUEN25202G07.zip</p><p>150611-SI-1800EN-02.52.02G.07-23257-4.4.3-user</p></td>
@@ -352,10 +364,12 @@ Description:
 			<td>/storage/sdcard1</td>
 			<td>Removable Micro SD Card (media must be physically present)</td>
 		  </tr>
+		 <!--
 		  <tr>
 			<td>/data/tmp</td>
 			<td>Internal Data Partition (folder is not world writable)</td>
 		  </tr>
+		-->
 		  <tr>
 			<td>/data/tmp/local</td>
 			<td>Internal Data Partition (folder must be created by an entity with system privilege)</td>
@@ -380,10 +394,12 @@ Description:
 			<td>/storage/sdcard1</td>
 			<td>Removable Micro SD Card (media must be physically present)</td>
 		  </tr>
+		 <!--
 		  <tr>
 			<td>/data/tmp</td>
 			<td>Internal Data Partition (folder is not world writable)</td>
 		  </tr>
+		-->
 		  <tr>
 			<td>/data/tmp/local</td>
 			<td>Internal Data Partition (folder must be created by an entity that does not need system privilege)</td>
@@ -391,6 +407,7 @@ Description:
 		</table>
 	</td>
   </tr>
+ <!--
   <tr>
     <td>TC55</td>
     <td><p>Kit Kat MR GMS TBD</p><p>v??</p></td>
@@ -419,6 +436,8 @@ Description:
 		</table>
 	</td>
   </tr>
+  -->
+ <!--
   <tr>
     <td>TC55</td>
     <td><p>Kit Kat MR Non-GMS TBD</p><p>v??</p></td>
@@ -447,6 +466,7 @@ Description:
 		</table>
 	</td>
   </tr>
+  -->
   <tr>
     <td>TC70</td>
     <td><p>Kit Kat GA1</p><p>v112414</p><p>T70N0KEXXPUEF11244.zip</p><p>01-23245-K-00-00-00-G1-112414</p></td>
@@ -475,6 +495,7 @@ Description:
 		</table>
 	</td>
   </tr>
+ <!--
   <tr>
     <td>TC70</td>
     <td><p>Kit Kat MR TBD</p><p>v??</p></td>
@@ -503,6 +524,7 @@ Description:
 		</table>
 	</td>
   </tr>
+  -->
   <tr>
     <td>TC75</td>
     <td><p>Kit Kat</p><p>v01104</p><p>T75N0KEXXPUEF01104.zip</p><p>01-23257-K-11-04-00-MV</p></td>
@@ -516,14 +538,18 @@ Description:
 			<td>/storage/sdcard0</td>
 			<td>Internal Storage Card </td>
 		  </tr>
+		<!--
 		  <tr>
 			<td>/storage/sdcard1</td>
 			<td>Removable Micro SD Card (media must be physically present)</td>
 		  </tr>
+		-->
+		<!--
 		  <tr>
 			<td>/data/tmp</td>
 			<td>Internal Data Partition (folder is not world writable)</td>
 		  </tr>
+		-->
 		  <tr>
 			<td>/data/tmp/local</td>
 			<td>Internal Data Partition (folder must be created by an entity that does not need system privilege)</td>
@@ -531,6 +557,7 @@ Description:
 		</table>
 	</td>
   </tr>
+  <!--
   <tr>
     <td>TC75</td>
     <td><p>Kit Kat MR TBD</p><p>v??</p></td>
@@ -559,6 +586,7 @@ Description:
 		</table>
 	</td>
   </tr>
+  -->
 </table>
 </div>
 
