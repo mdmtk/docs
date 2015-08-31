@@ -4,11 +4,17 @@
 
 ### Overview
 
-The LicenseMgr Feature Type allows you to handle license related configurations.
+Software Licensing is a mechanism supported by Zebra Android devices that allows selected Software Components to require a suitable Software License to be present on a device in order for those Software Components to be useable on that device. If a Software Component does not require licensing, then the presence or absence of any Software Licenses will have no impact on that Software Component. If a Software Component requires licensing, then the absence of a suitable Software License on a device will make that Software Component unusable on that device. If a Software Component requires licensing, then applying a suitable Software License to that device will make that Software Component usable on that device and subsequently removing that Software License from that device will make that Software Component unusable on that device.
+
+Software Licenses are acquired from a Zebra Software License Server, are issued as Software License Files, and are associated to specific Software Components through the use of Licensed Feature Names. A given Software License File can only be used to enable use of its associated Licensed Feature Name. A given Software Component could have multiple capabilities, use of each of which could be controlled through separate Licensed Feature Names. Or, a given Software Component could have all of its capabilities controlled through a single Licensed Feature Name.
+
+Software Licenses acquired from a Zebra Software License Server may be Individual Device Licenses, with each Software License File tied to a specific device serial number. In such cases, it is necessary to apply the right Software License File to each matching device. Software Licenses acquired from a Zebra Software License Server may also be Enterprise Licenses, issued to all devices owned by a customer instead of to specifically identified devices. In such cases, the same Software License File can be applied to each device owned by that customer.
+
+The LicenseMgr Feature Type allows you to manage the set of Software Licenses that are present on a device and thereby to control the usability of Software Components that require licensing.
 
 ### Main Functionality
 
-* Apply or remove a license
+* Apply or remove a Software License from a device
 
 ##Parameter Notes
 ###Specify license action to perform
@@ -16,7 +22,7 @@ Pivotal parm: Yes
 
 Description: 
 
->This parm allows you to specify whether a license should be applied or removed from the device.
+>This parm allows you to specify whether a Software License should be applied or removed from the device.
 
 <div class="parm-table">
  <table>
@@ -28,17 +34,17 @@ Description:
   <tr>
     <td>Do nothing</td>
     <td>""</td>
-	<td>This value will not cause a license to be applied or removed.</td>
+	<td>This value (or the absence of this parm from the XML) will not cause any changes to the set of Software Licenses that are present on the device.</td>
   </tr>
   <tr>
     <td>Apply</td>
     <td>"apply"</td>
-	<td>This value will cause a license to be applied to the resident licensing component. This can enable the use of a currently unlicensed software component by installing the suitable license.</td>
+	<td>This value will cause a Software License to be applied to the device. Applying a suitable Software License onto a device for a Software Component that requires licensing will make the controlled capability of the associated Software Component usable on that device.</td>
   </tr>
   <tr>
     <td>Remove</td>
     <td>"remove"</td>
-	<td>This value will cause a license to be removed from the resident licensing component. This can disable the use of a currently licensed software component by installing the suitable license.</td>
+	<td>This value will cause a Software License to be removed from the device. Removing a required Software License from a device for a Software Component that requires licensing make the controlled capability of the associated Software Component unusable on that device.</td>
   </tr>
 </table>
 </div>	
@@ -50,7 +56,9 @@ Pivotal parm: Yes
 
 Description: 
 
->This parm allows you to specify how the feature name within in the input file should be verified.
+>This parm allows you to specify whether and how the Licensed Feature Name contained within the specified Software License File should be verified.
+
+>**Note:** Verification of the Licensed Feature Name contained within a Software License File is highly recommended since it can help prevent mistakes. When a Software License File is acquired from a Zebra Software License Server, it must be stored in a file and then used via the LicenseMgr Feature Type. The file name to which a Software License File is stored may or may not reflect the Licensed Feature whose use will be enabled by that Software License File. If you intend to apply a Software License for a given Licensed Feature and mistakenly use the wrong Software License File, no error will result so long as the Software License File is contains a valid Software License. But if the Licensed Feature Name contained with the Software License File is not what you intended, then applying that Software License will not result in enabling the use of the Software Component that you intended. By specifying the Licensed Feature Name and indicating that it should be verified, you can catch such a condition. In the event of a mismatch, an error will be returned in the Result XML.
 
 <div class="parm-table">
  <table>
@@ -62,17 +70,17 @@ Description:
   <tr>
     <td>Do not verify feature name</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will not cause the feature name to be verified.</td>
+	<td>This value (or the absence of this parm from the XML) will not cause any verification of the Licensed Feature Name contained within the specified Software License File.</td>
   </tr>
   <tr>
     <td>Verify against a standard feature name</td>
     <td>"1"</td>
-	<td>This value will allow a standard feature name to be used for verification.</td>
+	<td>This value will cause the Licensed Feature Name contained within the specified Software License File to be verified as matching a specified Standard Licensed Feature Name.</td>
   </tr>
   <tr>
     <td>Verify against a custom feature name</td>
     <td>"2"</td>
-	<td>This value will allow a custom feature name to be used for verification.</td>
+	<td>This value will cause the Licensed Feature Name contained within the specified Software License File to be verified as matching a specified Custom Licensed Feature Name.</td>
   </tr>
 </table>
 </div>	
@@ -86,7 +94,9 @@ Parm name: VerifyStandardFeatureName
 
 Description: 
 
->This parm allows you to specify the desired feature name.
+>This parm allows you to specify the Standard Licensed Feature Name against which you want to verify the Software License File.
+
+>**Note:** At present, there is only one defined Standard Licensed Feature Name, for SimulScan. Selecting it will avoid the need to enter the exact value of the Licensed Feature Name for SimulScan. In the future, as new Standard Licensed Feature Names are added, the list will be expanded to make those Licensed Feature Names easier to verify. If you acquire a Software License File that is associated with some other Licensed Feature Name, use "Verify against a custom feature name" instead so you can enter the specific Licensed Feature Name for the Software License File you acquired.
 
 <div class="parm-table">
  <table>
@@ -98,7 +108,7 @@ Description:
   <tr>
     <td>SimulScan OCR/OMR</td>
     <td>"SIMULDC1_0_0"</td>
-	<td>This value will set the desired feature name as SimulScan OCR/OMR.</td>
+	<td>This value will cause Licensed Feature Name contained within the Software License File to be verified as matching the Standard Licensed Feature Name of the SimulScan Software Component.</td>
   </tr>
 </table>
 </div>	
@@ -112,11 +122,13 @@ Parm name: VerifyCustomFeatureName
 
 Description: 
 
->This parm allows you to enter the custom feature name, which is obtained from license server.
+>This parm allows you to enter a Custom Licensed Feature Name, which must match exactly the Licensed Feature Name contained within the Software License File acquired from Zebra Software License Server.
+
+>**Note:** You must use this option to verify any Licensed Feature Name that is not contained within the list of Standard Licensed Feature Names. Be careful to enter the exact Licensed Feature Name as acquired from the Zebra Software License Server with identical case and without any additional whitespace or other characters.
 
 Parm value input rules: 
 
-* String with a valid feature name
+* String with a valid Custom Licensed Feature Name that was contained within a Software License File acquired from the Zebra Software License Server.
 
 ####Specify licensing method
 Settable if: The "Specify license action to perform" is "Apply"
@@ -125,7 +137,9 @@ Pivotal parm: Yes
 
 Description: 
 
->This parm allows you to specify the method that will be used to supply the license blob.
+>This parm allows you to specify the method that will be used to supply the Software License.
+
+>**Note:** Regardless of the method used to supply the Software License File (Embed or Reference), the supplied Software License File must contain valid contents that were acquired from the Zebra Software License Server. An attempt to apply a Software License File that contains invalid contents will result in an error in the Result XML. In addition, if the Software License File was an Individual Device License, then the device serial number embedded in the Software License File must match the serial number of the device onto which it is being applied. An attempt to apply a Software License File that contains an Individual Device License whose serial number does not match the serial number of the device to which it is being applied will result in an error in the Result XML
 
 <div class="parm-table">
  <table>
@@ -137,12 +151,12 @@ Description:
   <tr>
     <td>Embed the license blob from the license file into the XML</td>
     <td>"embed"</td>
-	<td>This parm value indicates that the license blob should be embedded in the XML.</td>
+	<td><p>This value indicates that the contents of the Software License File will be embedded (Base64 encoded) into the Request XML.</p><p><b>Note:</b> This option has the advantage of making the Request XML self-contained, although it does make the total data size somewhat larger, due to the Note: Base64 encoding the Software License File contents.</p></td>
   </tr>
   <tr>
     <td>Reference a license file already on the mobile device</td>
     <td>"reference"</td>
-	<td>This parm value indicates that a license file that is already on the device should be referenced.</td>
+	<td><p>This value indicates that a Software License File, which must be present in the device file system, will be referenced by its path and file name.</p><b>Note:</b> This option requires that the Software License File be transferred to the device file system before the Request XML is submitted and requires that the exact path and file name of the Software License File in the device file system be specified.</p></td>
   </tr>
 </table>
 </div>	
@@ -156,12 +170,12 @@ Parm name: LicenseBlob
 
 Description: 
 
->This parm allows you to select the licensing file whose data should be embedded in the XML. This is a base 64 encoded binary blob that will be applied to the resident licensing component.
+>This parm allows you to specify the Software License File whose contents should be embedded in the XML. The contents will be Base64 encoded, and hence will result in increasing the size of the contents by 33%. The Software License encoded within the Request XML will be extracted and applied to the device.
 
 Parm value input rules: 
 
-* String with a minimum size of 1 character
-* The data should be base 64 encoded
+* String with a minimum size of 2 characters (minimum required to hold 1 byte of content)
+* The data should be Base64 encoded (4 characters hold 3 bytes of content)
 
 #####**Specify file name and path to the license file**
 Settable if: The "Specify license action to perform" is "Apply" *AND* "Specify licensing method" is "Reference a license file already on the mobile device"
@@ -172,11 +186,12 @@ Parm name: LicensePathAndFileName
 
 Description: 
 
->This parm allows you to specify file name and path to the license file that will be referenced. The file that is referenced should contain a base 64 encoded binary blob which contains the SW license entitlement. The contents of this file will be extracted and applied to the resident licensing component.
+>This parm allows you to specify the path and file name of a Software License File, which must exist in the device file system. The Software License File must contain the exact contents acquired from the Zebra Software License Server. The Software License contained within the Software License File will be applied to the device.
 
 Parm value input rules: 
 
 * String with a minimum size of 1 character
+* Must be a valid path and file name identifying a valid Software License File that exists in the device file system
 
 ####Specify selection method to use
 Settable if: The "Specify license action to perform" is "Remove"
@@ -185,7 +200,9 @@ Pivotal parm: Yes
 
 Description: 
 
->This parm allows you to specify the method that will be used to select an existing feature in the device.
+>This parm allows you to specify the method that will be used to specify the Licensed Feature Name that identifies the Software License to be removed from the device.
+
+>**Note:** To be certain that the right Software License is removed from the device, be sure to specify the exact same Licensed Feature Name that was contained within the Software License File when the Software License was applied to the device.
 
 <div class="parm-table">
  <table>
@@ -197,12 +214,12 @@ Description:
   <tr>
     <td>Select using a standard feature name</td>
     <td>"1"</td>
-	<td>This parm will cause a standard feature name to be used to select an existing feature on the device.</td>
+	<td>This value indicates that a Standard Licensed Feature Name will be specified to identify the Software License to be removed from the device.</td>
   </tr>
   <tr>
     <td>Select using a custom feature name</td>
     <td>"2"</td>
-	<td>This parm will cause a custom feature name to be used to select an existing feature on the device.</td>
+	<td>This value indicates that a Custom Licensed Feature Name will be specified to identify the Software License to be removed from the device.</td>
   </tr>
 </table>
 </div>	
@@ -216,7 +233,7 @@ Parm name: SelectStandardFeatureName
 
 Description: 
 
->This parm allows you to specify the desired standard feature name.
+>This parm allows you to specify the desired Standard Licensed Feature Name that identifies the Software License to be removed from the device.
 
 <div class="parm-table">
  <table>
@@ -228,7 +245,7 @@ Description:
   <tr>
     <td>SimulScan OCR/OMR</td>
     <td>"SIMULDC1_0_0"</td>
-	<td>This value will set the desired feature name as SimulScan OCR/OMR.</td>
+	<td>This value will cause the Software License for the SimulScan Software Component to be removed from the device.</td>
   </tr>
 </table>
 </div>	
@@ -242,79 +259,63 @@ Parm name: SelectCustomFeatureName
 
 Description: 
 
->This parm allows you to enter the custom feature name, which is obtained from license server.
+>This parm allows you to specify a Custom Licensed Feature Name that identifies the Software License to be removed from the device.
+
+>**Note:** Be careful to enter the exact Licensed Feature Name as acquired from the Zebra Software License Server with identical case and without any additional whitespace or other characters.
 
 Parm value input rules: 
 
-* String with a valid feature name
+* String with a valid Custom Licensed Feature Name that was contained within a Software License File acquired from the Zebra Software License Server.
 
 ## Queries
 
-### Get Get LicenseMgr Info
+###Get All Applied Software License Info
 
-#### Input 
+####Request XML
 
-    :::XML
-    <wap-provisioningdoc>
-        <characteristic-query type="LicenseMgr"/>
-    </wap-provisioningdoc>
+		:::XML
+		<wap-provisioningdoc>
+			<characteristic-query type="LicenseMgr"/>
+		</wap-provisioningdoc>
 
-#### Output
+####Success Result XML
+		
+		:::XML
+		<wap-provisioningdoc>
+			<characteristic type="LicenseMgr" version="4.3" >
+				<characteristic type="ExistingLicense">
+					<parm name="SelectCustomFeatureName" value="SIMULDC1_0_0"/>
+					<parm name="CompanyName" value="CompanyName1"/>
+					<parm name="LicenseType" value="serial"/>
+				</characteristic>
+			</characteristic>
+		</wap-provisioningdoc>
 
-    :::XML
-	<wap-provisioningdoc>
-        <characteristic type="LicenseMgr" version="4.3" >
-            <characteristic type=" ExistingLicense ">
-                <parm name="SelectStandardFeatureName" value="featurename1"/>
-                <parm name="CompanyName" value="CompanyName1"/>
-                <parm name="LicenseType" value="Device_id type"/>
-            </characteristic>
-        </characteristic>
-        <characteristic type="LicenseMgr" version="4.3" >
-            <characteristic type=" ExistingLicense ">
-                <parm name=" SelectStandardFeatureName " value="featurename2"/>
-                <parm name="CompanyName" value="CompanyName1"/>
-                <parm name="LicenseType" value="Device_id type"/>
-            </characteristic>
-        </characteristic>
-    </wap-provisioningdoc>
+>**Note:** For the above query Request XML requests information on all Software Licenses that are applied on the device. The Success Result XML shown presupposes that only a single Software License for SimulScan was previously applied to the device. If additional Software Licenses were applied, then additional information would be returned in the Success Result XML. The same Request XML submitted on a device with no Software Licenses applied would return the following Failure Result XML to indicate that there are no Software Licenses applied and hence none that can be queried:
+		
+####Failure Result XML
+		
+		:::XML
+		<wap-provisioningdoc>
+			<characteristic type="LicenseMgr" version="4.3" >
+				<characteristic-error type="ExistingLicense" desc="Feature is not licensed" />
+			</characteristic>
+		</wap-provisioningdoc>
+		
+###Get Specific Software License Info
 
-### Get License Info
+####Request XML
+		
+		:::XML
+		<wap-provisioningdoc>
+			<characteristic type="LicenseMgr" >
+				<characteristic-query type="ExistingLicense">
+					 <parm name="SelectStandardFeatureName" value="SIMULDC1_0_0"/>
+				</characteristic-query>
+			</characteristic>
+		</wap-provisioningdoc>
 
-#### Input 
-
-    :::XML
-    <wap-provisioningdoc>
-        <characteristic type="LicenseMgr" version="4.3" >
-            <characteristic-query type="ExistingLicense">
-                 <parm name="SelectCustomFeatureName" value=" featurename1"/>
-            </characteristic-query>
-        </characteristic>
-    </wap-provisioningdoc>
-
-
-#### Output if license is Installed
-
-    :::XML
-    <wap-provisioningdoc>
-        <characteristic type="LicenseMgr" version="4.3" >
-            <parm name="LicenseAction" value="apply"/>
-            <characteristic type=" ExistingLicense ">
-                <parm name=" SelectCustomFeatureName " value="featurename1/>
-                <parm name="CompanyName" value="CompanyName1/>
-                <parm name="LicenseType" value="Device_id type"/>
-            </characteristic>
-        </characteristic>
-    </wap-provisioningdoc>
-
-#### Output if license is not Installed
-
-    :::XML
-	<wap-provisioningdoc>
-        <characteristic type="LicenseMgr" version="4.3" >
-            <characteristic-error type="ExistingLicense" desc="Feature is not licensed"/>
-        </characteristic>
-    </wap-provisioningdoc>
+>**Note:** For the above query Request XML, we are explicitly requesting to query just the Software License for the SimulScan Software Component. If that Software License is applied, the Success Result XML will be the same as that shown above for Get All Applied Software Licenses since both queries return only that one Software License. If that Software License is not applied, the Failure Result XML will be the same as that shown above for Get All Applied Software Licenses since both queries indicate that no Software License can be queried. If additional Software Licenses were applied, then this query would return the same Success Result XML since the query requested information about only one specific Software License. In such a case the Success Result XML would be different than that shown above for Get All Applied Software Licenses.
 
 ## Feature Compatibility
 
