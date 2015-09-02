@@ -1,20 +1,18 @@
 # XML Generation
 
 ## Overall Approach
-As discussed in the MX overview document, MX uses the XML format to submit requests to the framework to apply settings or to retrieve information. It also uses this same format when sending back responses to the client making the request. The XML needs to be structured in a standardized format. In order to help understand this format, we have included a DSDtoXML tool with this toolkit to be used to generate sample XML. Typically you would require that some values be changed dynamically on the device by your client application. So you would therefore manipulate the values of specific parameter attributes within your code based on the specific template you have generated. 
+As discussed in the MX Management System Overview document, the XML format is used to submit requests to the MXMS to apply settings or to retrieve information. It also uses this same format when sending back responses to the client making the request. The XML needs to be structured in a standardized format. In order to help understand this format, we have included a DSDtoXML tool with this toolkit to be used to generate sample XML. Typically you would require that some values be changed dynamically on the device by your client application. So you would therefore manipulate the values of specific parameter attributes within your code based on the specific template you have generated. 
 
 A typical approach to XML generation may include:
 
 * Use the DSDtoXML tool to generate several XML templates for the features you wish to include in your client
 * Include these templates either in your device client or server code depending on your scheme for setting values
 * Edit the values inside specific parameter attributes accordingly (typically parameters with text values)
-* Submit the XML from your client application that has been enabled for MX communication
-
-
+* Submit the XML from your client application that has been enabled for MXMS communication
 
 ## DSD Files
 
-DSD Files are XML documents that define the schema a CSP uses to configure settings on a device. Each CSP has a matching DSD document. Each version of the MX Framework includes a set of CSPs that include a specific feature set. When generating XML for a CSP, be sure to consider the version of MX that you are working with. The DSDs included with the MDM Toolkit can be found in the `MX` folder. Within the `MX` folder, there will be versions of MX along with a `DSD` subfolder. 
+DSD Files are XML documents that define the schema a CSP uses to configure settings on a device. Each CSP has a matching DSD document. Each version of the MXMS includes a set of CSPs that include a specific feature set. When generating XML for a CSP, be sure to consider the version of the MXMS that you are working with. The DSDs included with the MDM Toolkit can be found in the `MX` folder. Within the `MX` folder, there will be versions of MXMS along with a `DSD` subfolder. 
 
 ![img](images/dsdfiles.jpg)
 
@@ -91,9 +89,9 @@ The DSDtoXML tool, `DSDtoXML.jar`, is used for generating XML configuration file
 
 ### About CSP XML Parms 
 
-In order to make sure your XML is well structured and follows the MX Framework definition. It is recommended that the XML be constructed using the DSDtoXML tool. The XML structure contains a possible tree of `characteristic` and `parm` attributes along with their values. Each CSP will generate a different XML tree based on how the CSP has grouped features together. By comparing the XML generated to the values you choose within the DSDtoXML tool will give you a way to identify the values that you may need to change dynamically. Typically the values that the MDM client will change will be the free form text fields. It is not recommended that other types of characteristics are changed dynamically. A set of XML characteristic and parm uages can be found in the associated CSP RTF file found in the `RTF` folder. You can also generate this document using the DSDtoXML tool by  selecting the "Save RTF" button. 
+In order to make sure your XML is well structured and follows the MXMS definition. It is recommended that the XML be constructed using the DSDtoXML tool. The XML structure contains a possible tree of `characteristic` and `parm` attributes along with their values. Each CSP will generate a different XML tree based on how the CSP has grouped features together. By comparing the XML generated to the values you choose within the DSDtoXML tool will give you a way to identify the values that you may need to change dynamically. Typically the values that the MDM client will change will be the free form text fields. It is not recommended that other types of characteristics are changed dynamically. A set of XML characteristic and parm uages can be found in the associated CSP RTF file found in the `RTF` folder. You can also generate this document using the DSDtoXML tool by  selecting the "Save RTF" button. 
 
->Note: Notice in the example below we are using the DSDtoXML tool to generate a Wi-Fi profile to add a new Wi-Fi network. In the tool we put in placeholder text that we can replace with our MDM client code before submitting the XML to the MX framework.
+>**Note:** Notice in the example below we are using the DSDtoXML tool to generate a Wi-Fi profile to add a new Wi-Fi network. In the tool we put in placeholder text that we can replace with our MDM client code before submitting the XML to the MXMS.
 
 ![img](images/xmlgenrelationship.jpg)
 
@@ -103,17 +101,15 @@ Most likely, you will need to generate multiple sets of XML segments associated 
 
 ![img](images/xmlgenloaddsdbutton.jpg)
 
->Note:   
->All current settings will be lost. 
+>**Note:** All current settings will be lost. 
 
 ### Resetting Configuration
 
-At any time while configuring MX settings you can reset the settings to their default values by clicking "Reset".
+At any time while configuring the MXMS settings you can reset the settings to their default values by clicking "Reset".
 
 ![img](images/xmlgenresetbutton.jpg)
 
->Note:   
->All current settings will be lost. 
+>**Note:** All current settings will be lost. 
 
 ### Quitting the Application
 
@@ -121,12 +117,11 @@ To quit the application click the button "Quit".
 
 ![img](images/xmlgenquitbutton.jpg)
 
->Note:   
->All current settings will be lost. 
+>**Note:** All current settings will be lost. 
 
 ### Limitations
 
-* In addition to setting device configurations, MX can be used to set query for device information. Currently this tool cannot generate Query XML. 
+* In addition to setting device configurations, MXMS can be used to set query for device information. Currently this tool cannot generate Query XML. 
 
 ## Modifying Values
 
@@ -176,4 +171,4 @@ Notice just the `Action` parm's value has changed.
 
 ## XML Queries
 
-At this time, the DSDtoXML tool does not generate XML that can be used for queries. Each CSP reference document within this MDM Toolkit documentation may include a section on query XML depending on whether it supports any query abilities. Future versions of the MDM toolkit and MX framework, may contain the ability to generate queries by using the corresponding DSD file and updated DSDtoXML tool.
+At this time, the DSDtoXML tool does not generate XML that can be used for queries. Each CSP reference document within this MDM Toolkit documentation may include a section on query XML depending on whether it supports any query abilities. Future versions of the MDM toolkit and MXMS, may contain the ability to generate queries by using the corresponding DSD file and updated DSDtoXML tool.

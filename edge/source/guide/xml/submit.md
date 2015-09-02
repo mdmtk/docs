@@ -1,12 +1,12 @@
 # XML Submission
 
 ## Overview
-This document will describe how to send XML to MX for setting parameter values for CSPs:
+This document will describe how to send XML to MXMS for setting parameter values for CSPs:
 
 * Sending XML
 * Group Submission
 
-The structure of the XML is based on a standard format that is being used by MX. Each CSP offers different options for parameters and sub-characteristics, but all follow the same structure:
+The structure of the XML is based on a standard format that is being used by the MXMS. Each CSP offers different options for parameters and sub-characteristics, but all follow the same structure:
 
 		:::xml
 		<wap-provisioningdoc>
@@ -31,9 +31,9 @@ The structure of the XML is based on a standard format that is being used by MX.
 
 ## Single Characteristic
 
-The following sample code shows how to submit XML to the MX Framework to set the date and time of the device's clock.
+The following sample code shows how to submit XML to the MXMS to set the date and time of the device's clock.
 
->Note: The code below uses the `MXservice` variable we used in the binding example. You will need to use the same reference that you established in your MX binding code.
+>Note: The code below uses the `MXservice` variable we used in the binding example. You will need to use the same reference that you established in your MXMS binding code.
 
     :::java
     //MX can through exceptions when processing XML 

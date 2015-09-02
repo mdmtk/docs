@@ -1,10 +1,10 @@
-# MX Overview
+# MX Management System Overview
 
 ## Overview
 
-The MX Framework provides a common interface to Zebra Android device capabilities utilizing XML that conforms to the standard OMA-CP PROV (Microsoft MSPROV) schema. This framework allows developers and administrators an extensible, efficient, reliable and scalable means for configuring and administrating Zebra Android devices. MX exposes capabilities that underlying CSPs provide to give the user access to both privileged and unprivileged APIs. Each CSP exposes its capabilities using DSD files that are included with the MDM Toolkit. These DSD files are then imported into a DSDtoXML tool to generate XML that can be sent to the MX framework running on the device to change a device configuration or behavior.
+The MX Management System (MXMS) provides a common interface to Zebra Android device capabilities utilizing XML that conforms to the standard OMA-CP PROV (Microsoft MSPROV) schema. This allows developers and administrators to have an extensible, efficient, reliable and scalable means for configuring and administrating Zebra Android devices. MXMS exposes capabilities that underlying CSPs provide to give the user access to both privileged and unprivileged APIs. Each CSP exposes its capabilities using DSD files that are included with the MDM Toolkit. These DSD files are then imported into a DSDtoXML tool to generate XML that can be sent to the MXMS running on the device to change a device configuration or behavior.
 
-## <a name="definitions"></a> Definitions of Terms
+## Definitions of Terms
 
 ### Board Support Package (BSP)
 
@@ -25,6 +25,8 @@ MX is the umbrella term used to refer collectively to the entire experience offe
 * The MX Management Framework (MXMF)
 * Configuration Service Providers (CSPs)
 * Changes and extensions to standard applications (e.g. Settings UI, Browser, Email Client, etc.)
+
+>**Note:** All of the above components may or may not be present on a device. Specifically, MXMF and the CSPs may be absent. Therefore, these components would need to be installed on the device before they can be used.
 
 ### Operating System Extensions (OSX)
 
@@ -63,11 +65,10 @@ MXMS is a term used to refer to the MXMF and all CSPs that are registered with t
 
 * CSPs that are built-into the MXMF, such as the CertMgr CSP
 * CSPs that are built-into a device and pre-registered with MXMF, such as the Wi-Fi CSP
-* CSPs that are optional and can be downloaded to a device and then can be registered, unregistered, or updated, as needed. 
 
 MXMS can be thought of as "the MXMF and a collection of currently registered CSPs". Although applications submit XML to the MXMF, it is a bit more accurate to say that the MXMS (not just the MXMF) is the entity via which applications set and/or query configuration.
 
-## <a name="arch"></a>  MX Architecture and Data Flow
+## MX Architecture and Data Flow
 
 System components:
 

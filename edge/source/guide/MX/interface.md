@@ -1,10 +1,10 @@
-# MX Binding Interface
+# MX Management System Interface
 
-In order to communicate with the MX Framework you must setup a binding to the service. Once this reference is established you can then:
+In order to communicate with the MXMS, you must setup a binding to the service. Once this reference is established you can then:
 
 * Send XML to change device behavior or configuration
 * Query for current device and framework settings
-* Process results sent back from MX
+* Process results sent back from the MXMS
 
 ## Requirements 
 
@@ -18,7 +18,7 @@ In order to communicate with the MX Framework you must setup a binding to the se
 1. Create a new Android project with an empty activity in Eclipse.  
 2. Create a new package in your application with the following name `com.symbol.mxmf`. This will be used for holding the aidl (Android Interface Definition Language)file.  
 3. Create a file called `IMxFrameworkService.aidl` inside the new package.
-4. Copy the following code into your aidl file, which defines to MX Interface:
+4. Copy the following code into your aidl file, which defines to MXMS Interface:
 
         :::java
 	    package com.symbol.mxmf;
@@ -53,9 +53,9 @@ In order to communicate with the MX Framework you must setup a binding to the se
 	        String getValue(String sKey);
 		}
 
-5. Add the Permission `<uses-permission android:name = "com.symbol.mxmf.ACCESS_MX_MANAGEMENT_FRAMEWORK_SERVICE" />` to your manifest file to allow MX accesses. 
+5. Add the Permission `<uses-permission android:name = "com.symbol.mxmf.ACCESS_MX_MANAGEMENT_FRAMEWORK_SERVICE" />` to your manifest file to allow MXMS accesses. 
 6. Implement `ServiceConnection` from your MainActivity, and add unimplemented methods. You should now have methods for `onServiceConnected` and `onServiceDisconnected`. 
-7. Copy the following variables to the top of your MainActivity for holding values needed for MX.  
+7. Copy the following variables to the top of your MainActivity for holding values needed for MXMS.  
 
         :::java
 		//Application Context for MX 
@@ -69,7 +69,7 @@ In order to communicate with the MX Framework you must setup a binding to the se
 	
 		//MX service holder
 		public IMxFrameworkService MXservice = null;
-8. Add the following method to `MainActivity` for binding to the MX service. 
+8. Add the following method to `MainActivity` for binding to the MXMS service. 
 
         :::java
 	    void bindService(){

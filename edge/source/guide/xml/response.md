@@ -7,7 +7,7 @@ When submitting a Request XML document, knowing what happened will require at le
 * If an operation was performed, but not exactly as requested, Parm Value Extraction can be used to compare requested and resulting values to determine any deviation
 * When an XML query is issued, Parm Value Extraction can be used to extract key values that were the primary purpose of the XML query 
 
-This document will describe how to handle response from MX:
+This document will describe how to handle response from MXMS:
 
 * Success Response
 * Error Responses
@@ -18,7 +18,7 @@ A simple and quite useful method for simplifying the extraction of relevant info
 
 ## Success Response
 
-If the call to MX is successful, the XML returned from MX will exactly match the XML sent to MX.   
+If the call to MXMS is successful, the XML returned from MXMS will exactly match the XML sent to MXMS.   
 
 XML Submitted
 
@@ -47,7 +47,7 @@ XML Returned
 
 ## Error Responses 
 
-Each CSP will handle errors according to their specific implementation. If the call to MX fails the response XML will contain information about the failure and contain the text "-error". Overall, there are a few common error types:
+Each CSP will handle errors according to their specific implementation. If the call to the MXMS fails the response XML will contain information about the failure and contain the text "-error". Overall, there are a few common error types:
 
 * Framework Error
 * CSP Error
@@ -55,7 +55,7 @@ Each CSP will handle errors according to their specific implementation. If the c
 * Parm Error
 
 ### Framework Error
-The MX framework typically passes the submitted XML directly to the CSP, but may return errors if a CSP is not found or if the XML is malformed in general. Below is an example:
+The MXMS typically passes the submitted XML directly to the CSP, but may return errors if a CSP is not found or if the XML is malformed in general. Below is an example:
 
 
 XML Submitted
@@ -100,7 +100,7 @@ XML Returned
         </characteristic-error>
     </wap-provisioningdoc>
 
->Note: The XML CSP enables you to control how MX will handle top-level characteristic errors. Consult the XML CSP reference in this guide for more information.
+>Note: The XML CSP enables you to control how MXMS will handle top-level characteristic errors. Consult the XML CSP reference in this guide for more information.
 
 ### Sub Characteristic Error
 Some CSPs contain 'sub-characteristics' which provide for a grouping of settings to be applied to a specific feature of the CSP. The CSP may report a `characteristic-error` at this level when all settings within that sub-characteristic have failed to be applied. Other settings outside of the sub-characteristic may have been applied. Below is an example:
@@ -155,4 +155,4 @@ XML Returned
 
 ## Notes
 
-XML sent into and returned from MX may differ in white spacing both before and after XML nodes and within XML nodes. When comparing returned XML to submitted XML you should format the white spacing to a unified pattern before making comparisons. 
+XML sent into and returned from MXMS may differ in white spacing both before and after XML nodes and within XML nodes. When comparing returned XML to submitted XML you should format the white spacing to a unified pattern before making comparisons. 

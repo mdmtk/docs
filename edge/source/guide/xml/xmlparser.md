@@ -2,13 +2,13 @@
 
 ## Overview
 
-The XML Parser class is a Java class for assisting with MX XML on Android. It has been developed to assist in starting MX development, and to offer suggestion as to how your application might process MX XML. Your application does not need to use the XML Parser class. It is up to your development teams to determine the best way for your application to handle MX XML for your needs. 
+The XML Parser class is a Java class for assisting with MXMS XML on Android. It has been developed to assist in starting MXMS development, and to offer suggestion as to how your application might process MXMS XML. Your application does not need to use the XML Parser class. It is up to your development teams to determine the best way for your application to handle MXMS XML for your needs. 
 
 ## Main Features
 
 ### Validate Set Responses
 
-The XML Parser class can assist you in validating responses from MX through the help of the `isXmlEquivalent` function. When an MX set is successful the response XML should be equivalent to the set XML, besides for white space. To use the `isXmlEquivalent` function pass in the XML string you have submitted to MX and the XML string response from MX. If the XML is equivalent, the function will return `true` if not it will return `false`. If the function  returns `false` it should contain error parms or characteristics.
+The XML Parser class can assist you in validating responses from MXMS through the help of the `isXmlEquivalent` function. When an MXMS set is successful the response XML should be equivalent to the set XML, besides for white space. To use the `isXmlEquivalent` function pass in the XML string you have submitted to MXMS and the XML string response from MXMS. If the XML is equivalent, the function will return `true` if not it will return `false`. If the function  returns `false` it should contain error parms or characteristics.
 
 For Example:
 
@@ -18,7 +18,7 @@ For Example:
 
 ### Validate Query Responses 
 
-The XML Parser class assist you in validating query responses from MX through the help of the `isQueryXmlResponseValid` function. You can pass in the response XML from MX and if the XML is error free it will return `true` if there is an error it will return `false`. 
+The XML Parser class assist you in validating query responses from MXMS through the help of the `isQueryXmlResponseValid` function. You can pass in the response XML from MXMS and if the XML is error free it will return `true` if there is an error it will return `false`. 
 
 For Example:
 
@@ -28,7 +28,7 @@ For Example:
 
 ### Counting Errors in Response XML
 
-The XML Parser class helps you count the number of errors in the XML returned from the MX framework through the use of the function `countCharErrors` and `countParmErrors`. Both functions take in the response XML string from MX and return the number of errors of their specified type. 
+The XML Parser class helps you count the number of errors in the XML returned from the MXMS through the use of the function `countCharErrors` and `countParmErrors`. Both functions take in the response XML string from MXMS and return the number of errors of their specified type. 
 
 For Example: 
 
@@ -39,7 +39,7 @@ For Example:
 
 ### Modifying XML Documents
 
-The XML Parser class helps you modify MX XML. For example you can use it to replace values in a template XML with values given to your program through a user input. The function `replaceParms` allows you to specify the XML string to modify, the list of MX parm values to set, and outputs the updated XML string. 
+The XML Parser class helps you modify MXMS XML. For example you can use it to replace values in a template XML with values given to your program through a user input. The function `replaceParms` allows you to specify the XML string to modify, the list of MXMS parm values to set, and outputs the updated XML string. 
 
 For Example:
 
@@ -58,7 +58,7 @@ For Example:
 
 ### Reading XML Documents
 
-The XML Parser class helps you read MX XML through the use of the `fetchParms` function. For example you can use this function to confirm parm values in set XML or read parm values in query xml. To use this function pass in the XML and a list of parm selectors, and the function will return an array list of parm values. 
+The XML Parser class helps you read MXMS XML through the use of the `fetchParms` function. For example you can use this function to confirm parm values in set XML or read parm values in query xml. To use this function pass in the XML and a list of parm selectors, and the function will return an array list of parm values. 
 
 For Example:
 
@@ -79,13 +79,13 @@ For Example:
 
 ### boolean isXmlEquivalent(String inXml,String outXml)
 
-Function for comparing if two MX XML's are equivalent, this can be used for validating set results
+Function for comparing if two MXMS XML's are equivalent, this can be used for validating set results
 
 **Parameters:**
 
-**inXml-** XML submitted to MX
+**inXml-** XML submitted to MXMS
 
-**outXml-** XML revived from MX
+**outXml-** XML revived from MXMS
 
 **Returns:** boolean- True if XML is equivalent false if XMLs are different 
 
@@ -111,7 +111,7 @@ Formats XML to eliminate XML formatting issues in XML Nodes
 
 ### int countCharErrors(String xml)
 
-Counts the number of characteristic errors in a block of MX XML
+Counts the number of characteristic errors in a block of MXMS XML
 
 **Parameters:**
 
@@ -121,7 +121,7 @@ Counts the number of characteristic errors in a block of MX XML
 
 ### int countParmErrors(String xml)
 
-Counts the number of parm errors in a block of MX XML
+Counts the number of parm errors in a block of MXMS XML
 
 **Parameters:**
 
@@ -139,7 +139,7 @@ Helper function for creating a parm query
 
 **parmName**- Parm Name to query 
 
-**Returns:** String- MX query XML
+**Returns:** String- MXMS query XML
 
 ### String getCharQuery(String charType)
 
@@ -149,7 +149,7 @@ Helper function for creating a characteristic query
 
 **charType**- Characteristic type
 
-**Returns:** String- MX query XML
+**Returns:** String- MXMS query XML
 
 ### String replaceParms(String xml,ArrayList<ParmValue> values)
 
@@ -214,7 +214,7 @@ Find parm value in xml
 	import android.content.res.AssetManager;
 
 	/** 
-	 * Helper class for working with MX XML
+	 * Helper class for working with MXMS XML
 	 */
 	public class XmlParser
 	{
@@ -341,7 +341,7 @@ Find parm value in xml
 		/**
 		 * Helper function for creating a characteristic query
 		 * @param charType Characteristic type
-		 * @return MX query XML 
+		 * @return MXMS query XML 
 		 */
 		static public String getCharQuery(String charType)
 		{
@@ -354,7 +354,7 @@ Find parm value in xml
 		 * Helper function for creating a parm query
 		 * @param charType Characteristic type
 		 * @param parmName Parm Name to query 
-		 * @return MX query XML 
+		 * @return MXMS query XML 
 		 */
 		static public String getParmQuery(String charType,String parmName)
 		{
@@ -385,7 +385,7 @@ Find parm value in xml
 		}
 
 		/**
-		 * Counts the number of characteristic errors in a block of MX XML
+		 * Counts the number of characteristic errors in a block of MXMS XML
 		 * @param xml XML to count errors on 
 		 * @return Number of errors 
 		 */
@@ -407,7 +407,7 @@ Find parm value in xml
 		}
 		
 		/**
-		 * Counts the number of parm errors in a block of MX XML
+		 * Counts the number of parm errors in a block of MXMS XML
 		 * @param xml XML to count errors on 
 		 * @return Number of errors 
 		 */
@@ -444,9 +444,9 @@ Find parm value in xml
 		}
 
 		/**
-		 * Function for comparing if two MX XML's are equivalent. This can be used for validating set results.
-		 * @param inXml XML submitted to MX 
-		 * @param outXml XML revived from MX
+		 * Function for comparing if two MXMS XML's are equivalent. This can be used for validating set results.
+		 * @param inXml XML submitted to MXMS 
+		 * @param outXml XML revived from MXMS
 		 * @return True if XML is equivalent false if XMLs are different 
 		 */
 		static public boolean isXmlEquivalent(String inXml,String outXml)
@@ -623,7 +623,7 @@ Find parm value in xml
 		}
 		
 		/** 
-		 * Helper class for parsing MX XML documents 
+		 * Helper class for parsing MXMS XML documents 
 		 */
 		private static class DocParser
 		{
