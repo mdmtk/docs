@@ -14,6 +14,31 @@ var menuStrcture = [
 				
 			},
 			{
+				name: 'MDM Agent',
+				icon: '',
+				link: '#',
+				items: [
+					{
+						title: 'MDM Agent',
+						icon: '',
+						items: [
+							{
+								name: 'Staging',
+								link: '#guide-MDM-staging',
+							},
+							{
+								name: 'Persistence',
+								link: '#guide-MDM-persistence',
+							},
+							{
+								name: 'Updating',
+								link: '#guide-MDM-updating',
+							},
+						]
+					}
+				]
+			},
+			{
 				name: 'MX Framework',
 				icon: '',
 				link: '#',

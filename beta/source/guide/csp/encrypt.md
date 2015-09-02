@@ -4,16 +4,32 @@
 
 ### Overview
 
-The EncryptMgr Feature Type allows the developer to set encryption policies on a device through MX XML. For example a developer can create an Encrypted File System for storing application data.  
+To configure encryption, certain questions must be answered:
+
+* What data will be encrypted?
+* Where will the encrypted version of the data be physically stored?
+* How will the unencrypted version of the data be accessed by applications?
+* Which keys will be used to encrypt and decrypt the data?
+
+Zebra Android devices support encrypting data that is stored in the device file system using two modes of operation:
+
+* Full Storage Card Encryption Mode allows a single Storage Card, usually the one that is physically removable (e.g. a Micro SD Card) to be formatted as one single encrypted file system.  This mode is particularly useful, from a security point of view, because it protects all data stored on the Storage Card from being accessed externally if the card is physically removed from the device.  In this mode, the entire card is encrypted, and the key used to perform the encryption is not stored on the card.  Since data is encrypted and decrypted transparently, applications running on the device can access all the data on the Storage Card as if it were not encrypted.  Applications access an encrypted Storage Card using the same paths they would use if the Storage Card was not encrypted. 
+
+>**Note:** Changing a Storage Card from unencrypted to encrypted or encrypted to unencrypted requires reformatting the card and hence causes the loss of all data on the card.  If there is data that must be preserved, it would have to be copied to another location before activating or deactivating encryption and then copied back after the card is reformatted.
+
+* Folder Encryption Mode allows any number of Encrypted File Systems (EFS) to be created.  The data for each EFS resides in a single file that must be stored on some non-encrypted file system.  This file is called the Backing Storage File (BSF).  A BSF can be located on internal storage (e.g. /data) or on the Primary Storage Card.  The BSF is named based on the name of the EFS.  An EFS is mounted at a virtual path, called its Mount Point.  The Mount Point for an EFS could specify a path on the same non-encrypted file system where the BSF is located or could specify a path on a different file system.  Since data is encrypted and decrypted transparently, applications running on the device can access all the data on an EFS as if it was not encrypted.  Applications must access an EFS using the Mount Point path that is established when the EFS is created.
+
+>**Note:** While the BSF for an EFS can be stored on a Storage Card that is removable, it cannot be stored on a Storage Card that is encrypted using Full Storage Card Encryption Mode.  If an attempt is made to create an EFS, whose BSF is on a Storage Card that is encrypted using Full Storage Card Encryption, then an error will be returned in the Result XML.
+
+Zebra Android devices have a Key Storage Database of named encryption keys.  Each Named Key has an associated Key Value that can be used to encrypt a Full Storage Card and/or to encrypt any number of EFSes.  When activating Full Storage Card Encryption or creating an EFS, a Named Key must be specified and must exist in the Key Storage Database.  If a Named Key is removed from the Key Storage Database, Full Storage Card Encryption and/or EFSes that are encrypted using that Named Key will become inaccessible.  Adding the Named Key (with the same Key Value) will restore accessibility.
+
+The EncryptMgr Feature Type allows you to manage the Key Storage Database, activate or deactivate Full Storage Card Encryption, and create or delete EFSes.
 
 ### Main Functionality
 
-* Install Encryption Key
-* Revoke Encryption Key
-* Create an Encrypted File System
-* Delete an Encrypted File System
-* Encrypt SD Card
-* Format SD Card
+* Add and Remove Named Keys
+* Create and Delete Encrypted File Systems
+* Format the Storage Card as Encrypted or Unencrypted
 
 ##Parameter Notes
 ###Install Key?
@@ -21,7 +37,13 @@ Pivotal parm: Yes
 
 Description: 
 
->This parm allows you to choose whether or not to install an Encryption Key to the Key Storage Database on the device. After successfully installing a key, all Encrypted File Systems using that key will be mounted. If multiple unmounted Encrypted File Systems use the same mount point, only the first will be mounted.
+>This parm allows you to choose whether or not to Add a Named Key to the Key Storage Database on the device.
+
+>**Note:** Only one Encrypted File System can be mounted at a time using a given Mount Point. If an attempt to create an EFS with a Mount Point that is already in used by a mounted EFS, the new EFS will be created, but will not be mounted.
+
+>Adding a Named Key to the Key Storage Database on the device makes a key available for use when activating Full Storage Card Encryption or when creating EFSes.
+
+>**Note:** If you Add a Named Key to the Key Storage Database, it can have an impact on a Storage Card or on Encrypted File Systems that were encrypted using that key and that previously became inaccessible when that key was Removed. By adding the same Key Name with the same associated Key Value, they will be re-mounted and hence will become accessible again.
 
 <div class="parm-table">
  <table>
@@ -33,12 +55,12 @@ Description:
   <tr>
     <td>Do nothing</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will not cause an Encryption Key to be installed.</td>
+	<td>This value (or the absence of this parm from the XML) will not cause a Named Key to be added to the Key Storage Database.</td>
   </tr>
   <tr>
     <td>Install key</td>
     <td>"1"</td>
-	<td>This value will cause an Encryption Key to be installed.</td>
+	<td>This value will cause a Named Key, along with an associated Key Value, to be added to the Key Storage Database.</td>
   </tr>
 </table>
 </div>
@@ -52,7 +74,9 @@ Parm name: InstallKeyName
 
 Description: 
 
->This parm allows you to set the name of the Encryption Key that will be installed on the device. This name must not be identical to the name of an existing Encryption Key on the device.
+>This parm allows you to specify the name of the Named Key that will be added to the Key Storage Database.
+
+>**Note:** If an attempt is made to add a Named Key that is already in the Key Storage Database, then an error will be returned in the Result XML.
 
 Parm value input rules: 
 
@@ -67,18 +91,29 @@ Parm name: InstallKeyValue
 
 Description: 
 
->This parm allows you to set the key value of the Encryption Key that will be installed on the device. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause a random key value to be generated for the given key name.
+>This parm allows you to specify the Key Value to be associated with a Named Key that is being added to the Key Storage Database. Specifying an empty (length of zero) value (or the absence of this parm from the XML) will cause a random key value to be automatically generated and used.
+
+>**Note:** If random key generation is used, there will be no way to extract the generated key from the device. Further, there is no method provided to guarantee that the same key is generated at a later time. This means that if a generated key is used for encryption and is then lost (such as due to Enterprise Reset), any data encrypted using that key will be unrecoverable.
 
 Parm value input rules: 
 
-* HEX string with a length of 64 bytes
+* HEX string that is empty (length of zero) or must be exactly 64 bytes that encode a 128 bit binary value that will be used as an AES encryption Key Value.
+
+>**Note:** The generation of Key Values can be accomplished using any desired mechanism since any 128 bit value can be used as an AES encryption Key Value.  For best results, Key Values should be generated randomly, to make them hard to predict.  Once generated, Key Values should be managed carefully since, if disclosed, a Key Value could be used to compromise the security of any data that is protected using that key.
 
 ###Revoke Key?
 Pivotal parm: Yes
 
 Description: 
 
->This parm allows you to choose whether or not to revoke an Encryption Key from the Key Storage Database. After successfully revoking a key, all Encrypted File System using that key will be unmounted.
+>This parm allows you to choose whether or not to Remove a Named Key from the Key Storage Database.
+
+>**Note:** If an attempt is made to Remove a Named Key that is not currently in the Key Storage Database, then an error will be returned in the Result XML.
+
+>Removing a Named Key from the Key Storage Database prevents that key from subsequently being used when activating Full Storage Card Encryption or when creating EFSes.
+
+>**Note:** When a Named Key is successfully Removed from the Key Storage Database, then any Storage Card or Encrypted File Systems that were encrypted using that key and that were mounted will be un-mounted and hence will become inaccessible.
+
 
 <div class="parm-table">
  <table>
@@ -90,12 +125,12 @@ Description:
   <tr>
     <td>Do nothing</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will not cause an Encryption Key to be revoked.</td>
+	<td>This value (or the absence of this parm from the XML) will not cause any Named Key to be Removed from the Key Storage Database.</td>
   </tr>
   <tr>
     <td>Revoke key</td>
     <td>"1"</td>
-	<td>This value will cause an Encryption Key to be revoked.</td>
+	<td>This value will cause an Encryption Key to be Removed from the Key Storage Database.</td>
   </tr>
 </table>
 </div>	
@@ -109,7 +144,7 @@ Parm name: RevokeKeyName
 
 Description: 
 
->This parm allows you to provide the name(s) of the Encryption Key(s) to revoke.
+>This parm allows you to specify the name(s) of the Named Key(s) to be Removed from the Key Storage Database.
 
 Parm value input rules: 
 
@@ -121,17 +156,18 @@ Pivotal parm: Yes
 
 Description: 
 
->This parm allows you to choose whether or not to create an Encrypted File System on the device. Since the process of creating the Encrypted File System takes time, access to the Encrypted File System will be denied during the creation process
+>This parm allows you to choose whether or not to create an Encrypted File System on the device.
 
->Encrypted File System creation may fail for any of the following conditions
+>**Note:** The process of Creating an Encrypted File System takes time since it must create the Backing Storage File and mount the EFS on its designated Mount Point. As a result, applications will not be able to access an EFS via its Mount Point until it is successfully mounted.  Further, an EFS could later be un-mounted if the Key Name it is using is Removed from the Key Storage Database. Applications that use an EFS should thus include error handling logic that can deal with situations where the EFS is not mounted and hence cannot be accessed.
 
->* Duplicate Encrypted File System names - Encrypted File Systems with the same name can coexist on different supporting file systems, but cannot coexist on the same file system.
->* Encrypted File System storage type is not available, e.g. no SD card inserted and mounted
->* Not enough space on supporting file system 
->* Key does not exist 
->* Creating an Encrypted File System on encrypted SD card 
->* Invalid parm values, e.g. Encrypted File System size too big or too small or not an integer number 
->* Unmatched mount point and Encrypted File System storage type
+>An attempt to Create an Encrypted File System creation may fail for various reasons, including:
+
+>* A BSF with the specified EFS name already exists in the specified storage location.  Only one EFS of a given name can created on each storage location.
+>* The storage location specified for the BSF is not accessible (e.g. is not mounted) or is not writable.
+>* The storage location specified for the BSF has insufficient free space to create the BSF of the specified size.
+>* The storage location specified for the BSF is a Storage Card for which Full Storage Card Encryption has been activated.
+>* The Named Key specified for the EFS is not present in the Key Storage Database.
+>* The size specified for the EFS is invalid.
 
 <div class="parm-table">
  <table>
@@ -143,7 +179,7 @@ Description:
   <tr>
     <td>Do nothing</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will not cause an Encrypted File System to be created.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no Encrypted File System to be created.</td>
   </tr>
   <tr>
     <td>Create EFS</td>
@@ -162,7 +198,7 @@ Parm name: EFSName
 
 Description: 
 
->This parm allows you to provide the EFS name to create an Encrypted File System.
+>This parm allows you to specify the name of the Encrypted File System to be Created.
 
 Parm value input rules: 
 
@@ -177,7 +213,7 @@ Parm name: EFSKeyName
 
 Description: 
 
->This parm allows you to provide the name of the Encryption Key you would like to use to encrypt the new Encrypted File System.
+>This parm allows you to specify the Named Key to use to Create the Encrypted File System.
 
 Parm value input rules: 
 
@@ -192,7 +228,7 @@ Parm name: EFSLocation
 
 Description: 
 
->This parm allows you to select the location of the Encrypted File System to create.
+>This parm allows you to specify the storage location where the Backing Storage File should be stored for the Encrypted File System to be Created.
 
 <div class="parm-table">
  <table>
@@ -204,12 +240,12 @@ Description:
   <tr>
     <td>Internal</td>
     <td>"0"</td>
-	<td>This value indicates that the Encrypted File System will be in the internal storage of the device.</td>
+	<td>This value indicates that the BSF for the EFS will be created in the internal storage (i.e. /data) of the device.</td>
   </tr>
   <tr>
     <td>SDcard</td>
     <td>"1"</td>
-	<td>This value indicates that the Encrypted File System will be on the SD card.</td>
+	<td>This value indicates that the BSF for the EFS will be created on the Primary Storage Card of the device.</td>
   </tr>
 </table>
 </div>	
@@ -223,7 +259,7 @@ Parm name: MountPath
 
 Description: 
 
->This parm allows you to provide the mount path to create the Encrypted File System.
+>This parm allows you to specify the Mount Path to be used for the Encrypted File System to be Created.
 
 Parm value input rules: 
 
@@ -238,7 +274,7 @@ Parm name: VolumeSize
 
 Description: 
 
->This parm allows you to provide the size of the Encrypted File System in Megabytes (MB).
+>This parm allows you to specify the size of the Backing Storage File in Megabytes (MB) for the Encrypted File System to be Created.
 
 Parm value input rules: 
 
@@ -250,7 +286,7 @@ Pivotal parm: Yes
 
 Description: 
 
->This parm allows you to choose whether or not to delete an Encrypted File System.
+>This parm allows you to choose whether or not to Delete an Encrypted File System.
 
 <div class="parm-table">
  <table>
@@ -262,12 +298,12 @@ Description:
   <tr>
     <td>Do nothing</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will not cause an Encryption File System to be deleted.</td>
+	<td>This value (or the absence of this parm from the XML) will not cause an Encrypted File System to be Deleted.</td>
   </tr>
   <tr>
     <td>Delete EFS</td>
     <td>"1"</td>
-	<td>This value will cause an Encryption File System to be deleted.</td>
+	<td>This value will cause an Encrypted File System to be Deleted.</td>
   </tr>
 </table>
 </div>	
@@ -281,7 +317,7 @@ Parm name: DeleteEFSLocation
 
 Description: 
 
->This parm allows you to select the location of the Encrypted File System to delete.
+>This parm allows you to specify the storage location of the Backing Storage File of the Encrypted File System to be Deleted.
 
 <div class="parm-table">
  <table>
@@ -293,12 +329,12 @@ Description:
   <tr>
     <td>Internal</td>
     <td>"0"</td>
-	<td>This value indicates that the Encrypted File System that will be deleted is located in the internal storage on the device.</td>
+	<td>This value indicates that the BSF for the EFS to be Deleted is in the internal storage (i.e. /data) of the device.</td>
   </tr>
   <tr>
     <td>SDcard</td>
     <td>"1"</td>
-	<td>This value indicates that the Encrypted File System that will be deleted is located on the SD card.</td>
+	<td>This value indicates that the BSF for the EFS to be Deleted is on the Primary Storage Card of the device.</td>
   </tr>
 </table>
 </div>	
@@ -308,7 +344,15 @@ Pivotal parm: Yes
 
 Description: 
 
->This parm allows you to choose if the SD card should be encrypted or formatted.
+>This parm allows you to choose whether Full Storage Card Encryption should be activated or deactivated.
+
+>An attempt to Activate or Deactivate Full Storage Card Encryption may fail for various reasons, including:
+
+>* The Storage Card is removable and is not currently present in the device
+>* The Storage Card is not currently mounted or is inaccessible
+>* The specified Named Key is not present in the Key Storage Database.
+
+>**Note:** Whenever Full Storage Card Encryption is activated or deactivated, the Storage Card must be reformatted as encrypted or unencrypted, respectively. Reformatting causes the loss of all data on the card. If there is data that must be preserved, it would have to be copied to another location before activating or deactivating encryption and then copied back after the card is reformatted.
 
 <div class="parm-table">
  <table>
@@ -320,17 +364,17 @@ Description:
   <tr>
     <td>Do nothing</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will not cause no change to the SD card.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no changes to whether Full Storage Card Encryption is activated or deactivated.</td>
   </tr>
   <tr>
     <td>Encrypt SDcard</td>
     <td>"1"</td>
-	<td>This value will cause the entire SD card to be encrypted.</td>
+	<td>This value will cause Full Storage Card Encryption to be activated, thus causing the Storage Card to be reformatted as encrypted.</td>
   </tr>
   <tr>
     <td>Format SDcard</td>
     <td>"2"</td>
-	<td><p>This value will cause the SD card to be formatted.</p> <p> <b>Note:</b> When formating an encrypted SD card, the result would be a formated, unencrypted SD card.</p></td>
+	<td><p>This value will cause Full Storage Card Encryption to be deactivated, thus causing the Storage Card to be reformatted as unencrypted.</p></td>
   </tr>
 </table>
 </div>	
@@ -344,16 +388,9 @@ Parm name: SdCardKeyName
 
 Description: 
 
->This parm allows you to provide the key name to encrypt the  SD card with. Since the process of encrypting the SD card takes time, access to the encrypted SD card will be denied during the creation process. When encrypting an SD card that was previously encrypted, the SD card will be re-formated and re-encrypted, as a result, all existing data will be lost.
+>This parm allows you to specify the Named Key that will be used to perform Full Storage Card Encryption.
 
-> Encrypting the SD card may fail for the following reasons:
-
->* SD card is not inserted
->* SD card is not mounted, e.g. UMS is in use
->* Key name is invalid
-
-> **Note:** This process will format and encrypt the SD card. Therefore, all existing data on the SD card will be lost.
-
+>**Note:** If the Named Key is not present in the Key Storage Database then an error will be returned in the Result XML.
 
 Parm value input rules: 
 
