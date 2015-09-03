@@ -151,7 +151,7 @@ Description:
   <tr>
     <td>Embed the license blob from the license file into the XML</td>
     <td>"embed"</td>
-	<td><p>This value indicates that the contents of the Software License File will be embedded (Base64 encoded) into the Request XML.</p><p><b>Note:</b> This option has the advantage of making the Request XML self-contained, although it does make the total data size somewhat larger, due to the Note: Base64 encoding the Software License File contents.</p></td>
+	<td><p>This value indicates that the contents of the Software License File will be embedded (Base64 encoded) into the Request XML.</p><p><b>Note:</b> This option has the advantage of making the Request XML self-contained, although it does make the total data size somewhat larger due to the Base64 encoding the Software License File contents. However, this method is recommended because it does not require a license file to be on the device, possibly in a persistant storage location.</p></td>
   </tr>
   <tr>
     <td>Reference a license file already on the mobile device</td>

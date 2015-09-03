@@ -4,6 +4,8 @@
 
 Persistence can be used to ensure that a device would stay managed by MDM after an Enterprise Reset or an OS Update that causes an Enterprise Reset. 
 
+##Persisting managability
+
 ###Persistent Components
 
 The following are the components of the device that would need to be made persistent in order for the device to continue to be managed after an Enterprise Reset.
