@@ -39,20 +39,20 @@ var menuStrcture = [
 				]
 			},
 			{
-				name: 'MX Framework',
+				name: 'MX Management System',
 				icon: '',
 				link: '#',
 				items: [
 					{
-						title: 'MX Framework',
+						title: 'MX Management System',
 						icon: '',
 						items: [
 							{
-								name: 'MX Framework Overview',
+								name: 'MX Management System Overview',
 								link: '#guide-MX-overview',
 							},
 							{
-								name: 'MX Interface',
+								name: 'MX Management System Interface',
 								link: '#guide-MX-interface',
 							},
 							// {
@@ -331,7 +331,11 @@ var menuStrcture = [
 						items: [
 							{
 								name: 'Sample App',
-								link: '#guide-samples-1',
+								link: '#guide-samples-SimpleMdmToolkitSample',
+							},
+							{
+								name: 'Query Sample App',
+								link: '#guide-samples-SimpleMdmToolkitQuery',
 							},
 							{
 								name: 'Using XML Parser',

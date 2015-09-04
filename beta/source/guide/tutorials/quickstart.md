@@ -1,14 +1,14 @@
 #Quick Start
 
 ## Overview
-This quick start guide will walk through the common tasks and components that you will use in order for your MDM client to interface with the MX Framework available on Zebra Android devices. The following steps will be covered. 
+This quick start guide will walk through the common tasks and components that you will use in order for your MDM client to interface with the MX Management System available on Zebra Android devices. The following steps will be covered. 
 
-* **Intro to MX** - The basic information that is needed for using the MX system
-* **Binding to MX** - All communications to the MX framework on Zebra devices, occur through a common binding interface.  
-* **Generating XML** - Data exchanged to the MX framework from the MDM client is handled through a defined XML structure. Using the DSDtoXml tool provided in the MDM Toolkit will provide a template for the XML to be used for applying settings. Typically you will use this tool to generate all needed functions and then replace string values for dynamically changing variables.
+* **Intro To The MXMS** - The basic information that is needed for using the MX Management System.
+* **Binding to the MXMS** - All communications to the MXMS on Zebra devices, occur through a common binding interface.  
+* **Generating XML** - Data exchanged to the MXMS from the MDM client is handled through a defined XML structure. Using the DSDtoXml tool provided in the MDM Toolkit will provide a template for the XML to be used for applying settings. Typically you will use this tool to generate all needed functions and then replace string values for dynamically changing variables.
 * **Submitting XML** - Within the MDM client, XML will be submitted to apply settings via a simple API.
 <!--* **Checking Response** - the MDM client will need to handle response from the MX framework for interpreting submit or query results -->
-* **Querying MX** - Within the MDM client, XML will be submitted to query MX to receive back information about the current settings on the device.
+* **Querying the MXMS** - Within the MDM client, XML will be submitted to query the MXMS to receive back information about the current settings on the device.
 * Next Steps
 
 ## Requirements
@@ -18,11 +18,11 @@ This quick start guide will walk through the common tasks and components that yo
 * Java JVM Installed
 * Android ADT
 
-## Intro To MX
+## Intro To The MXMS
 
-### MX Overview
+### MXMS Overview
 
-The MX Framework provides a common interface to Zebra Android device capabilities utilizing XML that conforms to the standard OMA-CP PROV (Microsoft MSPROV) schema. This framework allows developers and administrators an extensible, efficient, reliable and scalable means for configuring and administrating Zebra Android devices. MX exposes capabilities that underlying CSPs provide to give the user access to both privileged and unprivileged APIs. Each CSP exposes its capabilities using DSD files that are included with the MDM Toolkit. These DSD files are then imported into a DSDtoXML tool to generate XML that can be sent to the MX framework running on the device to change a device configuration or behavior.
+The MX Management System (MXMS) provides a common interface to Zebra Android device capabilities utilizing XML that conforms to the standard OMA-CP PROV (Microsoft MSPROV) schema. This allows developers and administrators to have an extensible, efficient, reliable and scalable means for configuring and administrating Zebra Android devices. MXMS exposes capabilities that underlying CSPs provide to give the user access to both privileged and unprivileged APIs. Each CSP exposes its capabilities using DSD files that are included with the MDM Toolkit. These DSD files are then imported into a DSDtoXML tool to generate XML that can be sent to the MXMS running on the device to change a device configuration or behavior.
 
 For more information on the definitions of necessary terms, the MX architecture and data flow, MDM implementation approaches, CSP summaries and other information, please see [this page.](../guide/MX/overview)
 
@@ -44,7 +44,7 @@ When submitting a Request XML document, knowing what happened will require at le
 
 For more information on Result XML documents and Parm Value Extraction, please see [this page.](../guide/xml/response)
 
-## Binding to MX
+## Binding to the MXMS
 
 1. Create a new Android project with an empty activity in Eclipse.   
 
@@ -54,11 +54,11 @@ For more information on Result XML documents and Parm Value Extraction, please s
         <uses-permission android:name="com.symbol.mxmf.ACCESS_MX_MANAGEMENT_FRAMEWORK_SERVICE" />
 		<uses-permission android:name="com.motorolasolutions.emdk.mxframework.ACCESS_MX_MANAGEMENT_FRAMEWORK_SERVICE"/>
 		
-3. Create two new packages in your application. One package should be named "com.symbol.mxmf" and the other package should be named "com.motorolasolutions.emdk.mxframework". These packages will be used for holding the aidl (Android Interface Definition Language) files.
+3. Create two new packages in your application. One package should be named `com.symbol.mxmf` and the other package should be named `com.motorolasolutions.emdk.mxframework`. These packages will be used for holding the aidl (Android Interface Definition Language) files.
 
-4. The SimpleMdmToolKitSample project, which is supplied in the MDM Toolkit, contains the IMxFrameworkService.aidl files that should be copied into your application. These AIDL files are located in the SimpleMdmToolKitSample's "com.symbol.mxmf" and "com.motorolasolutions.emdk.mxframework" packages. These AIDL files should be copied into the respective packages that were made in Step 2.
+4. The SimpleMdmToolKitSample project, which is supplied in the MDM Toolkit, contains the IMxFrameworkService.aidl files that should be copied into your application. These AIDL files are located in the SimpleMdmToolKitSample's `com.symbol.mxmf` and `com.motorolasolutions.emdk.mxframework` packages. These AIDL files should be copied into the respective packages that were made in Step 2.
 
-5. In the package that contains the empty activity that was created in Step 1, copy and paste the following classes from the SimpleMdmToolKitSample project's "com.symbol.simplemdmtoolkitsample" package:
+5. In the package that contains the empty activity that was created in Step 1, copy and paste the following classes from the SimpleMdmToolKitSample project's `com.symbol.simplemdmtoolkitsample` package:
 
 	* MxNamespace.java
 	* MxNamespaceMotorolaSolutions.java
@@ -135,134 +135,6 @@ For more information on Result XML documents and Parm Value Extraction, please s
 			}
 		};    
 
-
-
-<!--
-
-2. Create a new package in your application with the following name "com.symbol.mxmf". This will be used for holding the aidl (Android Interface Definition Language)file.  
-
-3. Create a file called "IMxFrameworkService.aidl" inside the new package.  
-
-4. Copy the following code into your aidl file, which defines to MX Interface:
-
-        :::java
-	    package com.symbol.mxmf;
-     
-	    // IMxFrameworkService.aidl
-	    // Declare any non-default types here with import statements
-	
-	    /**
-	     *  MX Management Framework AIDL service interface
-	     */
-		interface IMxFrameworkService {
-	      /**
-		   * Provide Mx Framework Service(s) to process a clinet's request
-		   * @param  sRequest - request String in XML format sent by a client
-		   * @return a String from Mx Framework Service's response in XML format
-		   */
-	       String processXML(String sRequest);
-    
-	       /**
-		   * Provide Mx Framework Service(s) to process a clinet's request
-		   * @param  sRequest - request String in XML format sent by a client
-		   * @param  mapExtra - a map that contains Extra information on how the request XML should be applied
-		   * @return a String from Mx Framework Service's response in XML format
-		   */
-	       String processXmlRequest(String sRequest, in Map mapExtra);
-	
-	       /**
-		    * Get value from CSP by providing a key
-		    * @param  sKey - a key that CSP would understand, then return a value to MxFramework.
-		    * @return a value
-		    */
-	        String getValue(String sKey);
-		}
-
-    
-
-5. Add the Permission to your manifest file to allow MX accesses.  
-
-        :::xml
-        <uses-permission android:name="com.symbol.mxmf.ACCESS_MX_MANAGEMENT_FRAMEWORK_SERVICE" />
-
-    
-6. Implement "ServiceConnection" from your MainActivity, and add unimplemented methods. You should now have methods for "onServiceConnected" and "onServiceDisconnected".   
-
-7. Copy the following variables to the top of your MainActivity for holding values needed for MX.  
-
-        :::java
-		//Application Context for MX 
-		Context context = null;
-		
-	    //MX Framework package name
-		private static final String MX_FRAMEWORK_PKG ="com.symbol.mxmf";
-	
-		//MX Framework service class name
-		private static final String MX_FRAMEWORK_SERVICE_CLS ="com.symbol.mxmf.MxFrameworkService";
-	
-		//MX service holder
-		public IMxFrameworkService MXservice = null;
-
-    
-
-8. Add the following method to "MainActivity" for binding to the MX service. 
-
-        :::java
-	    void bindService(){
-		    //Bind to Remote Service
-		    Intent bindServiceIntent = new Intent();
-		    //Set Component
-		    bindServiceIntent.setComponent(new ComponentName(MX_FRAMEWORK_PKG, MX_FRAMEWORK_SERVICE_CLS));
-		
-		    try{
-			    this.context.bindService(bindServiceIntent, this, Context.BIND_AUTO_CREATE);
-		    }
-		    catch(Exception e)
-		    {
-			    Log.e("MX", e.toString());		
-		    }
-	    }
-
-	
-
-9. Add the following code to "onCreate" for getting the application context and calling the binding method. 
-
-        :::java
-	    //Get Application Context
-	    this.context = this.getApplicationContext();
-	
-	    // Call bindService
-		bindService();
-
-	
-
-10. Add the following code to "onServiceConnected" to set the service reference. 
-
-        :::java
-	    //Set service
-		this.MXservice = IMxFrameworkService.Stub.asInterface(service);
-
-	
-
-11. Add the following code to "onServiceDisconnected" to set the service reference to null. 
-
-        :::java
-	    //Set service to null
-		this.MXservice=null;
-
-	
-
->Note:  
-> you can use the following code to close the connection to MX. 
->
->     :::java
->     //Unbind service
->     this.context.unbindService(this);
->
->     //Set service to null
->     this.MXservice = null;
-
--->
 
 ## Generating XML
 
@@ -518,7 +390,7 @@ In this example, the utilizeMXMS method is used to demonstrate how to take an XM
 			}
 		}
 
-## Querying MX
+## Querying the MXMS
 
 Submitting queries to MX follows a similar process to submitting XML that is meant to set the device or perform an action. The SimpleMdmToolKitQuery project, which is supplied in the MDM Toolkit, contains an example of how to submit queries to MX. 
 

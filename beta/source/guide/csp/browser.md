@@ -109,8 +109,7 @@ Description:
 
     :::XML
     <wap-provisioningdoc>
-        <characteristic-query type = "BrowserMgr">
-       	</characteristic-query>
+        <characteristic-query type = "BrowserMgr"/>
     </wap-provisioningdoc>
 
 

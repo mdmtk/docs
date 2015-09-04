@@ -331,7 +331,11 @@ var menuStrcture = [
 						items: [
 							{
 								name: 'Sample App',
-								link: '#guide-samples-1',
+								link: '#guide-samples-SimpleMdmToolkitSample',
+							},
+							{
+								name: 'Query Sample App',
+								link: '#guide-samples-SimpleMdmToolkitQuery',
 							},
 							{
 								name: 'Using XML Parser',

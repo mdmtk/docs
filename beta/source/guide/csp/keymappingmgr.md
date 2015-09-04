@@ -2535,6 +2535,9 @@ Description:
 Parm value input rules: 
 
 * String containing a valid flag
+	* The list of valid flags would be the Constant Values, which can be found on this page: http://developer.android.com/reference/android/content/Intent.html
+	* For example, the value for the FLAG_ACTIVITY_NEW_TASK flag would be "0x10000000"
+	* Also, if more than one flag should be used, the flags will need to be OR'ed together. For example, if you want to use the FLAG_ACTIVITY_NEW_TASK and FLAG_ACTIVITY_SINGLE_TOP flags, their values ("0x10000000" and "0x20000000") would be OR'ed together to produce the value "0x30000000", which would be used as the parm value.
 
 ###Application Launch
 

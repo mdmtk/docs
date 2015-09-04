@@ -1,6 +1,6 @@
 # XML Queries
 
-This guide will describes how to query MX for framework and device information:
+This guide will describes how to query MXMS for framework and device information:
 
 * Component Versions
 * Installed CSPs
@@ -11,7 +11,7 @@ This guide will describes how to query MX for framework and device information:
 
 ## CSP Query System  
 
-The CSP query system allows a developer to query the MX Framework for information about the device and the state of the device. CSPs can be queried based off characteristics or parameters. Each CSP may or may not support querying of individual parameters and characteristics. You will need to check the CSP reference found in this guide to see what querying capabilities it supports. 
+The CSP query system allows a developer to query the MXMS for information about the device and the state of the device. CSPs can be queried based off characteristics or parameters. Each CSP may or may not support querying of individual parameters and characteristics. You will need to check the CSP reference found in this guide to see what querying capabilities it supports. 
 
 ### Parameter Query Example
 
@@ -53,9 +53,9 @@ Example Output:
 	    </characteristic>
     </wap-provisioningdoc>
 
-## Getting MX Version 
+## Getting the MXMS Version 
 
-The following XML block queries for MX Version information: 
+The following XML block queries for MXMS Version information: 
 
     :::xml
     <wap-provisioningdoc>
@@ -74,7 +74,7 @@ Example Output:
 
 ## Getting Installed CSPs 
 
-The following XML block queries MX for the list of CSPs: 
+The following XML queries the MXMS for the list of CSPs: 
 
     :::xml
     <wap-provisioningdoc>
@@ -230,7 +230,7 @@ Example Output:
 ## Grouping Queries
 
 
-XML Queries can be combined. For example we can query for MX version, and the list of CSPs:
+XML Queries can be combined. For example, we can query for MXMS version and the list of CSPs:
 
      :::xml
      <wap-provisioningdoc>

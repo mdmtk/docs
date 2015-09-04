@@ -2,7 +2,9 @@
 
 ##Overview
 
-Persistence can be used to ensure that a device would stay managed by MDM after an Enterprise Reset. 
+Persistence can be used to ensure that a device would stay managed by MDM after an Enterprise Reset or an OS Update that causes an Enterprise Reset. 
+
+##Persisting managability
 
 ###Persistent Components
 
@@ -20,9 +22,9 @@ MX is required to be on the device and it is automatically persisted. Therefore,
 
 The following are steps that need to be performed in order for the device to continue to be managed by MDM:
 
-1. Get
+1. Download
 
-	In order to be persisted, the MDM Agent APK needs to be saved in a location that survives an Enterprise Reset, such as the Enterprise Partition. When putting a new version of the MDM Agent APK onto a device that already has this APK stored on it, the new version should overwrite the old version.
+	In order to be persisted, the MDM Agent APK needs to be downloaded and saved in a location that survives an Enterprise Reset, such as the Enterprise Partition. When saving a new version of the MDM Agent APK onto a device that already has this APK stored on it, the new version should overwrite the old version.
 
 2. Installation
 	
