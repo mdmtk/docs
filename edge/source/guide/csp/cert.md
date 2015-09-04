@@ -4,7 +4,7 @@
 
 ### Overview
 
-A Digital Certificate is an electronic document that can be used to prove an asserted identity. By possessing a valid Public Certificate and its matching Private Key, an entity can assert an identity and then, through Certificate Validation, prove to other entities that it is entitled to assert that identity. Certificate Validation is based on verification that an entity possesses the Private Key that is associated with valid Public Certificate for the asserted identity and that was issued by a trusted Certificate Authority (CA).
+A Digital Certificate is an electronic document that can be used to prove an asserted identity. By possessing a valid Public Certificate and its matching Private Key, an entity can assert an identity and then, through Certificate Validation, prove to other entities that it is entitled to assert that identity. Certificate Validation is based on verification that an entity possesses the Private Key that is associated with the valid Public Certificate for the asserted identity and that was issued by a trusted Certificate Authority (CA).
 
 To acquire a Public Certificate, an entity first generates a Public/Private Key pair. The entity then submits the Public Key along with identity information to a Certificate Authority (CA). The CA verifies the identity information provided by the requestor, issues a Public Certificate that contains the submitted Public Key and identity information, and signs the Public Certificate using its own Private Key. By signing a Public Certificate with its own Private Key, the CA enables other entities that trust that CA to trust the Public Certificate once they verify that it was signed by that CA. Signing also enables entities to verify that the Public Certificate is genuine and has not been modified since it was signed by the CA.
 
@@ -18,11 +18,11 @@ Digital Certificates are most commonly used in Android devices in two primary wa
 Zebra Android devices can store Digital Certificates in two primary areas:
 
 * The Trusted Store is a protected area of the device that can only hold CA Certificates. The Trusted Store is present in the device by default and contains CA Certificates for many well-known and universally trusted CAs. The Trusted Store allows various System Applications to establish trust of CAs that issue other Certificates.
-* The Android Keystore is a protected area of the device that can hold both CA Certificates and Client Certificates. The Android Keystore must be initialized before it can be used and starts out empty.  By adding CA Certificates to the Android Keystore, trust of additional CAs and Servers may be established. By adding Client Certificates to the Android Keystore, the device can be provided with the ability to assert and prove various identities.
+* The Android Keystore is a protected area of the device that can hold both CA Certificates and Client Certificates. The Android Keystore must be initialized before it can be used and starts out empty. By adding CA Certificates to the Android Keystore, trust of additional CAs and Servers may be established. By adding Client Certificates to the Android Keystore, the device can be provided with the ability to assert and prove various identities.
 
-Digital Certificates are commonly acquired in the form of Certificate Files of various formats. Distinguished Encoding Rules (DER) is a standard scheme used to encode Digital Certificates. DER can be used directly to encode a Certificate as a binary Certificate File, which will usually have a file extension of .CER, but may also have a file extension of .CRT or .DER.  DER can also be used in conjunction with Base64 encoding to produce a text Certificate File according to the Privacy-enhanced Electronic Mail (PEM) standard. Certificate Files only encode Public Certificates, never Private Keys.
+Digital Certificates are commonly acquired in the form of Certificate Files of various formats. Distinguished Encoding Rules (DER) is a standard scheme used to encode Digital Certificates. DER can be used directly to encode a Certificate as a binary Certificate File, which will usually have a file extension of .CER, but may also have a file extension of .CRT or .DER. DER can also be used in conjunction with Base64 encoding to produce a text Certificate File according to the Privacy-enhanced Electronic Mail (PEM) standard. Certificate Files only encode Public Certificates, never Private Keys.
 
-Private Keys are commonly generated or acquired in the form of a text Key File encoded according to the PEM standard. A common practice for Client Certificates is to combine a Public Certificate and a matching Private Key into a Container Files using the Public-Key Cryptography Standards (PKCS) standard PKCS12. PKCS12 is an archive file format for storing multiple cryptography objects as a single binary file, usually with a file extension of .PKCS12, .P12, or .PFX. Container Files constructed according to the PKCS12 standard are typically encrypted based on a password, to protect the Private Key contained therein. Encrypted Container Files would require the original password to be supplied before they could be processed.
+Private Keys are commonly generated or acquired in the form of a text Key File encoded according to the PEM standard. A common practice for Client Certificates is to combine a Public Certificate and a matching Private Key into a Container Files using the Public-Key Cryptography Standards (PKCS) standard PKCS12. PKCS12 is an archive file format for storing multiple cryptography objects as a single binary file, usually with a file extension of .PKCS12, .P12, or .PFX. Container Files constructed according to the PKCS12 standard are typically encrypted based on a password to protect the Private Key contained therein. Encrypted Container Files would require the original password to be supplied before they could be processed.
 
 The CertMgr Feature Type allows you to initialize the Android Keystore, install or uninstall CA Certificates to the Trusted Store and Android Keystore and the install or uninstalled CA and/or Client Certificates to the Android Keystore.
 
@@ -38,7 +38,7 @@ Pivotal parm: Yes
 
 Description: 
 
->This parm allows you to specify whether to initialize the Android Keystore, Install a Certificate or Uninstall a Certificate.
+>This parm allows you to specify whether to initialize the Android Keystore, Install a Certificate, or Uninstall a Certificate.
 
 <div class="parm-table">
  <table>
@@ -168,7 +168,7 @@ If the Certificate Action is "Install certificate" AND the Certificate Method is
 
 If the Certificate Action is "Install certificate" AND the Certificate Method is "Reference certificate file" AND the Certificate Type is "Client Certificate (.PEM file)" or "Client Certificate and Private Key (.PFX file)" or "Client Certificate and Private Key (.P12 file)" or "Client Certificate and Private Key (.PKCS12 file)"
 
-*Parm name: CertFileClient
+* Parm name: CertFileClient
 
 Parm value input rules: 
 
@@ -185,7 +185,7 @@ Description:
 
 >This parm allows you to specify whether or not to the device clock should be adjusted automatically when the Certificate is installed if the current date on the device is outside of the Validity Window for the Certificate.
 
->**Note:** This option allows you to solve the issue where a device may be unable to use a Certificate to get on a network (e.g. EAP-TLS) because the date on the device is not set properly (as it may not be on a fresh-out-of-the-box device) and hence the Certificate appears to be invalid (expired or not yet valid). If this parm has a value of "true", then if the date is outside the Validity Window for a Certificate that is being installed, the date of the device will be changed to the start date of the Validity Window for a Certificate. A common use case is to use this option to allow a Certificate to be used to join a network and then acquire the real date and time via that network (see Clock Feature Type).
+>**Note:** This option allows you to solve the issue where a device may be unable to use a Certificate to get on a network (e.g. EAP-TLS) because the date on the device is not set properly (as it may not be on a fresh-out-of-the-box device) and hence the Certificate appears to be invalid (expired or not yet valid). If this parm has a value of "true", then if the date is outside the Validity Window for a Certificate that is being installed, the date of the device will be changed to the start date of the Validity Window for a Certificate. A common use case is to use this option to allow a Certificate to be used to join a network and then acquire the real date and time via that network (see [Clock Feature Type](../guide/csp/clock)).
 
 Parm value input rules:
 

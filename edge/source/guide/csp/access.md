@@ -395,6 +395,20 @@ Parm value input rules:
 * String with a minimum size of 0 characters
 * Package names must be separated by commas, such as "com.mycompany.mypackage,com.mycompany2.mypackage2" 
 
+##Queries
+
+###Query the Package Names in the Whitelist, the Operation Mode, and the Application Verification Signing Mode
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="AccessMgr" >
+			<parm-query name="PackageNames"/>  
+			<parm-query name="OperationMode"/>  
+			<parm-query name="AppVerifySignMode"/>  
+		</characteristic>
+	</wap-provisioningdoc>
+
+
 ##Example XML
 
 ###Add an Application to the "white" list
