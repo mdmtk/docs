@@ -412,7 +412,7 @@ Parm name: TFTPSerAddrState
 
 Description: 
 
->The TFTP Server Address DHCP Option (Option 67) is basically a Cisco-proprietary version of the standard TFTP Server Name DHCP Option (Option Number 67).
+>The TFTP Server Address DHCP Option (Option 150) is basically a Cisco-proprietary version of the standard TFTP Server Name DHCP Option (Option Number 150).
 
 >This parm allows you to control whether a request for a TFTP Server Address will be sent by the DHCP Client to the DHCP Server in the DHCP Request. When requested, the DHCP Server will return the TFTP Server Address to the device in the DHCP Acknowledgment.
 

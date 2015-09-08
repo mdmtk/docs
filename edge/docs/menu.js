@@ -323,7 +323,7 @@ var menuStrcture = [
 			{
 				name: 'Samples',
 				icon: 'fa fa-download',
-				link: '#guide-samples-1',
+				link: '#',
 				items: [
 					{
 						title: 'Samples',
