@@ -49,38 +49,39 @@ In order to Stage a device to be managed by an MDM and to provide Persistence of
 
 The following sample Staging Profile is an example of a how a Staging Profile can be structured so that MDM Manageability can be persisted:
  
-a. Wi-Fi - Set up Staging WLAN network
-b. FileMgr - Download MDM Agent Configuration file to:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a. Wi-Fi - Set up Staging WLAN network
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b. FileMgr - Download MDM Agent Configuration file to:
 	
-&nbsp;&nbsp;&nbsp;&nbsp; /enterprise/usr/mymdm/mymdm.cfg
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TargetPathAndFileName = /enterprise/usr/mymdm/mymdm.cfg
 
-c. FileMgr - Download MDM Agent APK file to:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c. FileMgr - Download MDM Agent APK file to:
 
-&nbsp;&nbsp;&nbsp;&nbsp; /enterprise/usr/mymdm/mymdm.APK
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TargetPathAndFileName = /enterprise/usr/mymdm/mymdm.APK
 
-d. AppMgr - Install APK file from:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d. AppMgr - Install APK file from:
 	
-&nbsp;&nbsp;&nbsp;&nbsp; /enterprise/usr/mymdm/mymdm.APK
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; APK = /enterprise/usr/mymdm/mymdm.APK
 
-e. Intent - Send Intent, with:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e. Intent - Send Intent, with:
 
-&nbsp;&nbsp;&nbsp;&nbsp; action="android.intent.action.MAIN"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Action = "android.intent.action.MAIN"
 
-&nbsp;&nbsp;&nbsp;&nbsp; type="Start Activity"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Type = "Start Activity"
 
-&nbsp;&nbsp;&nbsp;&nbsp; package="com.mycompany.mymdm"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Package = "com.mycompany.mymdm"
 
-&nbsp;&nbsp;&nbsp;&nbsp; class=" com.mycompany.mymdm/MainActivity"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Class = " com.mycompany.mymdm/MainActivity"
 
-f. PersistMgr - Persist entire Staging Profile, with:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f. PersistMgr - Persist entire Staging Profile, with:
 	
-&nbsp;&nbsp;&nbsp;&nbsp; PersistAsName="StageNowPersistMyMDM"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PersistAsName="StageNowPersistMyMDM"
 
-&nbsp;&nbsp;&nbsp;&nbsp; PersistAsVersion="1.0"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PersistAsVersion="1.0"
 
-&nbsp;&nbsp;&nbsp;&nbsp; PersistAsOrder="50"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PersistAsOrder="50"
 
-&nbsp;&nbsp;&nbsp;&nbsp; PersistIfError="false"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PersistIfError="false"
 
 The sample Staging Profile would in theory meet all the key requirements to achieve Persistence of Manageability for the hypothetical MDM named "MyMDM". In particular:
 
