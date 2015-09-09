@@ -202,10 +202,10 @@ var menuStrcture = [
 								name: 'GprsMgr',
 								link: '#guide-csp-gprs',
 							},
-							/*{
+							{
 								name: 'Intent',
 								link: '#guide-csp-intent',
-							},*/
+							},
 							{
 								name: 'KeyMappingMgr',
 								link: '#guide-csp-keymappingmgr',

@@ -35,7 +35,7 @@ In order to Stage a device to be managed by an MDM and to provide Persistence of
 
 5.	The MDM Agent APK(s) must be launched
 
-	Requirement 5 could be accomplished on most Zebra Android devices by having the customer use the StageNow Intent Setting Type to send the Android Intent(s) required to launch the MDM Agent APK(s). The exact Android Intent(s) that need to be sent, and the details of those Intent(s), will be specific to the MDM vendor implementation. The MDM vendor should define those details and communicate them to the customer so they could have that information when using StageNow to Stage a device to be managed by that MDM.
+	Requirement 5 could be accomplished on most Zebra Android devices by having the customer use the StageNow Intent Setting Type to send the Android Intent(s) required to launch the MDM Agent APK(s). The exact Android Intent(s) that need to be sent, and the details of those Intent(s), such as the package name and the class name of the MDM Agent, will be specific to the MDM vendor implementation. The MDM vendor should define those details (such as the package name and class name)and communicate them to the customer so they could have that information when using StageNow to Stage a device to be managed by that MDM.
 
 6.	Connectivity must be established via which the MDM Agent can contact the MDM Server
 	
@@ -43,48 +43,52 @@ In order to Stage a device to be managed by an MDM and to provide Persistence of
 
 7.	All XML used above should be made Persistent
 
-	Requirement 6 could be accomplished on most Zebra Android devices by having the customer use the StageNow PersistMgr Setting Type to make the entire Staging Profile Persistent. Such a Staging Profile might have a structure similar to the example below:
+	Requirement 7 could be accomplished on most Zebra Android devices by having the customer use the StageNow PersistMgr Setting Type to make the entire Staging Profile Persistent.
+	
+####Sample Staging Profile	
 
-	1. Wi-Fi - Set up Staging WLAN network
-	2. FileMgr - Download MDM Agent Configuration file to:
-		
-		/enterprise/usr/mymdm/mymdm.cfg
+The following sample Staging Profile is an example of a how a Staging Profile can be structured so that MDM Manageability can be persisted:
+ 
+a. Wi-Fi - Set up Staging WLAN network
+b. FileMgr - Download MDM Agent Configuration file to:
 	
-	3. FileMgr - Download MDM Agent APK file to:
+&nbsp;&nbsp;&nbsp;&nbsp; /enterprise/usr/mymdm/mymdm.cfg
+
+c. FileMgr - Download MDM Agent APK file to:
+
+&nbsp;&nbsp;&nbsp;&nbsp; /enterprise/usr/mymdm/mymdm.APK
+
+d. AppMgr - Install APK file from:
 	
-		/enterprise/usr/mymdm/mymdm.APK
+&nbsp;&nbsp;&nbsp;&nbsp; /enterprise/usr/mymdm/mymdm.APK
+
+e. Intent - Send Intent, with:
+
+&nbsp;&nbsp;&nbsp;&nbsp; action="android.intent.action.MAIN"
+
+&nbsp;&nbsp;&nbsp;&nbsp; type="Start Activity"
+
+&nbsp;&nbsp;&nbsp;&nbsp; package="com.mycompany.mymdm"
+
+&nbsp;&nbsp;&nbsp;&nbsp; class=" com.mycompany.mymdm/MainActivity"
+
+f. PersistMgr - Persist entire Staging Profile, with:
 	
-	4. AppMgr - Install APK file from:
-		
-		/enterprise/usr/mymdm/mymdm.APK
-	
-	5. Intent - Send Intent, with:
-	
-		action="android.intent.action.MAIN"
-		
-		type="Start Activity"
-		
-		package="com.mycompany.mymdm"
-		
-		class=" com.mycompany.mymdm/MainActivity"
-	
-	6. PersistMgr - Persist entire Staging Profile, with:
-		
-		PersistAsName="StageNowPersistMyMDM"
-		
-		PersistAsVersion="1.0"
-		
-		PersistAsOrder="50"
-		
-		PersistIfError="false"
+&nbsp;&nbsp;&nbsp;&nbsp; PersistAsName="StageNowPersistMyMDM"
+
+&nbsp;&nbsp;&nbsp;&nbsp; PersistAsVersion="1.0"
+
+&nbsp;&nbsp;&nbsp;&nbsp; PersistAsOrder="50"
+
+&nbsp;&nbsp;&nbsp;&nbsp; PersistIfError="false"
 
 The sample Staging Profile would in theory meet all the key requirements to achieve Persistence of Manageability for the hypothetical MDM named "MyMDM". In particular:
 
-* Step 1) establishes Connectivity that will be used to download required files during Staging and that will be used by the MDM Agent to contact the MDM Server
-* Steps 2) and 3) cause the the MDM Agent Configuration file and the MDM Agent APK file to be downloaded and stored into the folder "/enterprise/usr/mymdm", which is a location that will persist across an Enterprise Reset.
-* Step 4) installs the MDM Agent APK silently
-* Step 5) launches the Main Activity Class of the MDM Agent
-* Step 6) persists everything done in prior steps, causing PersistMgr to save the XML for the Staging Profile in the /enterprise partition and arrange to resubmit it following subsequent Enterprise Resets.
+* Step a) establishes Connectivity that will be used to download required files during Staging and that will be used by the MDM Agent to contact the MDM Server
+* Steps b) and c) cause the the MDM Agent Configuration file and the MDM Agent APK file to be downloaded and stored into the folder "/enterprise/usr/mymdm", which is a location that will persist across an Enterprise Reset.
+* Step d) installs the MDM Agent APK silently
+* Step e) launches the Main Activity Class of the MDM Agent
+* Step f) persists everything done in prior steps, causing PersistMgr to save the XML for the Staging Profile in the /enterprise partition and arrange to resubmit it following subsequent Enterprise Resets.
 
 Once the steps in the sample Staging Profile are completed, the MDM Agent would be running. When the MDM Agent starts, it would presumably read its Configuration file, looking for the specific file name in a specific location (e.g. "/enterprise/usr/mymdm/mymdm.cfg") and configure itself based on the contents of that file. It would then use that configuration to reach the MDM Server, via the established Connectivity. The device then will be discovered by the MDM Server and will show up in the device inventory displayed by the Management Console of the MDM Server.
 
@@ -96,17 +100,19 @@ Once the Staging steps described in the sample Staging Profile have been complet
 
 At this point, if an Enterprise Reset was performed on the device, the PersistMgr would locate the Persistent Request XML Document that was stored by PersistMgr as a result of the Staging Profile and would resubmit it. For the sample Staging Profile, this would lead to the following:
 
-* Step 1) re-establishes the Connectivity that will be used by the MDM Agent to contact the MDM Server
-* Steps 2) and 3) causes the attempted re-download of the MDM Agent Configuration file and the MDM Agent APK file. But since these both files already exist, downloading of both files will fail (benignly).
-* Step 4) re-installs the MDM Agent APK silently
-* Step 5) re-launches the Main Activity Class of the MDM Agent
-* Step 6) does not re-persist the Request XML Document since PersistIfError="false" and errors occurred (during the download steps). But since the Request XML Document is already Persistent, it will remain Persistent.
+* Step a) re-establishes the Connectivity that will be used by the MDM Agent to contact the MDM Server
+* Steps b) and c) causes the attempted re-download of the MDM Agent Configuration file and the MDM Agent APK file. But since these both files already exist, downloading of both files will fail (benignly).
+* Step d) re-installs the MDM Agent APK silently
+* Step e) re-launches the Main Activity Class of the MDM Agent
+* Step f) does not re-persist the Request XML Document since PersistIfError="false" and errors occurred (during the download steps). But since the Request XML Document is already Persistent, it will remain Persistent.
 
 ####MDM Agent Updates and Persistence of Manageability
 
 Given that Persistence of Manageability has been established for the MDM Agent, as described above, there likely will come a when the MDM Agent needs to be updated, as described in Updating the MDM Agent. While the MDM Agent can be updated directing using the AppMgr Feature Type, unless care is taken, that will not automatically cause the new version of the MDM Agent to become the Persistent version. As noted above, following an Enterprise Reset, PersistMgr will re-install the MDM Agent APK file from the location as a result of resubmitting the Persistent Request XML Document.
 
 If the new version of the MDM Agent APK file has the same name and is downloaded and stored into the same location, thus physically replacing the existing APK file, then the new version will be re-installed as a result of PersistMgr resubmitting that existing Persistent Request XML Document following a subsequent Enterprise Reset. Since the StageNow FileMgr Setting Type has to be told what name to give the file and the location in which it should be stored, you would need to know the details of how the customer used StageNow in order to know how to update the MDM Agent so as to maintain Persistence of Manageability. The easiest way to do that is to tell the customer the right way to use StageNow to Stage your MDM for Persistence of Manageability and then leverage that knowledge to update the MDM Agent to maintain Persistence of Manageability.
+
+For more information on updating the MDM Agent, please see the [Updating page](../guide/MDM/updating).
 
 ####Connectivity and Persistence of Manageability
 
@@ -116,7 +122,9 @@ Persistence of Connectivity is really a topic that is better suited for discussi
 
 An important aspect to understand is that if the StageNow PersistMgr Setting Type was used to make the Request XML Document for the Staging Profile Persistent, and if Connectivity was part of what was made Persistent, then that Request XML Document, along with any Connectivity it configures will remain Persistent until it is explicitly made Non-persistent, using PersistMgr. If additional Connectivity is configured, and if it is also made Persistent using PersistMgr, then conflicts could potentially arise following an Enterprise Reset, when PersistMgr resubmits multiple Persistent Request XML Documents that configure Connectivity.
 
-In a similar manner to that discussed for MDM Agent updates, Connectivity updates will need to be considered in light of their relationship to what was performed and what was Persisted, during Staging. Depending on how the customer performs their Staging, and in particular depending on what they choose to make Persistent, the MDM may need to align any Connectivity updates to match. This could lead to many combinations and could get quite complex. A simplifying assumption can be made and is strongly recommended. The customer can be directed to use StageNow to Stage the device such that Connectivity is not Persistent but everything else is Persistent. Then, the customer can be directed to use the MDM to configure Persistent Connectivity as one of the first Management Operations performed using the MDM. In this manner, no conflict between Persistent Connectivity configured by StageNow and Persistent Connectivity configured by the MDM could occur.
+In a similar manner to that discussed for MDM Agent updates, Connectivity updates will need to be considered in light of their relationship to what was performed and what was Persisted, during Staging. Depending on how the customer performs their Staging, and in particular depending on what they choose to make Persistent, the MDM may need to align any Connectivity updates to match. This could lead to many combinations and could get quite complex. You could solve this by persisting the connectivity 
+
+A simplifying assumption can be made and is strongly recommended. The customer can be directed to use StageNow to Stage the device such that Connectivity is not Persistent but everything else is Persistent. Then, the customer can be directed to use the MDM to configure Persistent Connectivity as one of the first Management Operations performed using the MDM. In this manner, no conflict between Persistent Connectivity configured by StageNow and Persistent Connectivity configured by the MDM could occur.
 
 ###Persistence of Management Operations performed using the MDM
 
