@@ -23,15 +23,15 @@ var menuStrcture = [
 						icon: '',
 						items: [
 							{
-								name: 'Staging',
+								name: 'Staging a Device',
 								link: '#guide-MDM-staging',
 							},
 							{
-								name: 'Persistence',
+								name: 'MDM Persistence',
 								link: '#guide-MDM-persistence',
 							},
 							{
-								name: 'Updating',
+								name: 'Updating the MDM Agent',
 								link: '#guide-MDM-updating',
 							},
 						]
@@ -202,10 +202,10 @@ var menuStrcture = [
 								name: 'GprsMgr',
 								link: '#guide-csp-gprs',
 							},
-							/*{
+							{
 								name: 'Intent',
 								link: '#guide-csp-intent',
-							},*/
+							},
 							{
 								name: 'KeyMappingMgr',
 								link: '#guide-csp-keymappingmgr',
@@ -323,7 +323,7 @@ var menuStrcture = [
 			{
 				name: 'Samples',
 				icon: 'fa fa-download',
-				link: '#guide-samples-1',
+				link: '#',
 				items: [
 					{
 						title: 'Samples',

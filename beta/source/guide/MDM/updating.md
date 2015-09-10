@@ -12,8 +12,6 @@ By using the Upgrade action, the MDM Agent will not be uninstalled and the exist
 * Be signed by the same developer
 * The newer app must have a higher version number
 
-<!--The [PersistMgr Feature](../guide/csp/persistence) should also be used with the AppMgr Feature to save the XML to the Enterprise Partition. This will cause the XML to survive an Enterprise Reset and automatically reinstall the MDM Agent after an Enterprise Reset. -->
-
 Therefore, the steps that would have to be taken to update the MDM Agent would be:
 
 1. Download the new version of the MDM Agent APK file(s) onto the device
@@ -23,3 +21,5 @@ Therefore, the steps that would have to be taken to update the MDM Agent would b
 	>**Note:** The Upgrade action will cause the running MDM Agent on the device to be shut down before it installs the new version. This may affect any processes that are running while the Upgrade action was triggered. For example, if the MDM Agent was submitting an XML to the MXMS while the Upgrade action was triggered, MXMS will still process the XML since it was sent before the MDM Agent was shut down. However, the Result XML document that is returned by the MXMS may not be received by the MDM Agent, possibly causing errors to not be detected.
 
 4. The new version of the MDM Agent has been updated and will be used on the device now.
+
+>**Note:** The above steps are used to acheive Persistence of Manageability by the MDM, which is described in the [Persistence page](../guide/MDM/persistence).
