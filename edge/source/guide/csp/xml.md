@@ -6,7 +6,8 @@
 
 The MXMS processes a Request XML document which contains one or more Features, where each Feature is of one of the defined Feature Types. Each Feature is represented by a top-level characteristic tag in the Request XML document, whose type matches the Feature Type. For example, a Feature of Feature Type "XmlMgr" in XML would begin with:
 
-<characteristic type="XmlMgr" …
+	:::XML
+	<characteristic type="XmlMgr" ...
 
 The MXMS executes Features, by passing them to the corresponding CSPs, in the order they appear in the Request XML document, by passing the characteristic to the corresponding CSP. When a Feature is executed by a CSP, the CSP returns Result XML. A characteristic tag is returned by the CSP to indicate that the Feature succeeded. A characteristic-error tag is returned by the CSP  to indicate that the Feature failed. The MXMS aggregates the Result XML returned by the CSPs in the order the Features are executed, to create the final Result XML.
 

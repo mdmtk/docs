@@ -23,15 +23,15 @@ var menuStrcture = [
 						icon: '',
 						items: [
 							{
-								name: 'Staging',
+								name: 'Staging a Device',
 								link: '#guide-MDM-staging',
 							},
 							{
-								name: 'Persistence',
+								name: 'MDM Persistence',
 								link: '#guide-MDM-persistence',
 							},
 							{
-								name: 'Updating',
+								name: 'Updating the MDM Agent',
 								link: '#guide-MDM-updating',
 							},
 						]
