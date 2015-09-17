@@ -41,25 +41,30 @@ Description:
   <tr>
     <td>Install</td>
     <td>"Install"</td>
-	<td>This value will cause a User application contained within an APK file in the specified path on the device to be Installed on the device. If an application with the same Package Name is already installed on the device, then an error will be returned in the Result XML document. To replace an application that is already installed on the device with a different version with the same Package Name, use the value "Upgrade" instead.</td>
+	<td><p>This value will cause a User application contained within an APK file in the specified path on the device to be Installed on the device. If for any reason the requested application cannot be installed, then an error will be returned in the Result XML document.</p><p><b>Note:</b> If an attempt is made to install an application with the same Package Name as an application that is already installed on the device, then an error will be returned in the Result XML document. To replace an application that is already installed on the device with a different version with the same Package Name, use the value "Upgrade" instead.</p>
   </tr>
   <tr>
     <td>Uninstall</td>
     <td>"Uninstall"</td>
-	<td><p>This value will cause a User application with the specified Package Name to be Uninstalled from the device. If no User application with the specified Package Name is installed on the device then an error will be returned in the Result XML document.</p>
+	<td><p>This value will cause a User application with the specified Package Name to be Uninstalled from the device. If for any reason the requested application cannot be uninstalled, then an error will be returned in the Result XML document.</p>
 	
-	<p><b>Note:</b> When an application is Uninstalled, data that is stored in sandbox areas owned by that application will be automatically removed.  If the application is later Installed again, it will need to recreate such data.</p>
+	<p><b>Note:</b> If no User application with the specified Package Name is installed on the device then an error will be returned in the Result XML document.</p>
+	
+	<p><b>Note:</b> When an application is Uninstalled, data that is stored in sandbox areas owned by that application will be automatically removed. If the application is later Installed again, it will need to recreate such data.</p>
+	
 	</td>	
   </tr>
   <tr>
     <td>Upgrade</td>
     <td>"Upgrade"</td>
 	<td>
-	<p>This value will cause a User application contained within an APK file in the specified path on the device to Upgrade another version of the application with the same Package Name that is already on the device. If no application with same Package Name is installed on the device then an error will be returned in the Result XML document. To install an application that is not already installed on the device, use the value "Install" instead.</p>
+	<p>This value will cause a User application contained within an APK file in the specified path on the device to Upgrade another version of the application with the same Package Name that is already on the device. If for any reason the requested application cannot be upgraded, then an error will be returned in the Result XML document.</p>
 	
-	<p><b>Note:</b> When an application is upgraded, the data for that application is maintained.  This allows the new version of the application to access (and possibly convert) data created by the old version.</p>
+	<p><b>Note:</b> If an attempt is made to upgrade an application with a Package Name that does not match any Package Names that are on the device already, then an error will be returned in the Result XML document. To install an application that is not already installed on the device, use the value "Install" instead.</p>
+	
+	<p><b>Note:</b> When an application is upgraded, the data for that application is maintained. This allows the new version of the application to access (and possibly convert) data created by the old version.</p>
 
-	<p><b>Note:</b>  In devices running the Jelly Bean version of Android, an Upgrade can replace any version of an application with any other version of the same application. However, in devices running the KitKat or higher version of Android, an Upgrade can only replace an application with a higher (numerically greater) version of the same application. This change was made to reduce issues where an older version of an application maybe unable to understand data produced by a newer version.</p>
+	<p><b>Note:</b> In devices running the Jelly Bean version of Android, an Upgrade can replace any version of an application with any other version of the same application. However, in devices running the KitKat or higher version of Android, an Upgrade can only replace an application with a higher (numerically greater) version of the same application. This change was made to reduce issues where an older version of an application maybe unable to understand data produced by a newer version.</p>
 	</td>
   </tr>
   <tr>
