@@ -4,7 +4,7 @@
 
 ### Overview
 
-Zebra Android devices are equipped with an Analytics Engine that can collect information pertaining to the operation and health of a device. Collected data can be stored locally on the device and optionally sent to the Cloud. Such data can be used to detect devices that need attention or potentially could be used to detect trends that could allow problems to be prevented through preventative action.
+Zebra Android devices are equipped with an Analytics Engine that can collect information pertaining to the operation and health of a device. Collected data can be sent to the Cloud or stored locally on the device. Such data can be used to detect devices that need attention or potentially could be used to detect trends that could allow problems to be prevented through preventative action.
 
 The AnalyticsMgr Feature Type allows you enable or disable collection of data, in the form of groups of metrics, by the Analytics Engine. It also allows you to control whether collected data is stored on the device or sent to the Cloud, and also provides some control over which data is collected and how often.
 
@@ -149,25 +149,25 @@ Description:
   <tr>
     <td>None</td>
     <td>"1"</td>
-	<td>This value will cause the Analytics Engine to skip collecting data for all of the metrics in the group.</td>
+	<td>This value will cause the Analytics Engine to skip collecting data for all of the metrics in the group, meaning that data collection is disabled.</td>
   </tr>
   <tr>
     <td>Low</td>
     <td>"2"</td>
-	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at low frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at low frequency. Data is collected at a 60 minute interval.</td>
   </tr>
   <tr>
     <td>Medium</td>
     <td>"3"</td>
-	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency. Data is collected at a 30 minute interval</td>
   </tr>
   <tr>
     <td>High</td>
     <td>"4"</td>
-	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at high frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at high frequency. Data is collected at a 10 minute interval.</td>
   </tr>
 </table>
-</div>	
+</div>
 
 ####WLAN Performance
 Settable if: Group Action is "Configure Levels for Multiple Groups"
@@ -195,22 +195,22 @@ Description:
   <tr>
     <td>None</td>
     <td>"1"</td>
-	<td>This value will cause the Analytics Engine to skip collecting data for all of the metrics in the group.</td>
+	<td>This value will cause the Analytics Engine to skip collecting data for all of the metrics in the group, meaning that data collection is disabled.</td>
   </tr>
   <tr>
     <td>Low</td>
     <td>"2"</td>
-	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at low frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at low frequency. Data is collected at a 60 minute interval.</td>
   </tr>
   <tr>
     <td>Medium</td>
     <td>"3"</td>
-	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency. Data is collected at a 30 minute interval</td>
   </tr>
   <tr>
     <td>High</td>
     <td>"4"</td>
-	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at high frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at high frequency. Data is collected at a 10 minute interval.</td>
   </tr>
 </table>
 </div>	
@@ -241,25 +241,25 @@ Description:
   <tr>
     <td>None</td>
     <td>"1"</td>
-	<td>This value will cause the Analytics Engine to skip collecting data for all of the metrics in the group.</td>
+	<td>This value will cause the Analytics Engine to skip collecting data for all of the metrics in the group, meaning that data collection is disabled.</td>
   </tr>
   <tr>
     <td>Low</td>
     <td>"2"</td>
-	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at low frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at low frequency. Data is collected at a 60 minute interval.</td>
   </tr>
   <tr>
     <td>Medium</td>
     <td>"3"</td>
-	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency. Data is collected at a 30 minute interval</td>
   </tr>
   <tr>
     <td>High</td>
     <td>"4"</td>
-	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at high frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at high frequency. Data is collected at a 10 minute interval.</td>
   </tr>
 </table>
-</div>	
+</div>
 
 ####System Information
 Settable if: Group Action is "Configure Levels for Multiple Groups"
@@ -287,22 +287,22 @@ Description:
   <tr>
     <td>None</td>
     <td>"1"</td>
-	<td>This value will cause the Analytics Engine to skip collecting data for all of the metrics in the group.</td>
+	<td>This value will cause the Analytics Engine to skip collecting data for all of the metrics in the group, meaning that data collection is disabled.</td>
   </tr>
   <tr>
     <td>Low</td>
     <td>"2"</td>
-	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at low frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at low frequency. Data is collected at a 60 minute interval.</td>
   </tr>
   <tr>
     <td>Medium</td>
     <td>"3"</td>
-	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency. Data is collected at a 30 minute interval</td>
   </tr>
   <tr>
     <td>High</td>
     <td>"4"</td>
-	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at high frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at high frequency. Data is collected at a 10 minute interval.</td>
   </tr>
 </table>
 </div>	
@@ -333,25 +333,25 @@ Description:
   <tr>
     <td>None</td>
     <td>"1"</td>
-	<td>This value will cause the Analytics Engine to skip collecting data for all of the metrics in the group.</td>
+	<td>This value will cause the Analytics Engine to skip collecting data for all of the metrics in the group, meaning that data collection is disabled.</td>
   </tr>
   <tr>
     <td>Low</td>
     <td>"2"</td>
-	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at low frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at low frequency. Data is collected at a 60 minute interval.</td>
   </tr>
   <tr>
     <td>Medium</td>
     <td>"3"</td>
-	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at medium frequency. Data is collected at a 30 minute interval</td>
   </tr>
   <tr>
     <td>High</td>
     <td>"4"</td>
-	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at high frequency.</td>
+	<td>This value will cause the Analytics Engine to collect data for all of the metrics in the group at high frequency. Data is collected at a 10 minute interval.</td>
   </tr>
 </table>
-</div>	
+</div>
 
 ## Feature Compatibility
 
