@@ -2,15 +2,23 @@
 
 ##Overview
 
+Zebra Remote Control is part of MDM Toolkit to mirror the display of a Zebra Enterprise Android device and control the navigation of the device from a Workstation or desktop. The screen capture data from the device and the UI events from the Web App are encrypted using a shared "Customer Generated Encryption Key".
+
 This document describes how to integrate the Zebra Remote Control with any of the MDM solutions. Zebra Remote Control consists of the following components.
+
+![img](images/remote-control/rc-overview.PNG) 
+
+##Components
 
 ###Remote Control Client 
 
 The Remote Control Client is available as an Android APK file. This should be deployed to the Zebra Android devices as a user application using any management software. Because of Android security, the user has to start the client manually for the first time. For the remote control to be functional, a secured shared key has to be set using the [EncryptMgr Feature Type](../guide/csp/encrypt) by using the MX interface either directly or through the use of tools, such as StageNow or EMDK.
 
-###Remote Control Server
+###Remote Control Server Web App
 
-This component is written as a Java applet. This should be launched from any of the MDM pages. Sample application source is provided explaining the details. This applet expects a few parameters as explained in detail below.
+The Remote Control Server Web App is a simple WebApp hosted and served from the MDM page or the App Server, such as Tomcat. A sample HTML page is provided with the "Java Applet" embedded in it.
+
+The Remote Control UI component is written as a Java Applet. This applet will communicate with a web service to obtain information about the device to which it needs to connect and also to obtain the "Shared Customer Generated Encryption Key", which was set in device using Staging. This applet expects a few parameters for launching as explained in detail below.
 
 <div class="parm-table">
  <table>
@@ -27,7 +35,7 @@ This component is written as a Java applet. This should be launched from any of 
   <tr>
     <td>WsApiKey</td>
     <td>Mandatory</td>
-	<td>This is the API key to validate the request</td>
+	<td>This is the API key to validate the request from WebApp</td>
   </tr>
   <tr>
     <td>WsUserName</td>
@@ -44,7 +52,7 @@ This component is written as a Java applet. This should be launched from any of 
 
 ###Sample MDM Web Service
 
-MDM vendors need to implement this web service adhering to Zebra Remote Control standard. The details about input and output parameters are explained below. This can be implemented as REST service with the GET request type returning the JSON string
+MDM vendors must implement this web service adhering to the Zebra Remote Control standard. The details about input and output parameters are explained below. This can be implemented as a REST service with the GET request type returning the JSON string
 
 Zebra has provided a sample web service implementation in Java web archive file (WAR) file with the source code. This can be deployed in an application server, such as Tomcat.
 
@@ -56,9 +64,9 @@ Zebra has provided a sample web service implementation in Java web archive file 
 		<th>Description</th>
 	</tr>
   <tr>
-    <td>Key</td>
+    <td>key</td>
     <td>Mandatory. Passed as a query parameter.</td>
-	<td>This is the API key to validate the request. This key has to be passed to the applet in the applet launching page.</td>
+	<td>This is the API key to validate the request. This key has to be passed to the Applet in the applet launching page, mentioned as WsApiKey.</td>
   </tr>
 </table>
 </div>	
@@ -86,17 +94,17 @@ The response from the web service should be in the JSON format, which contains t
   <tr>
     <td>deviceIP</td>
     <td>Mandatory</td>
-	<td>This is the IP address of the device.</td>
+	<td>This is the IP address of the device to which the WebApp/Java applet needs to connect.</td>
   </tr>
   <tr>
     <td>Port</td>
     <td>Optional</td>
-	<td>Port number in which device is listening for TCP connection</td>
+	<td>Port number in which device is listening for TCP connection (ideally set to port :7775)</td>
   </tr>
   <tr>
     <td>Passphrase</td>
     <td>Mandatory</td>
-	<td>This Key should be same as the key set in the device using MX interface</td>
+	<td>This Key should be same as the key set in the device using MX interface and must be of 64 bytes (Customer Generated Encryption Keys)</td>
   </tr>
   <tr>
     <td>screenHeight</td>
@@ -122,22 +130,37 @@ Software Requirements
 * Tomcat (Tested with Tomcat 8.0) with SSL support
 	* Please refer to this web page for more information: https://dzone.com/articles/setting-ssl-tomcat-5-minutes
 * Java latest version JRE8
-* Firefox/Chrome 
-	* These browsers will eventually block all Java applets
+* Firefox/Internet Explorer
 
 The following steps describe how to integrate the Zebra Remote Control:
 
-1.	Install the shared secret key to the device using StageNow tool
-2.	Implement web service 
-3.	Call the applet from any of the MDM pages, such as the Device Detail page
-4.	Install the Remote Control client on the device
-5.	Start the Remote Control client
+1. Install the Customer Generated Encryption Key to the device using the StageNow tool. Please ensure that 64 Bytes of the key is set using EncryptMgr Feature Type.
+
+	![img](images/remote-control/rc-1.PNG)
+	
+2. Implement web service. Please refer to the Sample Webservice section of this page.
+3. Install the Remote Control client on the device
+4. Start the Remote Control client
 
 	>**Note:** This is only required to be done the first time after installation.
 
-6.	When the applet is launched it should automatically connect to the device UI
+5. Invoke the Applet from any of the MDM pages, such as the Device Detail page.
+6. When the applet is launched, it should automatically connect to the device UI based on the IP and port setting. 
+
+![img](images/remote-control/rc-3.PNG) 
+
+![img](images/remote-control/rc-4.PNG) 
 
 Please refer to the user guide for more details about the Remote Control applet.
+
+###Java Control Panel Setting
+
+Go to Windows-> Start Menu-> Run -> javacpl  
+
+* Launch the Java Control Panel and check the "Enable Java content in the Browser" option
+* Add the URL (http://yourweb-appserverIP:8443/MDM-webapp). The highlighted string should match your webserver IP as well as the app name deployed in Tomcat.
+
+![img](images/remote-control/rc-2.PNG) 
 
 ###Installing the Remote Control Files
 
@@ -222,17 +245,13 @@ Set the IP of the device in `tomcat\webapps\RCWebService\WEB-INF\web.xml` by mod
 
 Another way to do this would be to override "Device IP" in the GUI after launching the URL in the section below.
 
-![img](images/remote-control/rc-3.PNG) 
 
 ###Setting key in device
 
 The below given snapshot is from StageNowClient where user can set key name and key value.
  
-![img](images/remote-control/rc-1.PNG) 
 
-![img](images/remote-control/rc-2.PNG) 
 
-![img](images/remote-control/rc-4.PNG) 
 
 ###Launch URL
 

@@ -4,7 +4,7 @@
 
 ### Overview
 
-Software Licensing is a mechanism supported by Zebra Android devices that allows selected Software Components to require a suitable Software License to be present on a device in order for those Software Components to be useable on that device. If a Software Component does not require licensing, then the presence or absence of any Software Licenses will have no impact on that Software Component. If a Software Component requires licensing, then the absence of a suitable Software License on a device will make that Software Component unusable on that device. If a Software Component requires licensing, then applying a suitable Software License to that device will make that Software Component usable on that device and subsequently removing that Software License from that device will make that Software Component unusable on that device.
+Software Licensing is a mechanism supported by Zebra Android devices that allows select Software Components to require a suitable Software License to be present on a device in order for those Software Components to be useable on that device. If a Software Component does not require licensing, then the presence or absence of any Software Licenses will have no impact on that Software Component. If a Software Component requires licensing, then the absence of a suitable Software License on a device will limit the full functionality of that Software Component. If a Software Component requires licensing, then applying a suitable Software License to that device will make that Software Component usable on that device and subsequently removing that Software License from that device will limit the full functionality of that Software Component.
 
 Software Licenses are acquired from a Zebra Software License Server, are issued as Software License Files, and are associated to specific Software Components through the use of Licensed Feature Names. A given Software License File can only be used to enable use of its associated Licensed Feature Name. A given Software Component could have multiple capabilities, use of each of which could be controlled through separate Licensed Feature Names. Or, a given Software Component could have all of its capabilities controlled through a single Licensed Feature Name.
 
@@ -33,7 +33,7 @@ Description:
 	</tr>
   <tr>
     <td>Do nothing</td>
-    <td>""</td>
+    <td>"0"</td>
 	<td>This value (or the absence of this parm from the XML) will not cause any changes to the set of Software Licenses that are present on the device.</td>
   </tr>
   <tr>
@@ -44,7 +44,7 @@ Description:
   <tr>
     <td>Remove</td>
     <td>"remove"</td>
-	<td>This value will cause a Software License to be removed from the device. Removing a required Software License from a device for a Software Component that requires licensing make the controlled capability of the associated Software Component unusable on that device.</td>
+	<td><p>This value will cause a Software License to be removed from the device. Removing a required Software License from a device for a Software Component that requires licensing make the controlled capability of the associated Software Component unusable on that device.</p><p><b>Note:</b> This will only delete the licence from the private store. The actual license file will still exist on the device and will need to be deleted.</p></td>
   </tr>
 </table>
 </div>	

@@ -963,24 +963,6 @@ var mxVersions = [
                             {
                                 name: 'WWAN',
                                 compatibility: [
-                                    {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC92 KK',
-                                        device: 'MC92',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
                                 ]
                             },
                             {
@@ -1055,24 +1037,6 @@ var mxVersions = [
                             {
                                 name: 'GPS',
                                 compatibility: [
-                                    {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC92 KK',
-                                        device: 'MC92',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
                                 ]
                             },
                             {

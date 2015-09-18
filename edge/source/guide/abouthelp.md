@@ -20,7 +20,7 @@ The menu on the left hand side of the page can be used to navigate through the v
 
 ![img](images/about/toc1.jpg)
 
-The documents are broken in to categories that can be drilled down to.
+The documents are broken into categories that can be drilled down to.
 
 ![img](images/about/toc3.jpg)
 

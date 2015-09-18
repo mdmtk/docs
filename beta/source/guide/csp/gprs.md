@@ -75,12 +75,12 @@ Description:
   <tr>
     <td>ATT</td>
     <td>"1"</td>
-	<td><p>This value indicates that AT&T is the GPRS carrier and that the standard public APN used by AT&T should be used.</p><p><b>Note:</b> If you want to use anything other than the standard AT&T public APN, then you should choose Custom and supply the values for the desired APN that must be obtained from AT&T.</p></td>
+	<td><p>This value indicates that AT&T is the GPRS carrier and that the standard public APN used by AT&T should be used.</p><p><b>Note:</b> If you want to use an AT&T APN other than the standard AT&T public APN, then you should choose "Custom" and supply the values for the desired AT&T APN that must be obtained from AT&T.</p></td>
   </tr>
   <tr>
     <td>T-Mobile</td>
     <td>"2"</td>
-	<td><p>This value indicates that T-Mobile is the GPRS carrier and that the standard public APN used by T-Mobile should be used.</p><p><b>Note:</b> If you want to use anything other than the standard T-Mobile public APN, then you should choose Custom and supply the values for the desired APN that must be obtained from T-Mobile.</p></td>
+	<td><p>This value indicates that T-Mobile is the GPRS carrier and that the standard public APN used by T-Mobile should be used.</p><p><b>Note:</b> If you want to use a T-Mobile APN other than the standard T-Mobile public APN, then you should choose "Custom" and supply the values for the desired T-Mobile APN that must be obtained from T-Mobile.</p></td>
   </tr>
   <tr>
     <td>Custom</td>
