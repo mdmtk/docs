@@ -14,6 +14,29 @@ This document describes how to integrate the Zebra Remote Control with any of th
 
 The Remote Control Client is available as an Android APK file. This should be deployed to the Zebra Android devices as a user application using any management software. Because of Android security, the user has to start the client manually for the first time. For the remote control to be functional, a secured shared key has to be set using the [EncryptMgr Feature Type](../guide/csp/encrypt) by using the MX interface either directly or through the use of tools, such as StageNow or EMDK.
 
+To prepare a device to be Remote Controlled, do the following steps in the specified order:
+
+1. Generate a 256 bit encryption key - this can be any 256 bit value, expressed as 64 hex, but for best results this should be randomly generated.
+	* This could be done using openssl to generate the key or by using any other random number generator that can generated such values
+2. Add a key with the name "mrckey" and with the above value
+	* This could be done as part of Staging by using the StageNow EncryptMgr Setting Type
+	* This could be done by the MDM Agent by using the [EncryptMgr Feature Type](../guide/csp/encrypt)
+3. Download the APK (need exact file name here) to a suitable path that is persistent, such as: /enterprise/usr/mymdm, perhaps using FileMgr
+	* This could be done as part of Staging by using the StageNow FileMgr Setting Type
+	* This could be done by the MDM Agent using its native file transfer capabilities
+4. Install the APK from the location to which it was stored
+	* This could be done as part of Staging by using the AppMgr Setting Type
+	* This could be done by the MDM Agent by using the [AppMgr Feature Type](../guide/csp/app)
+5. Launch the APK using an Intent with action=" android.intent.action.MAIN" plus Package Name and Class Name (defined by the MDM)
+	* This could be done as part of Staging by using the Intent Setting Type
+	* This could be done by the MDM Agent by using the [Intent Feature Type](../guide/csp/intent)
+6. Make the Request XML Document containing the above steps persistent
+	* This could be done as part of Staging by using the PersistMgr Setting Type
+	* This could be done by the MDM Agent by using the [PersistMgr Feature Type](../guide/csp/persistence)
+
+Once the above have been completed, the Remote Control Client will be ready and listening for connections from the Remote Control Web App, which must possess the same 256 bit encryption key. It will also be persistent and will come up ready to be Remote Controlled following subsequent Enterprise Resets.
+
+
 ###Remote Control Server Web App
 
 The Remote Control Server Web App is a simple WebApp hosted and served from the MDM page or the App Server, such as Tomcat. A sample HTML page is provided with the "Java Applet" embedded in it.

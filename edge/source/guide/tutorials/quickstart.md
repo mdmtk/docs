@@ -56,7 +56,7 @@ For more information on Result XML documents and Parm Value Extraction, please s
 		
 3. Create two new packages in your application. One package should be named `com.symbol.mxmf` and the other package should be named `com.motorolasolutions.emdk.mxframework`. These packages will be used for holding the aidl (Android Interface Definition Language) files.
 
-4. The SimpleMdmToolKitSample project, which is supplied in the MDM Toolkit, contains the IMxFrameworkService.aidl files that should be copied into your application. These AIDL files are located in the SimpleMdmToolKitSample's `com.symbol.mxmf` and `com.motorolasolutions.emdk.mxframework` packages. These AIDL files should be copied into the respective packages that were made in Step 2.
+4. The SimpleMdmToolKitSample project, which is supplied in the MDM Toolkit, contains the IMxFrameworkService.aidl files that should be copied into your application. These AIDL files are located in the SimpleMdmToolKitSample's `com.symbol.mxmf` and `com.motorolasolutions.emdk.mxframework` packages. These AIDL files should be copied into the respective packages that were made in Step 3.
 
 5. In the package that contains the empty activity that was created in Step 1, copy and paste the following classes from the SimpleMdmToolKitSample project's `com.symbol.simplemdmtoolkitsample` package:
 
