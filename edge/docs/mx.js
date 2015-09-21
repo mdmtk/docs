@@ -1817,36 +1817,6 @@ var mxVersions = [
 							{
 								name: 'Set the device to Mute/Vibrate/Unmute mode',
 								compatibility: [
-								{
-										name: 'MC32 JB',
-										device: 'MC32',
-										os: 'JB',
-										notes: ''
-									},
-									{
-										name: 'MC40 JB',
-										device: 'MC40',
-										os: 'JB',
-										notes: ''
-									},
-									{
-										name: 'MC67 JB',
-										device: 'MC67',
-										os: 'JB',
-										notes: ''
-									},
-									{
-										name: 'TC55 JB',
-										device: 'TC55',
-										os: 'JB',
-										notes: ''
-									},
-									{
-										name: 'TC70 JB',
-										device: 'TC70',
-										os: 'JB',
-										notes: ''
-									},
 									{
 										name: 'TC75 KK',
 										device: 'TC75',

@@ -39,8 +39,6 @@ An Audio Profile can also configure the volume levels for each of four audio mod
 
 ### Main Functionality
 * Create a new Audio Profile
-* Modify a created Audio Profile
-* Modify the Factory Preset Audio Profile
 * Delete a created Audio Profile
 * Set an Audio Profile to be the current Audio Profile
 * Set the Factory Preset Audio Profile to be the current Audio Profile
