@@ -80,11 +80,6 @@ Parm value input rules:
 
 * String with a minimum size of 1 character
 
-#### Alias Handling Issues
-Due to limitations on some devices, the Alias specified when installing a Client Certificate using a PFX file may not be assigned to the Certificate and Private Key. On such devices, the actual Alias that will be assigned to the Certificate and Private Key will be computed based on the content of the Certificate being installed. This can inhibit the later ability to uninstall or replace the Client Certificate since the Alias may be impractical to determine. On such devices, it may therefore be impractical to support Client Certificate management.
-
-A key use of Client Certificates is to support Wireless Local Area Networks that use Client Certificates for authentication (e.g. EAP-TLS). In particular, the Wi-Fi Feature Type requires the Client Certificate to be used for authentication to be specified by supplying its Alias. So, if Client Certificate management is impractical, then management of such networks may also be impractical.
-
 ###Certificate Type
 Settable if: The Certificate Action is "Install certificate"
 

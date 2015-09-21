@@ -1161,24 +1161,6 @@ Parm value input rules:
 
 * String with a minimum of 0 characters and a maximum of 64 characters
 
-##### **EAP-TLS and Certificate Alias**
-Due to current limitations of the Certificate Manager Feature (in an EAP-TLS scenario), it is not possible to "override" the Alias that is assigned to a Client Certificate and Private Key when they are installed into the Android KeyStore
-
-The only way to determine the actual Alias that is assigned to a Client Certificate and Private Key when they are installed into the Android KeyStore is to examine the Android KeyStore after installation to determine which Alias was used:
-
-1. The same Alias will ALWAYS be assigned to a given Client Certificate and Private Key, no matter when, or on which device, it is installed
-
-2. Whenever a different Client Certificate is used, a different Alias will generally be assigned to the Client Certificate and Private Key
-
-###### **Manually Determining the Certificate Alias**
-A device can be used to capture the alias being used for the certificate being installed. It is recommended that the key store be cleared before performing these steps (Settings->Security->Clear Credentials)
-
-1. Use Certificate Manager to install the certificate onto a device.
-2. Navigate to Settings->Wi-Fi->'+'' to add a network
-3. Scroll to security, tap and select 802.1x EAP
-4. Scroll to EAP method, tap and select TLS
-5. Scroll to client certificate, tap and note a drop down box with "(unspecified)" and the alias of the installed certificate. The alias listed can become the value to use as the certificate when using WiFiConfig to configure a profile that uses EAP-TLS.
-
 #### Encryption Type
 Pivotal parm: No
 
