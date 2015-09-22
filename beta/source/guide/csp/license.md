@@ -33,7 +33,7 @@ Description:
 	</tr>
   <tr>
     <td>Do nothing</td>
-    <td>"0"</td>
+    <td>""</td>
 	<td>This value (or the absence of this parm from the XML) will not cause any changes to the set of Software Licenses that are present on the device.</td>
   </tr>
   <tr>

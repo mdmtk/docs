@@ -4,35 +4,40 @@
 
 ### Overview
 
-The CspMgr Feature Type is used by the Mx Management Framework to maintain records of the Feature Types, which are required to submit their registration information to the CspMgr when the device boots up after an Enterprise or Factory Reset.
+The MX Management System (MXMS) is a system on Zebra Android devices that consists of the MX Management Framework and a collection of Configuration Service Providers (CSPs). Using the MDM Toolkit, an MDM Agent can submit Request XML Documents to the MXMF, which will route sections of the XML to appropriate CSPs.  Each CSP provides the ability to perform certain configuration and administration functions for a specific subsystem on the device. For example, the CameraMgr CSP can be used to manage the Camera subsystem on a device.
 
-For MDMs, the main functionality of the CspMgr Feature Type that would be of use would be its queries. By submitting a Request XML document which contains a Top-Level Query to the CspMgr, an enumerated list of all of the registered Feature Types on the device will be returned with parms containing information about the Feature Type. This will indicate which Feature Types have registered with the CspMgr and which are available to be used.
+The capabilities of a CSP that is present on a given device can be accessed by using the corresponding Feature Type via the MDM Toolkit. For example, the CameraMgr Feature type can be used to access the functionality of the CameraMgr CSP. The MXMS that is present on a given device will include many CSPs.  Different device models, or devices with different versions of Android, may include different sets of available CSPs. The CspMgr Feature Type allows you to query the CspMgr CSP and thereby determine the set of CSPs that are present on a given device. This allows you to determine which MDM Toolkit Feature Types can be used on that device.
 
 ### Main Functionality
 
-* Queries for the current registered Feature Types
+* Query the list of CSPs that are available for use on the device
 
 ##Parameter Notes
 ###Characteristic
 Parm name: characteristic
 
-Description: 
+Description:
 
->This parm will contain the Top Level Characteristic (TLC) of each of the registered Feature Types. These are the TLC values that will be used in Request XML documents for the Feature Type that you want to use.
+> This parm will contain the CSP name of each CSP that is available for use on the device. Since there is a one-to-one correspondence between CSP names and Feature Types in the MDM Toolkit, this is also the list of Feature Types that can be successfully used on the device.
+
+>Knowing the set of CSPs that are available on a device can be useful for an MDM Agent to avoid submitting Request XML Documents that would fail due to Feature Types that are not supported by that device. It may be preferable to perform a pre-check and avoid generating XML that uses unsupported Feature Type rather that submitting XML and detecting and handling failures due to unsupported Feature Types.
+
+>Knowing the set of CSPs that are available on a device can be useful for an MDM Server to better understand the capabilities of a given device. The MDM Server might use this information to determine which optional features to expose to an Administrator via the Management Console. Or, the MDM Server might display this information to an Administrator to help determine which operations make sense to perform on which devices.
+
 
 ###Package
 Parm name: package
 
 Description: 
 
->This parm will contain the Android Package Name of each of the registered Feature Types.
+>This parm will contain the Android Package Name of each of the registered Feature Types. This parm is generally less useful to an MDM but may be useful in some circumstances, such as when troubleshooting problems with management functionality.
 
 ###Class
 Parm name: class
 
 Description: 
 
->This parm will contain the Android Class Name of each of the registered Feature Types.
+>This parm will contain the Android Class Name of each of the registered Feature Types. This parm is generally less useful to an MDM but may be useful in some circumstances, such as when troubleshooting problems with management functionality.
 
 ##Queries
 
