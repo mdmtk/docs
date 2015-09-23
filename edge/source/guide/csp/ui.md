@@ -449,21 +449,21 @@ Parm value input rules:
 #### Input 
 
     :::XML
-     <wap-provisioningdoc>
-        <characteristic type="UiMgr" version="4.3" >
-            <parm name="HomeKeyUsage" value="1"/>
-        </characteristic>
-    </wap-provisioningdoc>
+    <wap-provisioningdoc>
+		<characteristic type="UiMgr" version="4.3" >
+			<parm-query name="HomeKeyUsage"/>
+		</characteristic>
+	</wap-provisioningdoc>
 
 #### Output
 
     :::XML
 	<wap-provisioningdoc>
         <characteristic type="UiMgr" version="4.3" >
-            <parm name="" value=""/>
+            <parm name="HomeKeyUsage" value="1"/>
         </characteristic>
-    </wap-provisioningdoc>  
-
+    </wap-provisioningdoc>
+	
 ### Get Clipboard Usage
 
 #### Input 
@@ -535,29 +535,17 @@ Parm value input rules:
         </characteristic>
     </wap-provisioningdoc>
 
-#### Output Selected Input
+#### Output 
 
-    :::XML
-    <wap-provisioningdoc>
-        <characteristic type="UiMgr" version="4.3" >
-            <parm name="InputMethodAction" value="1"/>
-            <characteristic-query type="InputMethodDetails">
-              <parm name="InputMethodOption" value="1"/>
-            </characteristic>
-        </characteristic>
-    </wap-provisioningdoc>
-
-#### Output Custom Input
-
-    :::XML
-    <characteristic type="UiMgr" version="4.3" >
-        <parm name="InputMethodAction" value="1"/>
-        <characteristic type="InputMethodDetails">
-	        <parm name="InputMethodOption" value="4"/>
-	        <parm name="InputMethodPackageName" value="PakcageName1"/>
-	        <parm name="InputMethodClassName" value="ClassName1"/>
-        </characteristic>
-    </characteristic>
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="UiMgr" version="4.3">
+			<parm name="InputMethodAction" value="1"/>
+			<characteristic type="InputMethodDetails">
+				<parm name="InputMethodOption" value="1"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
 
 
 ### Get All Settings

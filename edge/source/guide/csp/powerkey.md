@@ -210,7 +210,7 @@ Description:
         <characteristic type="PowerKeyMgr" >
             <parm-query name="AirPlaneMode"/>
         </characteristic>
-    <wap-provisioningdoc>
+    </wap-provisioningdoc>
 
 #### Output
 
@@ -219,7 +219,7 @@ Description:
         <characteristic type="PowerKeyMgr" version="4.3" >
             <parm name="AirPlaneMode" value="1"/>
         </characteristic>
-    <wap-provisioningdoc>
+    </wap-provisioningdoc>
 
 ### Get Touch Panel
 
@@ -230,7 +230,7 @@ Description:
         <characteristic type="PowerKeyMgr" >
             <parm-query name="TouchPanel"/>
         </characteristic>
-    <wap-provisioningdoc>
+    </wap-provisioningdoc>
 
 #### Output
 
@@ -239,7 +239,7 @@ Description:
         <characteristic type="PowerKeyMgr" version="4.3" >
             <parm name="TouchPanel" value="1"/>
         </characteristic>
-    <wap-provisioningdoc>
+    </wap-provisioningdoc>
 
 ### Get Safe Mode
 
@@ -250,7 +250,7 @@ Description:
         <characteristic type="PowerKeyMgr" >
             <parm-query name="SafeMode"/>
         </characteristic>
-    <wap-provisioningdoc>
+    </wap-provisioningdoc>
 
 #### Output
 
@@ -259,7 +259,7 @@ Description:
         <characteristic type="PowerKeyMgr" version="4.3" >
             <parm name="SafeMode" value="1"/>
         </characteristic>
-    <wap-provisioningdoc>
+    </wap-provisioningdoc>
 
 ### Get Auto Screen Lock Option
 
@@ -270,7 +270,7 @@ Description:
         <characteristic type="PowerKeyMgr" >
             <parm-query name="AutoScreenLockOption"/>
         </characteristic>
-    <wap-provisioningdoc>
+    </wap-provisioningdoc>
 
 #### Output
 
@@ -279,7 +279,7 @@ Description:
         <characteristic type="PowerKeyMgr" version="4.3" >
             <parm name="AutoScreenLockOption" value="1"/>
         </characteristic>
-    <wap-provisioningdoc>
+    </wap-provisioningdoc>
 
 ### Get Auto Screen Lock State
 
@@ -290,7 +290,7 @@ Description:
         <characteristic type="PowerKeyMgr" >
             <parm-query name="AutoScreenLockState"/>
         </characteristic>
-    <wap-provisioningdoc>
+    </wap-provisioningdoc>
 
 #### Output
 
@@ -299,7 +299,7 @@ Description:
         <characteristic type="PowerKeyMgr" version="4.3" >
             <parm name="AutoScreenLockState" value="1"/>
         </characteristic>
-    <wap-provisioningdoc>
+    </wap-provisioningdoc>
 
 
 ## Feature Compatibility

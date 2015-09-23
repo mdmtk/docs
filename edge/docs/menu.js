@@ -48,11 +48,11 @@ var menuStrcture = [
 						icon: '',
 						items: [
 							{
-								name: 'MX Management System Overview',
+								name: 'MXMS Overview',
 								link: '#guide-MX-overview',
 							},
 							{
-								name: 'MX Management System Interface',
+								name: 'MXMS Interface',
 								link: '#guide-MX-interface',
 							},
 							// {
@@ -337,11 +337,11 @@ var menuStrcture = [
 								name: 'Query Sample App',
 								link: '#guide-samples-SimpleMdmToolkitQuery',
 							},
-							{
+							/*{
 								name: 'Using XML Parser',
 								link: '#guide-samples-2',
 							},
-							/*{
+							{
 								name: 'Querying a CSP',
 								link: '#guide-samples-2',
 							},
