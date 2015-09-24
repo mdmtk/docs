@@ -151,12 +151,12 @@ Description:
   <tr>
     <td>Embed the license blob from the license file into the XML</td>
     <td>"embed"</td>
-	<td><p>This value indicates that the contents of the Software License File will be embedded (Base64 encoded) into the Request XML.</p><p><b>Note:</b> This option has the advantage of making the Request XML self-contained, although it does make the total data size somewhat larger due to the Base64 encoding the Software License File contents. However, this method is recommended because it does not require a license file to be on the device, possibly in a persistant storage location.</p></td>
+	<td><p>This value indicates that the contents of the Software License File will be embedded (Base64 encoded) into the Request XML.</p><p>To use this option, the contents of the Software License File acquired from the Zebra Software License Server, which are already Base64 encoded, must be Base64 encoded a second time by the MDM Agent before it is added into this Request XML Document.</p><p><b>Note:</b> This option has the advantage of making the Request XML self-contained, although it does make the total data size somewhat larger due to the Base64 encoding the Software License File contents.</p></td>
   </tr>
   <tr>
     <td>Reference a license file already on the mobile device</td>
     <td>"reference"</td>
-	<td><p>This value indicates that a Software License File, which must be present in the device file system, will be referenced by its path and file name.</p><b>Note:</b> This option requires that the Software License File be transferred to the device file system before the Request XML is submitted and requires that the exact path and file name of the Software License File in the device file system be specified.</p></td>
+	<td><p>This value indicates that a Software License File, which must be present in the device file system, will be referenced by its path and file name.</p><b>Note:</b> This option requires that the Software License File be transferred to the device file system before the Request XML is submitted and requires that the exact path and file name of the Software License File in the device file system be specified. Also, if the license should be applied after an Enterprise Reset, the license file should be stored in a persistent location so that it is not deleted after the reset.</p></td>
   </tr>
 </table>
 </div>	
@@ -175,7 +175,7 @@ Description:
 Parm value input rules: 
 
 * String with a minimum size of 2 characters (minimum required to hold 1 byte of content)
-* The data should be Base64 encoded (4 characters hold 3 bytes of content)
+* The data must be Base64 encoded (4 characters hold 3 bytes of content)
 
 #####**Specify file name and path to the license file**
 Settable if: The "Specify license action to perform" is "Apply" *AND* "Specify licensing method" is "Reference a license file already on the mobile device"

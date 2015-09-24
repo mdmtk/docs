@@ -86,6 +86,54 @@ Description:
 </table>
 </div>	
 
+##Queries
+
+###Get the Ethernet Usage Value
+
+This query will indicate if the state of the Ethernet Option can be changed. 
+
+####Input
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="ComponentMgr">
+			<parm-query name="EthernetUsage"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+####Output
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="ComponentMgr" version="4.4">
+			<parm name="EthernetUsage" value="1"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+
+###Get the Ethernet State Value
+
+This query will indicate if the Ethernet State of the device is currently set to On or Off.
+
+####Input
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="ComponentMgr">
+			<parm-query name="EthernetState"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+####Output
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="ComponentMgr" version="4.4">
+			<parm name="EthernetState" value="1"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+
 ## Feature Compatibility
 
 <iframe src="compare.html#mx=4.3&csp=ComponentMgr&os=JB&embed=true"></iframe> 

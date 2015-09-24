@@ -48,11 +48,11 @@ var menuStrcture = [
 						icon: '',
 						items: [
 							{
-								name: 'MX Management System Overview',
+								name: 'MXMS Overview',
 								link: '#guide-MX-overview',
 							},
 							{
-								name: 'MX Management System Interface',
+								name: 'MXMS Interface',
 								link: '#guide-MX-interface',
 							},
 							// {
@@ -170,11 +170,11 @@ var menuStrcture = [
 								name: 'ComponentMgr',
 								link: '#guide-csp-componentmgr',
 							},
-							{
+						/*	{
 								name: 'ConditionMgr',
 								link: '#guide-csp-conditionmgr',
 							},
-							{
+						*/	{
 								name: 'CspMgr',
 								link: '#guide-csp-cspmgr',
 							},
@@ -242,11 +242,11 @@ var menuStrcture = [
 								name: 'SettingsMgr',
 								link: '#guide-csp-settings',
 							},
-							{
+							/*{
 								name: 'StatusMgr',
 								link: '#guide-csp-statusmgr',
 							},
-							{
+							*/{
 								name: 'ThreatMgr',
 								link: '#guide-csp-threat',
 							},
@@ -337,11 +337,11 @@ var menuStrcture = [
 								name: 'Query Sample App',
 								link: '#guide-samples-SimpleMdmToolkitQuery',
 							},
-							{
+							/*{
 								name: 'Using XML Parser',
 								link: '#guide-samples-2',
 							},
-							/*{
+							{
 								name: 'Querying a CSP',
 								link: '#guide-samples-2',
 							},

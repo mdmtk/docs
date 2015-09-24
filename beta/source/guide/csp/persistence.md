@@ -159,6 +159,8 @@ Description:
 
 ##Queries
 
+>**Note:** The following queries are supported in by the PersistMgr Feature Type. However, they have not been indicated in the PersistMgr DSD. Therefore, the following queries cannot be generated with the DSD tool and will need to be created manually.
+
 ###Get the List of All of the Persistent Request XML Documents
 
 Input
@@ -193,6 +195,8 @@ Output
 			</characteristic>
 		</characteristic>
 	</wap-provisioningdoc>
+	
+>**Note:** The "ProfileMethod" is included in the Result XML Document. This parm is for a future feature and is not used in the 4.4 version of the PersistMgr.
 
 ###Get the Values for a Specified Persistent Request XML Document
 
@@ -223,6 +227,7 @@ Output
 		</characteristic>
 	</wap-provisioningdoc>
 
+>**Note:** The "ProfileMethod" is included in the Result XML Document. This parm is for a future feature and is not used in the 4.4 version of the PersistMgr.
 	
 ###Get Persist As Version Value of a Specified Persistent Request XML Document
 

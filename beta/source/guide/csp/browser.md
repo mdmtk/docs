@@ -6,8 +6,6 @@
 
 Many Zebra Android devices include a default Web Browser that is derived from the stock Android Open Source Project (AOSP) Web Browser source code. The key changes made are to enable configurability of selected settings. The BrowserMgr Feature Type is used to configure these settings.
 
-**Note:** Multi-User Mode is supported on all Zebra Android devices that support Zebra MX functionality, but the AccessMgr Feature Type currently does not support enabling Multi-User Mode. Multi-User Mode can be enabled on devices that support it, but only using unsupported tools or mechanisms that do not scale to large deployments. For this reason, the ability to use the AppMgr Feature Type to manage the Protected List may provide little or no immediate benefit. In the future, when the AccessMgr Feature Type is enhanced to support enabling Multi-User Mode, the ability to use the AppMgr Feature Type to manage the Protected List will likely be more meaningful.
-
 ### Main Functionality
 
 * Set the Default Home Page
@@ -38,6 +36,8 @@ Description:
 >This parm will allow you to turn the Remember Passwords Option of the Default Android Web Browser On or Off.
 
 >Turning the Remember Passwords Option On can make browsing more convenient by eliminating the need for the device user to enter the same password later. Turning the Remember Passwords Option Off is generally more secure, especially on a device that might be shared, since it would prevent an unauthorized user from logging in using a password that was previously entered by an authorized user.
+
+>**Note:** This feature has been depreciated from KitKat onwards. This is available on Jelly Bean devices.
 
 <div class="parm-table">
  <table>
@@ -165,7 +165,7 @@ Description:
         </characteristic>
     </wap-provisioningdoc>
 
-### Get Save Forum Data Setting
+### Get Save Form Data Setting
 
 #### Input 
 
