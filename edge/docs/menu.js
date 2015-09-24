@@ -170,11 +170,11 @@ var menuStrcture = [
 								name: 'ComponentMgr',
 								link: '#guide-csp-componentmgr',
 							},
-							{
+						/*	{
 								name: 'ConditionMgr',
 								link: '#guide-csp-conditionmgr',
 							},
-							{
+						*/	{
 								name: 'CspMgr',
 								link: '#guide-csp-cspmgr',
 							},
@@ -242,11 +242,11 @@ var menuStrcture = [
 								name: 'SettingsMgr',
 								link: '#guide-csp-settings',
 							},
-							{
+							/*{
 								name: 'StatusMgr',
 								link: '#guide-csp-statusmgr',
 							},
-							{
+							*/{
 								name: 'ThreatMgr',
 								link: '#guide-csp-threat',
 							},
