@@ -140,7 +140,7 @@ For more information on Result XML documents and Parm Value Extraction, please s
 
 ###Creating a Set XML
 
-1. Start the jar file "DSDtoXML.jar" located in the folder "DSD To XML". You will be presented with the following menu screen.
+1. Start the jar file `DsdTool.jar` located in the folder `DSD To XML`. You will be presented with the following menu screen.
 
 	![img](images/xml-gen/mainmenu.PNG)
 	
@@ -201,35 +201,9 @@ For more information on Result XML documents and Parm Value Extraction, please s
 			</characteristic>
 		</wap-provisioningdoc>
 
-<!--
-1. Start the jar file "DSDtoXML.jar" located in the folder "DSD To XML". You will be presented with a file select dialog.  
-![img](images/xmlgendialog.jpg)
-2. Select the DSD file for the corresponding CSP you wish to configure and click "Open". For this example we will be using "Clock.dsd".  
-![img](images/xmlgenclock.jpg)
-3. Set the values you wish to configure via MX. For this example we will be setting, Date, Time, and time Zone.  
-![img](images/xmlgensetvalues.jpg)
-4. When complete, click the button "Save XML".  
-![img](images/xmlgensavebutton.jpg)
-5. Select a location to save your XML configuration file on your computer, give it a name, and select "Save".  
-![img](images/xmlgensavelocation.jpg)
-6. You can now open the file with a text or XML editor to view the generated XML. For example:
-
-    	:::xml
-		<wap-provisioningdoc>
-			<characteristic type="Clock" version="4.2" >
-				<parm name="AutoTime" value="false"/>
-				<parm name="TimeZone" value="GMT-5"/>
-				<parm name="Date" value="2014-12-03"/>
-				<parm name="Time" value="11:00:00"/>
-			</characteristic>
-		</wap-provisioningdoc>
-
->Note: Notice the relationship with the `parm` attributes and associated `value`. 
--->
-
 ## Submitting XML
 
-In your application's activity's onServiceConnected method, you can add code before the term call that would submit XML to MXMS. This example adds the utilizeMXMS method here, which will show how to edit XML and submit them to MXMS. However, it would be possible to repeatedly call this method from other locations. The onServiceConnected method is the first location where this method could possibly be called.
+In your application's activity's onServiceConnected method, you can add code before the `term` call that would submit XML to MXMS. This example adds the utilizeMXMS method here, which will show how to edit XML and submit them to MXMS. However, it would be possible to repeatedly call this method from other locations. The onServiceConnected method is the first location where this method could possibly be called.
 
 		:::java
 		// This definition is mandatory to track binding to the MXMS
@@ -501,42 +475,6 @@ Submitting queries to MX follows a similar process to submitting XML that is mea
 
 
 
-<!--
-The following sample code shows how to submit XML that was created in the previous step to the MX Framework as a string. The `MXservice` object refers to the `IMxFrameworkService` object we created in the previous step.
-
-    :::java
-    //MX can through exceptions when processing XML 
-	try {
-	    //Check if the MX service is null 
-	    if(MXservice != null){
-	        //MX Response XML
-			String MxResXML = "";
-						
-			//MX XML
-			String MxXML = "<wap-provisioningdoc>"
-						 +     "<characteristic type=\"Clock\" version=\"4.2\">"
-						 +         "<parm name=\"AutoTime\" value=\"false\"/>"
-						 +         "<parm name=\"TimeZone\" value=\"GMT-5\"/>"
-						 +         "<parm name=\"Date\" value=\"2014-12-03\"/>"
-						 +         "<parm name=\"Time\" value=\"17:00:00\"/>"
-						 +     "</characteristic>"
-						 + "</wap-provisioningdoc>";
-						
-						
-			//Send XML to MX for processing 
-			MxResXML = MXservice.processXML(MxXML);
-						
-			//Log result XML
-		    Log.i("MX", "MxResXML: " + MxResXML);
-	    }
-	    else{
-	        Log.e("MX", "Service is null");
-	    }
-	} 
-	catch (Exception e) {
-	    Log.e("MX", e.toString());
-    }
--->
 	
 <!--
 ## MX Response

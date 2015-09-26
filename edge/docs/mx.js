@@ -2140,12 +2140,6 @@ var mxVersions = [
 										notes: ''
 									},
 									{
-										name: 'MC18 KK',
-										device: 'MC18',
-										os: 'KK',
-										notes: ''
-									},
-									{
 										name: 'MC92 KK',
 										device: 'MC92',
 										os: 'KK',
@@ -2157,32 +2151,8 @@ var mxVersions = [
 								name: 'Set the Battery Percentage Decommissioned Threshold',
 								compatibility: [
 									{
-										name: 'MC40 KK',
-										device: 'MC40',
-										os: 'KK',
-										notes: ''
-									},
-									{
-										name: 'TC55 KK',
-										device: 'TC55',
-										os: 'KK',
-										notes: ''
-									},
-									{
-										name: 'TC75 KK',
-										device: 'TC75',
-										os: 'KK',
-										notes: ''
-									},
-									{
 										name: 'MC18 KK',
 										device: 'MC18',
-										os: 'KK',
-										notes: ''
-									},
-									{
-										name: 'MC92 KK',
-										device: 'MC92',
 										os: 'KK',
 										notes: ''
 									},
@@ -4043,12 +4013,6 @@ var mxVersions = [
                                         notes: ''
                                     },
 									{
-                                        name: 'TC55 KK',
-                                        device: 'TC55',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
@@ -4080,12 +4044,6 @@ var mxVersions = [
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-									{
-                                        name: 'TC55 KK',
-                                        device: 'TC55',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -4130,12 +4088,6 @@ var mxVersions = [
                                         notes: ''
                                     },
 									{
-                                        name: 'TC55 KK',
-                                        device: 'TC55',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
@@ -4167,12 +4119,6 @@ var mxVersions = [
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-									{
-                                        name: 'TC55 KK',
-                                        device: 'TC55',
                                         os: 'KK',
                                         notes: ''
                                     },
