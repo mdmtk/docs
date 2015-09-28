@@ -2,7 +2,7 @@
 
 ##Overview
 
-Zebra Remote Control is part of MDM Toolkit to mirror the display of a Zebra Enterprise Android device and control the navigation of the device from a Workstation or desktop. The screen capture data from the device and the UI events from the Web App are encrypted using a shared "Customer Generated Encryption Key".
+Zebra Remote Control is part of MDM Toolkit to mirror the display of a Zebra Enterprise Android device and control the navigation of the device from a Workstation or desktop. The screen capture data from the device and the UI events from the Web App are encrypted using a shared "Customer Generated Encryption Key". - **mrckey**
 
 This document describes how to integrate the Zebra Remote Control with any of the MDM solutions. Zebra Remote Control consists of the following components.
 
@@ -12,29 +12,7 @@ This document describes how to integrate the Zebra Remote Control with any of th
 
 ###Remote Control Client 
 
-The Remote Control Client is available as an Android APK file. This should be deployed to the Zebra Android devices as a user application using any management software. Because of Android security, the user has to start the client manually for the first time. For the remote control to be functional, a secured shared key has to be set using the [EncryptMgr Feature Type](../guide/csp/encrypt) by using the MX interface either directly or through the use of tools, such as StageNow or EMDK.
-
-To prepare a device to be Remote Controlled, do the following steps in the specified order:
-
-1. Generate a 256 bit encryption key - this can be any 256 bit value, expressed as 64 hex, but for best results this should be randomly generated.
-	* This could be done using openssl to generate the key or by using any other random number generator that can generated such values
-2. Add a key with the name "mrckey" and with the above value
-	* This could be done as part of Staging by using the StageNow EncryptMgr Setting Type
-	* This could be done by the MDM Agent by using the [EncryptMgr Feature Type](../guide/csp/encrypt)
-3. Download the APK (need exact file name here) to a suitable path that is persistent, such as: /enterprise/usr/mymdm, perhaps using FileMgr
-	* This could be done as part of Staging by using the StageNow FileMgr Setting Type
-	* This could be done by the MDM Agent using its native file transfer capabilities
-4. Install the APK from the location to which it was stored
-	* This could be done as part of Staging by using the AppMgr Setting Type
-	* This could be done by the MDM Agent by using the [AppMgr Feature Type](../guide/csp/app)
-5. Launch the APK using an Intent with action=" android.intent.action.MAIN" plus Package Name and Class Name (defined by the MDM)
-	* This could be done as part of Staging by using the Intent Setting Type
-	* This could be done by the MDM Agent by using the [Intent Feature Type](../guide/csp/intent)
-6. Make the Request XML Document containing the above steps persistent
-	* This could be done as part of Staging by using the PersistMgr Setting Type
-	* This could be done by the MDM Agent by using the [PersistMgr Feature Type](../guide/csp/persistence)
-
-Once the above have been completed, the Remote Control Client will be ready and listening for connections from the Remote Control Web App, which must possess the same 256 bit encryption key. It will also be persistent and will come up ready to be Remote Controlled following subsequent Enterprise Resets.
+The Remote Control Client is available as an Android APK file. This should be deployed to the Zebra Android devices as a user application using any management software. Because of Android security, the user has to start the client *manually* for the first time. For the remote control to be functional, a *secured shared key* (Customer Generated Encryption Key- "**mrckey**") has to be set using the [EncryptMgr Feature Type](../guide/csp/encrypt) by using the MX interface either directly or through the use of tools, such as StageNow or EMDK.
 
 
 ###Remote Control Server Web App
@@ -53,10 +31,10 @@ The Remote Control UI component is written as a Java Applet. This applet will co
   <tr>
     <td>WsUrl</td>
     <td>Mandatory</td>
-	<td>URL of the web service end point</td>
+	<td>URL of the web service end point implemented by MDM</td>
   </tr>
   <tr>
-    <td>WsApiKey</td>
+    <td><b>WsApiKey</b></td>
     <td>Mandatory</td>
 	<td>This is the API key to validate the request from WebApp</td>
   </tr>
@@ -75,7 +53,7 @@ The Remote Control UI component is written as a Java Applet. This applet will co
 
 ###Sample MDM Web Service
 
-MDM vendors must implement this web service adhering to the Zebra Remote Control standard. The details about input and output parameters are explained below. This can be implemented as a REST service with the GET request type returning the JSON string
+MDM vendors must implement this web service adhering to the Zebra Remote Control standard. The details about input and output parameters are explained below. This can be implemented as a REST service with the GET request type returning the JSON string.
 
 Zebra has provided a sample web service implementation in Java web archive file (WAR) file with the source code. This can be deployed in an application server, such as Tomcat.
 
@@ -89,7 +67,7 @@ Zebra has provided a sample web service implementation in Java web archive file 
   <tr>
     <td>key</td>
     <td>Mandatory. Passed as a query parameter.</td>
-	<td>This is the API key to validate the request. This key has to be passed to the Applet in the applet launching page, mentioned as WsApiKey.</td>
+	<td>This is the API key to validate the request. This key has to be passed to the Applet in the applet launching page, mentioned as <b>WsApiKey</b>.</td>
   </tr>
 </table>
 </div>	
@@ -142,7 +120,7 @@ The response from the web service should be in the JSON format, which contains t
 </table>
 </div>	
 
-A sample Web Service output is as shown below:
+**A sample Web Service output is as shown below:**
 
 {"bitDepth":"32","deviceIP":"10.233.82.145","passPhrase":"1111111111111111111111111111111111111111111111111111111111111111","port":"7775","screenHeight":"800","screenWidth":"800"}
 
@@ -155,36 +133,79 @@ Software Requirements
 * Java latest version JRE8
 * Firefox/Internet Explorer
 
-The following steps describe how to integrate the Zebra Remote Control:
+###Staging the device with Shared Customer Generated Encryption Key
 
-1. Install the Customer Generated Encryption Key to the device using the StageNow tool. Please ensure that 64 Bytes of the key is set using EncryptMgr Feature Type.
+To prepare a device to be Remote Controlled, perform the below steps in the specified order:
 
-	![img](images/remote-control/rc-1.PNG)
+1. Generate a 256 bit encryption key
+	* This can be any 256 bit value, expressed as 64 hex characters, but for best results this should be randomly generated
+	* This could be done using openssl to generate the key or by using any other random number generator that can generated such values
+		* For example, openssl rand 32 -hex (https://www.openssl.org/docs/man1.0.2/apps/rand.html)
+2. Add a key with the name "**mrckey**" and with the above value of encryption key.
+	* This could be done as part of Staging by using the StageNow EncryptMgr Setting Type
+	* This could be done by the MDM Agent by using the [EncryptMgr Feature Type](../guide/csp/encrypt)
+
+	![img](images/remote-control/rc-stagenow-key.PNG)
 	
-2. Implement web service. Please refer to the Sample Webservice section of this page.
-3. Install the Remote Control client on the device
-4. Start the Remote Control client
+3. Download the APK (TBD) to a suitable path that is persistent, such as: /enterprise/usr/ using using FileMgr
+	* This could be done as part of Staging by using the StageNow FileMgr Setting Type
+	* This could be done by the MDM Agent using its native file transfer capabilities
+4. Install the APK from the location to which it was stored
+	* This could be done as part of Staging by using the AppMgr Setting Type in StageNow
+	* This could be done by the MDM Agent by using the [AppMgr Feature Type](../guide/csp/app)
 
-	>**Note:** This is only required to be done the first time after installation.
+	![img](images/remote-control/rc-stagenow-manageapps.PNG)
+	
+	![img](images/remote-control/rc-stagenow-installapp.PNG)
+	
+5. Launch the APK using an Intent with action=" android.intent.action.MAIN" plus Package Name and Class Name (defined by the MDM)
+	* This could be done as part of StageNowTool by using the "App Manager Launch App" Setting Type
+	* This could be done by the MDM Agent by using the [Intent Feature Type](../guide/csp/intent)
 
-5. Invoke the Applet from any of the MDM pages, such as the Device Detail page.
-6. When the applet is launched, it should automatically connect to the device UI based on the IP and port setting. 
+	![img](images/remote-control/rc-stagenow-launchapp.PNG)
+	
+6. Make the Request XML Document containing the above steps persistent
+	* This could be done as part of Staging by using the PersistMgr Setting Type
+	* This could be done by the MDM Agent by using the [PersistMgr Feature Type](../guide/csp/persistence)
 
-![img](images/remote-control/rc-3.PNG) 
+Once the above steps have been completed, the Remote Control Client will be ready and listening for connections from the Remote Control Web App, which must possess the same 256 bit encryption key.  It will also be persistent and will come up ready to be Remote Controlled following subsequent Enterprise Resets.
 
-![img](images/remote-control/rc-4.PNG) 
+###MDM Vendor Changes for Zebra RC Integration/Launch
 
-Please refer to the user guide for more details about the Remote Control applet.
+1. MDM must host the Zebra-signed Remote Control Web App on their MDM Server (Tomcat server)
+2. MDM must implement Zebra defined Web Service Interface on their MDM Server
+3. MDM may elect prepare a device to be Remote Controlled
+	* MDM may elect to do all the steps required via the MDM Agent or may assume some or all steps were done during Staging
+	* MDM may want to control the value deployed for the "mrckey" to the device to ensure it matches the key possessed by the MDM Server
+4. MDM must determine the IP address of a device that is ready to be Remote Controlled
+5. MDM must expose a feature in their Management Console to launch Remote Control for a device
+6. MDM must provide a page in their Management Console within which the Zebra-signed Remote Control Web App can be run
+7. MDM must ensure that the page on which the Zebra-signed Remote Control Web App runs passes the proper parameters to it
+
+###Initialization and Launch of Zebra Remote Control
+
+1. Administrator launches the MDM Management Console
+2. Administrator selects a device that is ready to be Remote Controlled from the MDM Management Console
+3. Administrator selects Remote Control function for the selected device
+4. MDM Management Console displays the Remote Control page with the Zebra-signed Remote Control Web App running in it
+5. Zebra-signed Remote Control Web App calls the Web Service on the MDM Server to obtain the information needed to contact the device and the key
+6. Zebra-signed Remote Control Web App contacts the Zebra Remote Control Client on the device to be Remote Controlled
+7. Communication between the Zebra-signed Remote Control Web App and the Zebra Remote Control Client is protected using the key
+
+When the applet is launched it should automatically connect to the device UI based on the IP, port setting 
+
+![img](images/remote-control/rc-settings.PNG)
 
 ###Java Control Panel Setting
 
-Go to Windows-> Start Menu-> Run -> javacpl  
+Go to Windows-> Start Menu-> Run -> **javacpl**
 
 * Launch the Java Control Panel and check the "Enable Java content in the Browser" option
 * Add the URL (http://yourweb-appserverIP:8443/MDM-webapp). The highlighted string should match your webserver IP as well as the app name deployed in Tomcat.
 
-![img](images/remote-control/rc-2.PNG) 
+![img](images/remote-control/rc-javacontrolpanel.PNG) 
 
+<!--
 ###Installing the Remote Control Files
 
 1. Copy the following folders and files from: `\\10.233.85.45\images\MDM_TK\release\1.0.1.1012\Deliverables`
@@ -202,23 +223,42 @@ The following steps describe how to stage the "Install Key" by using the Encrypt
 2. The Install Key Value should be: "AFAFAFAFAFAFAFAFAFAFAFAFAFAFAFAF00000000000000000000000000000000"
 3. Use "StageNow" to set this key
 4. Install the MRCService-release.1.0.1.1012.apk on the corresponding Handset/device
+-->
 
-###Tomcat Setup
+###Deployment of WebApp using Tomcat
 
-1. Install Tomcat 
+In this guide, Tomcat is used to deploy the webapp as well as the webservice (RESTful) for launching Zebra Remote Control in the desktop/workstation.
+The following directories should be available as a sample in the release package obtained from Zebra:
 
-	>**Note:** JDK 1.8 is a pre-requisite for tomcat
+* MDM-Webservice (Contains the sample webservice used by RemoteControl App)
+* MDM-Webapp (RemoteControl App to contact webservice and connect to MC/TC handsets and display remote UI)
+
+To install these files:
+
+1. Copy "MDM-Webservice/RCWebService.war" to ( "webapps" folder of your Tomcat installation)
+2. Copy the complete folder "MDM-Webapp" to ("webapps" folder of your Tomcat installation)
+
+Follow the below steps to install/configure Tomcat for deploying the webservice/webapp.
+
+Install Tomcat ( JDK 1.8 is a pre-requisite for tomcat) by providing Username and password 
+Setup SSL for Tomcat as mentioned in https://dzone.com/articles/setting-ssl-tomcat-5-minutes 
+
+1. Install Tomcat by providing a Username and password 
+
+	>**Note:** JDK 1.8 is a pre-requisite for Tomcat
+<!--
 2. Enter "Symbol" as the Username
 3. Enter "Symbol" as the Password
-4. Setup SSL for Tomcat as mentioned in https://dzone.com/articles/setting-ssl-tomcat-5-minutes
+-->
 
-	For example:
+2. Setup SSL for Tomcat as mentioned in https://dzone.com/articles/setting-ssl-tomcat-5-minutes
+3. "%JAVA_HOME%\bin\keytool" -genkey -alias **tomcat** -keyalg RSA (provide necessary data)
 
-	a. "%JAVA_HOME%\bin\keytool" -genkey -alias tomcat -keyalg RSA (provide necessary data)
+	".keystore" will be saved in C:\Users\<**username**>\.keystore
 
-	".keystore" will be saved in `C:\Users\<username>\.keystore`
+	The bolded text can be configured to the user's preference. Remember the password for the keystore, which will be used later below as keystorePass.
 
-	b. Modify Server.xml (`tomcat/conf`) to have the below changes. Ensure that `C:\Users\<user>\.keystore` is present. Follow the link mentioned above for more information.
+4. Modify the Server.xml in the Tomcat install folder, `tomcat/conf`, to have the below changes. Ensure that `C:\Users\<user>\.keystore` is present.
 
 		:::XML
 		<Connector SSLEnabled="true" acceptCount="100" clientAuth="false"
@@ -227,7 +267,7 @@ The following steps describe how to stage the "Install Key" by using the Encrypt
 			protocol="org.apache.coyote.http11.Http11NioProtocol" scheme="https"
 			secure="true" sslProtocol="TLS" />
 
-	c. In web.xml (`tomcat/conf`), just before the "web-app" tag ends, add the following:
+5. Add in web.xml (`tomcat/conf`) just before "web-app" tag ends
 		
 		:::XML
 		 <security-constraint>
@@ -240,8 +280,9 @@ The following steps describe how to stage the "Install Key" by using the Encrypt
 			</user-data-constraint>
 		</security-constraint>
 
-5. Once all these changes are done, "STOP" and "START" Tomcat to deploy the WAR
+6. Once all these changes are done, "STOP" and "START" Tomcat to deploy the WAR
 
+<!--
 ###Security Settings
 
 1. In Control Panel -> Programs -> Java , update "Security settings" to set the Security Level to "High".
@@ -257,6 +298,7 @@ The following steps describe how to stage the "Install Key" by using the Encrypt
 5. In your URL bar, enter: chrome://flags/#enable-npapi
 6. Click the Enable link for the "Enable NPAPI" configuration option.
 7. Click the Relaunch button that now appears at the bottom of the configuration page.
+-->
 
 ###Configuring web.xml
 
@@ -268,12 +310,12 @@ Set the IP of the device in `tomcat\webapps\RCWebService\WEB-INF\web.xml` by mod
 
 Another way to do this would be to override "Device IP" in the GUI after launching the URL in the section below.
 
-
+<!--
 ###Setting key in device
 
 The below given snapshot is from StageNowClient where user can set key name and key value.
  
-
+-->
 
 
 ###Launch URL
@@ -282,5 +324,6 @@ http://localhost:8080/MDM-Webapp/
 
 Accept all the security warning pop up to proceed.
 
->**Note:** If any Tomcat user name and password is asked for, please enter: Symbol,Symbol
+<!-- >**Note:** If any Tomcat user name and password is asked for, please enter: Symbol,Symbol -->
 
+![img](images/remote-control/rc-connection.PNG)
