@@ -98,7 +98,7 @@ The DSD tool, `DsdTool.jar`, is used for generating XML configuration files and 
 >**Note:** Notice the relationship with the `parm` attributes and associated `value`. 
 
 ###Creating a Query XML
-1. Start the jar file "DSDtoXML.jar" located in the folder "DSD To XML". You will be presented with the following menu screen.
+1. Start the jar file "DsdTool.jar" located in the folder "DSD To XML". You will be presented with the following menu screen.
 
 	![img](images/xml-gen/mainmenu.PNG)
 	
@@ -196,7 +196,7 @@ Notice just the `Action` parm's value has changed.
 
 ## Multiple Characteristics
 
-You can combine multiple settings together inside on `wap-provisioningdoc` by including multiple `characteristic` XML that was generated individually. These settings will be applied in the order they are represented in the file. Further handling can be controlled by the [XML Manager](../csp/xml) that can control behavior of error handling.  
+You can combine multiple settings together inside on `wap-provisioningdoc` by including multiple `characteristic` XML that was generated individually. These settings will be applied in the order they are represented in the file. Further handling can be controlled by the [XML Manager](../guide/csp/xml) that can control behavior of error handling.  
 
 For example we will set the date and time as two separate instructions as well as add a new WiFi network:
 

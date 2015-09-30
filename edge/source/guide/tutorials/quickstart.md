@@ -5,7 +5,7 @@ This quick start guide will walk through the common tasks and components that yo
 
 * **Intro To The MXMS** - The basic information that is needed for using the MX Management System.
 * **Binding to the MXMS** - All communications to the MXMS on Zebra devices, occur through a common binding interface.  
-* **Generating XML** - Data exchanged to the MXMS from the MDM client is handled through a defined XML structure. Using the DSDtoXml tool provided in the MDM Toolkit will provide a template for the XML to be used for applying settings. Typically you will use this tool to generate all needed functions and then replace string values for dynamically changing variables.
+* **Generating XML** - Data exchanged to the MXMS from the MDM client is handled through a defined XML structure. Using the DSD tool provided in the MDM Toolkit will provide a template for the XML to be used for applying settings. Typically you will use this tool to generate all needed functions and then replace string values for dynamically changing variables.
 * **Submitting XML** - Within the MDM client, XML will be submitted to apply settings via a simple API.
 <!--* **Checking Response** - the MDM client will need to handle response from the MX framework for interpreting submit or query results -->
 * **Querying the MXMS** - Within the MDM client, XML will be submitted to query the MXMS to receive back information about the current settings on the device.
@@ -22,7 +22,7 @@ This quick start guide will walk through the common tasks and components that yo
 
 ### MXMS Overview
 
-The MX Management System (MXMS) provides a common interface to Zebra Android device capabilities utilizing XML that conforms to the standard OMA-CP PROV (Microsoft MSPROV) schema. This allows developers and administrators to have an extensible, efficient, reliable and scalable means for configuring and administrating Zebra Android devices. MXMS exposes capabilities that underlying CSPs provide to give the user access to both privileged and unprivileged APIs. Each CSP exposes its capabilities using DSD files that are included with the MDM Toolkit. These DSD files are then imported into a DSDtoXML tool to generate XML that can be sent to the MXMS running on the device to change a device configuration or behavior.
+The MX Management System (MXMS) provides a common interface to Zebra Android device capabilities utilizing XML that conforms to the standard OMA-CP PROV (Microsoft MSPROV) schema. This allows developers and administrators to have an extensible, efficient, reliable and scalable means for configuring and administrating Zebra Android devices. MXMS exposes capabilities that underlying CSPs provide to give the user access to both privileged and unprivileged APIs. Each CSP exposes its capabilities using DSD files that are included with the MDM Toolkit. These DSD files are then imported into a DSD tool to generate XML that can be sent to the MXMS running on the device to change a device configuration or behavior.
 
 For more information on the definitions of necessary terms, the MX architecture and data flow, MDM implementation approaches, CSP summaries and other information, please see [this page.](../guide/MX/overview)
 
@@ -34,7 +34,7 @@ For more information on the XML elements, Request and Result XML documents, DSDs
 
 ### MDM XML Creation
 
-The XML documents that are used in MX need to be structured in a standardized format. The DSDtoXML tool, which is included in this toolkit, can be used to generate sample XML. Typically you would require that some values be changed dynamically on the device by your client application. So you would therefore manipulate the values of specific parameter attributes within your code based on the specific template you have generated. 
+The XML documents that are used in MX need to be structured in a standardized format. The DSD tool, which is included in this toolkit, can be used to generate sample XML. Typically you would require that some values be changed dynamically on the device by your client application. So you would therefore manipulate the values of specific parameter attributes within your code based on the specific template you have generated. 
 
 For more information and instructions on XML generation, modifying values, and other information, please see [this page.](../guide/xml/generate)
 
@@ -173,7 +173,7 @@ For more information on Result XML documents and Parm Value Extraction, please s
 >**Note:** Notice the relationship with the `parm` attributes and associated `value`. 
 
 ###Creating a Query XML
-1. Start the jar file "DSDtoXML.jar" located in the folder "DSD To XML". You will be presented with the following menu screen.
+1. Start the jar file `DsdTool.jar` located in the folder `DSD To XML`. You will be presented with the following menu screen.
 
 	![img](images/xml-gen/mainmenu.PNG)
 	

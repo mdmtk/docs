@@ -1,6 +1,6 @@
 # XML Queries
 
-This guide will describes how to query MXMS for framework and device information:
+This guide will describe how to query MXMS for framework and device information:
 
 * Component Versions
 * Installed CSPs

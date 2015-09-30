@@ -18,9 +18,33 @@ A simple and quite useful method for simplifying the extraction of relevant info
 
 ## Success Response
 
-If the call to MXMS is successful, the XML returned from MXMS will exactly match the XML sent to MXMS.   
+### XML Equivalence
 
-XML Submitted
+Two XML documents are equivalent if they represent the same data even if they do not have identical text. Two XML documents are equivalent if they differ only in white space, for example:
+
+	:::XML
+	<characteristic type="Wi-Fi" version="2.1" >
+	
+vs.
+
+	:::XML
+	<characteristic type="Wi-Fi"                       version="2.1" >
+
+Two XML documents may be equivalent if they differ only in order and order is not relevant, for example:
+
+	:::XML
+	<characteristic  version="2.1" type="Wi-Fi" >
+	
+vs.
+
+	:::XML
+	<characteristic  type="Wi-Fi" version="2.1" >	
+
+Equivalence is a key concept when taken together with the reflexive nature of Set Configuration and Perform Action behaviors. "Total Success" is indicated by Request and Result XML documents being equivalent since it means that what was done was exactly what was requested.
+
+Therefore, the following XML Documents demonstrate the Result XML Document that would be returned after successfully setting the device's clock.
+
+Request XML Document Submitted
 
     :::xml
     <wap-provisioningdoc>
@@ -32,7 +56,7 @@ XML Submitted
         </characteristic>
     </wap-provisioningdoc>
 
-XML Returned
+Result XML Document Returned
 
 	:::xml
     <wap-provisioningdoc>
@@ -45,20 +69,30 @@ XML Returned
     </wap-provisioningdoc>
 
 
-## Error Responses 
+## Error Response
 
-Each CSP will handle errors according to their specific implementation. If the call to the MXMS fails the response XML will contain information about the failure and contain the text "-error". Overall, there are a few common error types:
+If a Result XML document is equivalent to the corresponding Request XML document, then it indicates a "total success" and that all of the behavior(s) that were requested were performed exactly as specified. However, if a Result XML Document contains any TLC errors, then the behaviors requested by the TLCs in the corresponding Request XML document were not performed at all. 
 
-* Framework Error
-* CSP Error
-* Sub Characteristic Error
-* Parm Error
+To find out which behaviors were not performed and why, the TLC errors in the Result XML document will need to be examined. 
 
-### Framework Error
-The MXMS typically passes the submitted XML directly to the CSP, but may return errors if a CSP is not found or if the XML is malformed in general. Below is an example:
+If a Result XML document contains no TLC errors but is not equivalent to the corresponding Request XML document, then some of the behaviors requested by the corresponding Request XML document were either not performed or were performed but not exactly as specified. 
 
+To find out which behaviors were not executed, examine the SGC errors or Parm-Errors, which are described below, in the Result XML document. To find out which behaviors were executed, but not exactly as specified, examine the values of parms in the Result XML document and see how they differ from the requested values in the Request XML document.
 
-XML Submitted
+### Characteristic-Error
+
+A Characteristic-Error is an element that appears in a Result XML document that is used to indicate a failure when processing a corresponding characteristic in a Request XML document. 
+
+#### Top-Level Characteristic-Error
+
+Top-Level Characteristic-Errors (TLC Errors) are those that appear at the outermost level of a Result XML document. A Result XML document may contain zero or more TLC errors. If a Result XML document contains a TLC error, it indicates that the corresponding characteristic in the Request XML document was completely rejected. This means that none of the behaviors requested by that TLC were performed by the CSP. 
+
+##### **Framework Error**
+The MXMS typically passes the submitted XML directly to the CSP, but may return errors if a CSP is not found or if the XML is malformed in general. 
+
+The following XML Documents demonstrate what a Result XML Document with a Framework Error would look like:
+
+Request XML Document Submitted
 
     :::xml
     <wap-provisioningdoc>
@@ -67,7 +101,7 @@ XML Submitted
         </characteristic>
     </wap-provisioningdoc>
 
-XML Returned
+Result XML Document Returned
 
     :::xml
     <wap-provisioningdoc>
@@ -75,13 +109,13 @@ XML Returned
             <parm name="SomeParm" value="false"/>
         </characteristic-error>
     </wap-provisioningdoc>
+	
+##### **CSP Error**
+A CSP is considered a 'top-level characteristic' within the context of the XML. An error indicated at this level is considered a major error by the CSP and typically means that none of the parms were processed.
 
-### CSP Error
-A CSP is considered a 'top-level characteristic' within the context of the XML. An error indicated at this level is considered a major error by the CSP and typically means that none of the parms were processed. 
+The following XML Documents demonstrate what a Result XML Document with a CSP Error would look like:
 
-Below is an example:
-
-XML Submitted
+Request XML Document Submitted
 
     :::xml
     <wap-provisioningdoc>
@@ -90,8 +124,7 @@ XML Submitted
         </characteristic>
     </wap-provisioningdoc>
 
-
-XML Returned
+Result XML Document Returned
 
     :::xml
     <wap-provisioningdoc>
@@ -100,13 +133,15 @@ XML Returned
         </characteristic-error>
     </wap-provisioningdoc>
 
->Note: The XML CSP enables you to control how MXMS will handle top-level characteristic errors. Consult the XML CSP reference in this guide for more information.
+####Sub-Group Characteristic-Error
 
-### Sub Characteristic Error
-Some CSPs contain 'sub-characteristics' which provide for a grouping of settings to be applied to a specific feature of the CSP. The CSP may report a `characteristic-error` at this level when all settings within that sub-characteristic have failed to be applied. Other settings outside of the sub-characteristic may have been applied. Below is an example:
+Sub-Group Characteristic-Errors (SGC Errors) are those that appear within TLCs/SGCs. If a TLC or SGC in a Result XML document contains an SGC error, it indicates that the Behavior requested by the corresponding SGC was rejected. This means a that portion of the behavior requested by the enclosing TLC was not performed by the CSP. Any behaviors requested outside of the SGC may have been applied even though the SGC contained an error.
 
+>Note: The [XmlMgr Feature Type](../guide/csp/xml) enables you to control how MXMS will handle top-level characteristic errors. Consult the XML CSP reference in this guide for more information.
 
-XML Submitted
+The following XML Documents demonstrate what a Result XML Document with an SGC Error would look like:
+
+Request XML Document Submitted
 
     :::xml
     <wap-provisioningdoc>
@@ -118,7 +153,7 @@ XML Submitted
         </characteristic>
     </wap-provisioningdoc>
 
-XML Returned
+Result XML Document Returned
 
     :::xml
     <wap-provisioningdoc>
@@ -129,13 +164,20 @@ XML Returned
             </characteristic-error>
         </characteristic>
     </wap-provisioningdoc>
+	
+### Characteristic-Query-Error
 
+A Characteristic-Query-Error is an element that appears in a Result XML document that is used to indicate that a failure occurred when processing a corresponding Characteristic-Query element in a Request XML document. This could occur because the TLC or SGC being queried does not support Characteristic-Query. This could also occur because the SGC being queried requires a query index and none was supplied or the query index parm supplied did not have a value that selected a valid configuration to query.
 
-### Parm Error
-Some CSPs may report a `parm-error` when that setting for that specific parm have failed to be applied. Other settings outside of parm may have been applied. Below is an example:
+### Parm-Error
 
+A Parm-Error is an element that appears in a Result XML document that is used to indicate a failure when processing a corresponding parm in a Request XML document.
 
-XML Submitted
+If the processing of a parm in a Request XML document by a CSP is unsuccessful, then the Result XML document will contain a Parm-Error element instead of a Parm element. The Parm-Error element will contain the same name and value as the failed Parm element plus a description explaining the reason for the failure. If a Result XML document contains a Parm-Error element, then it indicates that the behavior requested by the Request XML document could not be completely achieved.
+
+The following XML Documents demonstrate what a Result XML Document with an Parm-Error would look like:
+
+Request XML Document Submitted
 
     :::xml
     <wap-provisioningdoc>
@@ -144,7 +186,7 @@ XML Submitted
         </characteristic>
     </wap-provisioningdoc>
 
-XML Returned
+Result XML Document Returned
 
     :::xml
     <wap-provisioningdoc>
@@ -153,6 +195,8 @@ XML Returned
         </characteristic>
     </wap-provisioningdoc>
 
-## Notes
+### Parm-Query-Error
 
-XML sent into and returned from MXMS may differ in white spacing both before and after XML nodes and within XML nodes. When comparing returned XML to submitted XML you should format the white spacing to a unified pattern before making comparisons. 
+A Parm-Query-Error is an element that appears in a Result XML document that is used to indicate that a failure occurred when processing a corresponding Parm-Query element in a Request XML document. 
+
+If the processing of a Parm-Query in a Request XML document by a CSP is unsuccessful, then the Result XML document will contain a Parm-Query-Error element instead of a Parm element. The Parm-Query-Error element will contain the same name as the failed Parm-Query element plus a description explaining the reason for the failure.

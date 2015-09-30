@@ -2,7 +2,9 @@
 
 ## Overview
 
-The XML Parser class is a Java class for assisting with MXMS XML on Android. It has been developed to assist in starting MXMS development, and to offer suggestion as to how your application might process MXMS XML. Your application does not need to use the XML Parser class. It is up to your development teams to determine the best way for your application to handle MXMS XML for your needs. 
+The XML Parser class is a Java class for assisting with MXMS XML on Android. This class is available in the SimpleMdmToolkitSample and SimpleMdmToolkitQuery projects that are included in the MDM Toolkit. These projects can be found in the "Samples" folder of the MDM Toolkit.
+
+The XML Parser class has been developed to assist in starting MXMS development and to offer suggestion as to how your application might process MXMS XML. Your application does not need to use the XML Parser class. It is up to your development teams to determine the best way for your application to handle MXMS XML for your needs. 
 
 ## Main Features
 
