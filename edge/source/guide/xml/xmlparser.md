@@ -2,46 +2,38 @@
 
 ## Overview
 
-The XML Parser class is a Java class for assisting with MXMS XML on Android. This class is available in the SimpleMdmToolkitSample and SimpleMdmToolkitQuery projects that are included in the MDM Toolkit. These projects can be found in the "Samples" folder of the MDM Toolkit.
+The XmlParser class is a Java class for assisting with MXMS XML on Android. This class is available in the SimpleMdmToolkitSample and SimpleMdmToolkitQuery projects that are included in the MDM Toolkit. These projects can be found in the "Samples" folder of the MDM Toolkit.
 
-The XML Parser class has been developed to assist in starting MXMS development and to offer suggestion as to how your application might process MXMS XML. Your application does not need to use the XML Parser class. It is up to your development teams to determine the best way for your application to handle MXMS XML for your needs. 
+The XmlParser class has been developed to assist in starting MXMS development and to offer suggestion as to how your application might process MXMS XML. Your application does not need to use the XmlParser class. It is up to your development teams to determine the best way for your application to handle MXMS XML for your needs. 
 
 ## Main Features
 
+This section describes some common features that may need to be used by the MDM Agent when processing Request and Result XML Documents. For more information about the individual methods, please see the Main Methods section below.
+
 ### Validate Set Responses
 
-The XML Parser class can assist you in validating responses from MXMS through the help of the `isXmlEquivalent` function. When an MXMS set is successful the response XML should be equivalent to the set XML, besides for white space. To use the `isXmlEquivalent` function pass in the XML string you have submitted to MXMS and the XML string response from MXMS. If the XML is equivalent, the function will return `true` if not it will return `false`. If the function  returns `false` it should contain error parms or characteristics.
+The XmlParser class can assist you in validating responses from MXMS through the help of the `isEquivalent` function. When an MXMS set is successful the Result XML Document should be equivalent to the set XML, besides for white space. To use the `isEquivalent` function pass in the XML string you have submitted to MXMS and the XML string response from MXMS. If the XML is equivalent, the function will return `true` if not it will return `false`. If the function returns `false` it should contain error parms or characteristics.
 
 For Example:
 
     :::java
     //Check for Errors
-    Boolean isXmlGood = XmlParser.isXmlEquivalent(XML, resXML);
+    boolean isXmlGood = XmlParser.isEquivalent(XML, resXML);
 
-### Validate Query Responses 
+### Counting Errors in a Result XML Document
 
-The XML Parser class assist you in validating query responses from MXMS through the help of the `isQueryXmlResponseValid` function. You can pass in the response XML from MXMS and if the XML is error free it will return `true` if there is an error it will return `false`. 
-
-For Example:
-
-    :::java
-    //Check for Errors
-	Boolean isXmlGood = XmlParser.isQueryXmlResponseValid(resXML);
-
-### Counting Errors in Response XML
-
-The XML Parser class helps you count the number of errors in the XML returned from the MXMS through the use of the function `countCharErrors` and `countParmErrors`. Both functions take in the response XML string from MXMS and return the number of errors of their specified type. 
+The XmlParser class helps you count the number of errors in the XML returned from the MXMS through the use of the function `countCharcErrors` and `countTlcErrors`. Both functions take in the Result XML Document string from MXMS and return the number of Characteristic-Errors of their specified type (either only Top-Level Characteristic-Errors *or* both Top-Level Characteristic-Errors and Sub-Group Characteristic-Errors). 
 
 For Example: 
 
     :::java
     //Count Errors 
-    int charErrors = XmlParser.countCharErrors(resXML);
-    int parmErrors = XmlParser.countParmErrors(resXML);
+    int charErrors = XmlParser.countCharcErrors(resXML);
+    int tlcErrors = XmlParser.countTlcErrors(resXML);
 
 ### Modifying XML Documents
 
-The XML Parser class helps you modify MXMS XML. For example you can use it to replace values in a template XML with values given to your program through a user input. The function `replaceParms` allows you to specify the XML string to modify, the list of MXMS parm values to set, and outputs the updated XML string. 
+The XmlParser class helps you modify MXMS XML. For example, you can use it to replace values in a template XML with values given to your program through a user input. The function `replaceParms` allows you to specify the Top-Level Characteristic that containts the parm(s) that will be replaced, the name(s) of the parm(s) that will be replaced, and the new value(s) of the parm(s). The method then will output the updated XML string with the specified parm value change(s).
 
 For Example:
 
@@ -60,22 +52,16 @@ For Example:
 
 ### Reading XML Documents
 
-The XML Parser class helps you read MXMS XML through the use of the `fetchParms` function. For example you can use this function to confirm parm values in set XML or read parm values in query xml. To use this function pass in the XML and a list of parm selectors, and the function will return an array list of parm values. 
+The XmlParser class helps you read MXMS XML through the use of the `fetchParms` and `fetchParmRepeats` functions. For example, you can use these functions to confirm parm values in a set Request XML Document or read parm values in a query XML Document. To use this function pass in the XML and a list of parm selectors, and the function will return an array list of parm values. 
 
 For Example:
 
     :::java
     //Setup parm selector
 	ParmSelector parmSelector = new ParmSelector("charType", "parmName");
-	    				 
-	//Setup parm value array list
-	ArrayList<ParmSelector> parmSelectors = new ArrayList<ParmSelector>();
-	    				 
-	//Add parm value
-	parmSelectors.add(parmSelector);
-	    				 
+	
 	//Get parm values
-	ArrayList<ParmValue> parmValues = XmlParser.fetchParms(xml, parmSelectors);
+	ArrayList<ParmValue> parmValues = XmlParser.fetchParms(xml, parmSelector);
 
 ## Main Methods
 
@@ -132,7 +118,7 @@ A string containing the parm value of the specified parm in the XML Document. If
 	:::java
 	String time = XmlParser.fetchParm(outXml,new ParmSelector("clock","time"));
 
-###static public ArrayList<String> fetchParmRepeats(String xml,ParmSelector selector)
+###static public ArrayList&lt;String&gt; fetchParmRepeats(String xml,ParmSelector selector)
 
 Helper function to extract a parm value from an XML document. This can be used when there are multiple parms with the same name. The values of these parms would be returned in the ArrayList.
 
@@ -271,7 +257,7 @@ The XML Document as a string variable. Null is returned if no data could be read
 	::java
 	String xml = XmlParser.readXml(stream);
 
-###static public String replaceParms(String xml,ArrayList<ParmValue> values)
+###static public String replaceParms(String xml,ArrayList&lt;ParmValue&gt; values)
 Helper function to replace the values of a list of parms.
 
 >**Note:** This function will only replace within the first occurrence of a specified Top-Level Characteristic within an XML document. If an XML document has multiple instances of the same Top-Level Characteristic, then subsequent instances cannot be affected.
