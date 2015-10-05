@@ -79,789 +79,216 @@ For Example:
 
 ## Main Methods
 
-### boolean isXmlEquivalent(String inXml,String outXml)
+###static public int countCharcErrors(String xml)
 
-Function for comparing if two MXMS XML's are equivalent, this can be used for validating set results
-
-**Parameters:**
-
-**inXml-** XML submitted to MXMS
-
-**outXml-** XML revived from MXMS
-
-**Returns:** boolean- True if XML is equivalent false if XMLs are different 
-
-### boolean isQueryXmlResponseValid(String resXml)
-
-Checks Query response XML for Errors
+Helper function to count the number of Characteristic-Errors in an XML document. The Characteristic-Errors that are added to this count can be at any level in the XML, meaning that they can be errors on Top-Level Characteristics or Sub-Group Characteristics.
 
 **Parameters:**
 
-**resXml**- XML to check for errors
+*xml-* The Result XML Document that was returned by MXMS.
 
-**Returns:** boolean- True for no errors false for errors 
+**Returns**
 
-### String formatXml(String xml)
+An integer indicating the number of Characteristic-Errors that are at any level in the Result XML Document.
 
-Formats XML to eliminate XML formatting issues in XML Nodes
+**Example**
 
-**Parameters:**
+	::java
+	int charErrorCount = XmlParser.countCharcErrors(xml);
 
-**xml**- XML to format
+###static public int countTlcErrors(String xml)
 
-**Returns:** String- Cleaned XML
-
-### int countCharErrors(String xml)
-
-Counts the number of characteristic errors in a block of MXMS XML
+Helper function to count the number of Top-Level Characteristic-Errors in an XML document.
 
 **Parameters:**
 
-**xml**- XML to count errors on
+*xml-* The Result XML Document that was returned by MXMS.
 
-**Returns:** int- Number of errors
+**Returns**
 
-### int countParmErrors(String xml)
+An integer indicating the number of Top-Level Characteristic-Errors in the Result XML Document.
 
-Counts the number of parm errors in a block of MXMS XML
+**Example**
 
-**Parameters:**
+	::java
+	int tlcErrorCount = XmlParser.countTlcErrors(xml);
 
-**xml**- XML to count errors on
+###static public String fetchParm(String xml,ParmSelector selector)
 
-**Returns:** int- Number of errors
-
-### String getParmQuery(String charType,String parmName)
-
-Helper function for creating a parm query
+Helper function to extract a single parm value from an XML document.
 
 **Parameters:**
 
-**charType**- Characteristic type
+*xml-* The XML Document that contains the parm who's value will be returned
 
-**parmName**- Parm Name to query 
+*selector-* A ParmSelector object containing the TLC that the needed parm is inside of and the name of the parm who's value will be returned. 
 
-**Returns:** String- MXMS query XML
+**Returns**
 
-### String getCharQuery(String charType)
+A string containing the parm value of the specified parm in the XML Document. If there are multiple parms with the same name, only the value of the first one of these parms will be returned.
 
-Helper function for creating a characteristic query
+**Example**
 
-**Parameters:** 
+	:::java
+	String time = XmlParser.fetchParm(outXml,new ParmSelector("clock","time"));
 
-**charType**- Characteristic type
+###static public ArrayList<String> fetchParmRepeats(String xml,ParmSelector selector)
 
-**Returns:** String- MXMS query XML
-
-### String replaceParms(String xml,ArrayList<ParmValue> values)
-
-Updates XML with specified parm changes 
+Helper function to extract a parm value from an XML document. This can be used when there are multiple parms with the same name. The values of these parms would be returned in the ArrayList.
 
 **Parameters:**
 
-**xml**- XML to update
+*xml-* The XML Document that contains the parm who's value will be returned
 
-**values**- Values to replace
+*selector-* A ParmSelector object containing the TLC that the needed parm is inside of and the name of the parm who's value will be returned. 
 
-**Returns:** String- Updated XML
+**Returns**
 
-###  ArrayList<ParmValue> fetchParms(String xml,ArrayList<ParmSelector> selectors)
+A string containing the parm value of the specified parm in the XML Document.
 
-Find parm value in xml
+**Example**
 
-**Parameters:**
+	:::java
+	ArrayList<String> parmValueList = XmlParser.fetchParmRepeats(xml, new ParmSelector("clock","time"));
 
-**xml**- XML to find parms in
+###public static String formatCompXml(String xml)
 
-**selectors**- Parm selectors to find 
-
-**Returns:** String- List of parm selector values or null on error
-
-### String fetchParm(String xml,ParmSelector selector)
-
-Find parm value in xml
+Helper function to reformat XML into "comparable" format for equivalence checking. For example, if an XML has contains extra whitespace, this will be removed from the XML so that it can be checked to see if it is equivalent with another XML that does not have whitespace. 
 
 **Parameters:**
 
-**xml**- XML to find parm in
+*xml-* The Result XML Document that was returned by MXMS
 
-**selector**- Parm selector
+**Returns**
 
-**Returns:** String- Parm value
+A string containing the reformatted XML
 
-## XML Parser Class
+**Example**
 
-    :::java
-    package com.example.mdmtester;
+	:::java
+	String formattedXML = XmlParser.formatCompXml(xml);
 
-	import java.io.BufferedReader;
-	import java.io.ByteArrayInputStream;
-	import java.io.ByteArrayOutputStream;
-	import java.io.IOException;
-	import java.io.InputStream;
-	import java.io.OutputStream;
-	import java.io.StringReader;
-	import java.util.ArrayList;
-	import java.util.Properties;
-	import javax.xml.parsers.DocumentBuilderFactory;
-	import javax.xml.transform.OutputKeys;
-	import javax.xml.transform.Transformer;
-	import javax.xml.transform.TransformerFactory;
-	import javax.xml.transform.dom.DOMSource;
-	import javax.xml.transform.stream.StreamResult;
-	import org.w3c.dom.Document;
-	import org.w3c.dom.NamedNodeMap;
-	import org.w3c.dom.Node;
-	import android.app.Activity;
-	import android.content.res.AssetManager;
+###public static String formatXml(String xml)
 
-	/** 
-	 * Helper class for working with MXMS XML
-	 */
-	public class XmlParser
-	{
-		//Variables
-		static private ArrayList<ParmSelector> m_selectors;
-		static private ArrayList<ParmValue> m_values;
-		static private String m_fetchParm;
-		static private int m_countCharErrors;
-		static private int m_countParmErrors;
-		static private String m_char;
+Helper function to reformat XML into "displayable" format. This will return the XML on multiple lines for better readability.
 
-		/**
-		 * Takes in a list of parm selectors and returns the value for that parm 
-		 * @param xml XML to find parms in
-		 * @param selectors Parm selectors to find 
-		 * @return List of parm selector values or null on error
-		 */
-		static public ArrayList<ParmValue> fetchParms(String xml,ArrayList<ParmSelector> selectors)
-		{
-			if ( xml == null ) return null;
-			if ( selectors == null ) return null;
-			if ( selectors.size() == 0 ) return null;
-			
-			DocParser parser = new DocParser(xml)
-			{
-				@Override public boolean test(Node node)
-				{
-					if ( isChar(node) && !isChar(node.getParentNode()) ) m_char = getCharType(node);
-					return isParm(node);
-				}
-				@Override public void process(Node node)
-				{
-					String name = getParmName(node); if ( name == null ) return;
-					for(ParmSelector selector:m_selectors)
-					{
-						if ( ( selector != null ) && selector.getParmName().equalsIgnoreCase(name) )
-						{
-							String charType = selector.getCharType(); 
-							if ( ( charType != null ) && !charType.equalsIgnoreCase(m_char) ) continue;
-							m_values.add(new ParmValue(selector,getParmValue(node)));
-						}
-					}
-				}
-			};
+**Parameters:**
 
-			if ( !parser.isValid() ) return null;
+*xml-* The Result XML Document that was returned by MXMS
 
-			m_char = null;
-			m_selectors = selectors;
-			m_values = new ArrayList<ParmValue>();
-			if ( !parser.parse(null,-1) ) return null; 
-			
-			return m_values;
-		}
+**Returns**
 
-		/**
-		 * Find parm value in xml
-		 * @param xml XML to find parm in
-		 * @param selector Parm selector
-		 * @return Parm value
-		 */
-		static public String fetchParm(String xml,ParmSelector selector)
-		{
-			if ( xml == null ) return null;
-			if ( selector == null ) return null;
-			
-			DocParser parser = new DocParser(xml)
-			{
-				@Override public boolean test(Node node) { return isParm(node); }
-				@Override public void process(Node node) { m_fetchParm = getParmValue(node); }
-			};
+A string containing the reformatted XML
 
-			if ( !parser.isValid() ) return null;
+**Example**
 
-			m_fetchParm = null;
-			if ( !parser.parse(null,-1) ) return null; 
-			
-			return m_fetchParm;
-		}
-		
-		/**
-		 * Updates XML with specified parm changes 
-		 * @param xml XML to update
-		 * @param values Values to replace
-		 * @return Updated XML
-		 */
-		static public String replaceParms(String xml,ArrayList<ParmValue> values)
-		{
-			if ( values == null ) return null;
-			
-			DocParser parser = new DocParser(xml)
-			{
-				@Override public boolean test(Node node)
-				{
-					if ( isChar(node) )
-						if ( !isChar(node.getParentNode()) )
-							m_char = getCharType(node);
-					
-					return isParm(node);
-				}
-				@Override public void process(Node node)
-				{
-					String name = getParmName(node); if ( name == null ) return;
-					for(ParmValue value:m_values)
-					{
-						if ( ( value != null ) && value.getParmName().equalsIgnoreCase(name) )
-						{
-							String charType = value.getCharType(); 
-							if ( ( charType != null ) && !charType.equalsIgnoreCase(m_char) ) continue;
-							replaceParmValue(node,value);
-						}
-					}
-				}
-			};
+	::java
+	String formattedXML = XmlParser.formatXml(xml);
 
-			if ( !parser.isValid() ) return null;
+###static public String getAssetXml(Activity activity,String assetName)
+Get an XML file from the assets folder and return its contents as a string.
 
-			m_values = values;
-			if ( !parser.parse(null,-1) ) return null; 
-			
-			return parser.toXml(false);
-		}
-		
-		/**
-		 * Helper function for creating a characteristic query
-		 * @param charType Characteristic type
-		 * @return MXMS query XML 
-		 */
-		static public String getCharQuery(String charType)
-		{
-			if ( charType == null ) return null;
-			
-			return "<wap-provisioningdoc><characteristic-query type=\"" + charType + "\" /></wap-provisioningdoc>";
-		}
+**Parameters:**
 
-		/**
-		 * Helper function for creating a parm query
-		 * @param charType Characteristic type
-		 * @param parmName Parm Name to query 
-		 * @return MXMS query XML 
-		 */
-		static public String getParmQuery(String charType,String parmName)
-		{
-			if ( charType == null ) return null;
-			if ( parmName == null ) return null;
-			
-			return "<wap-provisioningdoc><characteristic type=\"" + charType + "\"><parm-query name=\"" + parmName + "\"/>" + "</characteristic></wap-provisioningdoc>";
-		}
-		
-		/**
-		 * Reads in input stream and saves the XML to a string 
-		 * @param stream Input stream to read XML from 
-		 * @return Null on error or XML string on success 
-		 */
-		public static String readXml(InputStream stream)
-		{
-			if ( stream == null ) return null;
-			
-			StringBuilder xml = new StringBuilder();
-			byte[] buffer = new byte[256];
-			int count;
-			
-			try { while ( ( count = stream.read(buffer) ) > 0 ) for(int i=0;i<count;i++) xml.append((char)buffer[i]); } catch ( Exception e ) { }
-			
-			try { stream.close(); } catch ( Exception e ) { }
-			
-			return xml.toString();
-		}
+*activity-* An object for the Activity that is calling this method.
 
-		/**
-		 * Counts the number of characteristic errors in a block of MXMS XML
-		 * @param xml XML to count errors on 
-		 * @return Number of errors 
-		 */
-		static public int countCharErrors(String xml)
-		{
-			if ( xml == null ) return -1;
-			
-			DocParser parser = new DocParser(xml)
-			{
-				@Override public boolean test(Node node) { return isChar(node); }
-				@Override public void process(Node node) { if ( isError(node) ) m_countParmErrors++; }
-			};
-			if ( !parser.isValid() ) return -2;
-			
-			m_countParmErrors = 0;
-			if ( !parser.parse(null,-1) ) return -3; 
-			
-			return m_countParmErrors;
-		}
-		
-		/**
-		 * Counts the number of parm errors in a block of MXMS XML
-		 * @param xml XML to count errors on 
-		 * @return Number of errors 
-		 */
-		static public int countParmErrors(String xml)
-		{
-			if ( xml == null ) return -1;
-			
-			DocParser parser = new DocParser(xml)
-			{
-				@Override public boolean test(Node node) { return isParm(node); }
-				@Override public void process(Node node) { if ( isError(node) ) m_countCharErrors++; }
-			};
-			if ( !parser.isValid() ) return -2;
-			
-			m_countCharErrors = 0;
-			if ( !parser.parse(null,-1) ) return -3; 
-			
-			return m_countCharErrors;
-		}
+*assetName-* The name of the XML that is in the Asset folder of the project. This string must include the ".xml" extension.
 
-		/** 
-		 * Formats XML to eliminate XML formatting issues in XML Nodes
-		 * @param xml XML to format 
-		 * @return Cleaned XML
-		 */
-		public static String formatXml(String xml)
-		{
-			if ( xml == null ) return null;
-			
-			DocParser parser = new DocParser(xml);
-			if ( !parser.isValid() ) return null;
-			
-			return parser.toXml(true);
-		}
+**Returns**
 
-		/**
-		 * Function for comparing if two MXMS XML's are equivalent. This can be used for validating set results.
-		 * @param inXml XML submitted to MXMS 
-		 * @param outXml XML revived from MXMS
-		 * @return True if XML is equivalent false if XMLs are different 
-		 */
-		static public boolean isXmlEquivalent(String inXml,String outXml)
-		{
-			if ( inXml == null ) return false;
-			if ( outXml == null ) return false;
-			
-			return formatXml(trimWhiteSpace(inXml)).equalsIgnoreCase(formatXml(trimWhiteSpace(outXml)));
-		}
-		
-		/**
-		 * Checks Query response XML for Errors
-		 * @param resXml XML to check for errors 
-		 * @return True for no errors false for errors 
-		 */
-		static public boolean isQueryXmlResponseValid(String resXml)
-		{
-			if (resXml == null ) return false;
-			
-			if(resXml.contains("<characteristic-error") || resXml.contains("<characteristic-query-error") || resXml.contains("<parm-error") || resXml.contains("<parm-query-error") )
-			{
-				return false;
-			}
-			else
-			{
-				return true;
-			}
-		}
-		
-		/**
-		 * Removes white space charters from the begging and end of lines in an XML string
-		 * @param inputXML XML to clean
-		 * @return Cleaned XML
-		 */
-		private static String trimWhiteSpace(String inputXML) 
-		{
-			BufferedReader readerBuffer = new BufferedReader(new StringReader(inputXML));
-			StringBuffer resultBuffer = new StringBuffer();
-			try 
-			{
-				String xmlLine;
-				while ((xmlLine = readerBuffer.readLine()) != null)
-				{
-					resultBuffer.append(xmlLine.trim());
-				}
-				return resultBuffer.toString();
-			} 
-			catch (IOException e) 
-			{
-				throw new RuntimeException(e);
-			}
-		}
-		
-		/** 
-		 * Reads an application asset file and loads it into a string
-		 * @param activity Activity to get asset for
-		 * @param assetName file name
-		 * @return XML on success or null on frailer 
-		 */
-		static public String getAssetXml(Activity activity,String assetName)
-		{
-			if ( activity == null ) return null;
-			if ( assetName == null ) return null;
-			
-			AssetManager assetManager = activity.getAssets();
-			if ( assetManager == null ) return null; 
-			
-			String readXml = null;
-			try { readXml = XmlParser.readXml(assetManager.open(assetName)); } catch ( Exception e) { }
-			if ( readXml == null ) return null;
-			
-			return readXml;
-		}
-		
-		/**
-		 * Helper class for selecting xml parms by characteristic type parm name 
-		 */
-		public static class ParmSelector
-		{ 
-			//Variables
-			protected String m_charType;
-			protected String m_parmName;
-			
-			/**
-			 * Creates a new Parm Selector Object
-			 * @param selector Existing Parm Selector to duplicate
-			 */
-			public ParmSelector(ParmSelector selector)
-			{
-				m_charType = selector.m_charType;
-				m_parmName = selector.m_parmName;
-			}
-			
-			/**
-			 * Creates a new Parm Selector Object
-			 * @param charType Characteristic Type
-			 * @param parmName Parm Name
-			 */
-			public ParmSelector(String charType,String parmName)
-			{
-				m_charType = charType;
-				m_parmName = parmName;
-			}
-			
-			/**
-			 * Get the Characteristic Type
-			 * @return Characteristic
-			 */
-			public String getCharType() 
-			{ 
-				return m_charType; 
-			}
-			
-			/**
-			 * Get the Parm Name
-			 * @return Parm name
-			 */
-			public String getParmName() 
-			{ 
-				return m_parmName; 
-			}
-		}
+If the specified XML is found in the Asset folder of the application, a string containing the contents of this XML file will be returned. If the XML file was not found, null will be returned.
 
-		/**
-		 * Helper class for holding parm information
-		 */
-		public static class ParmValue extends ParmSelector
-		{
-			//Variables
-			protected String m_value;
-			
-			/**
-			 * Creates a new Parm value object
-			 * @param selector Parm selector object
-			 * @param value Parm value
-			 */
-			public ParmValue(ParmSelector selector,String value)
-			{
-				super(selector);
-				
-				m_value = value;
-			}
+**Example**
 
-			/**
-			 * Creates a new parm value object
-			 * @param charType Characteristic Type
-			 * @param parmName Parm name
-			 * @param value Parm value
-			 */
-			public ParmValue(String charType,String parmName,String value)
-			{
-				super(charType,parmName);
-				
-				m_value = value;
-			}
-			
-			/**
-			 * Get parm selector
-			 * @return Parm selector 
-			 */
-			public ParmSelector getSelector() 
-			{ 
-				return this; 
-			}
-			
-			/**
-			 * Get parm value
-			 * @return Parm value 
-			 */
-			public String getValue() 
-			{ 
-				return m_value; 
-			}
-		}
-		
-		/** 
-		 * Helper class for parsing MXMS XML documents 
-		 */
-		private static class DocParser
-		{
-			//Variables
-			private Document m_doc;
-			
-			/** 
-			 * Creates a new instance of the doc parser 
-			 * @param xml XML string to parse
-			 */
-			public DocParser(String xml)
-			{
-				DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-				dbf.setNamespaceAware(true);
-				dbf.setCoalescing(true);
-				dbf.setIgnoringElementContentWhitespace(true);
-				dbf.setIgnoringComments(true);
-				
-				try { m_doc = dbf.newDocumentBuilder().parse(new ByteArrayInputStream(xml.getBytes())); } catch ( Exception e) { m_doc = null; }
-			}
+	::java
+	String xml = XmlParser.getAssetXml(this, "input.xml");
 
-			/**
-			 * Checks if doc is null
-			 * @return True if doc is not null false if doc is null 
-			 */
-			public boolean isValid() 
-			{ 
-				return ( m_doc != null ); 
-			}
-			
-			/**
-			 * Recursive function for processing XML
-			 * @param node XML node to process 
-			 * @param depth Depth of node
-			 * @return Returns true when finished 
-			 */
-			public boolean parse(Node node,int depth)
-			{
-				if ( node == null ) { node = m_doc.getFirstChild(); depth--; }
-				if ( node == null ) return false;
+###static public String getCharQuery(String charType)
+Helper function to construct an XML document that queries a Top-Level Characteristic. This XML Document can then be submitted to MXMS to query the specified Feature Type.
 
-				while ( node != null )
-				{
-					if ( node.getNodeType() != Node.TEXT_NODE )
-					{
-						if ( test(node) ) process(node); 
-						
-						Node child;
-						if ((depth != 0) && ((child = node.getFirstChild()) != null )) 
-						{
-							if (!parse(child,depth-1))
-							{
-								return false;
-							}
-						}
-					}
-					node = node.getNextSibling();
-				}
-				return true;
-			}
-			
-			/**
-			 * Stub function for testing an XML node. Should be override in real use case.  
-			 * @param node XML node to test
-			 * @return
-			 */
-			public boolean test(Node node) 
-			{ 
-				return false; 
-			}
-			
-			/**
-			 * Stub function for processing an XML node. Should be override in real use case.  
-			 * @param node XML node to process
-			 */
-			public void process(Node node) 
-			{ 
-				
-			}
-			
-			/**
-			 * Checks if an XML node is of type characteristic
-			 * @param node XML node to check if node is a characteristic 
-			 * @return True if XML nod is characteristic
-			 */
-			public boolean isChar(Node node)
-			{
-				if ( node == null ) return false;
-				String name = node.getNodeName().toLowerCase();
-				return ( name.startsWith("characteristic") ); 
-			}
-			
-			/**
-			 * Checks if an XML node is of type parm
-			 * @param node XML node to check if node is a parm
-			 * @return True if XML nod is parm
-			 */
-			public boolean isParm(Node node)
-			{
-				if ( node == null ) return false;
-				String name = node.getNodeName().toLowerCase();
-				return ( name.startsWith("parm") ); 
-			}
-			
-			/**
-			 * Checks if an XML node is of type error
-			 * @param node XML node to check if node is of type error 
-			 * @return True if XML nod is of type error 
-			 */
-			public boolean isError(Node node)
-			{
-				if ( node == null ) return false;
-				String name = node.getNodeName().toLowerCase();
-				return ( name.endsWith("-error") ); 
-			}
-			
-			/**
-			 * Checks if an XML node is of type query
-			 * @param node XML node to check if node is of type query 
-			 * @return True if XML nod is of type query 
-			 */
-			public boolean isQuery(Node node)
-			{
-				if ( node == null ) return false;
-				String name = node.getNodeName().toLowerCase();
-				return ( name.endsWith("-query") ); 
-			}
-			
-			/**
-			 * Get the parm name from an XML node
-			 * @param node XML node to get parm name from
-			 * @return Parm name
-			 */
-			public String getParmName(Node node)
-			{
-				if ( !isParm(node) && !isQuery(node) ) return null;
-				return getAttrValue(node,"name");
-			}
-			
-			/**
-			 * Get the characteristic type from an XML node
-			 * @param node XML node to get characteristic type from
-			 * @return Characteristic type
-			 */
-			public String getCharType(Node node)
-			{
-				if ( !isChar(node) ) return null;
-				return getAttrValue(node,"type");
-			}
-			
-			/**
-			 * Get the parm value from an XML node
-			 * @param node XML node to get parm value from
-			 * @return Parm value
-			 */
-			public String getParmValue(Node node)
-			{
-				if ( !isParm(node) && !isQuery(node) ) return null;
-				return getAttrValue(node,"value");
-			}
-			
-			/**
-			 * Replace parm value in XML node
-			 * @param node XML node to replace value in
-			 * @param value Parm value to set
-			 * @return True on successes false on failure
-			 */
-			public boolean replaceParmValue(Node node,ParmValue value)
-			{
-				if ( node == null ) return false;
-				if ( value == null ) return false;
-				if ( !isParm(node) && !isQuery(node) ) return false;
-				return setAttrValue(node,"value",value.getValue());
-			}
-			
-			/**
-			 * Get the value of an attribute in an XML node
-			 * @param node XML Node to get value from
-			 * @param name Attribute to get value of
-			 * @return Attribute
-			 */
-			public String getAttrValue(Node node,String name)
-			{
-				NamedNodeMap map = node.getAttributes(); if ( map == null ) return null;
-				Node attr = map.getNamedItem(name); if ( attr == null ) return null;
-				return attr.getNodeValue();
-			}
-			
-			/**
-			 * Sets attribute value in XML node 
-			 * @param node XML Node to set value in 
-			 * @param name XML attribute name 
-			 * @param value XML attribute value 
-			 * @return True on successes false on failure
-			 */
-			public boolean setAttrValue(Node node,String name,String value)
-			{
-				if ( node == null ) return false;
-				if ( name == null ) return false;
-				if ( value == null ) return false;
-				
-				NamedNodeMap map = node.getAttributes(); if ( map == null ) return false;
-				Node attr = map.getNamedItem(name); if ( attr == null ) return false;
-				attr.setNodeValue(value);
-				
-				return true;
-			}
-			
-			/**
-			 * Format XML doc through XML Transformer and returns formatted XML as a string
-			 * @param indent True if XML Transformer should indent XML or False if it should not indent XML
-			 * @return Formatted XML
-			 */
-			public String toXml(boolean indent)
-			{
-				if ( m_doc == null ) return null;
-				
-				try
-				{
-					TransformerFactory factory = TransformerFactory.newInstance();
-					Transformer transformer = factory.newTransformer();
-					Properties outFormat = new Properties();
-					outFormat.setProperty(OutputKeys.INDENT,indent?"yes":"no"); 
-					outFormat.setProperty(OutputKeys.METHOD,"xml");
-					outFormat.setProperty(OutputKeys.OMIT_XML_DECLARATION,"yes");
-					outFormat.setProperty(OutputKeys.VERSION,"1.0");
-					outFormat.setProperty(OutputKeys.ENCODING,"UTF-8");
-					transformer.setOutputProperties(outFormat);
-					
-					DOMSource domSource = new DOMSource(m_doc.getDocumentElement());
-					OutputStream output = new ByteArrayOutputStream();
-					StreamResult result = new StreamResult(output);
-					transformer.transform(domSource,result);
-					return output.toString();
-				}
-				catch ( Exception e) { return null; }
-			}
-		}
-	}
+**Parameters:**
+
+*charType-* The Feature Type name that the query will be made for
+
+**Returns**
+
+A string containing the Request XML Document that can be submitted to MXMS to query the specified Feature Type
+
+**Example**
+
+	::java
+	String charQuery = XmlParser.getCharQuery("PersistMgr");
+  
+###static public String getParmQuery(String charType,String parmName)
+Helper function to construct an XML document that queries one parm directly under a Top-Level Characteristic. This XML Document can then be submitted to MXMS to query the specified parm.
+
+**Parameters:**
+
+*charType-* The Feature Type name that will contain the parm that the query will be made for.
+
+*parmName-* The name of the parm that the query will be made for.
+
+**Returns**
+
+A string containing the Request XML Document that can be submitted to MXMS to query the specified parm.
+
+**Example**
+
+	::java
+	String parmQuery = XmlParser.getParmQuery("PersistMgr", "Version");
+
+###static public boolean isEquivalent(String inXml,String outXml)
+Return whether two XML strings are equivalent. This means that they are the same, ignoring whitespace. This can be used to detect if a set Request XML Document was successfully applied by MXMS by comparing it to the returned Result XML Document to see if it contained any errors.
+
+**Parameters:**
+
+*inXml-* The Request XML Document that will be compared to the Result XML Document to see if they are equivalent.
+
+*outXml-* The Result XML Document that will be compared to the Request XML Document to see if they are equivalent.
+
+**Returns**
+
+A Boolean containing true if the XML Documents are equivalent to each other or false if they are not.
+
+**Example**
+
+	::java
+	boolean equivalence = XmlParser.isEquivalent(xml,xml2);
+
+###public static String readXml(InputStream stream)
+Helper function to take an InputStream variable which contains an XML Document and convert it to a string. 
+
+**Parameters:**
+
+*stream-* The InputStream which contains the XML Document that will be read.
+
+**Returns**
+
+The XML Document as a string variable. Null is returned if no data could be read from the stream.
+
+**Example**
+
+	::java
+	String xml = XmlParser.readXml(stream);
+
+###static public String replaceParms(String xml,ArrayList<ParmValue> values)
+Helper function to replace the values of a list of parms.
+
+>**Note:** This function will only replace within the first occurrence of a specified Top-Level Characteristic within an XML document. If an XML document has multiple instances of the same Top-Level Characteristic, then subsequent instances cannot be affected.
+
+**Parameters:**
+
+*xml-* The XML Document that contains the parm value(s) that will be replaced.
+
+*values-* ParmValue objects of the parm(s) that will be replaced and the new value(s). Each ParmValue object should contain the Top-Level Characteristic that contains the parm who's value will be replaced, the name of the parm who's value will be replaced, and the new value that will be given to the specified parm.
+
+**Returns**
+
+A string containing the XML Document that was submitted to the method with the specified parm(s) containing the new value(s) that this method set.
+
+**Example**
+
+	::java
+	ArrayList<ParmValue> replaceValues = new ArrayList<ParmValue>();
+	replaceValues.add(new ParmValue("clock","time","11:11:11"));
+	String replaceXml = XmlParser.replaceParms(inXml,replaceValues);
