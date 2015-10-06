@@ -363,7 +363,7 @@ var menuStrcture = [
 			},
 			{
 				name: 'FAQ',
-				link: '#guide-FAQ'
+				link: '#guide-faq'
 			},
 			{
 				name: 'Using This Help',
