@@ -62,19 +62,19 @@ You can open the compatibility view in full screen by click on the link Icon.
 
 You can Change the Feature Type by using the Feature drop down.
 
-![img](images/about/comparabilitymatrix-04.png)
+![img](images/about/comparabilitymatrix-03.png)
 
 You can Change the OS Version compatibility by using the OS drop down.
 
-![img](images/about/comparabilitymatrix-05.png)
+![img](images/about/comparabilitymatrix-04.png)
 
 You can Change the Device compatibility by using the Device drop down.
 
-![img](images/about/comparabilitymatrix-06.png)
+![img](images/about/comparabilitymatrix-05.png)
 
 You can hover over a checkmark to see the full compatibility information, and any usage notes if applicable. 
 
-![img](images/about/comparabilitymatrix-07.png)
+![img](images/about/comparabilitymatrix-06.png)
 
 ###Image Viewer
 

@@ -14,7 +14,7 @@ A typical approach to XML generation may include:
 
 DSD Files are XML documents that define the schema a CSP uses to configure settings on a device. Each CSP has a matching DSD document. Each version of the MXMS includes a set of CSPs that include a specific feature set. When generating XML for a CSP, be sure to consider the version of the MXMS that you are working with. The DSDs included with the MDM Toolkit can be found in the `MX` folder. Within the `MX` folder, there will be versions of MXMS along with a `DSD` subfolder. 
 
-![img](images/dsdfiles.jpg)
+![img](images/xml-gen/dsdfiles.jpg)
 
 
 ### DSD-Driven Programmatic XML Generation
@@ -53,7 +53,7 @@ To perform a given management function:
 
 The DSD tool, `DsdTool.jar`, is used for generating XML configuration files and templates. It is located in the `DSD To XML` folder of the MDM Toolkit
 
-![img](images/dsdtoolfolder.jpg)
+![img](images/xml-gen/dsdtoolfolder.jpg)
 
 ###Prerequisites
 
@@ -133,7 +133,7 @@ In order to make sure your XML is well structured and follows the MXMS definitio
 
 >**Note:** Notice in the example below we are using the DSD tool to generate a Wi-Fi profile to add a new Wi-Fi network. In the tool we put in placeholder text that we can replace with our MDM client code before submitting the XML to the MXMS.
 
-![img](images/xmlgenrelationship.jpg)
+![img](images/xml-gen/xmlgenrelationship.jpg)
 
 ###Additional DSD Tool Menu Options
 
