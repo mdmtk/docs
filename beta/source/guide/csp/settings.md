@@ -4,15 +4,20 @@
 
 ### Overview
 
-SettingsMgr Feature Type allows you to manage the Settings UI options by allowing you to change what settings are allowed to be configured through this UI.
+All Android devices provide an in-device System Settings Menu that presents a user interface that a device user can use to configure a variety of Setting Settings. Some of these System Settings may be sensitive in nature and could lead to undesired consequences if a device user changed them inappropriately.
+
+Zebra Android devices provide a few ways to prevent a device user from making unwanted changes via the System Settings Menu. The [AppMgr Feature Type](../guide/csp/app) could be used to disable launching of the System Settings Menu application altogether. Or, the [AccessMgr Feature Type](../guide/csp/access) could be used to restrict the device user to a very limited version of the System Settings Menu with a reduced set of the capabilities (e.g. Display, Volume, About). But in some cases, it may be important to allow the device user to configure more System Settings while preventing configuration of especially sensitive ones.
+
+The SettingsMgr Feature Type allows you to individually control whether the device user can use selected especially sensitive System Settings via the System Settings Menu.
 
 ### Main Functionality
 
-* Enable or Disable the Ability to Perform an Enterprise Reset from the Settings UI
-* Enable or Disable the Ability to turn Wi-Fi on or off from the Settings UI
-* Enable or Disable the Ability to turn Install Apps from Unknown Sources on or off from the Settings UI
-* Enable or Disable the Ability to to turn Airplane Mode on or off from the Settings UI
-* Enable of Disable the Ability to access the "Apps" section in the Settings UI
+* Turn On or Off the ability for the device user to do the following from the System Settings Menu:
+	* Perform an Enterprise Reset of the device
+	* Change the Wi-Fi configuration of the device
+	* Change whether applications from Unknown Sources (e.g. not from the Google Play Store) can be installed
+	* Turn Airplane Mode On or Off
+	* Access the "Apps" section, where installed and running applications can be affected
 
 ##Parameter Notes
 ###Ability to invoke Enterprise Reset in Settings UI
@@ -22,7 +27,7 @@ Parm name: InvokeEnterpriseReset
 
 Description: 
 
->This parm allows you to specify whether or not the ability to invoke Enterprise Reset in Settings UI will be allowed. If an Enterprise Reset is performed, this would clear the data and cache partitions, but also preserve the contents of the Enterprise partition on the device.
+>This parm allows you to specify whether or not the device user will be allowed invoke the "Enterprise data reset" function, usually found in the "Backup & reset" section of the System Settings Menu. Since this function could lead to data loss or could render a device less functional, it may be advisable to prevent device users from invoking it.
 
 <div class="parm-table">
  <table>
@@ -34,17 +39,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will cause no changes to whether or not an Enterprise Reset can be invoked from the Settings UI.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not a device user will be allowed to invoke the "Enterprise data reset" function from the System Settings Menu.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This value will cause the ability to invoke Enterprise Reset in Settings UI to be allowed.</td>
+	<td>This value will cause the device user to be allowed to invoke the "Enterprise data reset" function from the System Settings Menu.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td>This value will cause the ability to invoke Enterprise Reset in Settings UI to not be allowed, preventing the user from performing this action from the Settings UI. However, an Enterprise Reset can still be invoked by a System application which uses the OSX API. This also does not prevent the user from using the Enterprise Reset ZIP folder to invoke an Enterprise Reset when the device is in recovery mode.</td>
+	<td>This value will cause the device user to be prevented from invoking the "Enterprise data reset" function from the System Settings Menu.</td>
   </tr>
 </table>
 </div>	
@@ -56,7 +61,9 @@ Parm name: WifiSettingsUI
 
 Description: 
 
->This parm allows you to specify whether or not the ability to turn Wi-Fi on or off in Settings UI will be allowed.
+>This parm allows you to specify whether or not the device user will be allowed to change any Wi-Fi configuration from the "Wi-Fi" section of the System Settings Menu
+
+>**Note:** While the title of this parm might make it seem that it only controls whether the device user is allowed to Turn Wi-Fi On or Off, it actually controls whether any changes to Wi-Fi configuration can be made. There is no way to control the ability to Turn Wi-Fi On and Off independently of other Wi-Fi configuration.
 
 <div class="parm-table">
  <table>
@@ -68,17 +75,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will cause no changes to whether or not an Wi-Fi can be turned on or off from the Settings UI.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not a device user will be allowed to make changes to the Wi-Fi configuration from the System Settings Menu.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This value will cause the ability to turn Wi-Fi on or off from the Settings UI to be allowed.</td>
+	<td>This value will cause the device user to be allowed to make changes to the Wi-Fi configuration from the System Settings Menu.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td>This value will cause the ability to turn Wi-Fi on or off from the Settings UI to not be allowed, preventing the user from changing the state of Wi-Fi from the Settings UI. This only blocks the user from making this change from the UI level and does not prevent the Wi-Fi status from being changed silently.</td>
+	<td>This value will cause the device user to be prevented from making changes to the Wi-Fi configuration from the System Settings Menu.</td>
   </tr>
 </table>
 </div>	
@@ -90,7 +97,7 @@ Parm name: UnknownSources
 
 Description: 
 
->This parm allows you to specify whether or not the ability to Turn Unknown Sources on or off in Settings UI will be allowed. Turning the Unknown Sources option on or off would allow or disallow an application to be installed on the device if it is from an unknown source. 
+>This parm allows you to specify whether or not the device user will be allowed to Turn On or Off the ability to install applications from "Unknown Sources" on or off from the "Security" section of the System Settings Menu.
 
 <div class="parm-table">
  <table>
@@ -102,17 +109,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will cause no changes to whether or not Unknown Sources can be turned on or off from the Settings UI.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not a device user will be allowed to Turn "Unknown Sources" On or Off from the System Settings Menu.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This value will cause the ability to turn Unknown Sources on or off from the Settings UI to be allowed.</td>
+	<td>This value will cause the device user to be allowed to Turn "Unknown Sources" On or Off from the System Settings Menu.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td>This value will cause the ability to turn Unknown Sources on or off from the Settings UI to not be allowed, preventing the user from changing the state of Unknown Sources from the Settings UI. This only blocks the user from making this change from the UI level and does not prevent the Unknown Sources status from being changed silently.</td>
+	<td>This value will cause the device user to be prevented from Turning "Unknown Sources" On or Off from the System Settings Menu.</td>
   </tr>
 </table>
 </div>	
@@ -125,7 +132,7 @@ Parm name: AirplaneMode
 
 Description: 
 
->This parm allows you to specify whether or not the ability to Turn Airplane Mode on or off in Settings UI will be allowed. If the user turns on Airplane Mode, the device's cellular radio, Wi-Fi and Bluetooth are disabled.
+>This parm allows you to specify whether or not the device user will be allowed to Turn "Airplane Mode" On or Off from "Unknown Sources" on or off from the "Wireless & networks" section of the System Settings Menu.
 
 <div class="parm-table">
  <table>
@@ -137,17 +144,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will cause no changes to whether or not Airplane Mode can be turned on or off from the Settings UI.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not a device user will be allowed to Turn "Airplane Mode" On or Off from the System Settings Menu.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This value will cause the ability to turn Airplane Mode on or off from the Settings UI to be allowed.</td>
+	<td>This value will cause the device user to be allowed to Turn "Airplane Mode" On or Off from the System Settings Menu.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td>This value will cause the ability to turn Airplane Mode on or off from the Settings UI to not be allowed, preventing the user from changing the state of Airplane Mode from the Settings UI. This only blocks the user from making this change from the UI level and does not prevent the Airplane Mode status from being changed silently.</td>
+	<td>This value will cause the device user to be prevented from Turning "Airplane Mode" On or Off from the System Settings Menu.</td>
   </tr>
 </table>
 </div>	
@@ -159,7 +166,7 @@ Parm name: AccessAppsSection
 
 Description: 
 
->This parm allows you to specify whether or not the ability to access the "Apps" section in Settings UI will be allowed.
+>This parm allows you to specify whether or not the device user will be allowed to access the "Apps" section of the System Settings Menu.
 
 <div class="parm-table">
  <table>
@@ -171,24 +178,47 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will cause no changes to whether or not the "Apps" section can be accessed in the Settings UI.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not a device user will be allowed to access the "Apps" section of the System Settings Menu.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This value will cause the ability to access the "Apps" section in the Settings UI to be allowed.</td>
+	<td>This value will cause the device user to be allowed to access the "Apps" section of the System Settings Menu.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td>This value will cause the ability to access the "Apps" section in the Settings UI to not be allowed.</td>
+	<td>This value will cause the device user to be prevented from accessing the "Apps" section of the System Settings Menu.</td>
   </tr>
 </table>
 </div>	
 
 ## Queries
 
-### Get is Invoke Enterprise Reset Available
+### Query Everything
+
+#### Input
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic-query type="SettingsMgr" />
+	</wap-provisioningdoc>
+
+
+#### Output
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="SettingsMgr" version="4.3" >
+			<parm name="InvokeEnterpriseReset" value="1"/>
+			<parm name="WifiSettingsUI" value="1"/>
+			<parm name="UnknownSources" value="1"/>
+			<parm name="AirplaneMode" value="1"/>
+			<parm name="AccessAppsSection" value="1"/>
+		</characteristic>	
+	</wap-provisioningdoc>
+
+### Query if Invoking Enterprise Reset is Allowed
 
 #### Input 
 
@@ -208,7 +238,7 @@ Description:
         </characteristic>
     </wap-provisioningdoc>
 
-### Get is Wifi Settings UI Available
+### Query if Changing Wifi Configuration is Allowed
 
 #### Input 
 
@@ -228,7 +258,7 @@ Description:
         </characteristic>
     </wap-provisioningdoc>
 
-### Get is Unknown Sources Available 
+### Query if Changing Unknown Sources is Allowed
 
 #### Input 
 
@@ -248,7 +278,7 @@ Description:
         </characteristic>
     </wap-provisioningdoc>
 
-### Get is Airplane Mode Available 
+### Query if Changing Airplane Mode is Allowed
 
 #### Input 
 
@@ -267,6 +297,28 @@ Description:
             <parm name="AirplaneMode" value="1"/>
         </characteristic>
     </wap-provisioningdoc>
+	
+### Query if Accessing Apps Section is Allowed
+
+#### Input
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="SettingsMgr" >
+			<parm-query name="AccessAppsSection"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+
+#### Output
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="SettingsMgr" version="4.3" >
+			<parm name="AccessAppsSection" value="1"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
 
 ## Feature Compatibility
 

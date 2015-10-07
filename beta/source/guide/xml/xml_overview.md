@@ -14,14 +14,6 @@ Top-Level Characteristics (TLCs) must appear at the outermost level of a documen
 
 Sub-Group Characteristic (SGCs) may appear in TLCs/SGCs. A TLC may have any number (including zero) of SGCs and an SGC may have any number (including zero) of SGCs. A Request SGC provides information about a behavior to be performed by its enclosing Result TLC. A Result SGC provides information about the behavior performed for its enclosing Result SGC.
 
-### Characteristic-Errors
-
-A Characteristic-Error is an element that appears in a Result XML document that is used to indicate a failure when processing a corresponding characteristic in a Request XML document. 
-
-Top-Level Characteristic-Errors (TLC Errors) are those that appear at the outermost level of a Result XML document. A Result XML document may contain zero or more TLC errors. If a Result XML document contains a TLC error, it indicates that the corresponding characteristic in the Request XML document was completely rejected. This means that none of the behaviors requested by that TLC were performed by the CSP. 
-
-Sub-Group Characteristic-Errors (SGC Errors) are those that appear within TLCs/SGCs. If a TLC or SGC in a Result XML document contains an SGC error, it indicates that the Behavior requested by the corresponding SGC was rejected. This means a that portion of the behavior requested by the enclosing TLC was not performed by the CSP.
-
 ### Characteristic-Queries
 
 A Characteristic-Query is an element that appears in a Request XML document that is used to request a query of some or all of the current configurations of the features in the subsystem that are managed by a CSP.
@@ -29,10 +21,6 @@ A Characteristic-Query is an element that appears in a Request XML document that
 Top-Level Queries (TLQs) must appear at the outermost level of an XML document. A Request XML document may contain zero or more TLQs. A TLQ cannot contain any sub-elements. A TLQ in a Request XML document will result in a TLC or TLC error in the corresponding location in the Result XML document.
 
 Sub-Group Queries (SGQs) may appear in TLCs/SGCs. An SGQ must appear within a TLC or a SGC (never within another query). It may contain a parm to act as a query index to select which configuration to query. A request SGQ in a Request XML document will either result in a Characteristic-Query-Error or in the matching SGC in the corresponding location in the Result XML Document.
-
-### Characteristic-Query-Errors
-
-A Characteristic-Query-Error is an element that appears in a Result XML document that is used to indicate that a failure occurred when processing a corresponding Characteristic-Query element in a Request XML document. This could occur because the TLC or SGC being queried does not support Characteristic-Query. This could also occur because the SGC being queried requires a query index and none was supplied or the query index parm supplied did not have a value that selected a valid configuration to query.
 
 ### Parms
 
@@ -42,12 +30,6 @@ A parm is the desired configuration and a desired action selector or action para
 
 If the processing of a parm in a Request XML document by a CSP is successful, then the Result XML document will contain a Parm element, which typically will have the same value. The Parm element may have a different value in the Result XML document if the CSP determined that the value requested was not supported but was "close enough" to a supported value that substituting the closest supported value was reasonable. In such a case, the value actually used will be returned in the parm in the Result XML document instead of the value requested.
 
-### Parm-errors
-
-A Parm-Error is an element that appears in a Result XML document that is used to indicate a failure when processing a corresponding parm in a Request XML document.
-
-If the processing of a parm in a Request XML document by a CSP is unsuccessful, then the Result XML document will contain a Parm-Error element instead of a Parm element. The Parm-Error element will contain the same name and value as the failed Parm element plus a description explaining the reason for the failure. If a Result XML document contains a Parm-Error element, then it indicates that the behavior requested by the Request XML document could not be completely achieved.
-
 ### Parm-Queries
 
 A Parm-Query is an element that appears in a Request XML document that is used to request a query of a single current configuration value of the subsystem managed by a CSP. Every Parm-Query must have a name that is unique within a given TLC, even across different SGCs within that TLC. A given Parm-Query can appear only once within a given TLC. It may appear more than once within an XML document if that XML document contains multiple TLCs and that Parm-Query appears only once within each TLC.
@@ -55,12 +37,6 @@ A Parm-Query is an element that appears in a Request XML document that is used t
 A Parm-Query requests a value that is part of the current configuration of the subsystem managed by a CSP. It is used to request a current configuration value when sent in a Request XML document. The queried value will be returned via a Parm element in the Result XML document.
 
 If the processing of a Parm-Query in a Request XML document by a CSP is successful, then the Result XML Document will contain a Parm Element, with the current Configuration Value of that Parm. 
-
-### Parm-Query-Errors
-
-A Parm-Query-Error is an element that appears in a Result XML document that is used to indicate that a failure occurred when processing a corresponding Parm-Query element in a Request XML document. 
-
-If the processing of a Parm-Query in a Request XML document by a CSP is unsuccessful, then the Result XML document will contain a Parm-Query-Error element instead of a Parm element. The Parm-Query-Error element will contain the same name as the failed Parm-Query element plus a description explaining the reason for the failure.
 
 ## Request and Result XML Documents
 
@@ -87,31 +63,6 @@ A parm in a Request XML document will result in one of the following in the Resu
 * The request parm was accepted by the corresponding CSP, in which case, the value of that parm will be used by the CSP when performing the requested behavior. This means that the parm value in the Result XML document will be identical to the corresponding parm value in the Request XML, which indicates that the value was used successfully.
 * The request parm can be rejected by the corresponding CSP, in which case the parm value will not be used to perform a requested behavior. The CSP might consider this parm value to be critical and will return a Parm-Error element in the corresponding location in the Result XML document. Otherwise, the CSP might consider the parm value to be non-critical (i.e. merely a "suggestion") and will use a different value to perform the behavior. The CSP will then return the value that was actually used in the corresponding location of the Result XML document instead of the value specified in the Request XML document.
 
-
-## XML Equivalence
-
-Two XML documents are equivalent if they represent the same data even if they do not have identical text. Two XML documents are equivalent if they differ only in white space, for example:
-
-	:::XML
-	<characteristic type="Wi-Fi" version="2.1" >
-	
-vs.
-
-	:::XML
-	<characteristic type="Wi-Fi"                       version="2.1" >
-
-Two XML documents may be equivalent if they differ only in order and order is not relevant, for example:
-
-	:::XML
-	<characteristic  version="2.1" type="Wi-Fi" >
-	
-vs.
-
-	:::XML
-	<characteristic  type="Wi-Fi" version="2.1" >	
-
-Equivalence is a key concept when taken together with the reflexive nature of Set Configuration and Perform Action behaviors. "Total Success" is indicated by Request and Result XML documents being equivalent since it means that what was done was exactly what was requested.
-
 ## DSDs and Conditional Elements
 
 A primary purpose of a DSD is to provide the information required to present a viable Data-Driven UI to create XML that can be consumed by the CSP corresponding to that DSD.
@@ -130,17 +81,7 @@ When using Data-Driven UI to generate XML, the Data-Driven UI will enforce the P
 
 But when generating XML programmatically, it can be of critical importance to know about Pivotal Parms since failure to properly account for them can lead to the generation of XML does not conform to the DSD and hence cannot be successfully consumed by the corresponding CSP. In many cases, the existence of Pivotal Parms will indicate that the CSP can be used to accomplish multiple logical use cases, where each use case is achieved by taking a given path through the DSD by making certain selections for one or more Pivotal Parms.
 
-### Error Handling Rules
-
-If a Result XML document is equivalent to the corresponding Request XML document, then it indicates a "total success" and that all of the behavior(s) that were requested were performed exactly as specified. However, if a Result XML Document contains any TLC errors, then the behaviors requested by the TLCs in the corresponding Request XML document were not performed at all. 
-
-To find out which behaviors were not performed and why, the TLC errors in the Result XML document will need to be examined. 
-
-If a Result XML document contains no TLC errors but is not equivalent to the corresponding Request XML document, then some of the behaviors requested by the corresponding Request XML document were either not performed or were performed but not exactly as specified. 
-
-To find out which behaviors were not executed, examine the SGC errors or Parm-Errors in the Result XML document. To find out which behaviors were executed, but not exactly as specified, examine the values of parms in the Result XML document and see how they differ from the requested values in the Request XML document.
-
-### CSPs and Enterprise and Factory Resets
+## CSPs and Enterprise and Factory Resets
 
 Configuration performed by all CSPs is stored such that it is intentionally lost on every Enterprise Reset and Factory Reset. This means that the CSPs and the subsystems they manage intentionally do not store configuration in a manner that would cause it to be persistent across an Enterprise or Factory Reset. By definition, it is NOT possible to make any configuration persistent across Factory Reset since Factory Reset must always return a device to its Factory Default state and hence must discard all configuration that has been applied.
 

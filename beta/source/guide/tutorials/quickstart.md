@@ -5,7 +5,7 @@ This quick start guide will walk through the common tasks and components that yo
 
 * **Intro To The MXMS** - The basic information that is needed for using the MX Management System.
 * **Binding to the MXMS** - All communications to the MXMS on Zebra devices, occur through a common binding interface.  
-* **Generating XML** - Data exchanged to the MXMS from the MDM client is handled through a defined XML structure. Using the DSDtoXml tool provided in the MDM Toolkit will provide a template for the XML to be used for applying settings. Typically you will use this tool to generate all needed functions and then replace string values for dynamically changing variables.
+* **Generating XML** - Data exchanged to the MXMS from the MDM client is handled through a defined XML structure. Using the DSD tool provided in the MDM Toolkit will provide a template for the XML to be used for applying settings. Typically you will use this tool to generate all needed functions and then replace string values for dynamically changing variables.
 * **Submitting XML** - Within the MDM client, XML will be submitted to apply settings via a simple API.
 <!--* **Checking Response** - the MDM client will need to handle response from the MX framework for interpreting submit or query results -->
 * **Querying the MXMS** - Within the MDM client, XML will be submitted to query the MXMS to receive back information about the current settings on the device.
@@ -22,7 +22,7 @@ This quick start guide will walk through the common tasks and components that yo
 
 ### MXMS Overview
 
-The MX Management System (MXMS) provides a common interface to Zebra Android device capabilities utilizing XML that conforms to the standard OMA-CP PROV (Microsoft MSPROV) schema. This allows developers and administrators to have an extensible, efficient, reliable and scalable means for configuring and administrating Zebra Android devices. MXMS exposes capabilities that underlying CSPs provide to give the user access to both privileged and unprivileged APIs. Each CSP exposes its capabilities using DSD files that are included with the MDM Toolkit. These DSD files are then imported into a DSDtoXML tool to generate XML that can be sent to the MXMS running on the device to change a device configuration or behavior.
+The MX Management System (MXMS) provides a common interface to Zebra Android device capabilities utilizing XML that conforms to the standard OMA-CP PROV (Microsoft MSPROV) schema. This allows developers and administrators to have an extensible, efficient, reliable and scalable means for configuring and administrating Zebra Android devices. MXMS exposes capabilities that underlying CSPs provide to give the user access to both privileged and unprivileged APIs. Each CSP exposes its capabilities using DSD files that are included with the MDM Toolkit. These DSD files are then imported into a DSD tool to generate XML that can be sent to the MXMS running on the device to change a device configuration or behavior.
 
 For more information on the definitions of necessary terms, the MX architecture and data flow, MDM implementation approaches, CSP summaries and other information, please see [this page.](../guide/MX/overview)
 
@@ -34,7 +34,7 @@ For more information on the XML elements, Request and Result XML documents, DSDs
 
 ### MDM XML Creation
 
-The XML documents that are used in MX need to be structured in a standardized format. The DSDtoXML tool, which is included in this toolkit, can be used to generate sample XML. Typically you would require that some values be changed dynamically on the device by your client application. So you would therefore manipulate the values of specific parameter attributes within your code based on the specific template you have generated. 
+The XML documents that are used in MX need to be structured in a standardized format. The DSD tool, which is included in this toolkit, can be used to generate sample XML. Typically you would require that some values be changed dynamically on the device by your client application. So you would therefore manipulate the values of specific parameter attributes within your code based on the specific template you have generated. 
 
 For more information and instructions on XML generation, modifying values, and other information, please see [this page.](../guide/xml/generate)
 
@@ -140,7 +140,7 @@ For more information on Result XML documents and Parm Value Extraction, please s
 
 ###Creating a Set XML
 
-1. Start the jar file "DSDtoXML.jar" located in the folder "DSD To XML". You will be presented with the following menu screen.
+1. Start the jar file `DsdTool.jar` located in the folder `DSD To XML`. You will be presented with the following menu screen.
 
 	![img](images/xml-gen/mainmenu.PNG)
 	
@@ -173,7 +173,7 @@ For more information on Result XML documents and Parm Value Extraction, please s
 >**Note:** Notice the relationship with the `parm` attributes and associated `value`. 
 
 ###Creating a Query XML
-1. Start the jar file "DSDtoXML.jar" located in the folder "DSD To XML". You will be presented with the following menu screen.
+1. Start the jar file `DsdTool.jar` located in the folder `DSD To XML`. You will be presented with the following menu screen.
 
 	![img](images/xml-gen/mainmenu.PNG)
 	
@@ -201,35 +201,9 @@ For more information on Result XML documents and Parm Value Extraction, please s
 			</characteristic>
 		</wap-provisioningdoc>
 
-<!--
-1. Start the jar file "DSDtoXML.jar" located in the folder "DSD To XML". You will be presented with a file select dialog.  
-![img](images/xmlgendialog.jpg)
-2. Select the DSD file for the corresponding CSP you wish to configure and click "Open". For this example we will be using "Clock.dsd".  
-![img](images/xmlgenclock.jpg)
-3. Set the values you wish to configure via MX. For this example we will be setting, Date, Time, and time Zone.  
-![img](images/xmlgensetvalues.jpg)
-4. When complete, click the button "Save XML".  
-![img](images/xmlgensavebutton.jpg)
-5. Select a location to save your XML configuration file on your computer, give it a name, and select "Save".  
-![img](images/xmlgensavelocation.jpg)
-6. You can now open the file with a text or XML editor to view the generated XML. For example:
-
-    	:::xml
-		<wap-provisioningdoc>
-			<characteristic type="Clock" version="4.2" >
-				<parm name="AutoTime" value="false"/>
-				<parm name="TimeZone" value="GMT-5"/>
-				<parm name="Date" value="2014-12-03"/>
-				<parm name="Time" value="11:00:00"/>
-			</characteristic>
-		</wap-provisioningdoc>
-
->Note: Notice the relationship with the `parm` attributes and associated `value`. 
--->
-
 ## Submitting XML
 
-In your application's activity's onServiceConnected method, you can add code before the term call that would submit XML to MXMS. This example adds the utilizeMXMS method here, which will show how to edit XML and submit them to MXMS. However, it would be possible to repeatedly call this method from other locations. The onServiceConnected method is the first location where this method could possibly be called.
+In your application's activity's onServiceConnected method, you can add code before the `term` call that would submit XML to MXMS. This example adds the utilizeMXMS method here, which will show how to edit XML and submit them to MXMS. However, it would be possible to repeatedly call this method from other locations. The onServiceConnected method is the first location where this method could possibly be called.
 
 		:::java
 		// This definition is mandatory to track binding to the MXMS
@@ -501,42 +475,6 @@ Submitting queries to MX follows a similar process to submitting XML that is mea
 
 
 
-<!--
-The following sample code shows how to submit XML that was created in the previous step to the MX Framework as a string. The `MXservice` object refers to the `IMxFrameworkService` object we created in the previous step.
-
-    :::java
-    //MX can through exceptions when processing XML 
-	try {
-	    //Check if the MX service is null 
-	    if(MXservice != null){
-	        //MX Response XML
-			String MxResXML = "";
-						
-			//MX XML
-			String MxXML = "<wap-provisioningdoc>"
-						 +     "<characteristic type=\"Clock\" version=\"4.2\">"
-						 +         "<parm name=\"AutoTime\" value=\"false\"/>"
-						 +         "<parm name=\"TimeZone\" value=\"GMT-5\"/>"
-						 +         "<parm name=\"Date\" value=\"2014-12-03\"/>"
-						 +         "<parm name=\"Time\" value=\"17:00:00\"/>"
-						 +     "</characteristic>"
-						 + "</wap-provisioningdoc>";
-						
-						
-			//Send XML to MX for processing 
-			MxResXML = MXservice.processXML(MxXML);
-						
-			//Log result XML
-		    Log.i("MX", "MxResXML: " + MxResXML);
-	    }
-	    else{
-	        Log.e("MX", "Service is null");
-	    }
-	} 
-	catch (Exception e) {
-	    Log.e("MX", e.toString());
-    }
--->
 	
 <!--
 ## MX Response

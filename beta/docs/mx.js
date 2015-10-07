@@ -1,6 +1,6 @@
 var mxVersions = [
     {
-        version: '4.3',
+        version: '4.4',
         csps: [
             {
                 name: 'AccessMgr',
@@ -2140,12 +2140,6 @@ var mxVersions = [
 										notes: ''
 									},
 									{
-										name: 'MC18 KK',
-										device: 'MC18',
-										os: 'KK',
-										notes: ''
-									},
-									{
 										name: 'MC92 KK',
 										device: 'MC92',
 										os: 'KK',
@@ -2157,32 +2151,8 @@ var mxVersions = [
 								name: 'Set the Battery Percentage Decommissioned Threshold',
 								compatibility: [
 									{
-										name: 'MC40 KK',
-										device: 'MC40',
-										os: 'KK',
-										notes: ''
-									},
-									{
-										name: 'TC55 KK',
-										device: 'TC55',
-										os: 'KK',
-										notes: ''
-									},
-									{
-										name: 'TC75 KK',
-										device: 'TC75',
-										os: 'KK',
-										notes: ''
-									},
-									{
 										name: 'MC18 KK',
 										device: 'MC18',
-										os: 'KK',
-										notes: ''
-									},
-									{
-										name: 'MC92 KK',
-										device: 'MC92',
 										os: 'KK',
 										notes: ''
 									},
@@ -4043,12 +4013,6 @@ var mxVersions = [
                                         notes: ''
                                     },
 									{
-                                        name: 'TC55 KK',
-                                        device: 'TC55',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
@@ -4080,12 +4044,6 @@ var mxVersions = [
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-									{
-                                        name: 'TC55 KK',
-                                        device: 'TC55',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -4130,12 +4088,6 @@ var mxVersions = [
                                         notes: ''
                                     },
 									{
-                                        name: 'TC55 KK',
-                                        device: 'TC55',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
@@ -4171,12 +4123,6 @@ var mxVersions = [
                                         notes: ''
                                     },
 									{
-                                        name: 'TC55 KK',
-                                        device: 'TC55',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
@@ -4200,88 +4146,6 @@ var mxVersions = [
                                         os: 'KK',
                                         notes: ''
                                     }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            },
-			 {
-                name: 'ConditionMgr',
-                version: '',
-                features: [
-                    {
-                        name: 'All features',
-                        specifics: [
-                            {
-                                name: '',
-                                compatibility: [
-									{
-                                        name: 'ET1N0 JB',
-                                        device: 'ET1N0',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-									{
-                                        name: 'ET1N2 JB',
-                                        device: 'ET1N2',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-									{
-                                        name: 'TC55 JB',
-                                        device: 'TC55',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-									{
-                                        name: 'TC55 KK',
-                                        device: 'TC55',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-									{
-                                        name: 'MC67 JB',
-                                        device: 'MC67',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-									{
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-									{
-                                        name: 'TC70 KK',
-                                        device: 'TC70',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-									{
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC92 KK',
-                                        device: 'MC92',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
                                 ]
                             }
                         ]
@@ -5361,34 +5225,6 @@ var mxVersions = [
                 ]
             },
 			{
-                name: 'FileMgr',
-                version: '',
-                features: [
-                    {
-                        name: '',
-                        specifics: [
-                            {
-                                name: '',
-                                compatibility: [
-                                    {
-                                        name: '',
-                                        device: '',
-                                        os: '',	
-                                        notes: ''
-                                    },
-                                    {
-                                        name: '',
-                                        device: '',
-                                        os: '',
-                                        notes: ''
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            },
-			{
                 name: 'GprsMgr',
                 version: '',
                 features: [
@@ -6061,11 +5897,30 @@ var mxVersions = [
                                 name: '',
                                 compatibility: [
                                     {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
+                                    {
+                                        name: 'MC67 KK',
+                                        device: 'MC67',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+									/*
 									{
                                         name: 'TC55 KK',
                                         device: 'TC55',
@@ -6090,6 +5945,7 @@ var mxVersions = [
                                         os: 'KK',
                                         notes: ''
                                     },
+									*/
                                 ]
                             }
                         ]
@@ -7566,96 +7422,6 @@ var mxVersions = [
 					}
 				]
 			},
-			{
-                name: 'StatusMgr',
-                version: '',
-                features: [
-                    {
-                        name: 'All features',
-                        specifics: [
-                            {
-                                name: '',
-                                compatibility: [
-                                    {
-                                        name: 'ET1N0 JB',
-                                        device: 'ET1N0',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'ET1N2 JB',
-                                        device: 'ET1N2',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC40 JB',
-                                        device: 'MC40',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC55 JB',
-                                        device: 'TC55',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'TC55 KK',
-                                        device: 'TC55',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 JB',
-                                        device: 'MC67',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-									{
-                                        name: 'TC70 KK',
-                                        device: 'TC70',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC92 KK',
-                                        device: 'MC92',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            },
-			
-			
 			{
                 name: 'ThreatMgr',
                 version: '',

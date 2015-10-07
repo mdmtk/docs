@@ -1,11 +1,11 @@
 # XML Generation
 
 ## Overall Approach
-As discussed in the MX Management System Overview document, the XML format is used to submit requests to the MXMS to apply settings or to retrieve information. It also uses this same format when sending back responses to the client making the request. The XML needs to be structured in a standardized format. In order to help understand this format, we have included a DSDtoXML tool with this toolkit to be used to generate sample XML. Typically you would require that some values be changed dynamically on the device by your client application. So you would therefore manipulate the values of specific parameter attributes within your code based on the specific template you have generated. 
+As discussed in the MX Management System Overview document, the XML format is used to submit requests to the MXMS to apply settings or to retrieve information. It also uses this same format when sending back responses to the client making the request. The XML needs to be structured in a standardized format. In order to help understand this format, we have included a DSD tool with this toolkit to be used to generate sample XML. Typically you would require that some values be changed dynamically on the device by your client application. So you would therefore manipulate the values of specific parameter attributes within your code based on the specific template you have generated. 
 
 A typical approach to XML generation may include:
 
-* Use the DSDtoXML tool to generate several XML templates for the features you wish to include in your client
+* Use the DSD tool to generate several XML templates for the features you wish to include in your client
 * Include these templates either in your device client or server code depending on your scheme for setting values
 * Edit the values inside specific parameter attributes accordingly (typically parameters with text values)
 * Submit the XML from your client application that has been enabled for MXMS communication
@@ -14,7 +14,7 @@ A typical approach to XML generation may include:
 
 DSD Files are XML documents that define the schema a CSP uses to configure settings on a device. Each CSP has a matching DSD document. Each version of the MXMS includes a set of CSPs that include a specific feature set. When generating XML for a CSP, be sure to consider the version of the MXMS that you are working with. The DSDs included with the MDM Toolkit can be found in the `MX` folder. Within the `MX` folder, there will be versions of MXMS along with a `DSD` subfolder. 
 
-![img](images/dsdfiles.jpg)
+![img](images/xml-gen/dsdfiles.jpg)
 
 
 ### DSD-Driven Programmatic XML Generation
@@ -49,31 +49,41 @@ To perform a given management function:
 
 
 
-## Using DSDtoXML Tool
+## Using the DSD Tool
 
-The DSDtoXML tool, `DSDtoXML.jar`, is used for generating XML configuration files and templates. It is located in the `DSD To XML` folder of the MDM Toolkit
+The DSD tool, `DsdTool.jar`, is used for generating XML configuration files and templates. It is located in the `DSD To XML` folder of the MDM Toolkit
 
-![img](images/dsdtoolfolder.jpg)
+![img](images/xml-gen/dsdtoolfolder.jpg)
 
 ###Prerequisites
 
 * Java JVM Installed
-* DSDtoXML.jar
+* DsdTool.jar
 * DSD Files
 
-### Generating XML
+## Generating XML
 
-1. Start the jar file "DSDtoXML.jar" located in the folder "DSD To XML". You will be presented with a file select dialog.  
-![img](images/xmlgendialog.jpg)
-2. Select the DSD file for the corresponding CSP you wish to configure and click "Open". For this example we will be using "Clock.dsd".  
-![img](images/xmlgenclock.jpg)
-3. Set the values you wish to configure via MX. For this example we will be setting, Date, Time, and time Zone.  
-![img](images/xmlgensetvalues.jpg)
-4. When complete, click the button "Save XML".  
-![img](images/xmlgensavebutton.jpg)
-5. Select a location to save your XML configuration file on your computer, give it a name, and select "Save".  
-![img](images/xmlgensavelocation.jpg)
-6. You can now open the file with a text or XML editor to view the generated XML. For this example this is the XML output:
+###Creating a Set XML
+
+1. Start the jar file `DsdTool.jar` located in the folder `DSD To XML`. You will be presented with the following menu screen.
+
+	![img](images/xml-gen/mainmenu.PNG)
+	
+2. Click the "Create Set XML" button if you would like to create a new XML which will be used to set a feature on the device. 
+3. You will then be presented with a file select dialog. Select the DSD file for the corresponding CSP you wish to configure and click "Open". For this example we will be using "Clock.dsd". 
+
+	![img](images/xml-gen/dsd-selection.PNG)
+	
+4. Set the values you wish to configure via MX. For this example we will be setting Date, Time, and Time Zone.  
+
+	![img](images/xml-gen/set-parms.PNG)
+	
+5. When complete, click the button "Save Set XML". 
+6. Select a location to save your XML configuration file on your computer, give it a name, and select "Open".
+	
+	![img](images/xml-gen/save-screen.PNG)
+	
+7. You can now open the file with a text or XML editor to view the generated XML. For example:
 
     	:::xml
 		<wap-provisioningdoc>
@@ -81,59 +91,74 @@ The DSDtoXML tool, `DSDtoXML.jar`, is used for generating XML configuration file
 				<parm name="AutoTime" value="false"/>
 				<parm name="TimeZone" value="GMT-5"/>
 				<parm name="Date" value="2014-12-03"/>
-				<parm name="Time" value="17:00:00"/>
+				<parm name="Time" value="11:00:00"/>
 			</characteristic>
 		</wap-provisioningdoc>
 
->Note: Notice the relationship with the `parm` attributes and associated `value`. 
+>**Note:** Notice the relationship with the `parm` attributes and associated `value`. 
+
+###Creating a Query XML
+1. Start the jar file "DsdTool.jar" located in the folder "DSD To XML". You will be presented with the following menu screen.
+
+	![img](images/xml-gen/mainmenu.PNG)
+	
+2. Click the "Create Query XML" button if you would like to create a new XML which will be used to receive the status of a feature on the device. 
+3. You will then be presented with a file select dialog. Select the DSD file for the corresponding CSP you wish to query and click "Open". For this example we will be using "SettingsMgr.dsd". 
+
+	![img](images/xml-gen/dsd-selection-query.PNG)
+	
+4. Select the values you wish to query via MX. For this example we will be querying the ability to invoke an enterprise reset and the ability to turn Wi-Fi on/off.  
+
+	![img](images/xml-gen/set-query.PNG)
+	
+5. When complete, click the button "Save Query XML". 
+6. Select a location to save your XML configuration file on your computer, give it a name, and select "Open".
+	
+	![img](images/xml-gen/save-screen-query.PNG)
+	
+7. You can now open the file with a text or XML editor to view the generated XML. For example:
+
+		:::xml
+		<wap-provisioningdoc>
+			<characteristic type="SettingsMgr">
+				<parm-query name="InvokeEnterpriseReset"/>
+				<parm-query name="WifiSettingsUI"/>
+			</characteristic>
+		</wap-provisioningdoc>
+
 
 ### About CSP XML Parms 
 
-In order to make sure your XML is well structured and follows the MXMS definition. It is recommended that the XML be constructed using the DSDtoXML tool. The XML structure contains a possible tree of `characteristic` and `parm` attributes along with their values. Each CSP will generate a different XML tree based on how the CSP has grouped features together. By comparing the XML generated to the values you choose within the DSDtoXML tool will give you a way to identify the values that you may need to change dynamically. Typically the values that the MDM client will change will be the free form text fields. It is not recommended that other types of characteristics are changed dynamically. A set of XML characteristic and parm uages can be found in the associated CSP RTF file found in the `RTF` folder. You can also generate this document using the DSDtoXML tool by  selecting the "Save RTF" button. 
+In order to make sure your XML is well structured and follows the MXMS definition. It is recommended that the XML be constructed using the DSD tool. The XML structure contains a possible tree of `characteristic` and `parm` attributes along with their values. Each CSP will generate a different XML tree based on how the CSP has grouped features together. By comparing the XML generated to the values you choose within the DSD tool will give you a way to identify the values that you may need to change dynamically. Typically the values that the MDM client will change will be the free form text fields. It is not recommended that other types of characteristics are changed dynamically.
 
->**Note:** Notice in the example below we are using the DSDtoXML tool to generate a Wi-Fi profile to add a new Wi-Fi network. In the tool we put in placeholder text that we can replace with our MDM client code before submitting the XML to the MXMS.
+>**Note:** Notice in the example below we are using the DSD tool to generate a Wi-Fi profile to add a new Wi-Fi network. In the tool we put in placeholder text that we can replace with our MDM client code before submitting the XML to the MXMS.
 
-![img](images/xmlgenrelationship.jpg)
+![img](images/xml-gen/xmlgenrelationship.jpg)
 
-### Switching DSD Documents
+###Additional DSD Tool Menu Options
 
-Most likely, you will need to generate multiple sets of XML segments associated with each task that the MDM client wishes to expose. To accomplish this, you will need to load DSD files separately. You can select another DSD at any time by clicking the button `Load DSD`. 
+Most likely, you will need to generate multiple sets of XML segments associated with each task that the MDM client wishes to expose. To accomplish this, you will need to load DSD files separately. You can select another DSD at any time by clicking the "Main Menu" button. This will send you back to the main menu screen, where you can choose to generate another XML. 
 
-![img](images/xmlgenloaddsdbutton.jpg)
+At any time while configuring the MXMS parm values, you can reset the parm values to their default values by clicking "Reset".
 
->**Note:** All current settings will be lost. 
+To quit the application, click the "Quit" button. 
 
-### Resetting Configuration
+![img](images/xml-gen/dsdtool-buttons.PNG)
 
-At any time while configuring the MXMS settings you can reset the settings to their default values by clicking "Reset".
+>**Note:** All of the options described in this section will cause the current settings to be lost. 
 
-![img](images/xmlgenresetbutton.jpg)
-
->**Note:** All current settings will be lost. 
-
-### Quitting the Application
-
-To quit the application click the button "Quit". 
-
-![img](images/xmlgenquitbutton.jpg)
-
->**Note:** All current settings will be lost. 
-
-### Limitations
-
-* In addition to setting device configurations, MXMS can be used to set query for device information. Currently this tool cannot generate Query XML. 
 
 ## Modifying Values
 
-Once the XML template has been generated, it is very likely your MDM client will want to modify some of the values dynamically. As you get familiar with different CSPs, you will see that when some options are selected, another group of options are presented. Some of the fields of the newly presented options may be required in order for it to be successfully processed. Generating the corresponding XML within your MDM client code would be quite complex and prone to error. Therefore, it is recommended that the DSDtoXML tool be used to generate each of these "decision points" to develop a very modular approach to XML submission. Then the values that need to be changed dynamically would simply reside in the text fields that are shown in the DSDtoXMl tool. This value would then simply be replaced in the XML in the MDM client application.
+Once the XML template has been generated, it is very likely your MDM client will want to modify some of the values dynamically. As you get familiar with different CSPs, you will see that when some options are selected, another group of options are presented. Some of the fields of the newly presented options may be required in order for it to be successfully processed. Generating the corresponding XML within your MDM client code would be quite complex and prone to error. Therefore, it is recommended that the DSD tool be used to generate each of these "decision points" to develop a very modular approach to XML submission. Then the values that need to be changed dynamically would simply reside in the text fields that are shown in the DSD tool. This value would then simply be replaced in the XML in the MDM client application.
 
-For example, let's say we needed to install and uninstall a series of applications as well as change the default launcher for the device. We would launch the DSDtoXML tool and develop a few XML modules:
+For example, let's say we needed to install and uninstall a series of applications as well as change the default launcher for the device. We would launch the DSD tool and develop a few Request XML Documents to do the following actions:
 
 * Install Application
 * Uninstall Application
 * Set Default Launcher
 
-The **Install Application** XML module would look something like:
+The **Install Application** Request XML Document in this example would be:
 
 	:::xml
 	<wap-provisioningdoc>
@@ -143,9 +168,9 @@ The **Install Application** XML module would look something like:
 		</characteristic>
 	</wap-provisioningdoc>
 
-The MDM client would use this XML module for each application it wishes to install and replace the `APK` parm's value `/storage/sdcard1/placeholder.apk` each time with the 'real' value.
+The MDM client would use this Request XML Document for each application it wishes to install and replace the `APK` parm's value `/storage/sdcard1/placeholder.apk` each time with the 'real' value.
 
-The **Uninstall Application** XML module would look something like:
+The **Uninstall Application** Request XML Document in this example would be:
 
 	:::xml
 	<wap-provisioningdoc>
@@ -155,9 +180,9 @@ The **Uninstall Application** XML module would look something like:
 		</characteristic>
 	</wap-provisioningdoc>
 
-Notice that this XML looks very similar to the previous one, but the `Action` parm has changed to `Uninstall`. This in turn, has also changed the parm to `Package` as opposed to `APK` that was used in the install XML above. Instead of trying to develop this XML within the MDM client code, we would just have a corresponding XML module generated by the DSDtoXML tool for our 'uninstall' action and then replace the  `Package` parm's value from `com.mycompany.placeholder` to the actual package that we wish to remove.
+Notice that this XML looks very similar to the previous one, but the `Action` parm has changed to `Uninstall`. This in turn, has also changed the parm to `Package` as opposed to `APK` that was used in the install XML above. Instead of trying to develop this XML within the MDM client code, we would just have a corresponding Request XML Document generated by the DSD tool for our 'uninstall' action and then replace the `Package` parm's value from `com.mycompany.placeholder` to the actual package that we wish to remove.
 
-Our **Default launcher** XML module looks very similar to the Uninstall one we just discussed:
+Our **Default launcher** Request XML Document looks very similar to the Uninstall one we just discussed:
 
 	:::xml
 	<wap-provisioningdoc>
@@ -169,6 +194,38 @@ Our **Default launcher** XML module looks very similar to the Uninstall one we j
 
 Notice just the `Action` parm's value has changed.
 
-## XML Queries
+## Multiple Characteristics
 
-At this time, the DSDtoXML tool does not generate XML that can be used for queries. Each CSP reference document within this MDM Toolkit documentation may include a section on query XML depending on whether it supports any query abilities. Future versions of the MDM toolkit and MXMS, may contain the ability to generate queries by using the corresponding DSD file and updated DSDtoXML tool.
+You can combine multiple settings together inside on `wap-provisioningdoc` by including multiple `characteristic` XML that was generated individually. These settings will be applied in the order they are represented in the file. Further handling can be controlled by the [XML Manager](../guide/csp/xml) that can control behavior of error handling.  
+
+For example we will set the date and time as two separate instructions as well as add a new WiFi network:
+
+    :::xml
+    <wap-provisioningdoc>
+	    <characteristic type="Clock" version="4.2">
+		    <parm name="AutoTime" value="false">
+			<parm name="Date" value="2013-11-19">
+        </characteristic>
+        <characteristic type="Clock" version="4.2">
+		    <parm name="AutoTime" value="false">
+			<parm name="Time" value="10:10:10">
+        </characteristic>
+		<characteristic type="Wi-Fi" version="2.7" >
+			<parm name="UseRegulatory" value="0"/>
+			<parm name="UseAdvancedOptions" value="0"/>
+			<parm name="NetworkAction" value="Add"/>
+			<characteristic type="network-profile">
+				<parm name="SSID" value="PLACEHODLER-SSID"/>
+				<parm name="SecurityMode" value="2"/>
+				<parm name="WPAMode" value="1"/>
+				<parm name="Authentication" value="1"/>
+				<characteristic type="auth-details">
+					<parm name="OptionalServerCertificate" value=""/>
+					<parm name="MandatoryClientCertificate" value=""/>
+				</characteristic>
+				<parm name="UseDHCP" value="1"/>
+				<parm name="UseProxy" value="0"/>
+			</characteristic>
+		</characteristic>
+
+    </wap-provisioningdoc>
