@@ -2797,109 +2797,732 @@ Output
 	<wap-provisioningdoc>
 		<characteristic type="KeyMappingMgr" version="4.4">
 			<characteristic type="QueryDefaultKeyMappings">
-				<characteristic type="KeyMappingMgr">
-					<parm name="Action" value="1"/>
-					<characteristic type="KeyMapping">
-						<parm name="KeyIdentifier" value="BACK"/>
-						<characteristic type="BaseTable">
-							<parm name="BaseBehavior" value="2"/>
-							<parm name="BaseKeyCode" value="4"/>
-						</characteristic>
-					</characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="0"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="140"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="7"/>
+				  </characteristic>
 				</characteristic>
-				<characteristic type="KeyMappingMgr">
-					<parm name="Action" value="1"/>
-					<characteristic type="KeyMapping">
-						<parm name="KeyIdentifier" value="HOME"/>
-						<characteristic type="BaseTable">
-							<parm name="BaseBehavior" value="2"/>
-							<parm name="BaseKeyCode" value="3"/>
-						</characteristic>
-					</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="1"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="131"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="8"/>
+				  </characteristic>
 				</characteristic>
-				<characteristic type="KeyMappingMgr">
-					<parm name="Action" value="1"/>
-					<characteristic type="KeyMapping">
-						<parm name="KeyIdentifier" value="RIGHT_TRIGGER_1"/>
-						<characteristic type="BaseTable">
-							<parm name="BaseBehavior" value="2"/>
-							<parm name="BaseKeyCode" value="103"/>
-						</characteristic>
-					</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="2"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="132"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="9"/>
+				  </characteristic>
 				</characteristic>
-				<characteristic type="KeyMappingMgr">
-					<parm name="Action" value="1"/>
-					<characteristic type="KeyMapping">
-						<parm name="KeyIdentifier" value="HEADSET_HOOK"/>
-						<characteristic type="BaseTable">
-							<parm name="BaseBehavior" value="2"/>
-							<parm name="BaseKeyCode" value="105"/>
-						</characteristic>
-					</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="3"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="133"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="10"/>
+				  </characteristic>
 				</characteristic>
-				<characteristic type="KeyMappingMgr">
-					<parm name="Action" value="1"/>
-					<characteristic type="KeyMapping">
-						<parm name="KeyIdentifier" value="RECENT"/>
-						<characteristic type="BaseTable">
-							<parm name="BaseBehavior" value="2"/>
-							<parm name="BaseKeyCode" value="187"/>
-						</characteristic>
-					</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="4"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="134"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="11"/>
+				  </characteristic>
 				</characteristic>
-				<characteristic type="KeyMappingMgr">
-					<parm name="Action" value="1"/>
-					<characteristic type="KeyMapping">
-						<parm name="KeyIdentifier" value="SEARCH"/>
-						<characteristic type="BaseTable">
-							<parm name="BaseBehavior" value="2"/>
-							<parm name="BaseKeyCode" value="82"/>
-						</characteristic>
-					</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="5"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="135"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="12"/>
+				  </characteristic>
 				</characteristic>
-				<characteristic type="KeyMappingMgr">
-					<parm name="Action" value="1"/>
-					<characteristic type="KeyMapping">
-						<parm name="KeyIdentifier" value="VOLUMEDOWN"/>
-						<characteristic type="BaseTable">
-							<parm name="BaseBehavior" value="2"/>
-							<parm name="BaseKeyCode" value="25"/>
-						</characteristic>
-					</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="6"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="136"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="13"/>
+				  </characteristic>
 				</characteristic>
-				<characteristic type="KeyMappingMgr">
-					<parm name="Action" value="1"/>
-					<characteristic type="KeyMapping">
-						<parm name="KeyIdentifier" value="VOLUMEUP"/>
-						<characteristic type="BaseTable">
-							<parm name="BaseBehavior" value="2"/>
-							<parm name="BaseKeyCode" value="24"/>
-						</characteristic>
-					</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="7"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="137"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="14"/>
+				  </characteristic>
 				</characteristic>
-				<characteristic type="KeyMappingMgr">
-					<parm name="Action" value="1"/>
-					<characteristic type="KeyMapping">
-						<parm name="KeyIdentifier" value="LEFT_TRIGGER_1"/>
-						<characteristic type="BaseTable">
-							<parm name="BaseBehavior" value="2"/>
-							<parm name="BaseKeyCode" value="102"/>
-						</characteristic>
-					</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="8"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="138"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="15"/>
+				  </characteristic>
 				</characteristic>
-				<characteristic type="KeyMappingMgr">
-					<parm name="Action" value="1"/>
-					<characteristic type="KeyMapping">
-						<parm name="KeyIdentifier" value="LEFT_TRIGGER_2"/>
-						<characteristic type="BaseTable">
-							<parm name="BaseBehavior" value="2"/>
-							<parm name="BaseKeyCode" value="104"/>
-						</characteristic>
-					</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="9"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="139"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="16"/>
+				  </characteristic>
 				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="A"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="55"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="29"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="B"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="56"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="30"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="C"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="75"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="31"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="D"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="221"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="32"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="E"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="71"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="33"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="F"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="72"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="34"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="G"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="73"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="35"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="H"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="24"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="36"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="I"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="220"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="37"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="J"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="68"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="38"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="K"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="6"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="39"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="L"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="76"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="40"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="M"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="25"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="41"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="N"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="69"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="42"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="O"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="6"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="43"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="P"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="6"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="44"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="Q"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="6"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="45"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="R"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="74"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="46"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="S"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="157"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="47"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="T"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="156"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="48"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="U"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="155"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="49"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="V"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="154"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="50"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="W"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="161"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="51"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="X"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="10025"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="52"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="Y"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="6"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="53"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="Z"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="10024"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="54"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="UP"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="6"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="19"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="DOT"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="6"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="56"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="ESC"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="6"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="111"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="RED"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="6"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="104"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="BLUE"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="6"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="10027"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="CTRL"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="10030"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="10031"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="DOWN"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="6"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="20"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="LEFT"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="6"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="21"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="SCAN"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="6"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="103"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="STAR"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="141"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="17"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="ENTER"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="6"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="66"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="GREEN"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="6"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="102"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="RIGHT"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="6"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="22"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="SHIFT"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="6"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="10032"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="SPACE"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="2"/>
+					<parm name="BlueKeyCode" value="61"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="62"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="GRIP_TRIGGER"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="6"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="103"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
+			  <characteristic type="KeyMappingMgr">
+				<parm name="Action" value="1"/>
+				<characteristic type="KeyMapping">
+				  <parm name="KeyIdentifier" value="BACKSPACE"/>
+				  <characteristic type="BlueTable">
+					<parm name="BlueBehavior" value="6"/>
+				  </characteristic>
+				  <characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="67"/>
+				  </characteristic>
+				</characteristic>
+			  </characteristic>
 			</characteristic>
-		</characteristic>
-	</wap-provisioningdoc>
+		  </characteristic>
+		</wap-provisioningdoc>
 
 ### Query Changed Key Mappings
 
@@ -2936,111 +3559,735 @@ Output
 
 	:::XML
 	<wap-provisioningdoc>
-		<characteristic type="KeyMappingMgr" version="4.4">
-			<characteristic type="QueryCurrentKeyMappings">
-				<characteristic type="KeyMappingMgr">
-					<parm name="Action" value="1"/>
-					<characteristic type="KeyMapping">
-						<parm name="KeyIdentifier" value="BACK"/>
-						<characteristic type="BaseTable">
-							<parm name="BaseBehavior" value="2"/>
-							<parm name="BaseKeyCode" value="4"/>
-						</characteristic>
-					</characteristic>
-				</characteristic>
-				<characteristic type="KeyMappingMgr">
-					<parm name="Action" value="1"/>
-					<characteristic type="KeyMapping">
-						<parm name="KeyIdentifier" value="HOME"/>
-						<characteristic type="BaseTable">
-							<parm name="BaseBehavior" value="2"/>
-							<parm name="BaseKeyCode" value="3"/>
-						</characteristic>
-					</characteristic>
-				</characteristic>
-				<characteristic type="KeyMappingMgr">
-					<parm name="Action" value="1"/>
-					<characteristic type="KeyMapping">
-						<parm name="KeyIdentifier" value="RIGHT_TRIGGER_1"/>
-						<characteristic type="BaseTable">
-							<parm name="BaseBehavior" value="2"/>
-							<parm name="BaseKeyCode" value="103"/>
-						</characteristic>
-					</characteristic>
-				</characteristic>
-				<characteristic type="KeyMappingMgr">
-					<parm name="Action" value="1"/>
-					<characteristic type="KeyMapping">
-						<parm name="KeyIdentifier" value="HEADSET_HOOK"/>
-						<characteristic type="BaseTable">
-							<parm name="BaseBehavior" value="2"/>
-							<parm name="BaseKeyCode" value="105"/>
-						</characteristic>
-					</characteristic>
-				</characteristic>
-				<characteristic type="KeyMappingMgr">
-					<parm name="Action" value="1"/>
-					<characteristic type="KeyMapping">
-						<parm name="KeyIdentifier" value="RECENT"/>
-						<characteristic type="BaseTable">
-							<parm name="BaseBehavior" value="2"/>
-							<parm name="BaseKeyCode" value="187"/>
-						</characteristic>
-					</characteristic>
-				</characteristic>
-				<characteristic type="KeyMappingMgr">
-					<parm name="Action" value="1"/>
-					<characteristic type="KeyMapping">
-						<parm name="KeyIdentifier" value="SEARCH"/>
-						<characteristic type="BaseTable">
-							<parm name="BaseBehavior" value="2"/>
-							<parm name="BaseKeyCode" value="82"/>
-						</characteristic>
-					</characteristic>
-				</characteristic>
-				<characteristic type="KeyMappingMgr">
-					<parm name="Action" value="1"/>
-					<characteristic type="KeyMapping">
-						<parm name="KeyIdentifier" value="VOLUMEDOWN"/>
-						<characteristic type="BaseTable">
-							<parm name="BaseBehavior" value="2"/>
-							<parm name="BaseKeyCode" value="25"/>
-						</characteristic>
-					</characteristic>
-				</characteristic>
-				<characteristic type="KeyMappingMgr">
-					<parm name="Action" value="1"/>
-					<characteristic type="KeyMapping">
-						<parm name="KeyIdentifier" value="VOLUMEUP"/>
-						<characteristic type="BaseTable">
-							<parm name="BaseBehavior" value="2"/>
-							<parm name="BaseKeyCode" value="24"/>
-						</characteristic>
-					</characteristic>
-				</characteristic>
-				<characteristic type="KeyMappingMgr">
-					<parm name="Action" value="1"/>
-					<characteristic type="KeyMapping">
-						<parm name="KeyIdentifier" value="LEFT_TRIGGER_1"/>
-						<characteristic type="BaseTable">
-							<parm name="BaseBehavior" value="2"/>
-							<parm name="BaseKeyCode" value="102"/>
-						</characteristic>
-					</characteristic>
-				</characteristic>
-				<characteristic type="KeyMappingMgr">
-					<parm name="Action" value="1"/>
-					<characteristic type="KeyMapping">
-						<parm name="KeyIdentifier" value="LEFT_TRIGGER_2"/>
-						<characteristic type="BaseTable">
-							<parm name="BaseBehavior" value="2"/>
-							<parm name="BaseKeyCode" value="104"/>
-						</characteristic>
-					</characteristic>
-				</characteristic>
+	  <characteristic type="KeyMappingMgr" version="4.4">
+		<characteristic type="QueryDefaultKeyMappings">
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="0"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="140"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="7"/>
+			  </characteristic>
 			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="1"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="131"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="8"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="2"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="132"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="9"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="3"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="133"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="10"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="4"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="134"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="11"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="5"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="135"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="12"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="6"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="136"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="13"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="7"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="137"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="14"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="8"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="138"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="15"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="9"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="139"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="16"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="A"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="55"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="29"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="B"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="56"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="30"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="C"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="75"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="31"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="D"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="221"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="32"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="E"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="71"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="33"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="F"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="72"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="34"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="G"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="73"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="35"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="H"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="24"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="36"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="I"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="220"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="37"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="J"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="68"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="38"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="K"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="6"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="39"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="L"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="76"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="40"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="M"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="25"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="41"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="N"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="69"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="42"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="O"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="6"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="43"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="P"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="6"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="44"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="Q"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="6"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="45"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="R"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="74"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="46"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="S"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="157"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="47"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="T"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="156"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="48"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="U"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="155"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="49"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="V"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="154"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="50"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="W"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="161"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="51"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="X"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="10025"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="52"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="Y"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="6"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="53"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="Z"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="10024"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="54"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="UP"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="6"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="19"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="DOT"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="6"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="56"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="ESC"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="6"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="111"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="RED"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="6"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="104"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="BLUE"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="6"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="10027"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="CTRL"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="10030"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="10031"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="DOWN"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="6"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="20"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="LEFT"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="6"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="21"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="SCAN"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="6"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="103"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="STAR"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="141"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="17"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="ENTER"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="6"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="66"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="GREEN"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="6"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="102"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="RIGHT"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="6"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="22"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="SHIFT"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="6"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="10032"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="SPACE"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="2"/>
+				<parm name="BlueKeyCode" value="61"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="62"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="GRIP_TRIGGER"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="6"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="103"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
+		  <characteristic type="KeyMappingMgr">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+			  <parm name="KeyIdentifier" value="BACKSPACE"/>
+			  <characteristic type="BlueTable">
+				<parm name="BlueBehavior" value="6"/>
+			  </characteristic>
+			  <characteristic type="BaseTable">
+				<parm name="BaseBehavior" value="2"/>
+				<parm name="BaseKeyCode" value="67"/>
+			  </characteristic>
+			</characteristic>
+		  </characteristic>
 		</characteristic>
+	  </characteristic>
 	</wap-provisioningdoc>
+
 
 
 	
