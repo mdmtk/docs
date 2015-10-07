@@ -4,15 +4,19 @@
 
 ### Overview
 
-The WirelessMgr Feature Type allows you to configure wireless configurations on your device, such as the device's Bluetooth settings.  
+Android devices often support a variety of wireless communication interfaces, including bidirectional interfaces, such as Wireless Wide Area Network (WWAN/cellular data), Bluetooth, and Near Field Communications (NFC), and including unidirectional (receive only) interfaces, such as the Global Positioning System (GPS). Wireless radios that can transmit may significantly affect battery life if turned on unnecessarily and may also need to be turned off in certain situations (e.g. when on an airplane or in "incendiary" environments). Wireless radios that can only receive may affect battery life if turned on unnecessarily.
+
+The WirelessMgr Feature Type allows you to turn various wireless radios On or Off, thus allowing them to use battery power only when they are needed and allowing you to prevent radios from transmitting when it would be undesirable or unsafe to do so. The WirelessMgr Feature Type also allows you to prevent the state of various wireless radios from being changed, this providing a sort of "lock" to prevent the state from being changed by the device user.
 
 ### Main Functionality
 
-* Enable or Disable Bluetooth
-* Turn Bluetooth On or Off
-* Turn NFC On or Off
-* Turn GPS On or Off
-* Turn WWAN (Wireless WAN) On or Off
+* Turn selected wireless radios On or Off
+	* Bluetooth
+	* Near Field Communication (NFC)
+	* Global Positioning System (GPS)
+	* Wireless Wide Area Network (WWAN/cellular data)
+* Enable or Disable changing the state (on/off) of various wireless radios
+	* Bluetooth
 
 ##Parameter Notes
 ###Enable/Disable Bluetooth
@@ -22,7 +26,7 @@ Parm name: Bluetooth
 
 Description: 
 
->This parm will allow you to specify whether the state of the Bluetooth radio can be changed.
+>This parm will allow you to control whether the state (On/Off) of the Bluetooth radio can be changed.
 
 <div class="parm-table">
  <table>
@@ -34,17 +38,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will not make any change to whether the state of the Bluetooth radio can be changed.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether the state of the Bluetooth radio can be changed.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This value will cause the state of the Bluetooth radio to be unlocked, allowing it to be changed, either by the device user or by the WirelessMgr Feature Type.</td>
+	<td>This value will allow changes to be made to the state of the Bluetooth radio.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td>This value will cause the state of the Bluetooth radio to be locked, preventing it from being changed, either by the device user or by the WirelessMgr Feature Type. This will cause the Bluetooth option in the Settings UI to be grayed out.</td>
+	<td>This value will prevent changes from being made to the state of the Bluetooth radio.</td>
   </tr>
 </table>
 </div>	
@@ -56,7 +60,7 @@ Parm name: BluetoothState
 
 Description: 
 
->This parm allows you to change the state of the Bluetooth radio to On or Off. Turning the Bluetooth radio on would allow the device to connect to other to other Bluetooth devices that have been paired or to setup a new pairing. Pairing the devices together means that a connection would be established between the Bluetooth enabled devices. For example, a Bluetooth enabled phone would need to first be paired with a Bluetooth enabled headset before the headset could be used.
+>This parm allows you to change the state of the Bluetooth radio by Turning it On or Off. Turning the Bluetooth radio On would allow the device to connect to other to other Bluetooth devices that have previously been paired or would allow the setup of a new pairing.
 
 <div class="parm-table">
  <table>
@@ -68,17 +72,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will cause no changes to whether the Bluetooth radio is turned On or Off.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no changes to the state (On/Off) of the Bluetooth radio.</td>
   </tr>
   <tr>
     <td>Turn On</td>
     <td>"1"</td>
-	<td>This value will cause the Bluetooth radio to be turned On, thus allowing the use of a Bluetooth connection on the device.</td>
+	<td>This value will cause the Bluetooth radio to be Turned On.</td>
   </tr>
   <tr>
     <td>Turn Off</td>
     <td>"2"</td>
-	<td>This value will cause the Bluetooth radio to be turned Off, thus disallowing the use of a Bluetooth connection on the device.</td>
+	<td>This value will cause the Bluetooth radio to be Turned Off.</td>
   </tr>
 </table>
 </div>	
@@ -90,7 +94,7 @@ Parm name: NFCState
 
 Description: 
 
->This parm allows you to change the state of the NFC radio On or Off, which would allow or disallow devices to establish a radio connection with each other when they are touched together or are within a close proximity to each other.
+>This parm allows you to change the state of the Near Field Communications (NFC) radio by Turning it On or Off. Turning the NFC radio On would allow the device to communicate with NFC tags by reading or writing them when they are in near proximity to the device.
 
 <div class="parm-table">
  <table>
@@ -102,17 +106,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will cause no changes to whether the NFC radio is turned On or Off.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no changes to be made to the state (On/Off) of the NFC radio.</td>
   </tr>
   <tr>
     <td>Turn On</td>
     <td>"1"</td>
-	<td>This value will cause the NFC radio to be turned On, thus allowing the use of NFC on the device.</td>
+	<td>This value will cause the NFC radio to be Turned On.</td>
   </tr>
   <tr>
     <td>Turn Off</td>
     <td>"2"</td>
-	<td>This value will cause the NFC radio to be turned Off, thus disallowing the use of NFC on the device.</td>
+	<td>This value will cause the NFC radio to be Turned Off.</td>
   </tr>
 </table>
 </div>	
@@ -124,7 +128,7 @@ Parm name: GPSState
 
 Description: 
 
->This parm allows you to change the state of the GPS radio to On or Off, which would allow or disallow the device from using satellite signals to determine the location of the device.
+>This parm allows you to change the state of the Global Positioning System (GPS) radio by Turning it On or Off. Turning the GPS radio On would allow the device to receive information from GPS satellites and thereby determine the position of the device.
 
 <div class="parm-table">
  <table>
@@ -136,17 +140,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will cause no changes to whether the GPS radio is turned On or Off.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no changes to be made to the state (On/Off) of the GPS radio.</td>
   </tr>
   <tr>
     <td>Turn On</td>
     <td>"1"</td>
-	<td>This value will cause the GPS radio to be turned On, thus allowing the use of GPS on the device.</td>
+	<td>This value will cause the GPS radio to be Turned On.</td>
   </tr>
   <tr>
     <td>Turn Off</td>
     <td>"2"</td>
-	<td>This value will cause the GPS radio to be turned Off, thus disallowing the use of GPS on the device.</td>
+	<td>This value will cause the GPS radio to be Turned Off.</td>
   </tr>
 </table>
 </div>	
@@ -158,7 +162,7 @@ Parm name: WWANState
 
 Description: 
 
->This parm allows you to change the state of the Wireless Wide Area Network (WWAN) radio to On or Off. This would allow or disallow a device from connecting to a WWAN, which is a wide area network that covers a large geographic area through the use of cellular tower technology.
+>This parm allows you to change the state of the Wireless Wide Area Network (WWAN) cellular radio by Turning it On or Off. Turning the WWAN radio On would allow the device to establish a cellular data connection and would also enable cellular voice connections, if supported.
 
 <div class="parm-table">
  <table>
@@ -170,23 +174,24 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will cause no changes to whether the WWAN radio is turned On or Off.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no changes to be made to the state (On/Off) of the WWAN radio.</td>
   </tr>
   <tr>
     <td>Turn On</td>
     <td>"1"</td>
-	<td>This value will cause the WWAN radio to be turned On, thus allowing the use of WWAN on the device.</td>
+	<td>This value will cause the WWAN radio to be Turned On.</td>
   </tr>
   <tr>
     <td>Turn Off</td>
     <td>"2"</td>
-	<td>This value will cause the WWAN radio to be turned Off, thus disallowing the use of WWAN on the device.</td>
+	<td>This value will cause the WWAN radio to be Turned Off.</td>
   </tr>
 </table>
 </div>	
 
 ##Example XML
-###Enable the Usage of Bluetooth
+###Enable Changes to be made to Bluetooth State
+
 	:::xml
 	<wap-provisioningdoc>
 		<characteristic type="WirelessMgr" version="4.3" >
@@ -194,7 +199,8 @@ Description:
 		</characteristic>
 	</wap-provisioningdoc>
 
-###Disable the Usage of Bluetooth
+###Disable Changes from being made to Bluetooth State
+
 	:::xml
 	<wap-provisioningdoc>
 		<characteristic type="WirelessMgr" version="4.3" >
@@ -202,7 +208,8 @@ Description:
 		</characteristic>
 	</wap-provisioningdoc>
 
-###Turn on the Radios
+###Turn On All Radios
+
 	:::xml
 	<wap-provisioningdoc>
 		<characteristic type="WirelessMgr" version="4.3" >
@@ -213,7 +220,7 @@ Description:
 		</characteristic>
 	</wap-provisioningdoc>
 
-###Turn Off the Radios To Save Power
+###Turn Off All Radios
 	:::xml
 	<wap-provisioningdoc>
 		<characteristic type="WirelessMgr" version="4.3" >
