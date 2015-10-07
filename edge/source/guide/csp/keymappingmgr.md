@@ -2565,6 +2565,570 @@ Parm value input rules:
 
 * String containing a valid Application Name
 
+## Queries
+
+###Version Query
+
+Input
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr">
+			<parm-query name="Version"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+Output
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr" version="4.4">
+			<parm name="Version" value="4.4.0"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+### Query the Available Keys
+
+Input
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr">
+			<characteristic-query type="QueryAvailableKeys"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+Output
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr" version="4.4">
+			<characteristic type="QueryAvailableKeys">
+				<parm name="KeyIdentifier" value="0"/>
+				<parm name="KeyIdentifier" value="1"/>
+				<parm name="KeyIdentifier" value="2"/>
+				<parm name="KeyIdentifier" value="3"/>
+				<parm name="KeyIdentifier" value="4"/>
+				<parm name="KeyIdentifier" value="5"/>
+				<parm name="KeyIdentifier" value="6"/>
+				<parm name="KeyIdentifier" value="7"/>
+				<parm name="KeyIdentifier" value="8"/>
+				<parm name="KeyIdentifier" value="9"/>
+				<parm name="KeyIdentifier" value="A"/>
+				<parm name="KeyIdentifier" value="B"/>
+				<parm name="KeyIdentifier" value="C"/>
+				<parm name="KeyIdentifier" value="D"/>
+				<parm name="KeyIdentifier" value="E"/>
+				<parm name="KeyIdentifier" value="F"/>
+				<parm name="KeyIdentifier" value="G"/>
+				<parm name="KeyIdentifier" value="H"/>
+				<parm name="KeyIdentifier" value="I"/>
+				<parm name="KeyIdentifier" value="J"/>
+				<parm name="KeyIdentifier" value="K"/>
+				<parm name="KeyIdentifier" value="L"/>
+				<parm name="KeyIdentifier" value="M"/>
+				<parm name="KeyIdentifier" value="N"/>
+				<parm name="KeyIdentifier" value="O"/>
+				<parm name="KeyIdentifier" value="P"/>
+				<parm name="KeyIdentifier" value="Q"/>
+				<parm name="KeyIdentifier" value="R"/>
+				<parm name="KeyIdentifier" value="S"/>
+				<parm name="KeyIdentifier" value="T"/>
+				<parm name="KeyIdentifier" value="U"/>
+				<parm name="KeyIdentifier" value="V"/>
+				<parm name="KeyIdentifier" value="W"/>
+				<parm name="KeyIdentifier" value="X"/>
+				<parm name="KeyIdentifier" value="Y"/>
+				<parm name="KeyIdentifier" value="Z"/>
+				<parm name="KeyIdentifier" value="UP"/>
+				<parm name="KeyIdentifier" value="DOT"/>
+				<parm name="KeyIdentifier" value="ESC"/>
+				<parm name="KeyIdentifier" value="RED"/>
+				<parm name="KeyIdentifier" value="BLUE"/>
+				<parm name="KeyIdentifier" value="CTRL"/>
+				<parm name="KeyIdentifier" value="DOWN"/>
+				<parm name="KeyIdentifier" value="LEFT"/>
+				<parm name="KeyIdentifier" value="SCAN"/>
+				<parm name="KeyIdentifier" value="STAR"/>
+				<parm name="KeyIdentifier" value="ENTER"/>
+				<parm name="KeyIdentifier" value="GREEN"/>
+				<parm name="KeyIdentifier" value="RIGHT"/>
+				<parm name="KeyIdentifier" value="SHIFT"/>
+				<parm name="KeyIdentifier" value="SPACE"/>
+				<parm name="KeyIdentifier" value="GRIP_TRIGGER"/>
+				<parm name="KeyIdentifier" value="BACKSPACE"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+###Query the Available Tables
+
+Input
+
+	:::XML
+	<wap-provisioningdoc>
+	<characteristic type="KeyMappingMgr">
+		<characteristic-query type="QueryAvailableTables"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+Output
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr" version="4.4">
+			<characteristic type="QueryAvailableTables">
+				<parm name="TableIdentifier" value="blue"/>
+				<parm name="TableIdentifier" value="base"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+### Query the Default Key Identifier
+
+Input
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr">
+			<characteristic-query type="QueryDefaultKeyMapping">
+				<parm name="QueryDefaultKeyIdentifier" value="0"/>
+			</characteristic-query>
+		</characteristic>
+	</wap-provisioningdoc>
+
+Output
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr" version="4.4">
+			<characteristic type="QueryDefaultKeyMapping">
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="0"/>
+						<characteristic type="BlueTable">
+							<parm name="BlueBehavior" value="2"/>
+							<parm name="BlueKeyCode" value="140"/>
+						</characteristic>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="7"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+### Query the Changed Key Identifier
+
+Input
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr">
+			<characteristic-query type="QueryChangedKeyMapping">
+				<parm name="QueryChangedKeyIdentifier" value="0"/>
+			</characteristic-query>
+		</characteristic>
+	</wap-provisioningdoc>
+
+Error Output
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr" version="4.4">
+			<characteristic-error type="QueryChangedKeyMapping" desc="No key mappings available"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+### Query the Current Key Identifier
+
+Input
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr">
+			<characteristic-query type="QueryCurrentKeyMapping">
+				<parm name="QueryCurrentKeyIdentifier" value="0"/>
+			</characteristic-query>
+		</characteristic>
+	</wap-provisioningdoc>
+
+Output
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr" version="4.4">
+			<characteristic type="QueryCurrentKeyMapping">
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="0"/>
+						<characteristic type="BlueTable">
+							<parm name="BlueBehavior" value="2"/>
+							<parm name="BlueKeyCode" value="140"/>
+						</characteristic>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="7"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+### Query the Default Key Mappings
+
+Input
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr">
+			<characteristic-query type="QueryDefaultKeyMappings"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+Output
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr" version="4.4">
+			<characteristic type="QueryDefaultKeyMappings">
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="BACK"/>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="4"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="HOME"/>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="3"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="RIGHT_TRIGGER_1"/>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="103"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="HEADSET_HOOK"/>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="105"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="RECENT"/>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="187"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="SEARCH"/>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="82"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="VOLUMEDOWN"/>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="25"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="VOLUMEUP"/>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="24"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="LEFT_TRIGGER_1"/>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="102"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="LEFT_TRIGGER_2"/>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="104"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+### Query Changed Key Mappings
+
+Input
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr">
+			<characteristic-query type="QueryChangedKeyMappings"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+Output
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr" version="4.4">
+			<characteristic-error type="QueryChangedKeyMappings" desc="No key mappings available"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+### Query Current Key Mappings
+
+Input
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr">
+			<characteristic-query type="QueryCurrentKeyMappings"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+Output
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr" version="4.4">
+			<characteristic type="QueryCurrentKeyMappings">
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="BACK"/>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="4"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="HOME"/>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="3"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="RIGHT_TRIGGER_1"/>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="103"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="HEADSET_HOOK"/>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="105"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="RECENT"/>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="187"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="SEARCH"/>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="82"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="VOLUMEDOWN"/>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="25"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="VOLUMEUP"/>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="24"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="LEFT_TRIGGER_1"/>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="102"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+				<characteristic type="KeyMappingMgr">
+					<parm name="Action" value="1"/>
+					<characteristic type="KeyMapping">
+						<parm name="KeyIdentifier" value="LEFT_TRIGGER_2"/>
+						<characteristic type="BaseTable">
+							<parm name="BaseBehavior" value="2"/>
+							<parm name="BaseKeyCode" value="104"/>
+						</characteristic>
+					</characteristic>
+				</characteristic>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+
+	
+## Example XML
+
+###Key Swap Example
+
+The first feature of the following Request XML Document is used to first reset the keys to their defaults. The following features are used to swap the 7 and 9 keys on the keyboard.
+
+Input
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr" version="4.4" >
+			<parm name="Action" value="2"/>
+		</characteristic>
+		<characteristic type="KeyMappingMgr" version="4.4" >
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+				<parm name="KeyIdentifier" value="7"/>
+				<characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="16"/>
+				</characteristic>
+			</characteristic>
+		</characteristic>
+		<characteristic type="KeyMappingMgr" version="4.4" >
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+				<parm name="KeyIdentifier" value="9"/>
+				<characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="14"/>
+				</characteristic>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+Output
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr" version="4.4">
+			<parm name="Action" value="2"/>
+		</characteristic>
+		<characteristic type="KeyMappingMgr" version="4.4">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+				<parm name="KeyIdentifier" value="7"/>
+				<characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="16"/>
+				</characteristic>
+			</characteristic>
+		</characteristic>
+		<characteristic type="KeyMappingMgr" version="4.4">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+				<parm name="KeyIdentifier" value="9"/>
+				<characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="14"/>
+				</characteristic>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+###Reset Keys To Default
+
+Input
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr" version="4.4" >
+			<parm name="Action" value="2"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+Output
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr" version="4.4">
+			<parm name="Action" value="2"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+
 ## Feature Compatibility
 
 <iframe src="compare.html#mx=4.3&csp=KeyMappingMgr&os=JB&embed=true"></iframe> 

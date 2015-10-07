@@ -55,23 +55,6 @@ var menuStrcture = [
 								name: 'MXMS Interface',
 								link: '#guide-MX-interface',
 							},
-							// {
-							// 	name: 'Version Notes',
-							// 	icon: '',
-							// 	link: '#',
-							// 	items: [
-							// 		{
-							// 			title: 'Version Notes',
-							// 			icon: '',
-							// 			items: [
-							// 				{
-							// 					name: 'MX 4.3',
-							// 					link: '#guide-MX-versions-4.3',
-							// 				}
-							// 			]
-							// 		}
-							// 	]
-							// }
 						]
 					}
 				]
@@ -230,10 +213,6 @@ var menuStrcture = [
 								name: 'PowerMgr',
 								link: '#guide-csp-power',
 							},
-							/*{
-								name: 'Proxy',
-								link: '#guide-csp-proxy',
-							},*/
 							{
 								name: 'SdCardMgr',
 								link: '#guide-csp-sdcard',
@@ -274,52 +253,10 @@ var menuStrcture = [
 								name: 'XmlMgr',
 								link: '#guide-csp-xml',
 							}
-							/*,
-							{
-								name: 'Old Encrypt',
-								link: '#guide-csp-encrypt-old',
-							},
-							{
-								name: 'Old Clock',
-								link: '#guide-csp-clock-old',
-							}*/
 						]
 					}
 				]
 			},
-			/*{
-				name: 'Tutorials',
-				icon: 'fa fa-terminal',
-				link: '#',
-				items: [
-					{
-						title: 'Tutorials',
-						icon: 'fa fa-terminal',
-						items: [
-							{
-								name: 'Quickstart',
-								link: '#guide-tutorials-quickstart',
-							},
-							{
-								name: 'Tutorial 2',
-								link: '#',
-							},
-							{
-								name: 'Tutorial 3',
-								link: '#',
-							},
-							{
-								name: 'Tutorial 4',
-								link: '#',
-							},
-							{
-								name: 'Tutorial 5',
-								link: '#',
-							}
-						]
-					}
-				]
-			},*/
 			{
 				name: 'Samples',
 				icon: 'fa fa-download',
@@ -337,22 +274,6 @@ var menuStrcture = [
 								name: 'Query Sample App',
 								link: '#guide-samples-SimpleMdmToolkitQuery',
 							},
-							/*{
-								name: 'Using XML Parser',
-								link: '#guide-samples-2',
-							},
-							{
-								name: 'Querying a CSP',
-								link: '#guide-samples-2',
-							},
-							{
-								name: 'Submitting to Multiple CSPs',
-								link: '#guide-samples-3',
-							},
-							{
-								name: 'Querying Multiple CSPs',
-								link: '#guide-samples-4',
-							}*/
 						]
 					}
 				]

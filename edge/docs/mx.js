@@ -5897,11 +5897,30 @@ var mxVersions = [
                                 name: '',
                                 compatibility: [
                                     {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
+                                    {
+                                        name: 'MC67 KK',
+                                        device: 'MC67',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+									/*
 									{
                                         name: 'TC55 KK',
                                         device: 'TC55',
@@ -5926,6 +5945,7 @@ var mxVersions = [
                                         os: 'KK',
                                         notes: ''
                                     },
+									*/
                                 ]
                             }
                         ]
