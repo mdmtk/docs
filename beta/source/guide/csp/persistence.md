@@ -157,6 +157,79 @@ Description:
 </table>
 </div>	
 
+##Example XML
+### Make a Request XML Document Persistent
+
+This Request XML Document below uses PersistMgr to make itself Persistent.
+
+    :::XML
+	<wap-provisioningdoc>
+		<characteristic type="Clock" version="4.2">
+			<parm name="AutoTime" value="true" /> 
+			<characteristic type="AutoTimeDetails">
+				<parm name="NTPServer" value="http://time.test.com" /> 
+				<parm name="SyncInterval" value="00:30:00" /> 
+			</characteristic>
+		</characteristic>
+		<characteristic type="PersistMgr">
+			<parm name="PersistAction" value="1" /> 
+			<characteristic type="persist-details">
+				<parm name="PersistAsName" value="Clock-profile" /> 
+				<parm name="PersistAsVersion" value="1" /> 
+				<parm name="PersistAsOrder" value="3"/>
+				<parm name="PersistIfError" value="false" /> 
+			</characteristic>
+		</characteristic>
+	  </wap-provisioningdoc>
+
+### Remove a Persistent Profile
+
+The Request XML Document below uses PersistMgr to make the Request XML Document that was made Persistent in the previous example, stop being Persistent.
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="PersistMgr" version="4.2" >
+			<parm name="PersistAction" value="2"/>
+			<characteristic type="persist-details">
+				<parm name="PersistAsName" value="Clock-profile"/>
+				<parm name="PersistAsVersion" value="1"/>
+				<parm name="PersistAsOrder" value="3"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+### Enable a Persistent Profile
+
+The Request XML Document below uses PersistMgr to Enable the Request XML Document that was made Persistent in a previous example.
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="PersistMgr" version="4.2" >
+			<parm name="PersistAction" value="3"/>
+			<characteristic type="persist-details">
+				<parm name="PersistAsName" value="Clock-profile"/>
+				<parm name="PersistAsVersion" value="1"/>
+				<parm name="PersistAsOrder" value="3"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+### Disable a Persistent Profile
+
+The Request XML Document below uses PersistMgr to Disable the Request XML Document that was made Persistent in a previous example.
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="PersistMgr" version="4.2" >
+			<parm name="PersistAction" value="4"/>
+			<characteristic type="persist-details">
+				<parm name="PersistAsName" value="Clock-profile"/>
+				<parm name="PersistAsVersion" value="1"/>
+				<parm name="PersistAsOrder" value="3"/>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+	
 ##Queries
 
 >**Note:** The following queries are supported in by the PersistMgr Feature Type. However, they have not been indicated in the PersistMgr DSD. Therefore, the following queries cannot be generated with the DSD tool and will need to be created manually.
@@ -251,79 +324,6 @@ Output
 			<characteristic type="persist-details">
 				<parm name="PersistAsName" value="Clock-profile"/>
 				<parm name="PersistAsVersion" value="01"/>
-			</characteristic>
-		</characteristic>
-	</wap-provisioningdoc>
-
-##Example XML
-### Make a Request XML Document Persistent
-
-This Request XML Document below uses PersistMgr to make itself Persistent.
-
-    :::XML
-	<wap-provisioningdoc>
-		<characteristic type="Clock" version="4.2">
-			<parm name="AutoTime" value="true" /> 
-			<characteristic type="AutoTimeDetails">
-				<parm name="NTPServer" value="http://time.test.com" /> 
-				<parm name="SyncInterval" value="00:30:00" /> 
-			</characteristic>
-		</characteristic>
-		<characteristic type="PersistMgr">
-			<parm name="PersistAction" value="1" /> 
-			<characteristic type="persist-details">
-				<parm name="PersistAsName" value="Clock-profile" /> 
-				<parm name="PersistAsVersion" value="1" /> 
-				<parm name="PersistAsOrder" value="3"/>
-				<parm name="PersistIfError" value="false" /> 
-			</characteristic>
-		</characteristic>
-	  </wap-provisioningdoc>
-
-### Remove a Persistent Profile
-
-The Request XML Document below uses PersistMgr to make the Request XML Document that was made Persistent in the previous example, stop being Persistent.
-
-	:::XML
-	<wap-provisioningdoc>
-		<characteristic type="PersistMgr" version="4.2" >
-			<parm name="PersistAction" value="2"/>
-			<characteristic type="persist-details">
-				<parm name="PersistAsName" value="Clock-profile"/>
-				<parm name="PersistAsVersion" value="1"/>
-				<parm name="PersistAsOrder" value="3"/>
-			</characteristic>
-		</characteristic>
-	</wap-provisioningdoc>
-
-### Enable a Persistent Profile
-
-The Request XML Document below uses PersistMgr to Enable the Request XML Document that was made Persistent in a previous example.
-
-	:::XML
-	<wap-provisioningdoc>
-		<characteristic type="PersistMgr" version="4.2" >
-			<parm name="PersistAction" value="3"/>
-			<characteristic type="persist-details">
-				<parm name="PersistAsName" value="Clock-profile"/>
-				<parm name="PersistAsVersion" value="1"/>
-				<parm name="PersistAsOrder" value="3"/>
-			</characteristic>
-		</characteristic>
-	</wap-provisioningdoc>
-
-### Disable a Persistent Profile
-
-The Request XML Document below uses PersistMgr to Disable the Request XML Document that was made Persistent in a previous example.
-
-	:::XML
-	<wap-provisioningdoc>
-		<characteristic type="PersistMgr" version="4.2" >
-			<parm name="PersistAction" value="4"/>
-			<characteristic type="persist-details">
-				<parm name="PersistAsName" value="Clock-profile"/>
-				<parm name="PersistAsVersion" value="1"/>
-				<parm name="PersistAsOrder" value="3"/>
 			</characteristic>
 		</characteristic>
 	</wap-provisioningdoc>
