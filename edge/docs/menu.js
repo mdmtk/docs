@@ -225,10 +225,12 @@ var menuStrcture = [
 								name: 'StatusMgr',
 								link: '#guide-csp-statusmgr',
 							},
-							*/{
+							*/
+							/*{
 								name: 'ThreatMgr',
 								link: '#guide-csp-threat',
 							},
+							*/
 							{
 								name: 'TouchMgr',
 								link: '#guide-csp-touch',
