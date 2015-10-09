@@ -2565,6 +2565,91 @@ Parm value input rules:
 
 * String containing a valid Application Name
 
+	
+## Example XML
+
+###Key Swap Example
+
+The first feature of the following Request XML Document is used to first reset the keys to their defaults. The following features are used to swap the 7 and 9 keys on the keyboard.
+
+Input
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr" version="4.4" >
+			<parm name="Action" value="2"/>
+		</characteristic>
+		<characteristic type="KeyMappingMgr" version="4.4" >
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+				<parm name="KeyIdentifier" value="7"/>
+				<characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="16"/>
+				</characteristic>
+			</characteristic>
+		</characteristic>
+		<characteristic type="KeyMappingMgr" version="4.4" >
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+				<parm name="KeyIdentifier" value="9"/>
+				<characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="14"/>
+				</characteristic>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+Output
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr" version="4.4">
+			<parm name="Action" value="2"/>
+		</characteristic>
+		<characteristic type="KeyMappingMgr" version="4.4">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+				<parm name="KeyIdentifier" value="7"/>
+				<characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="16"/>
+				</characteristic>
+			</characteristic>
+		</characteristic>
+		<characteristic type="KeyMappingMgr" version="4.4">
+			<parm name="Action" value="1"/>
+			<characteristic type="KeyMapping">
+				<parm name="KeyIdentifier" value="9"/>
+				<characteristic type="BaseTable">
+					<parm name="BaseBehavior" value="2"/>
+					<parm name="BaseKeyCode" value="14"/>
+				</characteristic>
+			</characteristic>
+		</characteristic>
+	</wap-provisioningdoc>
+
+###Reset Keys To Default
+
+Input
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr" version="4.4" >
+			<parm name="Action" value="2"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+Output
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="KeyMappingMgr" version="4.4">
+			<parm name="Action" value="2"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
 ## Queries
 
 ###Version Query
@@ -3535,7 +3620,7 @@ Input
 		</characteristic>
 	</wap-provisioningdoc>
 
-Output
+Error Output
 
 	:::XML
 	<wap-provisioningdoc>
@@ -4287,94 +4372,6 @@ Output
 		</characteristic>
 	  </characteristic>
 	</wap-provisioningdoc>
-
-
-
-	
-## Example XML
-
-###Key Swap Example
-
-The first feature of the following Request XML Document is used to first reset the keys to their defaults. The following features are used to swap the 7 and 9 keys on the keyboard.
-
-Input
-
-	:::XML
-	<wap-provisioningdoc>
-		<characteristic type="KeyMappingMgr" version="4.4" >
-			<parm name="Action" value="2"/>
-		</characteristic>
-		<characteristic type="KeyMappingMgr" version="4.4" >
-			<parm name="Action" value="1"/>
-			<characteristic type="KeyMapping">
-				<parm name="KeyIdentifier" value="7"/>
-				<characteristic type="BaseTable">
-					<parm name="BaseBehavior" value="2"/>
-					<parm name="BaseKeyCode" value="16"/>
-				</characteristic>
-			</characteristic>
-		</characteristic>
-		<characteristic type="KeyMappingMgr" version="4.4" >
-			<parm name="Action" value="1"/>
-			<characteristic type="KeyMapping">
-				<parm name="KeyIdentifier" value="9"/>
-				<characteristic type="BaseTable">
-					<parm name="BaseBehavior" value="2"/>
-					<parm name="BaseKeyCode" value="14"/>
-				</characteristic>
-			</characteristic>
-		</characteristic>
-	</wap-provisioningdoc>
-
-Output
-
-	:::XML
-	<wap-provisioningdoc>
-		<characteristic type="KeyMappingMgr" version="4.4">
-			<parm name="Action" value="2"/>
-		</characteristic>
-		<characteristic type="KeyMappingMgr" version="4.4">
-			<parm name="Action" value="1"/>
-			<characteristic type="KeyMapping">
-				<parm name="KeyIdentifier" value="7"/>
-				<characteristic type="BaseTable">
-					<parm name="BaseBehavior" value="2"/>
-					<parm name="BaseKeyCode" value="16"/>
-				</characteristic>
-			</characteristic>
-		</characteristic>
-		<characteristic type="KeyMappingMgr" version="4.4">
-			<parm name="Action" value="1"/>
-			<characteristic type="KeyMapping">
-				<parm name="KeyIdentifier" value="9"/>
-				<characteristic type="BaseTable">
-					<parm name="BaseBehavior" value="2"/>
-					<parm name="BaseKeyCode" value="14"/>
-				</characteristic>
-			</characteristic>
-		</characteristic>
-	</wap-provisioningdoc>
-
-###Reset Keys To Default
-
-Input
-
-	:::XML
-	<wap-provisioningdoc>
-		<characteristic type="KeyMappingMgr" version="4.4" >
-			<parm name="Action" value="2"/>
-		</characteristic>
-	</wap-provisioningdoc>
-
-Output
-
-	:::XML
-	<wap-provisioningdoc>
-		<characteristic type="KeyMappingMgr" version="4.4">
-			<parm name="Action" value="2"/>
-		</characteristic>
-	</wap-provisioningdoc>
-
 
 ## Feature Compatibility
 

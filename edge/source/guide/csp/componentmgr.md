@@ -86,6 +86,32 @@ Description:
 </table>
 </div>	
 
+##Example XML
+
+###Enabling Ethernet Usage and Turning On Ethernet
+
+####Input
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="ComponentMgr" version="4.4">
+			<parm name="EthernetUsage" value="1"/>
+			<parm name="EthernetState" value="1"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+####Error Output
+	
+The following XML is an example of an error that is returned when trying to set Ethernet features on a device that does not support Ethernet functionality.
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic-error desc="exception" type="ComponentMgr" version="4.4" >
+			<parm-error	name="EthernetUsage" desc="Error in enabling Ethernet UI" value="1" />
+			<parm-error name="EthernetState" desc="Failed to Turn On. Ethernet is disabled by admin" value="1" />
+		</characteristic-error>
+	</wap-provisioningdoc> 
+
 ##Queries
 
 ###Get the Ethernet Usage Value
@@ -132,33 +158,6 @@ This query will indicate if the Ethernet State of the device is currently set to
 			<parm name="EthernetState" value="1"/>
 		</characteristic>
 	</wap-provisioningdoc>
-
-##Example XML
-
-###Enabling Ethernet Usage and Turning On Ethernet
-
-####Input
-
-	:::XML
-	<wap-provisioningdoc>
-		<characteristic type="ComponentMgr" version="4.4">
-			<parm name="EthernetUsage" value="1"/>
-			<parm name="EthernetState" value="1"/>
-		</characteristic>
-	</wap-provisioningdoc>
-
-####Error Output
-	
-The following XML is an example of an error that is returned when trying to set Ethernet features on a device that does not support Ethernet functionality.
-
-	:::XML
-	<wap-provisioningdoc>
-		<characteristic-error desc="exception" type="ComponentMgr" version="4.4" >
-			<parm-error	name="EthernetUsage" desc="Error in enabling Ethernet UI" value="1" />
-			<parm-error name="EthernetState" desc="Failed to Turn On. Ethernet is disabled by admin" value="1" />
-		</characteristic-error>
-	</wap-provisioningdoc> 
-
 
 ## Feature Compatibility
 
