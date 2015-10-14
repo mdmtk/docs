@@ -9145,6 +9145,12 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
@@ -9200,6 +9206,12 @@ var mxVersions = [
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
+                                        os: 'KK',
+                                        notes: ''
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
                                         os: 'KK',
                                         notes: ''
                                     },

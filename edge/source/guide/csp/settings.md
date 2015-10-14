@@ -61,7 +61,7 @@ Parm name: WifiSettingsUI
 
 Description: 
 
->This parm allows you to specify whether or not the device user will be allowed to change any Wi-Fi configuration from the "Wi-Fi" section of the System Settings Menu
+>This parm allows you to specify whether or not the device user will be allowed to change any Wi-Fi configuration from the "Wi-Fi" section of the System Settings Menu and the Quick Settings.
 
 >**Note:** While the title of this parm might make it seem that it only controls whether the device user is allowed to Turn Wi-Fi On or Off, it actually controls whether any changes to Wi-Fi configuration can be made. There is no way to control the ability to Turn Wi-Fi On and Off independently of other Wi-Fi configuration.
 
@@ -75,17 +75,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not a device user will be allowed to make changes to the Wi-Fi configuration from the System Settings Menu.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not a device user will be allowed to make changes to the Wi-Fi configuration from the System Settings Menu and the Quick Settings.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This value will cause the device user to be allowed to make changes to the Wi-Fi configuration from the System Settings Menu.</td>
+	<td>This value will cause the device user to be allowed to make changes to the Wi-Fi configuration from the System Settings Menu and the Quick Settings.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td>This value will cause the device user to be prevented from making changes to the Wi-Fi configuration from the System Settings Menu.</td>
+	<td>This value will cause the device user to be prevented from making changes to the Wi-Fi configuration from the System Settings Menu and the Quick Settings.</td>
   </tr>
 </table>
 </div>	
@@ -132,7 +132,7 @@ Parm name: AirplaneMode
 
 Description: 
 
->This parm allows you to specify whether or not the device user will be allowed to Turn "Airplane Mode" On or Off from "Unknown Sources" on or off from the "Wireless & networks" section of the System Settings Menu.
+>This parm allows you to specify whether or not the device user will be allowed to Turn "Airplane Mode" On or Off from the "Wireless & Networks" section of the System Settings Menu, from the Quick Settings, and from the Power Key Menu.
 
 <div class="parm-table">
  <table>
@@ -144,17 +144,17 @@ Description:
   <tr>
     <td>Do not change</td>
     <td>"0"</td>
-	<td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not a device user will be allowed to Turn "Airplane Mode" On or Off from the System Settings Menu.</td>
+	<td>This value (or the absence of this parm from the XML) will cause no changes to be made as to whether or not a device user will be allowed to Turn "Airplane Mode" On or Off from the System Settings Menu, Quick Settings, and Power Key Menu.</td>
   </tr>
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This value will cause the device user to be allowed to Turn "Airplane Mode" On or Off from the System Settings Menu.</td>
+	<td>This value will cause the device user to be allowed to Turn "Airplane Mode" On or Off from the System Settings Menu, Quick Settings, and Power Key Menu.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td>This value will cause the device user to be prevented from Turning "Airplane Mode" On or Off from the System Settings Menu.</td>
+	<td>This value will cause the device user to be prevented from Turning "Airplane Mode" On or Off from the System Settings Menu, Quick Settings, and Power Key Menu.</td>
   </tr>
 </table>
 </div>	
