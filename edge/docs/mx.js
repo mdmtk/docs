@@ -10490,12 +10490,6 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
@@ -10533,12 +10527,6 @@ var mxVersions = [
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -10595,12 +10583,6 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
@@ -10638,12 +10620,6 @@ var mxVersions = [
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
@@ -10688,12 +10664,6 @@ var mxVersions = [
                                         notes: ''
                                     },
                                     {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
@@ -10725,12 +10695,6 @@ var mxVersions = [
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
                                         os: 'KK',
                                         notes: ''
                                     },
