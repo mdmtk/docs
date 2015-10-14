@@ -52,7 +52,7 @@ For Example:
 
 ### Reading XML Documents
 
-The XmlParser class helps you read MXMS XML through the use of the `fetchParms` and `fetchParmRepeats` functions. For example, you can use these functions to confirm parm values in a set Request XML Document or read parm values in a query XML Document. To use this function pass in the XML and a list of parm selectors, and the function will return an array list of parm values. 
+The XmlParser class helps you read MXMS XML through the use of the `fetchParms` and `fetchParmRepeats` functions. For example, you can use these functions to confirm parm values in a set Request XML Document or read parm values in a query XML Document. To use this function, pass in the XML and a list of parm selectors, and the function will return an array list of parm values. 
 
 For Example:
 
@@ -62,6 +62,16 @@ For Example:
 	
 	//Get parm values
 	ArrayList<ParmValue> parmValues = XmlParser.fetchParms(xml, parmSelector);
+	
+### Creating Query XML
+
+The XmlParser class helps you to create Characteristic-Query and Parm-Query Request XML Documents through the use of the `getCharQuery` and `getParmQuery` functions. You can use these methods to create simple Query Request XML Documents, which can be submitted to MXMS. To create a Characteristic-Query Request Xml Document, pass in the name of the Top-Level Characteristic that should be queried. To create a Parm-Query Request Xml Document, pass in the name of the Parm that should be queried and the name of the Top-Level Characteristic that contains this parm.
+
+For Example:
+
+	:::java
+	String charQuery = XmlParser.getCharQuery("PersistMgr");
+	String parmQuery = XmlParser.getParmQuery("PersistMgr", "Version");
 
 ## Main Methods
 
@@ -77,10 +87,26 @@ Helper function to count the number of Characteristic-Errors in an XML document.
 
 An integer indicating the number of Characteristic-Errors that are at any level in the Result XML Document.
 
-**Example**
+**Example Input XML**
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic-error type="TLCError" desc="Sample Top Level Characteristic Error" version="4.4" >
+			<characteristic-error type="SGCError" desc="Sample Sub Group Error">
+				<parm name="ParmExample" value="1"/>
+			</characteristic-error>
+		</characteristic-error>
+	</wap-provisioningdoc> 
+
+**Example Invocation**
 
 	::java
 	int charErrorCount = XmlParser.countCharcErrors(xml);
+	
+**Example Output**
+
+2
+
 
 ###static public int countTlcErrors(String xml)
 
@@ -94,10 +120,25 @@ Helper function to count the number of Top-Level Characteristic-Errors in an XML
 
 An integer indicating the number of Top-Level Characteristic-Errors in the Result XML Document.
 
-**Example**
+**Example Input XML**
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic-error type="TLCError" desc="Sample Top Level Characteristic Error" version="4.4" >
+			<characteristic-error type="SGCError" desc="Sample Sub Group Error">
+				<parm name="ParmExample" value="1"/>
+			</characteristic-error>
+		</characteristic-error>
+	</wap-provisioningdoc> 
+
+**Example Invocation**
 
 	::java
 	int tlcErrorCount = XmlParser.countTlcErrors(xml);
+
+**Example Output**
+
+1
 
 ###static public String fetchParm(String xml,ParmSelector selector)
 
@@ -113,10 +154,23 @@ Helper function to extract a single parm value from an XML document.
 
 A string containing the parm value of the specified parm in the XML Document. If there are multiple parms with the same name, only the value of the first one of these parms will be returned.
 
-**Example**
+**Example Input XML**
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="TLCExample" version="4.4" >
+			<parm name="ParmExample" value="ParmValueExample"/>
+		</characteristic>
+	</wap-provisioningdoc> 
+	
+**Example Invocation**
 
 	:::java
-	String time = XmlParser.fetchParm(outXml,new ParmSelector("clock","time"));
+	String parmValue = XmlParser.fetchParm(xml,new ParmSelector("TLCExample","ParmExample"));
+	
+**Example Output**	
+
+ParmValueExample
 
 ###static public ArrayList&lt;String&gt; fetchParmRepeats(String xml,ParmSelector selector)
 
@@ -132,10 +186,24 @@ Helper function to extract a parm value from an XML document. This can be used w
 
 A string containing the parm value of the specified parm in the XML Document.
 
-**Example**
+**Example Input XML**
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="TLCExample" version="4.4" >
+			<parm name="ParmExample" value="ParmValueExample1"/>
+			<parm name="ParmExample" value="ParmValueExample2"/>
+		</characteristic>
+	</wap-provisioningdoc> 
+
+**Example Invocation**
 
 	:::java
-	ArrayList<String> parmValueList = XmlParser.fetchParmRepeats(xml, new ParmSelector("clock","time"));
+	ArrayList<String> parmValueList  = XmlParser.fetchParmRepeats(xml, new ParmSelector("TLCExample","ParmExample"));
+	
+**Example Output**	
+
+[ParmValueExample1, ParmValueExample2]
 
 ###public static String formatCompXml(String xml)
 
@@ -147,12 +215,28 @@ Helper function to reformat XML into "comparable" format for equivalence checkin
 
 **Returns**
 
-A string containing the reformatted XML
+A string containing the reformatted XML.
 
-**Example**
+**Example Input XML**
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="TLCExample"      version="4.4" >
+			<parm     name="ParmExample"      value="ParmValueExample"/>
+		</characteristic>
+	</wap-provisioningdoc> 
+	
+
+**Example Invocation**
 
 	:::java
 	String formattedXML = XmlParser.formatCompXml(xml);
+	
+**Example Output**	
+
+	:::XML
+	<wap-provisioningdoc><characteristic type="TLCExample" version="4.4" ><parm name="ParmExample" value="ParmValueExample"/></characteristic></wap-provisioningdoc> 
+
 
 ###public static String formatXml(String xml)
 
@@ -166,10 +250,24 @@ Helper function to reformat XML into "displayable" format. This will return the 
 
 A string containing the reformatted XML
 
-**Example**
+**Example Input XML**
+
+	:::XML
+	<wap-provisioningdoc><characteristic type="TLCExample" version="4.4"><parm name="ParmExample" value="ParmValueExample"/></characteristic></wap-provisioningdoc>
+
+**Example Invocation**
 
 	::java
 	String formattedXML = XmlParser.formatXml(xml);
+	
+**Example Output**	
+
+	:::XML
+	<wap-provisioningdoc>
+	<characteristic type="TLCExample" version="4.4">
+	<parm name="ParmExample" value="ParmValueExample"/>
+	</characteristic>
+	</wap-provisioningdoc>
 
 ###static public String getAssetXml(Activity activity,String assetName)
 Get an XML file from the assets folder and return its contents as a string.
@@ -184,10 +282,15 @@ Get an XML file from the assets folder and return its contents as a string.
 
 If the specified XML is found in the Asset folder of the application, a string containing the contents of this XML file will be returned. If the XML file was not found, null will be returned.
 
-**Example**
+**Example Invocation**
 
 	::java
 	String xml = XmlParser.getAssetXml(this, "input.xml");
+	
+**Example Output**
+
+	:::XML
+	<wap-provisioningdoc><characteristic type="TLCExample" version="4.4"><parm name="ParmExample" value="ParmValueExample"/></characteristic></wap-provisioningdoc>
 
 ###static public String getCharQuery(String charType)
 Helper function to construct an XML document that queries a Top-Level Characteristic. This XML Document can then be submitted to MXMS to query the specified Feature Type.
@@ -200,10 +303,15 @@ Helper function to construct an XML document that queries a Top-Level Characteri
 
 A string containing the Request XML Document that can be submitted to MXMS to query the specified Feature Type
 
-**Example**
+**Example Invocation**
 
 	::java
 	String charQuery = XmlParser.getCharQuery("PersistMgr");
+	
+**Example Output**
+
+	:::XML
+	<wap-provisioningdoc><characteristic-query type="PersistMgr" /></wap-provisioningdoc>
   
 ###static public String getParmQuery(String charType,String parmName)
 Helper function to construct an XML document that queries one parm directly under a Top-Level Characteristic. This XML Document can then be submitted to MXMS to query the specified parm.
@@ -218,10 +326,15 @@ Helper function to construct an XML document that queries one parm directly unde
 
 A string containing the Request XML Document that can be submitted to MXMS to query the specified parm.
 
-**Example**
+**Example Invocation**
 
 	::java
 	String parmQuery = XmlParser.getParmQuery("PersistMgr", "Version");
+	
+**Example Output**
+
+	:::XML
+	<wap-provisioningdoc><characteristic type="PersistMgr"><parm-query name="Version"/></characteristic></wap-provisioningdoc>
 
 ###static public boolean isEquivalent(String inXml,String outXml)
 Return whether two XML strings are equivalent. This means that they are the same, ignoring whitespace. This can be used to detect if a set Request XML Document was successfully applied by MXMS by comparing it to the returned Result XML Document to see if it contained any errors.
@@ -236,11 +349,33 @@ Return whether two XML strings are equivalent. This means that they are the same
 
 A Boolean containing true if the XML Documents are equivalent to each other or false if they are not.
 
-**Example**
+**Example Input XML 1**
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="TLCExample" version="4.4" >
+			<parm name="ParmExample" value="ParmValueExample"/>
+		</characteristic>
+	</wap-provisioningdoc> 
+
+**Example Input XML 2**
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="TLCExample"      version="4.4" >
+			<parm     name="ParmExample"      value="ParmValueExample"/>
+		</characteristic>
+	</wap-provisioningdoc> 
+
+**Example Invocation**
 
 	::java
 	boolean equivalence = XmlParser.isEquivalent(xml,xml2);
+	
+**Example Output**
 
+true
+	
 ###public static String readXml(InputStream stream)
 Helper function to take an InputStream variable which contains an XML Document and convert it to a string. 
 
@@ -252,10 +387,15 @@ Helper function to take an InputStream variable which contains an XML Document a
 
 The XML Document as a string variable. Null is returned if no data could be read from the stream.
 
-**Example**
+**Example Invocation**
 
 	::java
 	String xml = XmlParser.readXml(stream);
+	
+**Example Output**
+
+	:::XML
+	<wap-provisioningdoc><characteristic type="TLCExample" version="4.4" ><parm name="ParmExample" value="ParmValueExample"/></characteristic></wap-provisioningdoc>
 
 ###static public String replaceParms(String xml,ArrayList&lt;ParmValue&gt; values)
 Helper function to replace the values of a list of parms.
@@ -272,9 +412,23 @@ Helper function to replace the values of a list of parms.
 
 A string containing the XML Document that was submitted to the method with the specified parm(s) containing the new value(s) that this method set.
 
-**Example**
+**Example Input XML**
+
+	:::XML
+	<wap-provisioningdoc>
+		<characteristic type="TLCExample" version="4.4" >
+			<parm name="ParmExample" value="ParmValueExample"/>
+		</characteristic>
+	</wap-provisioningdoc> 
+
+**Example Invocation**
 
 	::java
 	ArrayList<ParmValue> replaceValues = new ArrayList<ParmValue>();
-	replaceValues.add(new ParmValue("clock","time","11:11:11"));
+	replaceValues.add(new ParmValue("TLCExample", "ParmExample", "NewValue"));
 	String replaceXml = XmlParser.replaceParms(inXml,replaceValues);
+	
+**Example Output**
+
+	:::XML
+	<wap-provisioningdoc><characteristic type="TLCExample"><parm name="ParmExample" value="NewValue"/></characteristic></wap-provisioningdoc>
