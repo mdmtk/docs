@@ -28,6 +28,8 @@ Description:
 
 >This parm will allow you to control whether the state (On/Off) of the Bluetooth radio can be changed.
 
+>**Note:** On JellyBean devices, this parm allows you to change the state of the Bluetooth radio by Turning it On or Off. 
+
 <div class="parm-table">
  <table>
 	<tr>
@@ -43,12 +45,12 @@ Description:
   <tr>
     <td>Enable</td>
     <td>"1"</td>
-	<td>This value will allow changes to be made to the state of the Bluetooth radio.</td>
+	<td>This value will allow changes to be made to the state of the Bluetooth radio. On JellyBean devices, this will cause the Bluetooth radio to be Turned On.</td>
   </tr>
   <tr>
     <td>Disable</td>
     <td>"2"</td>
-	<td>This value will prevent changes from being made to the state of the Bluetooth radio.</td>
+	<td>This value will prevent changes from being made to the state of the Bluetooth radio. On JellyBean devices, this will cause the Bluetooth radio to be Turned Off.</td>
   </tr>
 </table>
 </div>	
@@ -61,6 +63,8 @@ Parm name: BluetoothState
 Description: 
 
 >This parm allows you to change the state of the Bluetooth radio by Turning it On or Off. Turning the Bluetooth radio On would allow the device to connect to other to other Bluetooth devices that have previously been paired or would allow the setup of a new pairing.
+
+>**Note:** This parm is only available from KitKat onwards. It is not supported on JellyBean devices.
 
 <div class="parm-table">
  <table>
@@ -192,6 +196,8 @@ Description:
 ##Example XML
 ###Enable Changes to be made to Bluetooth State
 
+>**Note:** In JellyBean devices, this XML will change the state of the Bluetooth radio by Turning it On.
+
 	:::xml
 	<wap-provisioningdoc>
 		<characteristic type="WirelessMgr" version="4.3" >
@@ -201,14 +207,39 @@ Description:
 
 ###Disable Changes from being made to Bluetooth State
 
+>**Note:** In JellyBean devices, this XML will change the state of the Bluetooth radio by Turning it Off.
+
 	:::xml
 	<wap-provisioningdoc>
 		<characteristic type="WirelessMgr" version="4.3" >
 			<parm name="Bluetooth" value="2"/>
 		</characteristic>
 	</wap-provisioningdoc>
+	
+###Turn On All Radios (For JellyBean Devices)
 
-###Turn On All Radios
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="WirelessMgr" version="4.3" >
+			<parm name="Bluetooth" value="1"/>
+			<parm name="NFCState" value="1"/>
+			<parm name="GPSState" value="1"/>
+			<parm name="WWANState" value="1"/>
+		</characteristic>
+	</wap-provisioningdoc>
+
+###Turn Off All Radios (For JellyBean Devices)
+	:::xml
+	<wap-provisioningdoc>
+		<characteristic type="WirelessMgr" version="4.3" >
+			<parm name="Bluetooth" value="2"/>
+			<parm name="NFCState" value="2"/>
+			<parm name="GPSState" value="2"/>
+			<parm name="WWANState" value="2"/>
+		</characteristic>
+	</wap-provisioningdoc>
+	
+###Turn On All Radios (For KitKat Devices)
 
 	:::xml
 	<wap-provisioningdoc>
@@ -220,7 +251,7 @@ Description:
 		</characteristic>
 	</wap-provisioningdoc>
 
-###Turn Off All Radios
+###Turn Off All Radios (For KitKat Devices)
 	:::xml
 	<wap-provisioningdoc>
 		<characteristic type="WirelessMgr" version="4.3" >
