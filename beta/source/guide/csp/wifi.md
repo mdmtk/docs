@@ -25,7 +25,7 @@ The Wi-Fi feature type allows you to manage a device's Wi-Fi settings as well as
 * Enable Fusion Advanced Logging
 * Enable the Device to set the Clock off the AP (Access Point) Time
 * Enable HF SR (Hyper Fast Secure Roam)
-* Disable HR SR (Hyper Fast Secure Roam)
+* Disable HF SR (Hyper Fast Secure Roam)
 * Enable CCKM (Cisco Centralized Key Management)
 * Disable CCKM (Cisco Centralized Key Management)
 * Enable FT (Fast Transition)

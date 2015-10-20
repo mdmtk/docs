@@ -611,12 +611,24 @@ function loadCSP()
 //Creates html for table cell 
 function generateCell(compatibility)
 {
-	return '<i class="fa fa-check-circle" data-toggle="tooltip" data-placement="top" title="' 
+	if(compatibility.supported == "1")
+	{
+		return '<i class="fa fa-check-circle" data-toggle="tooltip" data-placement="top" title="' 
 			+  compatibility.name 
 			+ '<br> Device: ' + compatibility.device
 			+ '<br> OS: ' + compatibility.os
 			+ ((compatibility.notes == "") ? "" : '<br> Notes: ' + compatibility.notes)
 			+ '"></i>';
+	}
+	else
+	{
+		return '<i data-toggle="tooltip" data-placement="top" title="' 
+			+  compatibility.name 
+			+ '<br> Device: ' + compatibility.device
+			+ '<br> OS: ' + compatibility.os
+			+ ((compatibility.notes == "") ? "" : '<br> Notes: ' + compatibility.notes)
+			+ '"></i>';
+	}
 }
 
 //Update Page Hash
