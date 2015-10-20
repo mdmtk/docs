@@ -7,14 +7,13 @@ This quick start guide will walk through the common tasks and components that yo
 * **Binding to the MXMS** - All communications to the MXMS on Zebra devices, occur through a common binding interface.  
 * **Generating XML** - Data exchanged to the MXMS from the MDM client is handled through a defined XML structure. Using the DSD tool provided in the MDM Toolkit will provide a template for the XML to be used for applying settings. Typically you will use this tool to generate all needed functions and then replace string values for dynamically changing variables.
 * **Submitting XML** - Within the MDM client, XML will be submitted to apply settings via a simple API.
-<!--* **Checking Response** - the MDM client will need to handle response from the MX framework for interpreting submit or query results -->
 * **Querying the MXMS** - Within the MDM client, XML will be submitted to query the MXMS to receive back information about the current settings on the device.
-* Next Steps
+* **Next Steps**
 
 ## Requirements
 
 * MDM Toolkit (XML Generator Tool, DSD Files)
-* Symbol Android Device with MX
+* Zebra Android Device with MX
 * Java JVM Installed
 * Android ADT
 
@@ -68,7 +67,7 @@ For more information on Result XML documents and Parm Value Extraction, please s
 
 	>**Note:** The package names in these classes will need to be edited to match the package name of your application.
 
-6. In your application's activity, the onCreate method should call the init method that is in the SymbolBrand class. This will check that MXMS is installed on the device. If MXMS is detected, your application will be bound to MXMS, allowing interaction to occur between them.
+6. In your application's activity, the `onCreate` method should call the init method that is in the SymbolBrand class. This will check that MXMS is installed on the device. If MXMS is detected, your application will be bound to MXMS, allowing interaction to occur between them.
 
 		:::java
 		// Variable to hold the main activity
@@ -89,7 +88,7 @@ For more information on Result XML documents and Parm Value Extraction, please s
 			SymbolBrand.MXMS.init(this,mMxFrameworkServiceConnection);
 		}
 
-7. The ServiceConnection will also need to be added to your application's activity. This will contain the onServiceConnected callback that will notify your application that it was successfully bound to MXMS. It should also contain the onServiceDisconnected callback that will notify your application when it was successfully unbound with MXMS.
+7. The ServiceConnection will also need to be added to your application's activity. This will contain the `onServiceConnected` callback that will notify your application that it was successfully bound to MXMS. It should also contain the `onServiceDisconnected` callback that will notify your application when it was successfully unbound with MXMS.
 
 		:::java
 		// This definition is mandatory to track binding to the MXMS
@@ -108,7 +107,7 @@ For more information on Result XML documents and Parm Value Extraction, please s
 			}
 		}; 
 
-8. In the onServiceConnected method, the onServiceConnected in the SymbolBrand helper class should also be called, which will notify this class that your application was bound to MXMS. At the end of the method, the term method in the SymbolBrand class should be called, which will unbind your application from MXMS. The application can also exit at this point. In the onServiceDisconnected method, the onServiceDisconnected method in the SymbolBrand helper class should also be called, which will notify this class that your application was unbound from MXMS.
+8. In the `onServiceConnected method`, the `onServiceConnected` in the SymbolBrand helper class should also be called, which will notify this class that your application was bound to MXMS. At the end of the method, the term method in the SymbolBrand class should be called, which will unbind your application from MXMS. The application can also exit at this point. In the `onServiceDisconnected` method, the `onServiceDisconnected` method in the SymbolBrand helper class should also be called, which will notify this class that your application was unbound from MXMS.
 
 		:::java
 		// This definition is mandatory to track binding to the MXMS
@@ -203,7 +202,7 @@ For more information on Result XML documents and Parm Value Extraction, please s
 
 ## Submitting XML
 
-In your application's activity's onServiceConnected method, you can add code before the `term` call that would submit XML to MXMS. This example adds the utilizeMXMS method here, which will show how to edit XML and submit them to MXMS. However, it would be possible to repeatedly call this method from other locations. The onServiceConnected method is the first location where this method could possibly be called.
+In your application's activity's `onServiceConnected` method, you can add code before the `term` call that would submit XML to MXMS. This example adds the `utilizeMXMS` method here, which will show how to edit XML and submit them to MXMS. However, it would be possible to repeatedly call this method from other locations. The `onServiceConnected` method is the first location where this method could possibly be called.
 
 		:::java
 		// This definition is mandatory to track binding to the MXMS
@@ -234,11 +233,11 @@ In your application's activity's onServiceConnected method, you can add code bef
 			}
 		}; 
 
-In this example, the utilizeMXMS method is used to demonstrate how to take an XML from the application's Assets folder, change the values of a parm, and send this Request XML document to MXMS. The Result XML document that is returned is then used to get the value of one of the parms. Through the use of the methods that are mentioned here, you can create an application that also performs these actions.
+In this example, the `utilizeMXMS` method is used to demonstrate how to take an XML from the application's Assets folder, change the values of a parm, and send this Request XML document to MXMS. The Result XML document that is returned is then used to get the value of one of the parms. Through the use of the methods that are mentioned here, you can create an application that also performs these actions.
 
-1. The utilizeMXMS method uses the isReady method from the SymbolBrand class to check if the application successfully bound to MXMS, which would mean that it is ready to accept XML from your application. 
+1. The `utilizeMXMS` method uses the `isReady` method from the SymbolBrand class to check if the application successfully bound to MXMS, which would mean that it is ready to accept XML from your application. 
 
-2. If isReady returns true, the clock.in.xml is then retrieved from the Assets folder, which will be used as the Request XML document. This XML file contains:
+2. If `isReady` returns true, the clock.in.xml is then retrieved from the Assets folder, which will be used as the Request XML document. This XML file contains:
 
 		:::xml
 		<wap-provisioningdoc>
@@ -250,15 +249,15 @@ In this example, the utilizeMXMS method is used to demonstrate how to take an XM
 			</characteristic>
 		</wap-provisioningdoc>
 
-3. To replace the parms in the Request XML document, an ArrayList must be made to contain ParmValue objects. The ParmValue object is in the XmlParser class and in this example, is instantiated with the Top Level Characteristic type ("clock"), the name of the parm that will be edited ("time"), and the new value that will be used to replace the original value in the XML ("11:11:11"). The Request XML document and the ArrayList of ParmValue objects is used by the XmlParser's replaceParms method, which in this example, will change the "time" parm's value to "11:11:11". 
+3. To replace the parms in the Request XML document, an ArrayList must be made to contain ParmValue objects. The ParmValue object is in the XmlParser class and in this example, is instantiated with the Top Level Characteristic type ("clock"), the name of the parm that will be edited ("time"), and the new value that will be used to replace the original value in the XML ("11:11:11"). The Request XML document and the ArrayList of ParmValue objects is used by the XmlParser's `replaceParms` method, which in this example, will change the "time" parm's value to "11:11:11". 
 
-4. The modified Request XML document is used by the SymbolBrand class's submitXml method, which will submit this XML to the MXMS. This XML will then be sent to the Clock Feature Type, which will change the time of the device to 11:11:11. 
+4. The modified Request XML document is used by the SymbolBrand class's `submitXml` method, which will submit this XML to the MXMS. This XML will then be sent to the Clock Feature Type, which will change the time of the device to 11:11:11. 
 
-5. The MXMS will return a Result XML document is used by the XmlParser's formatXml class to split the Result XML document up onto multiple lines for better readability. 
+5. The MXMS will return a Result XML document is used by the XmlParser's `formatXml` class to split the Result XML document up onto multiple lines for better readability. 
 
-6. The XmlParser's isEquivalent method is then used to check that the Result XML document is equivalent to the Result XML document that was submitted, which would indicate that the device's clock was set successfully. If the XML documents were not equivalent, this indicates that there may have been an error in setting the clock and a characteristic error and/or parm error was returned. 
+6. The XmlParser's `isEquivalent` method is then used to check that the Result XML document is equivalent to the Result XML document that was submitted, which would indicate that the device's clock was set successfully. If the XML documents were not equivalent, this indicates that there may have been an error in setting the clock and a characteristic error and/or parm error was returned. 
 
-7. If the XML documents are equivalent, this example shows how the XmlParser's fetchParm method can be used to retrieve the value of the "time" parm. The Top Level Characteristic type ("clock") and the name of the parm who's value will be fetched ("time") are used by the fetchParm method to return this parm's value.
+7. If the XML documents are equivalent, this example shows how the XmlParser's `fetchParm` method can be used to retrieve the value of the "time" parm. The Top Level Characteristic type ("clock") and the name of the parm who's value will be fetched ("time") are used by the `fetchParm` method to return this parm's value.
 
 
 		:::java
@@ -368,7 +367,7 @@ In this example, the utilizeMXMS method is used to demonstrate how to take an XM
 
 Submitting queries to MX follows a similar process to submitting XML that is meant to set the device or perform an action. The SimpleMdmToolKitQuery project, which is supplied in the MDM Toolkit, contains an example of how to submit queries to MX. 
 
-1. This example calls the queryMX method from the onServiceConnected instead of the utilizeMXMS method which was used in the previous example.
+1. This example calls the `queryMX` method from the `onServiceConnected` instead of the `utilizeMXMS` method which was used in the previous example.
 
 		:::java
 		// This definition is mandatory to track binding to the MXMS
@@ -399,16 +398,16 @@ Submitting queries to MX follows a similar process to submitting XML that is mea
 			}
 		};  
 
-2. In the queryMX method, if isReady returns true, the mx.in3.xml is then retrieved from the Assets folder, which will be used as the Request XML document. This XML file contains:
+2. In the `queryMX` method, if isReady returns true, the mx.in3.xml is then retrieved from the Assets folder, which will be used as the Request XML document. This XML file contains:
 
 		:::xml
 		<wap-provisioningdoc>
 			<characteristic-query type="MX"/>
 		</wap-provisioningdoc>
 		
-3. The Request XML document is used by the SymbolBrand class's submitXml method, which will submit this XML to the MXMS. This XML will then be sent to the MX Feature Type, which will return the version number of MXMS.
+3. The Request XML document is used by the SymbolBrand class's `submitXml` method, which will submit this XML to the MXMS. This XML will then be sent to the MX Feature Type, which will return the version number of MXMS.
 
-5. The MXMS will return a Result XML document which is then used by the XmlParser's fetchParm method to retreive and output the value of the "MXMFVersion" and "Version" parms.
+5. The MXMS will return a Result XML document which is then used by the XmlParser's `fetchParm` method to retreive and output the value of the "MXMFVersion" and "Version" parms.
 
 6. This sample project also shows similar code which would let you query the CspMgr Feature Type, which would return an enumerated list of the available Feature Types. There are also examples on how to use the other XMLs in the project's Assets folder to query other Feature Types, such as the CameraMgr, DisplayMgr, DevAdmin, DhcpOptionMgr, and EncryptMgr, to receive back information about the current settings of the device. 
 
@@ -472,32 +471,6 @@ Submitting queries to MX follows a similar process to submitting XML that is mea
 				}
 			}
 		}
-
-
-
-	
-<!--
-## MX Response
-
-On successful processing of the XML, MX will return the XML that was submitted. The following sample code shows how to determine if a call to the MX Framework was successful. 
-
-	:::java
-    //Send XML to MX for processing 
-	MxResXML = MXservice.processXML(MxXML);
-						
-	//Check for Success
-	if(MxResXML.equals(MxXML))
-	{
-		//Request Success
-		Log.i("MX", "MxResXML: " + MxResXML);
-	}
-	else
-	{
-		//Request Failure
-		Log.e("MX", "MxResXML: " + MxResXML);
-	}
-
--->
 
 ## Next Step
 Now that you have mastered the basics you will want to read about more details on the various aspects of interacting with MX.

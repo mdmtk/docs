@@ -16,61 +16,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 
                                 ]
@@ -78,41 +88,75 @@ var mxVersions = [
                             {
                                 name: 'Allow Application To Submit XML',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -128,55 +172,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -187,55 +247,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -246,61 +322,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -311,61 +397,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -376,61 +472,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -441,61 +547,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -506,184 +622,296 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
                             {
                                 name: 'Allow All Applications To Submit XML',
-                                compatibility: [
+                                compatibility: [	
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
                             {
                                 name: 'Allow No Applications To Submit XML',
-                                compatibility: [
+                                compatibility: [	
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
                             {
                                 name: 'Allow Specified Applications To Submit XML',
-                                compatibility: [
+                                compatibility: [	
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -694,55 +922,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -753,55 +997,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -812,55 +1072,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -879,24 +1155,76 @@ var mxVersions = [
                             {
                                 name: '',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             }
                         ]
@@ -907,24 +1235,76 @@ var mxVersions = [
                             {
                                 name: '',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             }
                         ]
@@ -935,24 +1315,76 @@ var mxVersions = [
                             {
                                 name: '',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             }
                         ]
@@ -962,104 +1394,452 @@ var mxVersions = [
                         specifics: [
                             {
                                 name: 'WWAN',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
                             {
                                 name: 'WLAN',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
                             {
                                 name: 'Battery',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
                             {
                                 name: 'System',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
                             {
                                 name: 'GPS',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
                             {
                                 name: 'CPU',
-                                compatibility: [
+                                compatibility: [				
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             }
 
@@ -1077,59 +1857,75 @@ var mxVersions = [
                             {
                                 name: 'Install Application',
                                 compatibility: [
+                                    {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 
                                 ]
@@ -1138,58 +1934,74 @@ var mxVersions = [
                                 name: 'Uninstall Application',
                                 compatibility: [
                                     {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 
                                 ]
@@ -1198,58 +2010,74 @@ var mxVersions = [
                                 name: 'Upgrade Application',
                                 compatibility: [
                                     {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 
                                 ]
@@ -1257,59 +2085,75 @@ var mxVersions = [
 							{
                                 name: 'Set Default Launcher',
                                 compatibility: [
-                                   {
+                                    {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 
                                 ]
@@ -1318,58 +2162,74 @@ var mxVersions = [
                                 name: 'Enable Application',
                                 compatibility: [
                                     {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 
                                 ]
@@ -1378,119 +2238,150 @@ var mxVersions = [
                                 name: 'Disable Application',
                                 compatibility: [
                                     {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
 							{
                                 name: 'Clear Recent Apps List',
                                 compatibility: [
-                                   {
+                                    {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
-
                                 ]
                             }
                         ]
@@ -1501,183 +2392,228 @@ var mxVersions = [
                             {
                                 name: 'Add Application to Protected List',
                                 compatibility: [
-                                   {
+                                    {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
 							{
                                 name: 'Remove Application from Protected List',
                                 compatibility: [
-                                   {
+                                    {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
-
                                 ]
                             },
 							{
                                 name: 'Remove All Applications from Protected List',
                                 compatibility: [
                                     {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
-
                                 ]
-                            }
-							
+                            }							
                         ]
                     },
                     {
@@ -1686,121 +2622,151 @@ var mxVersions = [
                             {
                                 name: 'Enable Access to App Info for All Applications ',
                                 compatibility: [
-                                   {
+                                    {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
-
                                 ]
                             },
 							{
                                 name: 'Disable Access to App Info for All Applications ',
                                 compatibility: [
-                                   {
+                                    {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
-
                                 ]
                             }
                         ]
@@ -1818,46 +2784,74 @@ var mxVersions = [
 								name: 'Set the device to Mute/Vibrate/Unmute mode',
 								compatibility: [
 									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
 										name: 'MC18 KK',
 										device: 'MC18',
 										os: 'KK',
-										notes: ''
-									},
-									{
-										name: 'MC32 KK',
-										device: 'MC32',
-										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'MC40 KK',
 										device: 'MC40',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'MC92 KK',
 										device: 'MC92',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'TC55 KK',
 										device: 'TC55',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'TC70 KK',
 										device: 'TC70',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'TC75 KK',
 										device: 'TC75',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 								]
 							}
@@ -1870,46 +2864,74 @@ var mxVersions = [
 								name: 'Set an Audio UI Profile as the current Profile',
 								compatibility: [
 									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
 										name: 'MC18 KK',
 										device: 'MC18',
 										os: 'KK',
-										notes: ''
-									},
-									{
-										name: 'MC32 KK',
-										device: 'MC32',
-										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'MC40 KK',
 										device: 'MC40',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'MC92 KK',
 										device: 'MC92',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'TC55 KK',
 										device: 'TC55',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'TC70 KK',
 										device: 'TC70',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'TC75 KK',
 										device: 'TC75',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 								]
 							},
@@ -1917,46 +2939,74 @@ var mxVersions = [
 								name: 'Adjust to the Preset volume level of the current Profile',
 								compatibility: [
 									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
 										name: 'MC18 KK',
 										device: 'MC18',
 										os: 'KK',
-										notes: ''
-									},
-									{
-										name: 'MC32 KK',
-										device: 'MC32',
-										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'MC40 KK',
 										device: 'MC40',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'MC92 KK',
 										device: 'MC92',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'TC55 KK',
 										device: 'TC55',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'TC70 KK',
 										device: 'TC70',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'TC75 KK',
 										device: 'TC75',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 								]
 							},
@@ -1964,46 +3014,74 @@ var mxVersions = [
 								name: 'Set the FactoryPreset Profile as the current Profile',
 								compatibility: [
 									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
 										name: 'MC18 KK',
 										device: 'MC18',
 										os: 'KK',
-										notes: ''
-									},
-									{
-										name: 'MC32 KK',
-										device: 'MC32',
-										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'MC40 KK',
 										device: 'MC40',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'MC92 KK',
 										device: 'MC92',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'TC55 KK',
 										device: 'TC55',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'TC70 KK',
 										device: 'TC70',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'TC75 KK',
 										device: 'TC75',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 								]
 							}
@@ -2016,46 +3094,74 @@ var mxVersions = [
 								name: 'Add an Audio UI Profile',
 								compatibility: [
 									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
 										name: 'MC18 KK',
 										device: 'MC18',
 										os: 'KK',
-										notes: ''
-									},
-									{
-										name: 'MC32 KK',
-										device: 'MC32',
-										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'MC40 KK',
 										device: 'MC40',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'MC92 KK',
 										device: 'MC92',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'TC55 KK',
 										device: 'TC55',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'TC70 KK',
 										device: 'TC70',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'TC75 KK',
 										device: 'TC75',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 								]
 							},
@@ -2063,48 +3169,75 @@ var mxVersions = [
 								name: 'Remove an Audio UI Profile',
 								compatibility: [
 									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
 										name: 'MC18 KK',
 										device: 'MC18',
 										os: 'KK',
-										notes: ''
-									},
-									{
-										name: 'MC32 KK',
-										device: 'MC32',
-										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'MC40 KK',
 										device: 'MC40',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'MC92 KK',
 										device: 'MC92',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'TC55 KK',
 										device: 'TC55',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'TC70 KK',
 										device: 'TC70',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'TC75 KK',
 										device: 'TC75',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
-									
 								]
 							}
 						]
@@ -2122,39 +3255,149 @@ var mxVersions = [
 								name: 'Set the Battery Usage Decommissioned Threshold',
 								compatibility: [
 									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
 										name: 'MC40 KK',
 										device: 'MC40',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'MC92 KK',
 										device: 'MC92',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
 									},
 									{
 										name: 'TC55 KK',
 										device: 'TC55',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 									{
 										name: 'TC75 KK',
 										device: 'TC75',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
 									},
 								]
 							},
 							{
 								name: 'Set the Battery Percentage Decommissioned Threshold',
-								compatibility: [
+								compatibility: [	
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
 									{
 										name: 'MC18 KK',
 										device: 'MC18',
 										os: 'KK',
-										notes: ''
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
 									},
 								]
 							}
@@ -2172,41 +3415,75 @@ var mxVersions = [
                             {
                                 name: 'Set Default Homepage',
                                 compatibility: [
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -2217,12 +3494,152 @@ var mxVersions = [
                         specifics: [
                             {
                                 name: 'Turn On',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Turn Off',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             }
                         ]
@@ -2233,82 +3650,150 @@ var mxVersions = [
                             {
                                 name: 'Turn On',
                                 compatibility: [
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
 							{
                                 name: 'Turn Off',
                                 compatibility: [
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -2326,23 +3811,151 @@ var mxVersions = [
                             {
                                 name: 'Enable',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Disable',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             }
                         ]
@@ -2353,23 +3966,151 @@ var mxVersions = [
                             {
                                 name: 'Enable',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Disable',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             }
                         ]
@@ -2380,23 +4121,151 @@ var mxVersions = [
                             {
                                 name: 'Enable',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Disable',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             }
                         ]
@@ -2413,58 +4282,150 @@ var mxVersions = [
                             {
                                 name: 'Turn On/Off',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
 							{
                                 name: 'Enable/Disable',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -2476,34 +4437,150 @@ var mxVersions = [
                             {
                                 name: 'Turn On/Off',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
 							{
                                 name: 'Enable/Disable',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -2525,61 +4602,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -2595,61 +4682,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -2660,61 +4757,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -2725,61 +4832,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -2790,61 +4907,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -2855,61 +4982,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -2920,61 +5057,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -2985,61 +5132,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -3050,61 +5207,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -3120,61 +5287,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -3185,61 +5362,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -3250,61 +5437,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -3315,61 +5512,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -3380,61 +5587,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -3445,61 +5662,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -3522,61 +5749,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -3587,61 +5824,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -3657,61 +5904,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -3722,61 +5979,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -3787,61 +6054,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -3857,55 +6134,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -3916,55 +6209,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -3983,34 +6292,74 @@ var mxVersions = [
                                 name: 'Turn On',
                                 compatibility: [
 									{
-                                        name: 'MC32 KK',
+                                        name: 'MC32 JB',
                                         device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -4018,34 +6367,74 @@ var mxVersions = [
                                 name: 'Turn Off',
                                 compatibility: [
 									{
-                                        name: 'MC32 KK',
+                                        name: 'MC32 JB',
                                         device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -4058,34 +6447,74 @@ var mxVersions = [
                                 name: 'Enable',
                                 compatibility: [
 									{
-                                        name: 'MC32 KK',
+                                        name: 'MC32 JB',
                                         device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -4093,34 +6522,74 @@ var mxVersions = [
                                 name: 'Disable',
                                 compatibility: [
 									{
-                                        name: 'MC32 KK',
+                                        name: 'MC32 JB',
                                         device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -4138,18 +6607,77 @@ var mxVersions = [
                             {
                                 name: '',
                                 compatibility: [
+																		
 									{
-                                        name: 'All devices',
-                                        device: 'All devices',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
 									{
-                                        name: 'All devices',
-                                        device: 'All devices',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                 ]
                             }
                         ]
@@ -4170,61 +6698,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 JB',
                                         device: 'TC70',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -4235,61 +6773,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 JB',
                                         device: 'TC70',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -4305,61 +6853,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 JB',
                                         device: 'TC70',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -4370,61 +6928,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 JB',
                                         device: 'TC70',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -4440,61 +7008,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 JB',
                                         device: 'TC70',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -4505,61 +7083,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 JB',
                                         device: 'TC70',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -4572,52 +7160,1247 @@ var mxVersions = [
                 version: '',
                 features: [
                     {
-                        name: 'All features',
+                        name: 'Host Name',
                         specifics: [
                             {
-                                name: '',
+                                name: 'Enable',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
+                                    },
+                                ]
+                            },
+							{
+                                name: 'Disable',
+                                compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                ]
+                            },
+                            
+                        ]
+                    },
+					{
+                        name: 'User Class',
+                        specifics: [
+                            {
+                                name: 'Enable',
+                                compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                ]
+                            },
+							{
+                                name: 'Disable',
+                                compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                ]
+                            },
+                            
+                        ]
+                    },
+					{
+                        name: 'Broadcast Address',
+                        specifics: [
+                            {
+                                name: 'Enable',
+                                compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                ]
+                            },
+							{
+                                name: 'Disable',
+                                compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                ]
+                            },
+                            
+                        ]
+                    },
+					{
+                        name: 'NTP Server',
+                        specifics: [
+                            {
+                                name: 'Enable',
+                                compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                ]
+                            },
+							{
+                                name: 'Disable',
+                                compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                ]
+                            },
+                            
+                        ]
+                    },
+					{
+                        name: 'TFTP Server Name',
+                        specifics: [
+                            {
+                                name: 'Enable',
+                                compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                ]
+                            },
+							{
+                                name: 'Disable',
+                                compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                ]
+                            },
+                            
+                        ]
+                    },
+					{
+                        name: 'Boot File Name',
+                        specifics: [
+                            {
+                                name: 'Enable',
+                                compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                ]
+                            },
+							{
+                                name: 'Disable',
+                                compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                ]
+                            },
+                            
+                        ]
+                    },
+					{
+                        name: 'Domain Search',
+                        specifics: [
+                            {
+                                name: 'Enable',
+                                compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                ]
+                            },
+							{
+                                name: 'Disable',
+                                compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                ]
+                            },
+                            
+                        ]
+                    },
+					{
+                        name: 'TFTP Server Address',
+                        specifics: [
+                            {
+                                name: 'Enable',
+                                compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                ]
+                            },
+							{
+                                name: 'Disable',
+                                compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -4636,155 +8419,151 @@ var mxVersions = [
                             {
                                 name: 'Change (15,30,...)',
                                 compatibility: [
-                                    {
-                                        name: 'ET1N0 JB',
-                                        device: 'ET1N0',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-									{
-                                        name: 'ET1N2 JB',
-                                        device: 'ET1N2',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
 									{
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                 ]
                             },
                             {
                                 name: 'Do not change interval',
                                 compatibility: [
-                                    {
-                                        name: 'ET1N0 JB',
-                                        device: 'ET1N0',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
-									{
-                                        name: 'ET1N2 JB',
-                                        device: 'ET1N2',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
 									{
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                 ]
                             },
                         ]
@@ -4805,61 +8584,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -4870,61 +8659,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -4940,61 +8739,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -5010,61 +8819,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -5075,61 +8894,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -5148,51 +8977,225 @@ var mxVersions = [
                                 name: 'Add/Replace',
                                 compatibility: [
 									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Remove Existing',
                                 compatibility: [
-                                   {
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Remove All',
                                 compatibility: [
-                                    {
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             }
                         ]
@@ -5203,137 +9206,601 @@ var mxVersions = [
                             {
                                 name: 'Carrier',
                                 compatibility: [
-                                    {
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'APN Name',
                                 compatibility: [
-                                    {
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Replace',
                                 compatibility: [
-                                    {
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Wait Time',
                                 compatibility: [
-                                    {
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Make Default',
                                 compatibility: [
-                                    {
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Access Point',
                                 compatibility: [
-                                    {
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'User Name',
                                 compatibility: [
-                                    {
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Password',
                                 compatibility: [
-                                    {
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             }
                         ]
@@ -5354,43 +9821,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -5401,43 +9896,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -5448,43 +9971,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -5495,43 +10046,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -5542,43 +10121,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -5589,32 +10196,452 @@ var mxVersions = [
                         specifics: [
                             {
                                 name: 'Android Action Name',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'MIME Type',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Package Name',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Class Name',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'URL',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'File',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             }
                         ]
@@ -5624,12 +10651,152 @@ var mxVersions = [
                         specifics: [
                             {
                                 name: 'Android Action Name',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'MIME Type',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             }
                         ]
@@ -5639,52 +10806,752 @@ var mxVersions = [
                         specifics: [
                             {
                                 name: 'Standard Integer',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Character',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Character Sequence',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Floating Point',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Long Interger',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Boolean',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Short',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Double Precision Floating Point',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'String',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'String Byte Integer',
-                                compatibility: [
+                                compatibility: [									
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             }
                         ]
@@ -5701,56 +11568,76 @@ var mxVersions = [
                             {
                                 name: '',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
-									/*
 									{
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'0'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'0'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'0'
                                     },
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
-									*/
                                 ]
                             }
                         ]
@@ -5767,47 +11654,75 @@ var mxVersions = [
                             {
                                 name: '',
                                 compatibility: [
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -5824,19 +11739,77 @@ var mxVersions = [
                         specifics: [
                             {
                                 name: '',
-                                compatibility: [
-                                   {
-                                        name: 'All devices',
-                                        device: 'All devices',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
+                                compatibility: [									
 									{
-                                        name: 'All devices',
-                                        device: 'All devices',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                 ]
                             },
                         ]
@@ -5857,61 +11830,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -5922,61 +11905,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -5987,61 +11980,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -6052,61 +12055,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -6125,70 +12138,150 @@ var mxVersions = [
                                 name: 'Show Menu Option',
                                 compatibility: [
                                     {
-                                        name: 'MC32 KK',
+                                        name: 'MC32 JB',
                                         device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Do not Show Menu Option',
                                 compatibility: [
                                     {
-                                        name: 'MC32 KK',
+                                        name: 'MC32 JB',
                                         device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             }
                         ]
@@ -6200,70 +12293,150 @@ var mxVersions = [
                                 name: 'Show Menu Option',
                                 compatibility: [
                                     {
-                                        name: 'MC32 KK',
+                                        name: 'MC32 JB',
                                         device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Do not Show Menu Option',
                                 compatibility: [
                                     {
-                                        name: 'MC32 KK',
+                                        name: 'MC32 JB',
                                         device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             }
                         ]
@@ -6275,70 +12448,150 @@ var mxVersions = [
                                 name: 'Show Menu Option',
                                 compatibility: [
                                     {
-                                        name: 'MC32 KK',
+                                        name: 'MC32 JB',
                                         device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Do not Show Menu Option',
                                 compatibility: [
                                     {
-                                        name: 'MC32 KK',
+                                        name: 'MC32 JB',
                                         device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             }
                         ]
@@ -6350,70 +12603,150 @@ var mxVersions = [
                                 name: 'Turn On',
                                 compatibility: [
                                     {
-                                        name: 'MC32 KK',
+                                        name: 'MC32 JB',
                                         device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             },
 							{
                                 name: 'Turn Off',
                                 compatibility: [
                                     {
-                                        name: 'MC32 KK',
+                                        name: 'MC32 JB',
                                         device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                 ]
                             }
                         ]
@@ -6434,43 +12767,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -6481,112 +12842,296 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
 							{
                                 name: 'Enterprise Reset',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
 							{
                                 name: 'Factory Reset',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
 							{
                                 name: 'Full Device Wipe',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -6597,43 +13142,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -6651,82 +13224,150 @@ var mxVersions = [
                             {
                                 name: 'Enable',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
 							{
                                 name: 'Disable',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             }
@@ -6743,84 +13384,152 @@ var mxVersions = [
                         specifics: [
                             {
                                 name: 'Enable',
-                                compatibility: [
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+                                compatibility: [	
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
 								]
 							},
 							{
                                 name: 'Disable',
                                 compatibility: [
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
 								]
 							},
                         ]
@@ -6831,83 +13540,151 @@ var mxVersions = [
                             {
                                 name: 'Enable',
                                 compatibility: [
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                 ]
                             },
                             {
                                 name: 'Disable',
                                 compatibility: [
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                 ]
                             },
                         ]
@@ -6918,83 +13695,151 @@ var mxVersions = [
                             {
                                 name: 'Enable',
                                 compatibility: [
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                 ]
                             },
                             {
                                 name: 'Disable',
                                 compatibility: [
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                 ]
                             },
                         ]
@@ -7005,83 +13850,151 @@ var mxVersions = [
                             {
                                 name: 'Enable',
                                 compatibility: [
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                 ]
                             },
                             {
                                 name: 'Disable',
                                 compatibility: [
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                 ]
                             },
 						]
@@ -7092,83 +14005,151 @@ var mxVersions = [
                             {
                                 name: 'Enable',
                                 compatibility: [
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                 ]
                             },
                             {
                                 name: 'Disable',
                                 compatibility: [
-                                    {
-                                        name: 'MC32 KK',
-                                        device: 'MC32',
-                                        os: 'KK',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                 ]
                             },
 						]
@@ -7185,59 +14166,151 @@ var mxVersions = [
                             {
                                 name: 'Stylus and Finger',
                                 compatibility: [
+								{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
                                 name: 'Glove and Finger',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							}
 						]
@@ -7254,92 +14327,300 @@ var mxVersions = [
                             {
                                 name: 'Enable Usage',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
 							{
                                 name: 'Disable Usage',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
 							{
                                 name: 'Clear Clipboard - True',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
                             {
                                 name: 'Clear Clipboard - False',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -7352,46 +14633,150 @@ var mxVersions = [
                             {
                                 name: 'Enable',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
 							{
                                 name: 'Disable',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							}
@@ -7407,25 +14792,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -7436,25 +14867,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							}
@@ -7466,46 +14943,150 @@ var mxVersions = [
                             {
                                 name: 'Enable',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
 							{
                                 name: 'Disable',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							}
@@ -7521,43 +15102,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -7568,43 +15177,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -7615,43 +15252,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -7662,43 +15327,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -7709,43 +15402,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -7756,43 +15477,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -7803,43 +15552,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -7850,43 +15627,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -7897,43 +15702,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -7944,43 +15777,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -7991,43 +15852,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -8038,43 +15927,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -8085,43 +16002,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -8132,43 +16077,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -8179,43 +16152,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -8226,43 +16227,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -8273,43 +16302,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -8320,43 +16377,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -8367,43 +16452,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -8414,43 +16527,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							}
@@ -8466,25 +16607,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -8495,25 +16682,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -8524,25 +16757,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -8553,25 +16832,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							}
@@ -8587,25 +16912,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -8616,25 +16987,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							}
@@ -8656,61 +17073,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -8721,61 +17148,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							}
@@ -8787,94 +17224,150 @@ var mxVersions = [
                             {
                                 name: 'Enable',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
 							{
                                 name: 'Disable',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							}
@@ -8890,61 +17383,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -8955,61 +17458,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							}
@@ -9021,35 +17534,75 @@ var mxVersions = [
                             {
                                 name: 'Enable',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -9057,34 +17610,74 @@ var mxVersions = [
                                 name: 'Disable',
                                 compatibility: [
                                     {
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							}
@@ -9100,61 +17693,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -9165,61 +17768,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							}
@@ -9235,61 +17848,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -9300,61 +17923,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 KK',
-                                        device: 'MC67',
-                                        os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							}
@@ -9376,14 +18009,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							}
 						]
@@ -9398,14 +18089,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9415,14 +18164,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							}
 						]
@@ -9437,14 +18244,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9454,14 +18319,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9471,14 +18394,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9488,26 +18469,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9517,26 +18544,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							}
 						]
@@ -9551,14 +18624,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9568,14 +18699,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9585,14 +18774,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9602,14 +18849,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							}
 						]
@@ -9624,14 +18929,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9641,14 +19004,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9658,14 +19079,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9675,14 +19154,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9692,14 +19229,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							}
 						]
@@ -9714,14 +19309,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9731,14 +19384,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9748,14 +19459,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9765,14 +19534,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9782,14 +19609,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9799,14 +19684,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9816,14 +19759,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9833,14 +19834,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9850,14 +19909,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							}
 						]
@@ -9872,14 +19989,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9889,14 +20064,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							}
 						]
@@ -9911,14 +20144,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9928,14 +20219,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9945,14 +20294,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9962,14 +20369,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -9979,14 +20444,152 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+								]
+							}
+						]
+					},
+					{
+						name: 'Diagnostic Options',
+                        specifics: [
+                            {
+                                name: 'Fusion Advanced Logging',
+                                compatibility: [
+                                    {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+                                        name: 'MC40 JB',
+                                        device: 'MC40',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							}
 						]
@@ -10001,14 +20604,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -10018,14 +20679,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -10035,14 +20754,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -10052,14 +20829,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -10069,14 +20904,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -10086,14 +20979,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -10103,14 +21054,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -10120,14 +21129,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -10137,14 +21204,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -10154,14 +21279,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -10171,14 +21354,72 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							},
 							{
@@ -10188,14 +21429,747 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
-                                    }
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+								]
+							},
+							{
+                                name: 'Radio Resource Measurement(802.​11K)',
+                                compatibility: [
+                                    {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+                                        name: 'MC40 JB',
+                                        device: 'MC40',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+								]
+							},
+							{
+                                name: 'Management Frame Protection Mode(802.​11w)',
+                                compatibility: [
+                                    {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+                                        name: 'MC40 JB',
+                                        device: 'MC40',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+								]
+							},
+							{
+                                name: 'Band Preference',
+                                compatibility: [
+                                    {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+                                        name: 'MC40 JB',
+                                        device: 'MC40',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+								]
+							},
+							{
+                                name: 'FTOverTheDS',
+                                compatibility: [
+                                    {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+                                        name: 'MC40 JB',
+                                        device: 'MC40',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+								]
+							},
+							{
+                                name: 'AggregatedFT',
+                                compatibility: [
+                                    {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+                                        name: 'MC40 JB',
+                                        device: 'MC40',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+								]
+							},
+							{
+                                name: 'ScanAssist',
+                                compatibility: [
+                                    {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+                                        name: 'MC40 JB',
+                                        device: 'MC40',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+								]
+							},
+							{
+                                name: 'Coverage Hole Detection',
+                                compatibility: [
+                                    {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+                                        name: 'MC40 JB',
+                                        device: 'MC40',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+								]
+							},
+							{
+                                name: 'Sub-Net Roam',
+                                compatibility: [
+                                    {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+                                        name: 'MC40 JB',
+                                        device: 'MC40',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+								]
+							},
+							{
+                                name: 'WANCountry',
+                                compatibility: [
+                                    {
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+                                        name: 'MC40 JB',
+                                        device: 'MC40',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC18 KK',
+										device: 'MC18',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC92 KK',
+										device: 'MC92',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 KK',
+										device: 'TC55',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC75 KK',
+										device: 'TC75',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
 								]
 							}
 						]
@@ -10212,82 +22186,150 @@ var mxVersions = [
                             {
                                 name: 'Enable',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
 							{
                                 name: 'Disable',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -10298,61 +22340,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -10363,61 +22415,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -10430,40 +22492,74 @@ var mxVersions = [
                                 name: 'Turn On',
                                 compatibility: [
 									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -10471,40 +22567,74 @@ var mxVersions = [
                                 name: 'Turn Off',
                                 compatibility: [
 									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -10516,82 +22646,150 @@ var mxVersions = [
                             {
                                 name: 'Turn On',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'1'
+									},
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
-                                    },
-                                    {
-                                        name: 'MC67 JB',
-                                        device: 'MC67',
-                                        os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
                             {
                                 name: 'Turn Off',
                                 compatibility: [
-                                    {
-                                        name: 'TC55 JB',
-                                        device: 'TC55',
-                                        os: 'JB',
-                                        notes: ''
-                                    },
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 JB',
+                                        device: 'TC55',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -10603,70 +22801,150 @@ var mxVersions = [
                             {
                                 name: 'Turn On',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
                             {
                                 name: 'Turn Off',
                                 compatibility: [
+									{
+										name: 'MC32 JB',
+										device: 'MC32',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC40 JB',
+										device: 'MC40',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+									{
+										name: 'MC67 JB',
+										device: 'MC67',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'MC40 KK',
+										device: 'MC40',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
+									{
+										name: 'TC70 KK',
+										device: 'TC70',
+										os: 'KK',
+										notes: '',
+										supported:'0'
+									},
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                 ]
                             },
@@ -10688,61 +22966,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -10753,61 +23041,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -10818,61 +23116,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							},
@@ -10883,61 +23191,71 @@ var mxVersions = [
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC55 JB',
                                         device: 'TC55',
                                         os: 'JB',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC40 KK',
                                         device: 'MC40',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'MC92 KK',
                                         device: 'MC92',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 									{
                                         name: 'TC70 KK',
                                         device: 'TC70',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
                                     {
                                         name: 'TC75 KK',
                                         device: 'TC75',
                                         os: 'KK',
-                                        notes: ''
+                                        notes: '',
+										supported:'1'
                                     },
 								]
 							}

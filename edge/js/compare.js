@@ -427,7 +427,18 @@ function loadCSP()
 	var rows = 1; 
 	var cols = 2;
 	var uniqueIDs = new Array();
-	
+	/*
+	uniqueIDs.push("MC32 JB");
+	uniqueIDs.push("MC40 JB");
+	uniqueIDs.push("MC67 JB");
+	uniqueIDs.push("TC55 JB");
+	uniqueIDs.push("MC18 KK");
+	uniqueIDs.push("MC40 KK");
+	uniqueIDs.push("MC92 KK");
+	uniqueIDs.push("TC55 KK");
+	uniqueIDs.push("TC70 KK");
+	uniqueIDs.push("TC75 KK");
+	*/
 	for(var i = 0; i < mxVersions[mxIndex].csps[cspIndex].features.length; i++)
 	{
 		for(var j = 0; j < mxVersions[mxIndex].csps[cspIndex].features[i].specifics.length; j++)
@@ -611,12 +622,24 @@ function loadCSP()
 //Creates html for table cell 
 function generateCell(compatibility)
 {
-	return '<i class="fa fa-check-circle" data-toggle="tooltip" data-placement="top" title="' 
+	if(compatibility.supported == "1")
+	{
+		return '<i class="fa fa-check-circle" data-toggle="tooltip" data-placement="top" title="' 
 			+  compatibility.name 
 			+ '<br> Device: ' + compatibility.device
 			+ '<br> OS: ' + compatibility.os
 			+ ((compatibility.notes == "") ? "" : '<br> Notes: ' + compatibility.notes)
 			+ '"></i>';
+	}
+	else
+	{
+		return '<i data-toggle="tooltip" data-placement="top" title="' 
+			+  compatibility.name 
+			+ '<br> Device: ' + compatibility.device
+			+ '<br> OS: ' + compatibility.os
+			+ ((compatibility.notes == "") ? "" : '<br> Notes: ' + compatibility.notes)
+			+ '"></i>';
+	}
 }
 
 //Update Page Hash
