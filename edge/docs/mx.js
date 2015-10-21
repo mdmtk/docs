@@ -82,82 +82,6 @@ var mxVersions = [
                                         notes: '',
 										supported:'1'
                                     },
-
-                                ]
-                            },
-                            {
-                                name: 'Allow Application To Submit XML',
-                                compatibility: [
-									{
-										name: 'MC32 JB',
-										device: 'MC32',
-										os: 'JB',
-										notes: '',
-										supported:'0'
-									},
-									{
-										name: 'MC40 JB',
-										device: 'MC40',
-										os: 'JB',
-										notes: '',
-										supported:'0'
-									},
-									{
-										name: 'MC67 JB',
-										device: 'MC67',
-										os: 'JB',
-										notes: '',
-										supported:'0'
-									},
-									{
-										name: 'TC55 JB',
-										device: 'TC55',
-										os: 'JB',
-										notes: '',
-										supported:'0'
-									},
-                                    {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'MC92 KK',
-                                        device: 'MC92',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC55 KK',
-                                        device: 'TC55',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC70 KK',
-                                        device: 'TC70',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
                                 ]
                             }
                         ]
@@ -166,7 +90,382 @@ var mxVersions = [
                         name: 'Single User with Whitelist',
                         specifics: [
                             {
-                                name: 'Full Access',
+                                name: 'Set Verification Mode',
+                                compatibility: [                                    
+									{
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 JB',
+                                        device: 'MC40',
+                                        os: 'JB',
+                                        notes: 'Supported in V02.08.0520 or higher',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC67 JB',
+                                        device: 'MC67',
+                                        os: 'JB',
+                                        notes: 'Supported in V030515 or higher',
+										supported:'1'
+                                    },
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: 'Supported in V2.52.02 or higher',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                ]
+                            },
+                            {
+                                name: 'Add Application Signature',
+                                compatibility: [                                        
+									{
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 JB',
+                                        device: 'MC40',
+                                        os: 'JB',
+                                        notes: 'Supported in V02.08.0520 or higher',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC67 JB',
+                                        device: 'MC67',
+                                        os: 'JB',
+                                        notes: 'Supported in V030515 or higher',
+										supported:'1'
+                                    },
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: 'Supported in V2.52.02 or higher',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                ]
+                            },
+                            {
+                                name: 'Delete Application Signature',
+                                compatibility: [    
+									{
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'0'
+                                    },
+                                    {
+                                        name: 'MC40 JB',
+                                        device: 'MC40',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'0'
+                                    },
+                                    {
+                                        name: 'MC67 JB',
+                                        device: 'MC67',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'0'
+                                    },
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: 'Supported in V2.52.02 or higher',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                ]
+                            },
+                            {
+                                name: 'Allow Application To Submit XML',
+                                compatibility: [
+									{
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'0'
+                                    },
+                                    {
+                                        name: 'MC40 JB',
+                                        device: 'MC40',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'0'
+                                    },
+                                    {
+                                        name: 'MC67 JB',
+                                        device: 'MC67',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'0'
+                                    },
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: 'Supported in V2.52.02 or higher',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },	
+                                ]
+                            },
+                            {
+                                name: 'Disallow Application from Submitting XML',
+                                compatibility: [	
+									{
+                                        name: 'MC32 JB',
+                                        device: 'MC32',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'0'
+                                    },
+                                    {
+                                        name: 'MC40 JB',
+                                        device: 'MC40',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'0'
+                                    },
+                                    {
+                                        name: 'MC67 JB',
+                                        device: 'MC67',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'0'
+                                    },
+									{
+										name: 'TC55 JB',
+										device: 'TC55',
+										os: 'JB',
+										notes: '',
+										supported:'0'
+									},
+                                    {
+                                        name: 'MC18 KK',
+                                        device: 'MC18',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC40 KK',
+                                        device: 'MC40',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'MC92 KK',
+                                        device: 'MC92',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC55 KK',
+                                        device: 'TC55',
+                                        os: 'KK',
+                                        notes: 'Supported in V2.52.02 or higher',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC70 KK',
+                                        device: 'TC70',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                    {
+                                        name: 'TC75 KK',
+                                        device: 'TC75',
+                                        os: 'KK',
+                                        notes: '',
+										supported:'1'
+                                    },
+                                ]
+                            },
+							  {
+                                name: 'Add No Whitelist Package',
                                 compatibility: [
                                     {
                                         name: 'MC32 JB',
@@ -182,7 +481,7 @@ var mxVersions = [
                                         notes: '',
 										supported:'1'
                                     },
-                                    {
+									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
@@ -190,12 +489,12 @@ var mxVersions = [
 										supported:'1'
                                     },
 									{
-										name: 'TC55 JB',
-										device: 'TC55',
-										os: 'JB',
-										notes: '',
-										supported:'0'
-									},
+                                        name: 'TC55 JB',
+                                        device: 'TC55',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
@@ -241,7 +540,7 @@ var mxVersions = [
                                 ]
                             },
                             {
-                                name: 'Reduced Access',
+                                name: 'Add Specified Whitelist Package(s)',
                                 compatibility: [
                                     {
                                         name: 'MC32 JB',
@@ -257,7 +556,7 @@ var mxVersions = [
                                         notes: '',
 										supported:'1'
                                     },
-                                    {
+									{
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
@@ -265,12 +564,12 @@ var mxVersions = [
 										supported:'1'
                                     },
 									{
-										name: 'TC55 JB',
-										device: 'TC55',
-										os: 'JB',
-										notes: '',
-										supported:'0'
-									},
+                                        name: 'TC55 JB',
+                                        device: 'TC55',
+                                        os: 'JB',
+                                        notes: '',
+										supported:'1'
+                                    },
                                     {
                                         name: 'MC18 KK',
                                         device: 'MC18',
@@ -318,7 +617,7 @@ var mxVersions = [
                             {
                                 name: 'Delete No Whitelist Packages',
                                 compatibility: [
-                                    {
+									{
                                         name: 'MC32 JB',
                                         device: 'MC32',
                                         os: 'JB',
@@ -541,382 +840,7 @@ var mxVersions = [
                                 ]
                             },
                             {
-                                name: 'Add No Whitelist Package',
-                                compatibility: [
-                                    {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
-                                        os: 'JB',
-                                        notes: '',
-										supported:'1'
-                                    },
-									{
-                                        name: 'MC40 JB',
-                                        device: 'MC40',
-                                        os: 'JB',
-                                        notes: '',
-										supported:'1'
-                                    },
-									{
-                                        name: 'MC67 JB',
-                                        device: 'MC67',
-                                        os: 'JB',
-                                        notes: '',
-										supported:'1'
-                                    },
-									{
-                                        name: 'TC55 JB',
-                                        device: 'TC55',
-                                        os: 'JB',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'MC92 KK',
-                                        device: 'MC92',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC55 KK',
-                                        device: 'TC55',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC70 KK',
-                                        device: 'TC70',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                ]
-                            },
-                            {
-                                name: 'Add Specified Whitelist Package(s)',
-                                compatibility: [
-                                    {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
-                                        os: 'JB',
-                                        notes: '',
-										supported:'1'
-                                    },
-									{
-                                        name: 'MC40 JB',
-                                        device: 'MC40',
-                                        os: 'JB',
-                                        notes: '',
-										supported:'1'
-                                    },
-									{
-                                        name: 'MC67 JB',
-                                        device: 'MC67',
-                                        os: 'JB',
-                                        notes: '',
-										supported:'1'
-                                    },
-									{
-                                        name: 'TC55 JB',
-                                        device: 'TC55',
-                                        os: 'JB',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'MC92 KK',
-                                        device: 'MC92',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC55 KK',
-                                        device: 'TC55',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC70 KK',
-                                        device: 'TC70',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                ]
-                            },
-                            {
-                                name: 'Allow All Applications To Submit XML',
-                                compatibility: [	
-									{
-										name: 'MC32 JB',
-										device: 'MC32',
-										os: 'JB',
-										notes: '',
-										supported:'0'
-									},
-									{
-										name: 'MC40 JB',
-										device: 'MC40',
-										os: 'JB',
-										notes: '',
-										supported:'0'
-									},
-									{
-										name: 'MC67 JB',
-										device: 'MC67',
-										os: 'JB',
-										notes: '',
-										supported:'0'
-									},
-									{
-										name: 'TC55 JB',
-										device: 'TC55',
-										os: 'JB',
-										notes: '',
-										supported:'0'
-									},
-                                    {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'MC92 KK',
-                                        device: 'MC92',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC55 KK',
-                                        device: 'TC55',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC70 KK',
-                                        device: 'TC70',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                ]
-                            },
-                            {
-                                name: 'Allow No Applications To Submit XML',
-                                compatibility: [	
-									{
-										name: 'MC32 JB',
-										device: 'MC32',
-										os: 'JB',
-										notes: '',
-										supported:'0'
-									},
-									{
-										name: 'MC40 JB',
-										device: 'MC40',
-										os: 'JB',
-										notes: '',
-										supported:'0'
-									},
-									{
-										name: 'MC67 JB',
-										device: 'MC67',
-										os: 'JB',
-										notes: '',
-										supported:'0'
-									},
-									{
-										name: 'TC55 JB',
-										device: 'TC55',
-										os: 'JB',
-										notes: '',
-										supported:'0'
-									},
-                                    {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'MC92 KK',
-                                        device: 'MC92',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC55 KK',
-                                        device: 'TC55',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC70 KK',
-                                        device: 'TC70',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                ]
-                            },
-                            {
-                                name: 'Allow Specified Applications To Submit XML',
-                                compatibility: [	
-									{
-										name: 'MC32 JB',
-										device: 'MC32',
-										os: 'JB',
-										notes: '',
-										supported:'0'
-									},
-									{
-										name: 'MC40 JB',
-										device: 'MC40',
-										os: 'JB',
-										notes: '',
-										supported:'0'
-									},
-									{
-										name: 'MC67 JB',
-										device: 'MC67',
-										os: 'JB',
-										notes: '',
-										supported:'0'
-									},
-									{
-										name: 'TC55 JB',
-										device: 'TC55',
-										os: 'JB',
-										notes: '',
-										supported:'0'
-									},
-                                    {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'MC92 KK',
-                                        device: 'MC92',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC55 KK',
-                                        device: 'TC55',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC70 KK',
-                                        device: 'TC70',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                ]
-                            },
-                            {
-                                name: 'Set Verification Mode',
+                                name: 'Full Access',
                                 compatibility: [
                                     {
                                         name: 'MC32 JB',
@@ -929,14 +853,14 @@ var mxVersions = [
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: '',
+                                        notes: 'Supported in V02.08.0520 or higher',
 										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: '',
+                                        notes: 'Supported in V030515 or higher',
 										supported:'1'
                                     },
 									{
@@ -971,7 +895,7 @@ var mxVersions = [
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: '',
+                                        notes: 'Supported in V2.52.02 or higher',
 										supported:'1'
                                     },
                                     {
@@ -991,7 +915,7 @@ var mxVersions = [
                                 ]
                             },
                             {
-                                name: 'Add Application Signature',
+                                name: 'Reduced Access',
                                 compatibility: [
                                     {
                                         name: 'MC32 JB',
@@ -1004,14 +928,14 @@ var mxVersions = [
                                         name: 'MC40 JB',
                                         device: 'MC40',
                                         os: 'JB',
-                                        notes: '',
+                                        notes: 'Supported in V02.08.0520 or higher',
 										supported:'1'
                                     },
                                     {
                                         name: 'MC67 JB',
                                         device: 'MC67',
                                         os: 'JB',
-                                        notes: '',
+                                        notes: 'Supported in V030515 or higher',
 										supported:'1'
                                     },
 									{
@@ -1046,82 +970,7 @@ var mxVersions = [
                                         name: 'TC55 KK',
                                         device: 'TC55',
                                         os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC70 KK',
-                                        device: 'TC70',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC75 KK',
-                                        device: 'TC75',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                ]
-                            },
-                            {
-                                name: 'Delete Application Signature',
-                                compatibility: [
-                                    {
-                                        name: 'MC32 JB',
-                                        device: 'MC32',
-                                        os: 'JB',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'MC40 JB',
-                                        device: 'MC40',
-                                        os: 'JB',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'MC67 JB',
-                                        device: 'MC67',
-                                        os: 'JB',
-                                        notes: '',
-										supported:'1'
-                                    },
-									{
-										name: 'TC55 JB',
-										device: 'TC55',
-										os: 'JB',
-										notes: '',
-										supported:'0'
-									},
-                                    {
-                                        name: 'MC18 KK',
-                                        device: 'MC18',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'MC40 KK',
-                                        device: 'MC40',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'MC92 KK',
-                                        device: 'MC92',
-                                        os: 'KK',
-                                        notes: '',
-										supported:'1'
-                                    },
-                                    {
-                                        name: 'TC55 KK',
-                                        device: 'TC55',
-                                        os: 'KK',
-                                        notes: '',
+                                        notes: 'Supported in V2.52.02 or higher',
 										supported:'1'
                                     },
                                     {
