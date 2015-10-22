@@ -147,7 +147,7 @@ To prepare a device to be Remote Controlled, perform the below steps in the spec
 
 	![img](images/remote-control/rc-stagenow-key.PNG)
 	
-3. Download the APK (TBD) to a suitable path that is persistent, such as: /enterprise/usr/ using using FileMgr
+3. Download the APK (**MRCService-release.1.0.1.1017**) to a suitable path that is persistent, such as: /enterprise/usr/ using using FileMgr
 	* This could be done as part of Staging by using the StageNow FileMgr Setting Type
 	* This could be done by the MDM Agent using its native file transfer capabilities
 4. Install the APK from the location to which it was stored
@@ -201,29 +201,9 @@ When the applet is launched it should automatically connect to the device UI bas
 Go to Windows-> Start Menu-> Run -> **javacpl**
 
 * Launch the Java Control Panel and check the "Enable Java content in the Browser" option
-* Add the URL (http://yourweb-appserverIP:8443/MDM-webapp). The highlighted string should match your webserver IP as well as the app name deployed in Tomcat.
+* Add the URL (http://**yourweb-appserverIP**:8443/**MDM-webapp**). The bolded text should match your webserver IP as well as the app name deployed in Tomcat.
 
 ![img](images/remote-control/rc-javacontrolpanel.PNG) 
-
-<!--
-###Installing the Remote Control Files
-
-1. Copy the following folders and files from: `\\10.233.85.45\images\MDM_TK\release\1.0.1.1012\Deliverables`
-	* MDM-Webservice - This contains the sample webservice used by RC App
-	* MDM-Webapp - This is the RC App to contact webservice and connect to MC/TC handsets and display remote UI
-	* RC-client - This is the APK to be installed on the respective handsets
-2.  Copy "MDM-Webservice/RCWebService.war" to the "webapps" folder of your Tomcat installation folder
-3.  Copy the complete folder "MDM-Webapp" to the "webapps" folder of your Tomcat installation folder
-
-###Device Setup
-
-The following steps describe how to stage the "Install Key" by using the EncryptMgr Feature Type:
-
-1. The Install Key Name should be: "mrckey"
-2. The Install Key Value should be: "AFAFAFAFAFAFAFAFAFAFAFAFAFAFAFAF00000000000000000000000000000000"
-3. Use "StageNow" to set this key
-4. Install the MRCService-release.1.0.1.1012.apk on the corresponding Handset/device
--->
 
 ###Deployment of WebApp using Tomcat
 
@@ -235,21 +215,14 @@ The following directories should be available as a sample in the release package
 
 To install these files:
 
-1. Copy "MDM-Webservice/RCWebService.war" to ( "webapps" folder of your Tomcat installation)
+1. Copy "RCWebService.1.0.1.1017.war" to ("webapps" folder of your Tomcat installation)
 2. Copy the complete folder "MDM-Webapp" to ("webapps" folder of your Tomcat installation)
 
 Follow the below steps to install/configure Tomcat for deploying the webservice/webapp.
 
-Install Tomcat ( JDK 1.8 is a pre-requisite for tomcat) by providing Username and password 
-Setup SSL for Tomcat as mentioned in https://dzone.com/articles/setting-ssl-tomcat-5-minutes 
-
 1. Install Tomcat by providing a Username and password 
 
 	>**Note:** JDK 1.8 is a pre-requisite for Tomcat
-<!--
-2. Enter "Symbol" as the Username
-3. Enter "Symbol" as the Password
--->
 
 2. Setup SSL for Tomcat as mentioned in https://dzone.com/articles/setting-ssl-tomcat-5-minutes
 3. "%JAVA_HOME%\bin\keytool" -genkey -alias **tomcat** -keyalg RSA (provide necessary data)
@@ -282,24 +255,6 @@ Setup SSL for Tomcat as mentioned in https://dzone.com/articles/setting-ssl-tomc
 
 6. Once all these changes are done, "STOP" and "START" Tomcat to deploy the WAR
 
-<!--
-###Security Settings
-
-1. In Control Panel -> Programs -> Java , update "Security settings" to set the Security Level to "High".
-2. Add an exception in the Site list to allow the browser (Chrome or Firefox) to allow running Java Applets.
-3. Add
-	* "http://ipaddress:8080/MDM-Webapp"
-	* "http://ipaddress:8443/MDM-Webapp"
-4. To enable Java in the browser, please refer to these web pages: 
-
-	https://www.java.com/en/download/help/browser_activate_plugin.xml
-
-	https://java.com/en/download/faq/chrome.xml
-5. In your URL bar, enter: chrome://flags/#enable-npapi
-6. Click the Enable link for the "Enable NPAPI" configuration option.
-7. Click the Relaunch button that now appears at the bottom of the configuration page.
--->
-
 ###Configuring web.xml
 
 Set the IP of the device in `tomcat\webapps\RCWebService\WEB-INF\web.xml` by modifying the following lines:
@@ -310,20 +265,12 @@ Set the IP of the device in `tomcat\webapps\RCWebService\WEB-INF\web.xml` by mod
 
 Another way to do this would be to override "Device IP" in the GUI after launching the URL in the section below.
 
-<!--
-###Setting key in device
-
-The below given snapshot is from StageNowClient where user can set key name and key value.
- 
--->
-
-
 ###Launch URL
 
 http://localhost:8080/MDM-Webapp/
 
-Accept all the security warning pop up to proceed.
+If localhost is not used, replace it with the correct IP adresss in the index.html sample in the MDM-Webapp folder.
 
-<!-- >**Note:** If any Tomcat user name and password is asked for, please enter: Symbol,Symbol -->
+Accept all the security warning pop up to proceed.
 
 ![img](images/remote-control/rc-connection.PNG)

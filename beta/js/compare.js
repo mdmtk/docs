@@ -622,12 +622,7 @@ function generateCell(compatibility)
 	}
 	else
 	{
-		return '<i data-toggle="tooltip" data-placement="top" title="' 
-			+  compatibility.name 
-			+ '<br> Device: ' + compatibility.device
-			+ '<br> OS: ' + compatibility.os
-			+ ((compatibility.notes == "") ? "" : '<br> Notes: ' + compatibility.notes)
-			+ '"></i>';
+		return "";
 	}
 }
 
